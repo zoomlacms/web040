@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>413</LabelID>
+    <LabelName>输出建筑资讯下新闻公告</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam> ParentID,1,1,父节点|TitleNum,300,1,标题长|ShowNum,1,1,显示数</LabelParam>
+    <LabelTable>ZL_Guest_Bar LEFT JOIN ZL_Guestcate ON ZL_Guest_Bar.CateID=ZL_Guestcate.Cateid</LabelTable>
+    <LabelField>ZL_Guest_Bar.ID,ZL_Guest_Bar.Title</LabelField>
+    <LabelWhere>ZL_Guestcate.CateID in (select Cateid from ZL_Guestcate where ParentID = @ ParentID) and ZL_Guest_Bar.Status=99 and title &lt;&gt; ''</LabelWhere>
+    <LabelOrder>ZL_Guest_Bar.ID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li&gt;&lt;a href="/PItem?ID={Field="ID"/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/li&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

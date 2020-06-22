@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>344</LabelID>
+    <LabelName>输出黄页列表标签</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出黄页列表标签</LabelDesc>
+    <LabelParam>PageID,,2,黄页ID|NodeID,,2,栏目ID|UserName,,1,黄页用户名|ShowNum,10,1,显示数|TitleNum,30,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_Page_mypage ON ZL_CommonModel.ItemID=ZL_Page_mypage.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_Page_mypage.pic</LabelField>
+    <LabelWhere>TableName = 'ZL_Page_mypage' And Status=99 And Inputer='@UserName'  And ZL_CommonModel.FirstNodeID=@NodeID</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="row"&gt;
+{Repeate}
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom: 10px;"&gt;
+&lt;div class="page_box"&gt;
+&lt;a href="/Page/PageContent?ItemID={Field="GeneralID"/}&amp;PageID={$GetRequest(pageid)$}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" onerror="javascript:this.src='/UploadFiles/nopic.gif'" alt="{Field="Title"/}"/&gt;
+&lt;h5&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/h5&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}
+&lt;/div&gt;
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_Page_mypage"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,318 @@
+{ZL.Source id="项目模型数据源标签" /}<!DOCTYPEHTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="项目模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="项目模型数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="项目模型数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script>
+var ucomp='{ZL.Label id="获取当前登录用户公司ID" /}';
+var tcomp='{ZL.Label id="获取指定用户公司ID" UserName="{SField sid="项目模型数据源标签" FD="Inputer" page="0"/}" /}';
+if(ucomp!=tcomp){
+	alert("您当前无权限查看该信息！");
+	window.location.href="/User/";
+}
+</script>
+</head>
+<body>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目名称</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="Title" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目地点</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmdd" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目中标价</div>
+<div class="myprojiect_con_c">￥{SField sid="项目模型数据源标签" FD="xmzbj" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目概述及规模</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmgsjgm" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目进度规划</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjdgh" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目进度款说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjdkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目施工概要</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmsggy" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">监理单位情况说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="jlswqkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目管理人员</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmglry" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目劳务班组说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmlwbzym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目机械设备说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjxsbym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目材料概要</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmclgy" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">预计进场时间</div>
+<div class="myprojiect_con_c">{ZL:FormatDate({SField sid="项目模型数据源标签" FD="yjjcsj" page="0"/},yyyy-MM-dd)/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">预计竣工时间</div>
+<div class="myprojiect_con_c">{ZL:FormatDate({SField sid="项目模型数据源标签" FD="yjjgsj" page="0"/},yyyy-MM-dd)/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">其它说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="qtym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目整体概况</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmztgk" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目进度概况说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjdgkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目管理人员变更说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmglrybgym" page="0"/}</div>
+</div>
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目劳务班组及施工人员说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmlw" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目机械设备概况</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjxsbgk" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目材料说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmclym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">预结算工程款说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="yjsgckym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目其它说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmqtym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">财务状况说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="cwzkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">在建项目其它说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="zjxmqtym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目竣工结算总体概况</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmjgjsztgk" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">项目劳务班组结款说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="xmlwbzjkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">材料供应结款说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="clgyjkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">机械设备结款说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="jxsbjkym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">勘察单位说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="kcswym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">设计单位说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="sjswym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">施工单位说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="sgswym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">监理单位说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="jlswym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">建设单位说明</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="jsswym" page="0"/}</div>
+</div>
+
+<div class="myprojiect_con" style="margin-bottom:0;">
+<div class="myprojiect_con_l"></div>
+<div class="myprojiect_con_t">竣工验收备注</div>
+<div class="myprojiect_con_c">{SField sid="项目模型数据源标签" FD="jgysbz" page="0"/}</div>
+</div>
+
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('Otop'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+
+//手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+		$(".logon").css("display","block");
+		$(".home_user_t").html('<img src="'+data.UserFace+'" alt="'+data.UserName+'" onerror="javascript:this.src=\'/Images/userface/noface.png\';" /><p>Hi,'+data.UserName+'<br/><a href="/User/">我的建途</a></p><div class="home_user_tb"><a href="/User/Login.aspx">我的供应空间</a><a href="/User/Register.aspx">我的采购空间</a><div class="clearfix"></div></div>')
+		$("#Main_UName_T").html(data.UserName);
+	}
+	else
+		window.location.href="/Class_79/Default.aspx";
+});
+
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function (e) {
+    setTimeout("SetHeight();", "500");
+});
+function SetHeight() {
+    if (window.top != window.self) {
+        parent.SetHeight("myoa_fright", $(document.body).height());
+    }
+}
+</script>

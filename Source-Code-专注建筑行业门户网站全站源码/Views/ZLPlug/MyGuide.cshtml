@@ -1,0 +1,235 @@
+﻿@using System.Data;
+@using ZoomLa.SQLDAL.SQL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Layout = "~/Areas/User/Views/Shared/_layout1.cshtml";
+}
+@section head{
+<title>办事指南</title>
+<script src="/JS/DatePicker/WdatePicker.js"></script>
+<style>
+body { font-size:12px;}
+.map_list { margin-left:11px; left:0; width:auto;}
+.map_list>li { margin-left:-11px; left:0;}
+.map_list1>li>h3 { padding:0; border:none; white-space:nowrap; line-height:17px;}
+.map_list1>li { padding-top:2px; padding-bottom:2px; padding-left:15px; background:url(/Template/JianTu/style/images/line.png) left top -3px no-repeat; }
+.map_list1_b { padding-top:1px; padding-bottom:1px; padding-left:3px; padding-right:3px; font-size:10px; line-height:1;}
+.map_list>li>h3 { padding-top:5px; padding-bottom:5px; border-radius:0; line-height:normal;}
+.map_list>li { margin-top:5px;}
+.allchk_l { display:none;}
+</style>
+}
+@section content{
+<div class="zhengzhao_guide">
+<div class="zhengzhao_mycert_t">
+<div class="zhengzhao_mycert_tl"><span>办事指南</span></div>
+<div class="zhengzhao_mycert_tr">
+<a href="/User/Content/AddContent3?NodeID=543&ModelID=2" class="zz_add">新增</a>
+<a href="javascript:;" onclick="EditFun();" class="zz_edit">修改</a>
+@if (ViewBag.Status.Equals("-2")){ <input type="button" value="批量还原" class="btn btn-info" onclick="mvcpage.bat({url: 'content_recover' });" /> }
+else { <a href="javascript:;" class="zz_delete"  onclick="mvcpage.bat({url: '/User/Content/content_del', confirm: '确定要批量移除吗' });">删除</a> }
+<a href="javascript:;" onclick="ViewFun();" class="zz_view">浏览</a>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="zhengzhao_mycert_c">
+<table class="table table-border table-condensed " style="margin-bottom:0;">
+<tr>
+<td width="210">
+<div class="zhengzhao_mycert_cl" style="height:auto;">
+<ul class="map_list">
+<li>
+<h3>办事指南</h3>
+<ul class="map_list1 map_list1_zzlb">
+@if (ViewBag.NodeID == 543)
+{
+<li data-node="543" class="active"><h3><a href="/User/MyGuide?NodeID=543&ModelID=2">行政事务办事</a></h3></li>
+<li data-node="544"><h3> <a href="/User/MyGuide?NodeID=544&ModelID=2">公司内部管理条例</a></h3></li>
+}
+@if (ViewBag.NodeID == 544)
+{
+<li data-node="543"><h3><a href="/User/MyGuide?NodeID=543&ModelID=2">行政事务办事</a></h3></li>
+<li data-node="544" class="active"><h3> <a href="/User/MyGuide?NodeID=544&ModelID=2">公司内部管理条例</a></h3></li>
+}
+</ul>
+</li>
+</ul>
+</div>
+</td>
+<td>
+<form method="post" action="/User/Content/MyContent">
+<table class="table table-condensed zhengzhao_mycert_ct1">
+<tr>
+<td style="padding-left:0;">
+<select class="form-control pull-left" style="width:120px;">
+<option value="0">按标题查找</option>
+<option value="1">按ID查找</option>
+</select>
+<input type="text" class="form-control pull-left mvcparam" id="skey" name="skey" style="width:200px;" />
+<button type="button" class="btn btn-info btn-sm pull-left" style="margin-left:5px; border-radius:0; padding-top:2px; padding-bottom:2px;" onclick="mvcpage.load();" >查询</button>
+<div class="input-group hidden-xs" style="max-width: 404px;">
+</td>
+</tr>
+</table>
+</form>
+<div>
+@Html.Action("Content_Data2", Model)
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+    <div class="container" hidden>
+        <ol class="breadcrumb">
+            <li><a title="会员中心" href="@Url.Action("Default","")">会员中心</a></li>
+            <li class="active"><a href="@Url.Action("MyContent", "Content")">投稿管理</a> [<a href="/User/Content/MyContent?NodeID=@ViewBag.NodeID&status=-2">回收站</a>]</li>
+        </ol>
+    </div>
+    <div class="container" hidden>
+        <div class="row">
+            <div id="nodeNav" class="col-lg-3 col-md-4 col-sm-4 col-xs-12 divBorder" style="height:500px;overflow-y:auto;">
+                <div>
+                    @if (ViewBag.NodeID == 539 || ViewBag.NodeID == 540 || ViewBag.NodeID == 541)
+                    {
+                        <ul class="map_list">
+                            <li>
+                                <h3>其他类型</h3>
+                                <ul class="map_list1">
+                                    @if(ViewBag.NodeID == 539) { <li class="active"><h3><a href="/User/Content/MyContent?NodeID=539">证书状态</a></h3></li>}
+                                    else { <li><h3><a href="/User/Content/MyContent?NodeID=539">证书状态</a></h3></li>}
+                                    @if(ViewBag.NodeID == 540) { <li class="active"><h3><a href="/User/Content/MyContent?NodeID=540">专业类别</a></h3></li>}
+                                    else { <li><h3><a href="/User/Content/MyContent?NodeID=540">专业类别</a></h3></li>}
+                                    @if(ViewBag.NodeID == 541) { <li class="active"><h3><a href="/User/Content/MyContent?NodeID=541">职称类别</a></h3></li>}
+                                    else { <li><h3><a href="/User/Content/MyContent?NodeID=541">职称类别</a></h3></li>}
+                                </ul>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        @Html.Partial("_treeview", ViewBag.treeMod as ZoomLa.Controls.C_TreeView)
+                    }
+                    
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+                <div>
+                    <div class="pull-left">
+                       
+                    </div>
+                    <form method="post" action="/User/Content/MyContent">
+                        
+                    </form>
+                </div>
+                
+                <div class="margin_t5">
+                    
+                </div>
+            </div>
+        </div>
+        <div style="display:none;">
+            <input type="hidden" id="status" value="@ViewBag.Status" class="mvcparam" />
+            <input type="hidden" id="nodeid" value="@ViewBag.NodeID" class="mvcparam" />
+        </div>
+    </div>
+}
+@section script{
+<script src="/JS/SelectCheckBox.js"></script>
+<script>
+$(function () {
+    $(".tvNav a.list1").click(function () { showlist(this); });
+    if (window.localStorage.Content_tvNav) {
+        expand($("#" + window.localStorage.Content_tvNav));
+    }
+})
+function showlist(obj) {
+    $(obj).parent().parent().find("a").removeClass("activeLi");//a-->li-->ul
+    $(obj).parent().children("a").addClass("activeLi");//li
+    $(obj).parent().siblings("li").find("ul").slideUp();
+    $(obj).parent().children("ul").slideToggle();
+    window.localStorage.Content_tvNav = obj.id;
+}
+function expand(obj)//超链接,不以动画效果显示
+{
+    $a = $(obj).parent().parent(".tvNav ul").parent("li").find("a:first");
+    if ($a.length > 0) expand($a);
+    $(obj).addClass("activeLi");
+    $(obj).parent("li").children("ul").show();
+}
+$(".map_list1 li").each(function (index, element) {
+if ($(this).find("ul li").length > 0) {
+$(this).find("ul").hide();
+}
+else {
+$(this).children("h3").find(".btn").remove();
+$(this).find("ul").remove();
+}
+});
+$(".map_list1_b").click(function () {
+if ($(this).find("i").hasClass("fa-plus")) {
+$(this).parent().parent().children("ul").show();
+$(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+}
+else {
+$(this).parent().parent().children("ul").hide();
+$(this).find("i").removeClass("fa-minus").addClass("fa-plus");
+}
+})
+$().ready(function (e) {
+var gid = "0";
+var pid = "0";
+if (gid > 0) {
+$(".map_list1 li[data-gid='" + gid + "']").addClass("active");
+ShowFun($(".map_list1 li[data-gid='" + gid + "']"))
+
+}
+else
+{
+$("#txt_parentid").val(pid);
+}
+if (pid > 0) {
+$(".map_list1 li[data-gid='" + pid + "']").addClass("active");
+ShowFun($(".map_list1 li[data-gid='" + pid + "']"))
+}
+$("#txt_parentid").parent().parent().hide();
+})
+$(".map_list1_zzlb li a").click(function () {
+    $("#zzlb").val($(this).html());
+    mvcpage.load();
+});
+$(".map_list1_zy li a").click(function () {
+    $("#zy").val($(this).html());
+    mvcpage.load();
+});
+$(".map_list1_zszt li a").click(function () {
+    $("#zszt").val($(this).html());
+    mvcpage.load();
+});
+function ViewFun(){
+	if(parseInt($("input[name='idchk']:checked").val())>0){
+		window.open("/Item/"+$("input[name='idchk']:checked").val()+".aspx");
+	}
+	else{
+	    alert("未选择指南！");
+	}
+}
+function EditFun(){
+	if(parseInt($("input[name='idchk']:checked").val())>0){
+		window.location.href="/User/Content/AddContent3?ID="+parseInt($("input[name='idchk']:checked").val());
+		//parent.EditFun1(parseInt($("input[name='idchk']:checked").val()));
+	}
+	else{
+		alert("未选择指南！");
+	}
+}
+$().ready(function (e) {
+    setTimeout("SetHeight();", "500");
+});
+function SetHeight() {
+    if (window.top != window.self) {
+        parent.SetHeight("myoa_fright", $(document.body).height());
+    }
+}
+</script>
+}

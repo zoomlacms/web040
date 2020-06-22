@@ -1,0 +1,76 @@
+﻿@using System.Data;
+@using ZoomLa.BLL;
+@using ZoomLa.Common;
+@using ZoomLa.Model;
+@using ZoomLa.SQLDAL;
+@using ZoomLa.SQLDAL.SQL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.cols = 15;
+    Model.url = "Content_Data3?NodeID=" + Request["NodeID"];
+    B_User buser = new B_User();
+    M_UserInfo mu = buser.GetLogin();
+    switch (B_User_Plat.IsPlatUser())
+    {
+        case 0://非Plat用户
+               //Response.Redirect("/Plat/Fill.aspx");
+            function.WriteErrMsg("你并非能力中心用户,请联系网络管理员,为你发送注册邀请!!");
+            break;
+        case 1://未审核
+            function.WriteErrMsg("你的帐户尚未审核,无法登录能力中心,请联系网络管理员!!!");
+            break;
+            //case 99://正常登录
+            //    Session["Main_IsPlatUser"] = true;
+            //    break;
+    }
+    if (!B_User_Plat.IsAdmin())
+    {
+        DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select * from ZL_Plat_Group where MemberIDS like '%," + mu.UserID + ",%' And GroupName='行政人事'", null);
+        if (dt.Rows.Count <= 0)
+        {
+            function.WriteErrMsg("你并非行政部门管理员，无法使用该功能！");
+        }
+    }
+}
+<table class="table table-bordered table-condensed" id="EGV">
+<tr>
+<td width="30"></td>
+<td>ID</td>
+<td>姓名</td>
+<td>性别</td>
+<td>民族</td>
+<td>籍贯</td>
+<td>身份证号</td>
+<td>联系电话</td>
+<td>QQ</td>
+<td>学历</td>
+<td>所属部门</td>
+<td>职务</td>
+<td>入职时间</td>
+<td>转正时间</td>
+<td>操作</td>
+</tr>
+@foreach (DataRow dr in Model.dt.Rows)
+{
+<tr>
+<td><input type="radio" name="idchk" value="@dr["GeneralID"]" /></td>
+<td>@dr["GeneralID"]</td>
+<td><a href="/Item/@(dr["GeneralID"]).aspx">@dr["Title"]</a></td>
+<td>@dr["xb"]</td>
+<td>@dr["mz"]</td>
+<td>@dr["jg"]</td>
+<td>@dr["sfzh"]</td>
+<td>@dr["phone"]</td>
+<td>@dr["qq"]</td>
+<td>@dr["xl"]</td>
+<td>@dr["szbm"]</td>
+<td>@dr["zw"]</td>
+<td>@dr["rzsj"]</td>
+<td>@dr["zzsj"]</td>
+<td>
+<a href="javascript:;" class="option_style" onclick="mvcpage.del({ ids: '@dr["GeneralID"]', url: '/User/Content/content_del', confirm: '确定要删除吗' });" title="删除"><i class="fa fa-trash"></i></a>
+</td>
+</tr>
+}
+@Html.Partial("_page", Model)
+</table>

@@ -1,0 +1,702 @@
+{ZL.Source id="节点栏目信息数据源"/}<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}站-{$SiteName/}</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="{$CssDir/}global.css?v={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/Controls/B_User.js"></script>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a></li>
+<li>华北：<a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(467)/}">天津</a><a href="{ZL:GetNodeLinkUrl(470)/}">河北</a><a href="{ZL:GetNodeLinkUrl(471)/}">山西</a><a href="{ZL:GetNodeLinkUrl(492)/}">内蒙古</a></li>
+<li>华东：<a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(475)/}">江苏</a><a href="{ZL:GetNodeLinkUrl(476)/}">浙江</a><a href="{ZL:GetNodeLinkUrl(477)/}">安徽</a><a href="{ZL:GetNodeLinkUrl(478)/}">福建</a><a href="{ZL:GetNodeLinkUrl(480)/}">山东</a></li>
+<li>华南：<a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(493)/}">广西</a><a href="{ZL:GetNodeLinkUrl(485)/}">海南</a></li>
+<li>华中：<a href="{ZL:GetNodeLinkUrl(479)/}">江西</a><a href="{ZL:GetNodeLinkUrl(481)/}">河南</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(483)/}">湖南</a></li>
+<li>西南：<a href="{ZL:GetNodeLinkUrl(469)/}">重庆</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a><a href="{ZL:GetNodeLinkUrl(487)/}">贵州</a><a href="{ZL:GetNodeLinkUrl(488)/}">云南</a><a href="{ZL:GetNodeLinkUrl(494)/}">西藏</a></li>
+<li>西北：<a href="{ZL:GetNodeLinkUrl(489)/}">陕西</a><a href="{ZL:GetNodeLinkUrl(490)/}">甘肃</a><a href="{ZL:GetNodeLinkUrl(491)/}">青海</a><a href="{ZL:GetNodeLinkUrl(495)/}">宁夏</a><a href="{ZL:GetNodeLinkUrl(496)/}">新疆</a></li>
+<li>东北：<a href="{ZL:GetNodeLinkUrl(472)/}">辽宁</a><a href="{ZL:GetNodeLinkUrl(473)/}">吉林</a><a href="{ZL:GetNodeLinkUrl(474)/}">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<span href="tel:400-6789-314" class="all_phone">400-6789-314</span>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li class="nav_user"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户登录</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login">用户登录</a></li>
+<li><a href="/User/Register">用户注册</a></li>
+<li class="logon" style="display:none;"><a href="/User/Info/UserInfo">资料维护</a></li>
+<li class="logon" style="display:none;"><a href="javascript:;" onClick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!--顶部结束-->
+<div class="container home_nav_t">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<a href="/" class="home_logo"><img src="{$LogoUrl/}" alt="{$SiteName/}" /></a>
+<div class="home_logo_text" style="float:none;"><span><a href="{ZL:GetNodeLinkUrl(68)/}">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}站</a></span><a href="/"><img src="{$CssDir/}images/logo2.png" alt="" /></a></div> 
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<div class="home_search">
+<form action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="home_search_r">
+<div class="input-group">
+<input type="text" name="keyword" class="form-control" placeholder="请输入关键字" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit">搜索</button>
+</span>
+</div><!-- /input-group -->
+</div>
+<div class="home_search_l">
+<a href="{ZL:GetHotinfo(1)/}" class="btn btn-default"><i class="fa fa-edit"></i> 免费发布</a>
+</div>
+</form>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<div class="home_code">
+<img src="{$CssDir/}images/MobileCode.jpg" alt="二维码" />
+<p>访问手机版</p>
+</div>
+</div>
+</div>
+</div>
+<!--头部搜索结束-->
+<div class="realtive">
+<nav class="navbar navbar-default home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs" href="/"><img src="{$LogoUrl/}" alt="{$SiteName/}" style="height:40px; width:95px;" /></a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav home_list">
+<li class="dropdown market hidden-xs">
+<a href="{ZL:GetNodeLinkUrl(52)/}" style="color:#FFF;" target="{ZL:GetNodeOpen(52)/}">建筑商城</a>
+<ul class="dropdown-menu second_list">
+{ZL.Label id="循环输出首页商城节点导航" NodeID="52" /}
+</ul>
+</li>
+<li class="dropdown visible-xs">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">建筑商城 <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+{ZL.Label id="循环输出首页商城节点导航" NodeID="52" /}
+</ul>
+</li>
+<li id="team"><a href="{ZL:GetNodeLinkUrl(1)/}" target="{ZL:GetNodeOpen(1)/}">施工队伍</a></li>
+<li id="jxsb"><a href="{ZL:GetNodeLinkUrl(5)/}" target="{ZL:GetNodeOpen(5)/}">机械设备</a></li>
+<li id="jzyc"><a href="{ZL:GetNodeLinkUrl(40)/}" target="{ZL:GetNodeOpen(40)/}">建筑用材</a></li>
+<li id="gczy"><a href="{ZL:GetNodeLinkUrl(6)/}" target="{ZL:GetNodeOpen(6)/}">工程资源</a></li>
+<li class="dropdown" role="presentation" id="jzfw">
+<a href="{ZL:GetNodeLinkUrl(37)/}" target="{ZL:GetNodeOpen(37)/}">建筑服务<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu second_list">		
+<li><a href="{ZL:GetNodeLinkUrl(38)/}" target="{ZL:GetNodeOpen(38)/}">人才证书</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(50)/}" target="{ZL:GetNodeOpen(50)/}">培训咨询</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(39)/}" target="{ZL:GetNodeOpen(39)/}">第三方代理</a></li>
+</ul>
+</li>
+<li id="qysjk"><a href="{ZL:GetNodeLinkUrl(3)/}" target="{ZL:GetNodeOpen(3)/}">企业数据库</a></li>
+<li class="dropdown" role="presentation" id="jxlt">
+<a href="{ZL:GetNodeLinkUrl(41)/}" target="{ZL:GetNodeOpen(41)/}">建筑资讯<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu second_list">		
+<li><a href="{ZL:GetNodeLinkUrl(42)/}" target="{ZL:GetNodeOpen(42)/}">新闻公告</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(51)/}" target="{ZL:GetNodeOpen(51)/}">政策法规</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(43)/}" target="{ZL:GetNodeOpen(43)/}">建筑文库</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(44)/}" target="{ZL:GetNodeOpen(44)/}">建筑视频</a></li>
+<li><a href="/Ask">建筑问答</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(45)/}" target="{ZL:GetNodeOpen(45)/}">办事指南</a></li>
+</ul>
+</li>
+<li class="home_nav_oa"><a href="{ZL:GetNodeLinkUrl(79)/}"><span></span>建途OA</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+</div>
+<!--导航结束-->
+<div class="home_banner">  
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active home_banner1">
+  <p><a class="" href="{ZL:GetNodeLinkUrl(79)/}">立即体验</a></p>
+</div>
+<div class="item home_banner2">
+<div class="carousel-caption">
+</div>
+</div>
+<div class="item home_banner3">
+<div class="carousel-caption">
+<p><a href="{ZL:GetInfoUrl(267)/}" target="_blank"><i class="fa fa-hand-pointer-o"></i> 立即联系</a></p>
+</div>
+</div>
+<div class="item home_banner4">
+<div class="carousel-caption">
+  <p><a href="{ZL:GetSpecialPage(2)/}" target="_blank" class="banner4">培训流程</a></p>
+</div>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+<div class="container hidden-xs">
+<div class="nav_llist">
+<ul id="nav_llist">
+{ZL.Label id="循环输出商城节点导航_首页" NodeID="52" /}
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container relative">
+<div class="home_user">
+<div class="home_user_t">
+<img src="/Images/userface/noface.png" alt="" onerror="javascript:this.src='/Images/userface/noface.png';" />
+<p>Hi,游客<br/>欢迎来到建途网</p>
+<div class="home_user_tb">
+<a href="/User/Login.aspx">登录</a>
+<a href="/User/Register.aspx">注册</a>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="home_user_g">
+<div class="home_user_gt"><span class="pull-left">建筑文库</span><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(43)/}" target="{ZL:GetNodeOpen(43)/}">更多></a></span><div class="clearfix"></div></div>
+<ul>
+{ZL.Label id="输出指定节点标题_无时间属性" NodeID="43" TitleNum="50" ShowNum="9" /}
+</ul>
+</div>
+</div>
+</div>
+
+<div class="container relative margin_top20 hidden-xs">
+<div role="tabpanel" class="home_tabs">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs tabs_list" role="tablist">
+<li class="tabs_first"><b>一站式套餐</b></li>
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">建筑企业全年套餐</a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">建筑业系统化培训</a></li>
+<li role="presentation"><a href="{ZL:GetNodeLinkUrl(79)/}" target="_blank">企业线上办公云系统</a></li>
+<li class="tabs_first tabs_list_r"><a href="#">更多</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="home_tab">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 home_tab_l">
+<i class="fa fa-home"></i><p>全年<br/>服务</p>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 home_tab_r">
+<ul>
+<li>全年至尊服务</li>
+<li><a href="#">企业主页推广</a></li>
+<li><a href="#">企业人才招聘</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="home_tab_link">+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
+<div class="home_tab">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 home_tab_l">
+<i class="fa fa-map-marker"></i><p>上门<br/>跟进</p>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 home_tab_r">
+<ul>
+<li>全年至尊服务</li>
+<li><a href="#">企业主页推广</a></li>
+<li><a href="#">企业人才招聘</a></li>
+<li><a href="#">年会推广席位保障</a></li>
+<li><a href="#">官网展示与专题宣传推广</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>  
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile">...</div>
+</div>
+</div>
+
+<div class="home_sitenews">
+<div class="home_sitenews_t"><span class="pull-left">{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}新闻</span><span class="pull-right"><a href="{ZL:GetNodeLinkUrl(41)/}" target="{ZL:GetNodeOpen(41)/}">更多>><a></span><div class="clearfix"></div></div>
+<ul>
+{ZL.Label id="输出指定地区名称节点标题_无时间属性" NodeID="498" TitleNum="50" ShowNum="8" Area="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+{ZL.Label id="输出指定地区节点标题_无时间属性" NodeID="42" TitleNum="50" ShowNum="8" Area="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</ul>
+</div>
+</div>
+
+<div class="container"><a href="#"><img class="img-responsive" src="{$CssDir/}images/index.png" alt="自选套餐"></a></div>
+
+<div class="container margin_top20" hidden>
+<div class="home_list_t"><span>1F</span>采购平台<a href="{ZL:GetNodeLinkUrl(2)/}">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+<div class="one_l">
+<h3>谁是施工高手</h3>
+<p>现金日结招聘区火热上线</p>
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center">
+{ZL.Label id="首页输出指定地区工程需求" ShowNum="5" NodeID="2" TitleNum="40" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+
+<div class="container margin_top20">
+<div class="home_list_t2"><span>1F</span>工程资源<a href="{ZL:GetNodeLinkUrl(6)/}">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+<div class="two_l"></div>
+</div>
+{ZL.Label id="首页输出指定地区建筑服务" NodeID="6" ShowNum="5" TitleNum="30" SysNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+
+<!--广告开始-->
+<div class="container margin_top20">
+<div class="home_ad">
+<div class="row">
+</div>
+</div>
+</div>
+<!--广告结束-->
+
+<div class="container margin_top20">
+<div class="home_list_t2"><span>2F</span>施工队伍<a href="{ZL:GetNodeLinkUrl(1)/}">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="two_l three_l">
+</div>
+</div>
+{ZL.Label id="首页输出指定地区施工队伍" NodeID="1" ShowNum="5" TitleNum="40" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+
+<div class="home_list_one">
+<div class="container margin_top20">
+<div class="home_list_t2"><span>3F</span>机械设备<a href="{ZL:GetNodeLinkUrl(5)/}">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="two_l four_l">
+</div>
+</div>
+{ZL.Label id="首页输出指定地区机械设备" NodeID="5" ShowNum="5" TitleNum="40" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+<!--广告位-->
+<div class="container home_ad_bg">
+<div class="row" style="width: 100%;height: 6.5em;margin-left: 0px;margin-top:20px;background: url(../Template/JianTu/style/images/ad_bg3.png) center;background-size: 100% 100%;">
+</div>
+</div>
+<!--广告结束-->
+<div class="container margin_top20">
+<div class="home_list_t5"><span>4F</span>建筑商城</div>
+<div class="home_shop margin_bot20">
+<div class="home_shop_t"><p>建筑服务<span>Building Services</span></p></div>
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="53" /}
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="53" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t bluecol"><p>砌筑材料<span>Masonry material</span></p></div>
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="54" /}
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="54" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+<!--新型专用建材上方广告开始-->
+<div class="container home_ad_bg">
+<div class="row" style="width: 100%;height: 6.5em;margin-left: 0px;background: url(../Template/JianTu/style/images/ad_bg4.png) center;background-size: 100% 100%;">
+</div>
+</div>
+<!--新型专用建材上方广告结束-->
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t redcol">
+<p>新型专用建材<span>New type special building material</span></p>
+</div>
+
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="55" /}
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="55" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t grcol">
+<p>机械设备<span>Mechanical Equipment</span></p>
+</div>
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="56" /}
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="56" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+<!--电气电工上方广告开始-->
+<div class="container">
+<div class="home_ad_bg">
+<div class="row" style="width: 100%;height: 6.5em;margin-left: 0px;margin-top:20px;background: url(/Template/JianTu/style/images/ad4.png) center;background-size: 100% 100%;">
+</div>
+</div>
+</div>
+<!--电气电工上方广告结束-->
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t greencol">
+<p>电气电工<span>Electrical electrician</span></p>
+</div>
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="62" /}
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="62" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t chencol">
+<p>苗木花圃<span>Nursery garden</span></p>
+</div>
+<div class="row">
+{ZL.Label id="输出商城推荐商品信息" ShowNum="1" NodeID="67" /}
+
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+{ZL.Label id="首页输出商城指定地区一般商品信息" ShowNum="8" NodeID="67" TitleNum="30" City="{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}" /}
+</div>
+</div>
+</div>
+</div>
+<div class="container"><a href="#"><img class="img-responsive" src="{$CssDir/}images/index3.png" alt="广告"></a></div>
+<div class="container margin_top20">
+<div class="shop_new">
+<div class="shop_new_t">
+<p><a></a><span><i class="fa fa-heart-o"></i>猜你喜欢</span><a></a></p>
+</div>
+<div class="row">
+{ZL.Label id="首页输出喜欢商品列表" ShowNum="8" TitleNum="30" SysNum="30" NodeID="52" /}
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="home_link">
+<div class="home_link_l">
+<span>建途旗下网站</span>
+</div>
+<div class="home_link_r">
+<ul>                  
+<li><a href="http://www.chinabaike.com">建筑百科</a></li>
+<li><a href="http://www.niwota.com/quan/10895">建筑人</a></li>
+<li><a href="http://www.likebuy.com">乐买</a></li>
+<li><a href="http://ai.pmph.com/index.do">成长学院</a></li>
+<li><a href="http://www.realestate.cei.gov.cn">成科苑</a></li>
+<li><a href="http://www.114ssw.com">百事通</a></li>
+<li><a href="http://www.mohurd.gov.cn/">国家住房和城乡建设部</a></li>
+<li><a href="http://www.chinaasc.org/">中国建筑学会</a></li>
+<li><a href="http://www.51zhucai.com/">筑才网</a></li>
+</ul>
+</div>	
+<div class="home_link_a"><a href="{ZL:GetNodeLinkUrl(8)/}">友情链接>></a></div>
+</div>	
+</div>
+<div class="container">
+<div class="home_pic_list">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="{$CssDir/}images/pic1.png" alt="pic1">
+<p><span>7*24全天候服务</span><br>国际准客服</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="{$CssDir/}images/pic2.png" alt="pic1">
+<p><span>专业实名认证</span><br>为每一个负责</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="{$CssDir/}images/pic3.png" alt="pic1">
+<p><span>国际验证</span><br>最完整的资质认证</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="{$CssDir/}images/pic4.png" alt="pic1">
+<p><span>全程呵护</span><br>9999的错误率支持</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="{$CssDir/}images/pic5.png" alt="pic1">
+<p><span>快速响应</span><br>高效社区实时支持</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="footer">
+<div class="row">		
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 footer_l">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 footer_list">
+<ul>
+<li>常见问题</li>
+<li><a href="{ZL:GetInfoUrl(249)/}">账户及会员</a></li>
+<li><a href="{ZL:GetInfoUrl(272)/}">法律中心</a></li>
+<li><a href="{ZL:GetInfoUrl(252)/}">在线支付</a></li>
+<li><a href="{ZL:GetInfoUrl(256)/}">联系客服</a></li>
+<li><a href="{ZL:GetInfoUrl(257)/}">投诉意见</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 footer_list">
+<ul>
+<li>建筑商城</li>
+<li><a href="{ZL:GetInfoUrl(265)/}">商家入驻</a></li>
+<li><a href="{ZL:GetInfoUrl(266)/}">法律法规</a></li>
+</ul>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 footer_list">
+<ul>
+<li>企业办公系统</li>
+<li><a href="{ZL:GetInfoUrl(270)/}">运营管理</a></li>
+<li><a href="{ZL:GetInfoUrl(271)/}">申请开通</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 footer_list">
+<ul>
+<li>商务合作</li>
+<li><a href="{ZL:GetInfoUrl(267)/}">招商加盟</a></li>
+<li><a href="{ZL:GetInfoUrl(268)/}">建途商会</a></li>
+<li><a href="{ZL:GetInfoUrl(269)/}">广告服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_r">
+<img src="/Common/Common.ashx?url=http://www.jt314.com/Class_461/NodeHot.aspx" alt="App下载" /><br/>扫描下载APP
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 home_footer_l">
+{$Copyright/}
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_r">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer_m">
+<b>关注我们</b>
+<ul>
+<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin=69250566&site=qq&menu=yes" target="_blank"><i class="fa fa-qq"></i></a></li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}Images/tel.png" alt="tel"/>
+<br/>
+<b>400-000-7777</b><br/>
+周一至周日9:00-22:00
+</div>
+</div>
+</div>
+</div>
+<div class="kefu">
+<ul>
+<li><a href="tel:17707091717"><span>联系我们</span><i class="fa fa-phone"></i></a><div class="clearfix"></div></li>
+<li class="kefu_qrcode"><a href="javascript:;"><span><img src="{$CssDir/}images/code2.png" alt="微信二维码"></span><i class="fa fa-qrcode"></i></a><div class="clearfix"></div></li>
+<li><a href="/Guest" target="_blank"><span>留言咨询</span><i class="fa fa-pencil"></i></a><div class="clearfix"></div></li>
+<li><a href="mailto:780125542@qq.com" target="_blank"><span>给我写信</span><i class="fa fa-envelope"></i></a><div class="clearfix"></div></li>
+</ul>
+</div>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+  $(".bottom-contrainer").addClass("bottom-hide");
+  $(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+  $(".bottom-contrainer").removeClass("bottom-hide");
+  $(".bottom-collspan").addClass("collspan-hide");	
+})
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+		$(".logon").css("display","block");
+		$(".home_user_t").html('<img src="'+data.UserFace+'" alt="'+data.UserName+'" onerror="javascript:this.src=\'/Images/userface/noface.png\';" /><p>Hi,'+data.UserName+'<br/><a href="/User/">我的建途</a></p><div class="home_user_tb"><a href="/User/Login.aspx">我的供应空间</a><a href="/User/Register.aspx">我的采购空间</a><div class="clearfix"></div></div>');
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+	$(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	});
+	$(".mainCate").mouseover(function(){
+		$(this).find(".nav_llist_c").show();	
+	}).mouseout(function(){
+	  $(this).find(".nav_llist_c").hide();
+	});
+	//判断分站
+	//if("{$GetRequest(city)$}"=="")
+	//{
+	//	$(".home_logo_text span a").html("{ZL:IPcity()/}");
+	//}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+$().ready(function(e) {
+    $(".home_list li.dropdown.visible-xs .nav_llist_c").show();
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

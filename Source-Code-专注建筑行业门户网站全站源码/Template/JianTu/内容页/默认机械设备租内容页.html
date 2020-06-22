@@ -1,0 +1,108 @@
+{ZL.Source id="机械设备租数据源标签" /}
+<!DOCTYPEHTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>{SField sid="机械设备租数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+{ZL:Boot()/}
+<meta name="Keywords" content="{SField sid="机械设备租数据源标签" FD="Tagkey" page="0" /}">
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="company_banner banner_font">{ZL.Label id="输出指定节点下提示信息" NodeID="3" /}</div>
+<div class="news_mySites container">
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="机械设备租数据源标签" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li class="active">正文</li>
+</ul>
+</div>
+<div class="seek_content">
+<div class="container">
+<div class="about_f">
+<div class="about_con">
+<div class="about_tit">
+<h1>{SField sid="机械设备租数据源标签" FD="Title" page="0"/}</h1>
+<i class="fa fa-clock-o"></i>发布时间：{ZL:FormatDate({SField sid="机械设备租数据源标签" FD="createtime" page="0"/},yyyy-MM-dd)/}
+<i class="fa fa-eye"></i>浏览次数：<SCRIPT language=javascript src="/Common/GetHits.aspx?id={SField sid="机械设备租数据源标签" FD="GeneralID" page="0"/}"></SCRIPT>
+</div>
+<div class="company_abouttable">
+<table>
+<tbody>
+<tr>
+<td class="tdtitle">公司地址：</td>
+<td>{SField sid="机械设备租数据源标签" FD="area" page="0"/}</td>
+<td width="146" class="tdtitle">经营类型：</td>
+<td colspan="3"><div style="width:544px">{SField sid="机械设备租数据源标签" FD="jylx" page="0"/}</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="myContent">{SField sid="机械设备租数据源标签" FD="content" page="0"/}</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+  $(".bottom-contrainer").addClass("bottom-hide");
+  $(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+  $(".bottom-contrainer").removeClass("bottom-hide");
+  $(".bottom-collspan").addClass("collspan-hide");	
+})
+
+$().ready(function(e) {
+    if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

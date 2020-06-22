@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>430</LabelID>
+    <LabelName>建筑资讯头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="home_top"&gt;
+&lt;div class="container"&gt;
+&lt;div class="home_top_l"&gt;&lt;span class="site_span"&gt;{$GetUrldecode({$GetRequest(city)$})$}站&lt;/span&gt;&lt;span class="site_ch"&gt;&amp;nbsp;[&lt;a href="{ZL:GetNodeLinkUrl(68)/}"&gt; 切换城市 &lt;/a&gt;]&amp;nbsp;&lt;/span&gt; 24小时客服热线：&lt;a href="tel:4005-888-999"&gt;4005-888-999&lt;/a&gt;&lt;/div&gt;
+&lt;div class="home_top_r"&gt;
+&lt;ul class="nav"&gt;
+&lt;li&gt;&lt;a href="/"  target="_blank"&gt;门户首页&lt;/a&gt;&lt;/li&gt;
+&lt;li class="nav_user"&gt;&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;用户登录&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="/User/" target="_blank"&gt;用户登录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Register.aspx" target="_blank"&gt;用户注册&lt;/a&gt;&lt;/li&gt;
+&lt;li class="logon" style="display:none;"&gt;&lt;a href="/User/Info/UserInfo.aspx" target="_blank"&gt;资料维护&lt;/a&gt;&lt;/li&gt;
+&lt;li class="logon" style="display:none;"&gt;&lt;a href="javascript:;" onClick="LogoutFun();"&gt;安全退出&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Guset"&gt;客户服务&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--顶部结束--&gt;
+&lt;div class="banner"&gt;
+&lt;div class="banner_show" id="banner_show"&gt;
+&lt;a class="bannger_inbox"&gt;&lt;img src="{$CssDir/}images/news_banner6.jpg" width="2000" height="572" alt="banner"/&gt;&lt;/a&gt;
+&lt;a class="bannger_inbox"&gt;&lt;img src="{$CssDir/}images/news_banner1.jpg" width="2000" height="572" alt="banner"/&gt;&lt;/a&gt;
+&lt;a class="bannger_inbox"&gt;&lt;img src="{$CssDir/}images/news_banner3.jpg" width="2000" height="572" alt="banner"/&gt;&lt;/a&gt;
+&lt;a class="bannger_inbox"&gt;&lt;img src="{$CssDir/}images/news_banner2.jpg" width="2000" height="572" alt="banner"/&gt;&lt;/a&gt;
+&lt;a class="bannger_inbox"&gt;&lt;img src="{$CssDir/}images/news_banner5.jpg" width="2000" height="572" alt="banner"/&gt;&lt;/a&gt;
+&lt;div class="container"&gt;
+&lt;div class="banner_logo"&gt;
+&lt;a href="/"&gt;&lt;img src="{$CssDir/}images/logo.svg" alt="logo"/&gt;&lt;/a&gt;
+&lt;h3&gt;资讯&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="banner_mag"&gt;
+&lt;div class="banner_magbox"&gt;
+{ZL.Label id="输出建筑资讯下政策法规" NodeID="51" TitleNum="200" SynNum="200" ShowNum="5" /}
+&lt;/div&gt;
+&lt;div class="yq_banner_list" id="yq_banner_list"&gt;
+&lt;a href="javascript:;" rel="0" class="hover"&gt;&amp;nbsp;&lt;/a&gt;
+&lt;a href="javascript:;" rel="1"&gt;&amp;nbsp;&lt;/a&gt;
+&lt;a href="javascript:;" rel="2"&gt;&amp;nbsp;&lt;/a&gt;
+&lt;a href="javascript:;" rel="3"&gt;&amp;nbsp;&lt;/a&gt;
+&lt;a href="javascript:;" rel="4"&gt;&amp;nbsp;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="banner_pre_next"&gt;
+&lt;a href="javascript:;" class="banner_btn_left"&gt;&amp;lt;&lt;/a&gt;
+&lt;a href="javascript:;" class="banner_btn_right"&gt;&amp;gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--顶部轮播图--&gt;
+&lt;div class="news_ul_t"&gt;
+&lt;div class="container"&gt;
+&lt;ul class="news_ul"&gt;
+&lt;li id="gid41"&gt;&lt;a href="{ZL:GetNodeLinkUrl(41)/}"&gt;资讯首页&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/PClass?ID=4"&gt;新闻公告&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gid51"&gt;&lt;a href="{ZL:GetNodeLinkUrl(51)/}"&gt;政策法规&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gid43"&gt;&lt;a href="{ZL:GetNodeLinkUrl(43)/}"&gt;建筑文库&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gid44"&gt;&lt;a href="{ZL:GetNodeLinkUrl(44)/}"&gt;建筑视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/ask/"&gt;建筑问答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/PClass?ID=19"&gt;办事指南&lt;/a&gt;&lt;/li&gt;
+&lt;form action="/Search/SearchList.aspx" method="get" target="_blank"&gt;
+&lt;div class="home_search_r news_search"&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" name="keyword" class="form-control" placeholder="请输入关键字" /&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button class="btn btn-default" type="submit"&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--导航栏结束--&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

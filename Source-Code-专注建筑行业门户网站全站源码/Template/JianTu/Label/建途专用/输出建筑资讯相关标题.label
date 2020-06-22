@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>315</LabelID>
+    <LabelName>输出建筑资讯相关标题</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出建筑文库标题</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|TitleNum,50,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel</LabelTable>
+    <LabelField>GeneralID,NodeID,Title</LabelField>
+    <LabelWhere>NodeID=@NodeID and status=99</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"&gt;
+&lt;div class="panel panel-default"&gt;
+&lt;div class="panel-heading"&gt;
+&lt;h3 class="panel-title"&gt;最新资料&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="panel-body fuwu_right_u"&gt;
+&lt;ul&gt;
+ {Repeate}
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,..)/}&lt;/a&gt;&lt;/li&gt;
+ {/Repeate}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

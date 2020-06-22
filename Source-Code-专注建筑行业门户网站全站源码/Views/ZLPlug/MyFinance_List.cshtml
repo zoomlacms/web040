@@ -1,0 +1,38 @@
+﻿@using System.Data;
+@using ZoomLa.BLL.Helper
+@using ZoomLa.SQLDAL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.cols = 15;
+    Model.url = "Content_Data6?NodeID=" + Request["NodeID"];
+}
+<table class="table table-bordered table-condensed" id="EGV">
+<tr>
+<td width="30"></td>
+<td>ID</td>
+<td>标题</td>
+<td>财务制度</td>
+<td>投票保证金管理</td>
+<td>现金流量表</td>
+<td>资产负债表</td>
+<td>利润表</td>
+<td>操作</td>
+</tr>
+@foreach (DataRow dr in Model.dt.Rows)
+{
+<tr onclick="$(this).find('input[name=\'idchk\']').get(0).checked = true">
+<td><input type="radio" name="idchk" value="@dr["GeneralID"]" /></td>
+<td>@dr["GeneralID"]</td>
+<td><a href="/Item/@(dr["GeneralID"]).aspx" target="_blank">@dr["Title"]</a></td>
+<td>@MvcHtmlString.Create(dr["cwzd"].ToString())</td>
+<td>@MvcHtmlString.Create(dr["tpbzjgl"].ToString())</td>
+<td>@MvcHtmlString.Create(dr["xjllb"].ToString())</td>
+<td>@MvcHtmlString.Create(dr["zcfzb"].ToString())</td>
+<td>@MvcHtmlString.Create(dr["lrb"].ToString())</td>
+<td>
+<a href="javascript:;" class="option_style" onclick="mvcpage.del({ ids: '@dr["GeneralID"]', url: '/User/Content/content_del', confirm: '确定要删除吗' });" title="删除"><i class="fa fa-trash"></i></a>
+</td>
+</tr>
+}
+@Html.Partial("_page", Model)
+</table>

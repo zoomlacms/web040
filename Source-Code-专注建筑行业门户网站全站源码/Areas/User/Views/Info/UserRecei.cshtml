@@ -1,0 +1,44 @@
+﻿@using System.Data
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    DataTable dt = new DataTable();
+    Layout = "~/Areas/User/Views/Shared/_layout.cshtml";
+}
+@section head{<title>用户地址薄</title>
+
+}
+@section content{
+    <div id="pageflag" data-nav="shop" data-ban="shop"></div>
+    <div class="container">
+        <ol class="breadcrumb" style="margin-bottom:5px;">
+            <li><a title="会员中心" href="@Url.Action("Default","")">会员中心</a></li>
+            <li class="active">我的地址薄</li>
+        </ol>
+    </div>
+@Html.Partial("UserRecel_List", Model)
+   
+}
+@section script{
+    <style type="text/css">
+        .add_left {
+            text-align: right;
+            color: #999;
+            display: inline-block;
+            width: 70px;
+            line-height: 22px;
+        }
+
+        .panel:hover {
+            background-color: #fcfcfc;
+            border: solid 1px #28c3fc;
+        }
+    </style>
+    <script>
+        $(function () {
+            var addli = '<li class="col-lg-4 col-md-4 col-xs-6 col-sm-6" title="添加新地址" style="padding-left:0px;"><div class="panel panel-default text-center" style="height:180px;"><i class="fa fa-plus-square-o"  onclick="location.href=\'AddUserAddress.aspx\';" style="font-size:150px;line-height:190px;color:#e3e3e3;cursor:pointer;"></i></div><li>';
+            $li = $("#addul li:last");
+            if ($li.length > 0) { $li.after(addli); }
+            else { $("#addul").append(addli); }
+        })
+    </script>
+}

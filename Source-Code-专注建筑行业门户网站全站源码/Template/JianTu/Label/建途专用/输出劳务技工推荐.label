@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>376</LabelID>
+    <LabelName>输出劳务技工推荐</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出劳务技工推荐</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_lwjg ON ZL_CommonModel.ItemID=ZL_C_lwjg.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_C_lwjg.name,ZL_C_lwjg.pic,ZL_C_lwjg.education</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And Status=99  And ZL_C_lwjg.ID={ZL:Random(1)/}</LabelWhere>
+    <LabelOrder>ZL_CommonModel.GeneralID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="name"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;
+&lt;div class="own_guess"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="name"/}"onerror="javascript:this.src='/UploadFiles/nopic.gif'" /&gt;
+&lt;strong&gt;&lt;p&gt;{Field="name"/}&lt;/p&gt;&lt;/strong&gt;
+&lt;span&gt;{Field="education"/}&lt;/span&gt;
+&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>2</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_lwjg"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

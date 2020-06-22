@@ -1,0 +1,182 @@
+{ZL.Source id="证照模型数据源标签" /}<!DOCTYPEHTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="证照模型数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="证照模型数据源标签" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="证照模型数据源标签" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<link href="/dist/css/viewer.min.css" rel="stylesheet"/>
+<script src="/dist/js/viewer.min.js"></script>
+<script src="/js/scrolltopcontrol.js"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script>
+var ucomp='{ZL.Label id="获取当前登录用户公司ID" /}';
+var tcomp='{ZL.Label id="获取指定用户公司ID" UserName="{SField sid="证照模型数据源标签" FD="Inputer" page="0"/}" /}';
+if(ucomp!=tcomp){
+	alert("您当前无权限查看该信息！");
+	window.location.href="/User/";
+}
+</script>
+<style>
+.fujian ul { margin-bottom:0; padding-left:0; list-style:none;}
+.fujian li { float:left; margin-right:5px;}
+.fujian img { width:50px; height:50px; border:1px solid #ddd;}
+.table img { cursor:pointer;cursor:-webkit-zoom-in;cursor:zoom-in;}
+</style>
+</head>
+<body>
+<table class="table table-bordered" style="margin-bottom:0;">
+<tr>
+<td width="120" class="text-right">证书名称：</td>
+<td>{SField sid="证照模型数据源标签" FD="Title" page="0"/}</td>
+<td width="120" class="text-right">证照类别：</td>
+<td>{SField sid="证照模型数据源标签" FD="zzlb" page="0"/}</td>
+</tr>
+<tr>
+<td class="text-right">证件类型：</td>
+<td>{SField sid="证照模型数据源标签" FD="zjlx" page="0"/}</td>
+<td class="text-right">证书状态：</td>
+<td>{SField sid="证照模型数据源标签" FD="zszt" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">姓名：</td>
+<td>{SField sid="证照模型数据源标签" FD="name" page="0"/}</td>
+<td class="text-right">性别：</td>
+<td>{SField sid="证照模型数据源标签" FD="xb" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">身份证号：</td>
+<td>{SField sid="证照模型数据源标签" FD="sfzh" page="0"/}</td>
+<td class="text-right">编号：</td>
+<td>{SField sid="证照模型数据源标签" FD="bh" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">内部编号：</td>
+<td>{SField sid="证照模型数据源标签" FD="nbbh" page="0"/}</td>
+<td class="text-right">专业：</td>
+<td>{SField sid="证照模型数据源标签" FD="zy" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">存放部门：</td>
+<td>{SField sid="证照模型数据源标签" FD="cfbm" page="0"/}</td>
+<td class="text-right">存放地点：</td>
+<td>{SField sid="证照模型数据源标签" FD="cfdd" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">状态：</td>
+<td>{SField sid="证照模型数据源标签" FD="zt" page="0"/}</td>
+<td class="text-right">是否由公司保存：</td>
+<td>{SField sid="证照模型数据源标签" FD="spygsbc" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">发证日期：</td>
+<td>{ZL:FormatDate({SField sid="证照模型数据源标签" FD="fzrq" page="0"/},yyyy-MM-dd)/}</td>
+<td class="text-right">年检日期：</td>
+<td>{ZL:FormatDate({SField sid="证照模型数据源标签" FD="njrq" page="0"/},yyyy-MM-dd)/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right">名称描述：</td>
+<td>{SField sid="证照模型数据源标签" FD="mcms" page="0"/}</td>
+<td class="text-right">备注：</td>
+<td>{SField sid="证照模型数据源标签" FD="remind" page="0"/}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;">图片：</td>
+<td colspan="3"><img data-original="{ZL:GetPicUrl({SField sid="证照模型数据源标签" FD="pic" page="0"/})/}" src="{ZL:GetPicUrl({SField sid="证照模型数据源标签" FD="pic" page="0"/})/}" alt="{SField sid="证照模型数据源标签" FD="Title" page="0"/}" width="50" height="50" /></td>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;">附件：</td>
+<td colspan="3">
+<div class="fujian" id="fujian">
+<ul></ul>
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+<script>
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		var uid='{ZL:GetuserID()/}';
+		var suprole='{ZL.Label id="获取当前登录用户公司超管角色ID" /}';
+		var zzgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="证照管理" /}';
+		var xzrs='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="行政人事" /}';
+		var jygl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="经营管理" /}';
+		var xmgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="项目管理" /}';
+		var cwb='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="财务部" /}';
+		var platrole='{ZL.Label id="输出当前登录用户办公角色" /}';
+		
+		if(platrole.indexOf(","+suprole+",")>=0){
+			
+		}
+		else if(zzgl.indexOf(","+uid+",")>=0){
+			$(".myoa_funlist .row>div:eq(0)").removeClass("col-lg-6").addClass("col-lg-12").siblings("div").remove();
+			$(".myoa_funlist").show();
+			$(".myoa_main .myoa_tnav .nav li:eq(0)").addClass("active").siblings("li").remove();
+			$(".myoa_main .tab-content .tab-pane:eq(0)").addClass("active").siblings(".tab-pane").remove();
+			$(".myoa_main").show();
+		}
+		else {
+			window.location.href="/User/MyCert";
+		}
+	}
+	else{
+		alert("尚未登录，请登录后再查看该消息！");
+		window.location.href="/Class_79/Default.aspx?ReturnUrl=/Item/{SField sid="证照模型数据源标签" FD="GeneralID" page="0"/}.aspx";
+	}
+});
+
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+    var pics='{SField sid="证照模型数据源标签" FD="pics" page="0"/}';
+	var str="";
+	if(pics!=""){
+		var jsonstr=JSON.parse(pics);
+		if(jsonstr.length>0){
+			for(i=0;i<jsonstr.length;i++){
+				str+="<li><img data-original=\"/UploadFiles/"+jsonstr[i].url+"\" src=\"/UploadFiles/"+jsonstr[i].url+"\" mid=\"/UploadFiles/"+jsonstr[i].url+"\" big=\"/UploadFiles/"+jsonstr[i].url+"\" alt=\""+jsonstr[i].desc+"\" /></li>";
+			}
+			$(".fujian ul").html(str+"<div class='clearfix'></div>");
+			var viewer = new Viewer(document.body, {
+				url: 'data-original'
+			});
+		}
+	}
+});
+$().ready(function (e) {
+    setTimeout("SetHeight();", "500");
+});
+function SetHeight() {
+    if (window.top != window.self) {
+        parent.SetHeight("myoa_fright", $(document.body).height());
+    }
+}
+</script>

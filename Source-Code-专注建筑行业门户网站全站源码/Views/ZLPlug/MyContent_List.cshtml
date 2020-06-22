@@ -1,0 +1,78 @@
+﻿@using System.Data;
+@using ZoomLa.BLL;
+@using ZoomLa.BLL.Helper
+@using ZoomLa.Common;
+@using ZoomLa.Model;
+@using ZoomLa.SQLDAL;
+@using ZoomLa.SQLDAL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.cols = 15;
+    Model.url = "Content_Data1";
+    B_User buser = new B_User();
+    M_UserInfo mu = buser.GetLogin();
+    switch (B_User_Plat.IsPlatUser())
+    {
+        case 0://非Plat用户
+               //Response.Redirect("/Plat/Fill.aspx");
+            function.WriteErrMsg("你并非能力中心用户,请联系网络管理员,为你发送注册邀请!!");
+            break;
+        case 1://未审核
+            function.WriteErrMsg("你的帐户尚未审核,无法登录能力中心,请联系网络管理员!!!");
+            break;
+            //case 99://正常登录
+            //    Session["Main_IsPlatUser"] = true;
+            //    break;
+    }
+    if (!B_User_Plat.IsAdmin())
+    {
+        DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select * from ZL_Plat_Group where MemberIDS like '%," + mu.UserID + ",%' And GroupName='证照管理'", null);
+        if (dt.Rows.Count <= 0)
+        {
+            function.WriteErrMsg("你并非证照管理员，无法使用该功能！");
+        }
+    }
+}
+<table class="table table-condensed zhengzhao_mycert_ct2" id="EGV">
+<tr>
+<td width="30"></td>
+<td>证书名称</td>
+<td>证书类型</td>
+<td>姓名</td>
+<td>证书编号</td>
+<td>内部编号</td>
+<td>过期日期</td>
+<td>发证日期</td>
+<td>存放部门</td>
+<td>证书状态</td>
+<td>专业</td>
+<td>职称</td>
+<td>身份证</td>
+<td>是否由公司保存</td>
+<td>所在地</td>
+<td>备注</td>
+
+</tr>
+@foreach (DataRow dr in Model.dt.Rows)
+{
+<tr onclick="$(this).find('input[name=\'idchk\']').get(0).checked = true">
+<td style="vertical-align:middle;text-align:center;"><input type="radio" name="idchk" value="@dr["GeneralID"]" /></td>
+<td><a href="/Item/@(dr["GeneralID"]).aspx">@dr["Title"]</a></td>
+<td>@dr["zzlb"]</td>
+<td>@dr["name"]</td>
+<td>@dr["bh"]</td>
+<td>@dr["nbbh"]</td>
+<td>@DataConvert.CDate(dr["njrq"].ToString()).ToString("yyyy年MM月dd日")</td>
+<td>@DataConvert.CDate(dr["fzrq"].ToString()).ToString("yyyy年MM月dd日")</td>
+<td>@dr["cfbm"]</td>
+<td>@dr["zszt"]</td>
+<td>@dr["zy"]</td>
+<td>@dr["zc"]</td>
+<td>@dr["sfzh"]</td>
+<td>@dr["spygsbc"]</td>
+<td>@dr["cfdd"]</td>
+<td>@dr["remind"]</td>
+</tr>
+}
+@Html.Partial("_page", Model)
+</table>

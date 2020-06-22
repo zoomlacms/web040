@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>439</LabelID>
+    <LabelName>微站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="wei_foot navbar-fixed-bottom"&gt;
+&lt;ul&gt;
+&lt;li id="wei_service"&gt;&lt;a href="{ZL:GetNodeLinkUrl(461)/}"&gt;&lt;div&gt;&lt;i class="fa fa-th-large"&gt;&lt;/i&gt;&lt;/div&gt;&lt;p&gt;建筑服务&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id="wei_oa"&gt;&lt;a href="/plat/blog/"&gt;&lt;div&gt;&lt;i class="fa fa-laptop"&gt;&lt;/i&gt;&lt;/div&gt;&lt;p&gt;办公平台&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id="wei_user"&gt;&lt;a href="/User/Default1.aspx"&gt;&lt;div&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/div&gt;&lt;p&gt;会员&lt;/p&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,270 @@
+{ZL.Source id="财务管理数据源标签" /}<!DOCTYPEHTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="财务管理数据源标签" FD="Title" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="财务管理数据源标签" FD="Tagkey" page="0"/}" />
+<meta name="Description" content="{SField sid="财务管理数据源标签" FD="Title" page="0"/}">
+{ZL:Boot()/}
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script>
+var ucomp='{ZL.Label id="获取当前登录用户公司ID" /}';
+var tcomp='{ZL.Label id="获取指定用户公司ID" UserName="{SField sid="财务管理数据源标签" FD="Inputer" page="0"/}" /}';
+if(ucomp!=tcomp){
+	alert("您当前无权限查看该信息！");
+	window.location.href="/User/";
+}
+</script>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">{ZL:IPprovince()/}</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="/">全国</a><a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a></li>
+<li>华北：<a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(467)/}">天津</a><a href="{ZL:GetNodeLinkUrl(470)/}">河北</a><a href="{ZL:GetNodeLinkUrl(471)/}">山西</a><a href="{ZL:GetNodeLinkUrl(492)/}">内蒙古</a></li>
+<li>华东：<a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(475)/}">江苏</a><a href="{ZL:GetNodeLinkUrl(476)/}">浙江</a><a href="{ZL:GetNodeLinkUrl(477)/}">安徽</a><a href="{ZL:GetNodeLinkUrl(478)/}">福建</a><a href="{ZL:GetNodeLinkUrl(480)/}">山东</a></li>
+<li>华南：<a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(493)/}">广西</a><a href="{ZL:GetNodeLinkUrl(485)/}">海南</a></li>
+<li>华中：<a href="{ZL:GetNodeLinkUrl(479)/}">江西</a><a href="{ZL:GetNodeLinkUrl(481)/}">河南</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(483)/}">湖南</a></li>
+<li>西南：<a href="{ZL:GetNodeLinkUrl(469)/}">重庆</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a><a href="{ZL:GetNodeLinkUrl(487)/}">贵州</a><a href="{ZL:GetNodeLinkUrl(488)/}">云南</a><a href="{ZL:GetNodeLinkUrl(494)/}">西藏</a></li>
+<li>西北：<a href="{ZL:GetNodeLinkUrl(489)/}">陕西</a><a href="{ZL:GetNodeLinkUrl(490)/}">甘肃</a><a href="{ZL:GetNodeLinkUrl(491)/}">青海</a><a href="{ZL:GetNodeLinkUrl(495)/}">宁夏</a><a href="{ZL:GetNodeLinkUrl(496)/}">新疆</a></li>
+<li>东北：<a href="{ZL:GetNodeLinkUrl(472)/}">辽宁</a><a href="{ZL:GetNodeLinkUrl(473)/}">吉林</a><a href="{ZL:GetNodeLinkUrl(474)/}">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li class="nav_user"><a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login">用户登录</a></li>
+<li><a href="/User/Register">用户注册</a></li>
+<li class="logon" style="display:none;"><a href="/User/Info/UserInfo">资料维护</a></li>
+<li class="logon" style="display:none;"><a href="javascript:;" onClick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Class_461/NodeHot.aspx">APP下载</a></li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="visible-xs">
+<nav class="navbar navbar-default navbar-fixed-top plat_xsnav">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/plat"><img src="{ZL.Label id="获取当前登录用户公司Logo" /}" alt="{ZL.Label id="获取当前登录用户公司名称" /}" onerror="javascript:this.src='/favicon.ico';" style="display:inline-block;width: 50px;" /> <span>{ZL.Label id="获取当前登录用户公司名称" /}办公平台</span></a>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="/Plat/Blog/">主线</a></li>
+<li><a href="/Plat/Blog/Spec.aspx">话题</a></li>
+<li><a href="/User/Content/Note/ProList.aspx">项目</a></li>
+<li><a href="/Mis/KE/DailyPlan.aspx">日程</a></li>
+<li><a href="/Plat/OA/">办公</a></li>
+<li><a href="/Plat/Group/CompDetail.aspx">公司</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div style="height:70px;"></div>
+</div>
+<div class="relative">
+<div class="Otop hidden-xs" id="Otop">
+<div class="Otitle">
+<a href="javascript:;" class="menu"><img src="{ZL.Label id="获取当前登录用户公司Logo" /}" id="logo_img" alt="{ZL.Label id="获取当前登录用户公司名称" /}" onerror="javascript:this.src='/favicon.ico';" /></a>
+<a href="/plat"><span id="M_CompName_L">{ZL.Label id="获取当前登录用户公司名称" /}</span>办公平台</a></div>
+<nav>
+<ul id="topmenu_ul">
+<li class="topnav_li active"><a href="{ZL:GetNodeListUrl(79)/}">工作台</a></li>
+<li class="topnav_li"><a href="/Plat/Blog/">主线</a></li>
+<li class="topnav_li"><a href="/Plat/Blog/Spec.aspx">话题</a></li>
+<li class="topnav_li"><a href="/User/Content/Note/ProList.aspx">项目</a></li>
+<li class="topnav_li"><a href="/Mis/KE/DailyPlan.aspx">日程</a></li>
+<li class="topnav_li"><a href="/Plat/OA/">办公</a></li>
+<li class="topnav_li"><a href="/Plat/Group/CompDetail.aspx">公司</a></li>
+<li class="skey_li">
+<i class="fa fa-search r_gray" style="position: absolute; left: 8px; top: 24px;"></i>
+<input type="text" class="form-control" id="skey_t" placeholder="搜索,回车确认" style="padding-left: 30px;" />
+</li>
+</ul>
+<div class="Otop_r hidden-md hidden-xs hidden-sm">
+<ul class="btns_ul list-unstyled">
+<li><a href="javascript:;" onclick="topnav.toggle();" id="skey_toggle_a"><i class="fa fa-search"></i></a></li>
+<li><a href="/Plat/Admin/"><i class="fa fa fa-cog"></i></a></li>
+<li><a href="/Plat/Email/"><i class="fa fa-envelope"></i> 邮件</a></li>
+<li>
+<div class="btn-group" style="margin-left:5px;">
+<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" style="border:none;">
+<img src="/Images/userface/noface.png" id="Main_UserFace_Img" class="uimg img_xs" onerror="shownoface(this);" alt="" />
+<span id="Main_UName_T"></span>
+<span class="fa fa-caret-down"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="/Plat/Blog/Contact.aspx">通讯录</a></li>
+<li><a href="/Plat/Mail/">站内信</a></li>
+<li><a href="/Plat/Doc/">云盘</a></li>
+<li><a href="/Plat/Task/">任务</a></li>
+<li><a href="/User/Logout.aspx">退出登录</a></li>
+</ul>
+</div>
+</li>
+<li><a href="http://www.zoomla.cn/OAS/" target="_blank"><i class="fa  fa-question-circle"></i></a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="oa_banner">
+<div class="oa_box">
+<h3>建途办公系统工作台</h3>
+</div>
+</div>
+
+<div class="container margin_top20 margin_bot20">
+<div class="zzcon_t">
+<h3>{SField sid="财务管理数据源标签" FD="Title" page="0"/}</h3>
+</div>
+<div class="zzcon_c" data-example-id="hoverable-table">
+<table class="table table-hover">
+<tbody>
+<tr>
+<td>财务制度：</td>
+<td>{SField sid="财务管理数据源标签" FD="cwzd" page="0"/}</td>
+</tr>
+<tr>
+<td>投票保证金管理：</td>
+<td>{SField sid="财务管理数据源标签" FD="tpbzjgl" page="0"/}</td>
+</tr>
+<tr>
+<td>现金流量表：</td>
+<td>{SField sid="财务管理数据源标签" FD="xjllb" page="0"/}</td>
+</tr>
+<tr>
+<td>资产负债表：</td>
+<td>{SField sid="财务管理数据源标签" FD="zcfzb" page="0"/}</td>
+</tr>
+<tr>
+<td>利润表：</td>
+<td>{SField sid="财务管理数据源标签" FD="lrb" page="0"/}</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('Otop'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+
+//手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+		$(".logon").css("display","block");
+		$(".home_user_t").html('<img src="'+data.UserFace+'" alt="'+data.UserName+'" onerror="javascript:this.src=\'/Images/userface/noface.png\';" /><p>Hi,'+data.UserName+'<br/><a href="/User/">我的建途</a></p><div class="home_user_tb"><a href="/User/Login.aspx">我的供应空间</a><a href="/User/Register.aspx">我的采购空间</a><div class="clearfix"></div></div>')
+		$("#Main_UName_T").html(data.UserName);
+	}
+	else
+		window.location.href="/Class_79/Default.aspx";
+});
+
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+$().ready(function(e) {
+    if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+</script>

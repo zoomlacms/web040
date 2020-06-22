@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>361</LabelID>
+    <LabelName>根据录入者输出标题</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>根据录入者输出标题</LabelDesc>
+    <LabelParam>Inputer,,1,录入者</LabelParam>
+    <LabelTable>ZL_PageReg</LabelTable>
+    <LabelField>PageTitle</LabelField>
+    <LabelWhere> ZL_PageReg.UserName='@Inputer'</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Field="PageTitle"/}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

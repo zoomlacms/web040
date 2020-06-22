@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>491</LabelID>
+    <LabelName>获取黄页列表不分页</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>TitleNum,30,1,标题长|ShowNum,30,1,显示数</LabelParam>
+    <LabelTable>ZL_PageReg LEFT JOIN ZL_Reg_Page ON ZL_PageReg.InfoID=ZL_Reg_Page.ID</LabelTable>
+    <LabelField>ZL_PageReg.CompanyName,ZL_PageReg.ID,ZL_PageReg.LOGO,ZL_Reg_Page.qyby</LabelField>
+    <LabelWhere>Status=99 And ZL_PageReg.Recommendation=1</LabelWhere>
+    <LabelOrder>ZL_PageReg.CreationTime ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"&gt;
+&lt;div class="sp2017_comp_c"&gt;
+&lt;a href="/Page/Default?pageid={Field="ID"/}" title="{Field="CompanyName"/}"&gt;&lt;img src="{Field="LOGO"/}" alt="{Field="CompanyName"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;&lt;/a&gt;
+&lt;div class="h3"&gt;&lt;a href="/Page/Default.aspx?pageid={Field="ID"/}" title="{Field="CompanyName"/}"&gt;{ZL:CutText({Field="CompanyName"/},@TitleNum,)/}&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;{Field="qyby"/}&lt;/p&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_PageReg","tb_s":"ZL_Reg_Page"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,158 @@
+﻿@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Layout = "~/Areas/User/Views/Shared/_layout.cshtml";
+}
+@section head{<title>组卷中心</title>
+
+}
+@section content{
+
+    <div runat="server" id="add_div">
+        <table class="table table-bordered table-striped table-hover">
+            <tr>
+                <td>标题:</td>
+                <td><input type="text" id="title_t" class="form-control m715-50 required" placeholder="标题不能为空" /></td>
+            </tr>
+            <tr><td>描述:</td><td><textarea id="desc_t" name="desc_t" class="form-control m715-50" placeholder="描述主要用来方便查看您的试卷,描述内容可以是试卷题型和考点组成、难度、使用年级及时完成时间等"></textarea></td></tr>
+            <tr><td>价格:</td><td><input type="text" id="price_t" name="price_t" class="form-control text_x int" /></td></tr>
+                        <tr><td>考试时间:</td><td><input type="text" id="time_t" name="time_t" value="120" class="form-control text_300"/><span class="r_green">0表示不限时长</span></td></tr>
+        </table>
+        <div class="panel panel-default">
+            @Html.Partial("PaperCenter_List",Model)
+            <div class="panel-footer text-center">
+                <button id="sure_btn" class="btn btn-default" onclick="Sure_Btn_Click">完成组卷</button>
+            <input type="button" id="cancel_btn" class="btn btn-default" value="取消组卷" onclick="parent.CloseComDiag();" />
+            <input type="button" id="del_btn" class="btn btn-default" value="清空试题篮" onclick="if (confirm('确定要清空吗?')) { AddToCart('cart_clear');}" />
+        </div>
+    </div>
+    </div>
+    <div id="addsucc_div" class="panel panel-primary" >
+        <div class="panel-heading" style="font-size:18px;">【恭喜您组卷成功】</div>
+        <div class="panel-body">
+            <table class="table table-bordered table-striped">
+                <tr><td class="td_m">标题:</td><td><label  id="title_l"></label></td></tr>
+                <tr><td>试卷类型:</td><td>练习</td></tr>
+                <tr><td>考试时长:</td><td>不限时</td></tr>
+            </table>
+        </div>
+        <div class="panel-footer" style="padding-left: 120px;">
+            <div class="input-group" style="width: 264px;float:left;">
+                <input type="hidden" id="newid_hid" />
+                <select id="paperSize_dp" class="form-control" style="width: 90px; border-right: none;">
+                    <option value="16k">16K</option>
+                    <option value="A4" selected="selected">A4</option>
+                    <option value="A3">A3</option>
+                    <option value="B4">B4</option>
+                </select>
+                <select id="orient_dp" class="form-control" style="width: 90px; border-right: none;">
+                    <option value="false">纵向</option>
+                    <option value="true">横向</option>
+                </select>
+                <span class="input-group-btn">
+                    <a href=""  target="_blank" id="paper_down" class="btn btn-primary">下载试卷</a>
+                </span>
+            </div>
+            <a href=""  id="paper_view" class="btn btn-primary margin_l5">查看试卷</a>
+            <a href=""  id="paper_edit" class="btn btn-primary" target="_blank">修改试卷</a>
+            <input type="button" class="btn btn-primary" value="关闭" onclick="parent.CloseComDiag();" />
+        </div>
+    </div>
+    <input type="hidden" id="qinfo_hid" />
+    }
+    @section script{
+
+        <style type="text/css">
+            label {
+                font-weight: normal;
+            }
+
+            .submitul li {
+                float: left;
+                margin-left: 20px;
+            }
+
+            .item {
+                border: 1px solid #ddd;
+                padding-left: 20px;
+                padding-top: 5px;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+
+                .item:hover {
+                    border: 1px solid #169bef;
+                }
+
+            .opdiv {
+                float: right;
+                font-size: 12px;
+                padding: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: none;
+            }
+
+                .opdiv > a {
+                    margin-left: 8px;
+                }
+
+            .opitem p {
+                display: inline-block;
+            }
+        </style>
+        <script src="/JS/ZL_Regex.js"></script>
+        <script>
+            $("form").validate();
+            $(function () {
+                $(".item").hover(function () { $(this).find(".opdiv").show(); }, function () { $(".opdiv").hide(); });
+                ZL_Regex.B_Num('.int');
+                //下载
+                $("#paperSize_dp,#orient_dp").change(function () {
+                    var query = "ID=" + $("#NewID_Hid").val() + "&paperSize=" + $("#paperSize_dp").val() + "&orient=" + $("#orient_dp").val();
+                    $("#paper_down").attr("href", "/User/Exam/DownPaper?" + query);
+                });
+            })
+            function DelThis(qid) {
+                $("#item_" + qid).fadeOut(500);
+                $("#item_" + qid).remove();
+                AddToCart("cart_remove", qid);
+            }
+            function AddToCart(action, qid) {
+                $.post("QuestAPI.aspx?action=" + action, { "qid": qid }, function (data) {
+                    if (action == "cart_clear") {
+                        location = location;
+                    }
+                });
+            }
+            function UPFunc(p_id) {
+                var item = $("#item_" + p_id);
+                var pre = item.prev(".item");
+                if (pre.length < 1) { return; }
+                else
+                {
+                    pre.before(item); //item.remove();
+                }
+            }
+            function DownFunc(p_id) {
+                var item = $("#item_" + p_id);
+                var next = item.next(".item");
+                if (next.length < 1) { return; }
+                else
+                {
+                    next.after(item); //item.remove();
+                }
+            }
+            function PreSave() {
+                if (!confirm('确定保存组卷吗?')) { return false; }
+                var items = $(".item"); var list = [];
+                for (var i = 0; i < items.length; i++) {
+                    var item = $(items[i]);
+                    var model = { id: item.data("id"), score: "", order: "" };
+                    model.score = ConverToInt(item.find("#score_" + model.id).val(), 0);
+                    model.order = i;
+                    list.push(model);
+                }
+                $("#QInfo_Hid").val(JSON.stringify(list));
+            }
+        </script>
+    }

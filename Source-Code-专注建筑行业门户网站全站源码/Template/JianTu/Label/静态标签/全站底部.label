@@ -1,0 +1,145 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>296</LabelID>
+    <LabelName>全站底部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;div class="container-fluid bor_m"&gt;&lt;/div&gt;
+&lt;div class="container home_pic_list"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list"&gt;
+&lt;a href="#"&gt;
+&lt;img src="{$CssDir/}images/pic1.png" alt="pic1" /&gt;
+&lt;p&gt;&lt;span&gt;7*24全天候服务&lt;/span&gt;&lt;br&gt;国际准客服&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list"&gt;
+&lt;a href="#"&gt;
+&lt;img src="{$CssDir/}images/pic2.png" alt="pic1" /&gt;
+&lt;p&gt;&lt;span&gt;专业实名认证&lt;/span&gt;&lt;br&gt;为每一个负责&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list"&gt;
+&lt;a href="#"&gt;
+&lt;img src="{$CssDir/}images/pic3.png" alt="pic1" /&gt;
+&lt;p&gt;&lt;span&gt;国际验证&lt;/span&gt;&lt;br&gt;最完整的资质认证&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list"&gt;
+&lt;a href="#"&gt;
+&lt;img src="{$CssDir/}images/pic4.png" alt="pic1" /&gt;
+&lt;p&gt;&lt;span&gt;全程呵护&lt;/span&gt;&lt;br&gt;9999的错误率支持&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list"&gt;
+&lt;a href="#"&gt;
+&lt;img src="{$CssDir/}images/pic5.png" alt="pic1" /&gt;
+&lt;p&gt;&lt;span&gt;快速响应&lt;/span&gt;&lt;br&gt;高效社区实时支持&lt;/p&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="container"&gt;
+&lt;div class="footer"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;关于我们&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(56)/}"&gt;公司介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(668)/}"&gt;团队展示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(63)/}"&gt;企业文化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(35)/}"&gt;招贤纳士&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;建筑商城&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(257)/}"&gt;申请注册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(265)/}"&gt;商家入驻&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetSpecialPage(1)/}"&gt;名企推荐&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(52)/}"&gt;商品检索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;办公平台&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(670)/}"&gt;平台介绍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(271)/}"&gt;申请开通&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(671)/}"&gt;特色功能&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(270)/}"&gt;运营管理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;商务合作&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetSpecialPage(2)/}"&gt;专业培训&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(267)/}"&gt;招商加盟&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(8)/}"&gt;合作网站&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(59)/}"&gt;联系我们&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list"&gt;
+&lt;ul&gt;
+&lt;li&gt;常见问题&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(65)/}"&gt;版权申明&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(672)/}"&gt;使用帮助&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Register.aspx"&gt;申请会员&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/GetPassword.aspx"&gt;找回密码&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer_r"&gt;&lt;img src="{$Banner/}" alt="微信公众号" /&gt;&lt;br/&gt;扫描关注建途微信公众号&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="container home_copy"&gt;
+&lt;div class="home_copy_r"&gt;
+&lt;div class="home_copy_rl"&gt;
+&lt;div class="home_copy_rlt"&gt;关注我们&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-weibo"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wpa.qq.com/msgrd?v=3&amp;uin=69250566&amp;site=qq&amp;menu=yes" target="_blank"&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="home_copy_rp"&gt;
+&lt;div class="home_copy_rpt"&gt;&lt;img src="{$CssDir/}Images/tel.png" alt="tel" /&gt;&lt;/div&gt;
+&lt;div class="h3"&gt;&lt;a href="tel:400-6789-314" class="all_phone"&gt;400-6789-314&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;周一至周日9:00-22:00&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="home_copy_l"&gt;
+&lt;p&gt;{$Copyright/}&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="kefu"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="{ZL:GetInfoUrl(59)/}"&gt;&lt;span&gt;QQ&lt;/span&gt;&lt;i class="fa fa-qq"&gt;&lt;/i&gt;&lt;/a&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="tel:17707091717"&gt;&lt;span&gt;联系电话&lt;/span&gt;&lt;i class="fa fa-phone"&gt;&lt;/i&gt;&lt;/a&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li class="kefu_qrcode"&gt;&lt;a href="javascript:;"&gt;&lt;span&gt;&lt;img src="/Common/Common.ashx?url=http://www.jt314.com/Class_461/NodeHot.aspx" alt="扫描下载手机APP客户端" /&gt;&lt;p&gt;扫描下载手机APP客户端&lt;/p&gt;&lt;/span&gt;&lt;i class="fa fa-qrcode"&gt;&lt;/i&gt;&lt;/a&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Guest"&gt;&lt;span&gt;留言咨询&lt;/span&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;&lt;/a&gt;&lt;div class="clearfix"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

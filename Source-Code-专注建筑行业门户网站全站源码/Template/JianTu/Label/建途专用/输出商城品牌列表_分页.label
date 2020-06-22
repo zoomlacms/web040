@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>476</LabelID>
+    <LabelName>输出商城品牌列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数</LabelParam>
+    <LabelTable>ZL_Manufacturers</LabelTable>
+    <LabelField>Coadd,CoPhoto,CreateTime,Email,ID,Producername,Telpho</LabelField>
+    <LabelWhere>ID&gt;0</LabelWhere>
+    <LabelOrder>ZL_Manufacturers.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;table class="table team_table"&gt;
+&lt;thead&gt;
+&lt;th width="76"&gt;图片&lt;/th&gt;
+&lt;th&gt;厂商名称&lt;/th&gt;
+&lt;th&gt;创建日期&lt;/th&gt;
+&lt;th&gt;公司地址&lt;/th&gt;
+&lt;th&gt;联系电话&lt;/th&gt;
+&lt;th&gt;Email&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{Repeate}
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="/Class_52/NodeElite.aspx?b={$GetUrlencode({Field="Producername"/})$}"&gt;&lt;img src="/Template/JianTu/style/Images/Shop_brand1.jpg" alt="" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h3&gt;&lt;a href="/Class_52/NodeElite.aspx?b={$GetUrlencode({Field="Producername"/})$}"&gt;{Field="Producername"/}&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+&lt;td&gt;{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/td&gt;
+&lt;td&gt;{Field="Coadd"/}&lt;/td&gt;
+&lt;td&gt;&lt;a href="tel:{Field="Telpho"/}"&gt;{Field="Telpho"/}&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href="mailto:{Field="Email"/}"&gt;{Field="Email"/}&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;{/Repeate}
+&lt;tr&gt;
+&lt;td colspan="6"&gt;
+{ZL.Page id="响应式列表分页v3"/}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Manufacturers","tb_s":""}</DataSourceType>
+    <ConnectString />
+  </Table>
+</NewDataSet>

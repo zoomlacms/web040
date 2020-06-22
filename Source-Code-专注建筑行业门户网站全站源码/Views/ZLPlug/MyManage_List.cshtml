@@ -1,0 +1,70 @@
+﻿@using System.Data;
+@using ZoomLa.BLL;
+@using ZoomLa.Common;
+@using ZoomLa.Model;
+@using ZoomLa.SQLDAL;
+@using ZoomLa.SQLDAL.SQL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.cols = 15;
+    Model.url = "Content_Data4?NodeID=" + Request["NodeID"];
+    B_User buser = new B_User();
+    M_UserInfo mu = buser.GetLogin();
+    switch (B_User_Plat.IsPlatUser())
+    {
+        case 0://非Plat用户
+               //Response.Redirect("/Plat/Fill.aspx");
+            function.WriteErrMsg("你并非能力中心用户,请联系网络管理员,为你发送注册邀请!!");
+            break;
+        case 1://未审核
+            function.WriteErrMsg("你的帐户尚未审核,无法登录能力中心,请联系网络管理员!!!");
+            break;
+            //case 99://正常登录
+            //    Session["Main_IsPlatUser"] = true;
+            //    break;
+    }
+    if (!B_User_Plat.IsAdmin())
+    {
+        DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select * from ZL_Plat_Group where MemberIDS like '%," + mu.UserID + ",%' And GroupName='经营管理'", null);
+        if (dt.Rows.Count <= 0)
+        {
+            function.WriteErrMsg("你并非经营部门管理员，无法使用该功能！");
+        }
+    }
+}
+<table class="table table-bordered table-condensed" id="EGV">
+<tr>
+<td width="30"></td>
+<td>ID</td>
+<td>申请人</td>
+<td>项目名称</td>
+<td>状态</td>
+<td>项目类型</td>
+<td>项目金额</td>
+<td>开标时间</td>
+<td>开标地点</td>
+<td>投标费用</td>
+<td>保证金额</td>
+<td>操作</td>
+</tr>
+@foreach (DataRow dr in Model.dt.Rows)
+{
+<tr onclick="$(this).find('input[name=\'idchk\']').get(0).checked = true">
+<td><input type="radio" name="idchk" value="@dr["GeneralID"]" /></td>
+<td>@dr["GeneralID"]</td>
+<td>@dr["sqr"]</td>
+<td><a href="/Item/@(dr["GeneralID"]).aspx">@dr["Title"]</a></td>
+<td>@dr["jyzt"]</td>
+<td>@dr["xmlx"]</td>
+<td>@(DataConvert.CDouble(dr["xmje"]).ToString("f2"))万</td>
+<td>@DataConvert.CDate(dr["kbsj"]).ToString("yyyy年MM月dd日")</td>
+<td>@dr["kbdd"]</td>
+<td>@(DataConvert.CDouble(dr["tbfy"]).ToString("f2"))元</td>
+<td>@(DataConvert.CDouble(dr["bzje"]).ToString("f2"))元</td>
+<td>
+<a href="javascript:;" class="option_style" onclick="mvcpage.del({ ids: '@dr["GeneralID"]', url: '/User/Content/content_del', confirm: '确定要删除吗' });" title="删除"><i class="fa fa-trash"></i></a>
+</td>
+</tr>
+}
+@Html.Partial("_page", Model)
+</table>

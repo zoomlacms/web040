@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>503</LabelID>
+    <LabelName>证照模型数据源标签地址栏传参</LabelName>
+    <LabelType>3</LabelType>
+    <LabelCate>数据源标签</LabelCate>
+    <LabelDesc>证照模型数据源标签</LabelDesc>
+    <LabelParam>InfoID,0,2,内容ID</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_C_zzmx on ZL_CommonModel.ItemID=ZL_C_zzmx.ID</LabelTable>
+    <LabelField>ZL_CommonModel.*,ZL_C_zzmx.*</LabelField>
+    <LabelWhere>ZL_CommonModel.GeneralID='{$GetRequest(ID)$}'</LabelWhere>
+    <LabelOrder />
+    <LabelContent />
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_zzmx"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

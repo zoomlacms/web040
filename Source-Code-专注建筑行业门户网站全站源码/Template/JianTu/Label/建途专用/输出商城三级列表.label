@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>372</LabelID>
+    <LabelName>输出商城三级列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出商城三级列表标签</LabelDesc>
+    <LabelParam>ShowNum,24,1,显示数|TitleNum,200,1,标题长|NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>ZL_Commodities LEFT JOIN ZL_P_Shop ON ZL_Commodities.ItemID=ZL_P_Shop.ID</LabelTable>
+    <LabelField>ZL_Commodities.Nodeid,ZL_Commodities.Producer,ZL_Commodities.ID,ZL_Commodities.LinPrice,ZL_Commodities.Proname,ZL_Commodities.Thumbnails</LabelField>
+    <LabelWhere> ZL_Commodities.ModelID=6 and Nodeid = @NodeID</LabelWhere>
+    <LabelOrder>ZL_Commodities.ID DESC</LabelOrder>
+    <LabelContent>&lt;div class="row"&gt;
+{Repeate}
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 margin_bot20"&gt;
+&lt;div class="shop_list"&gt;
+&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}" title="{Field="Proname"/}" target="{ZL:GetInfoOpen({Field="Nodeid"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="Thumbnails"/})/}" alt="{Field="Proname"/}" /&gt;&lt;/a&gt;
+&lt;div class="shop_info"&gt;
+&lt;span&gt;&lt;i class="fa fa-cny"&gt;&lt;/i&gt;{ZL:GetMoney({Field="LinPrice"/},2,1)/}&lt;/span&gt;
+&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}" target="{ZL:GetInfoOpen({Field="Nodeid"/})/}"&gt;&lt;button type="button" class="btn btn-info"&gt;查看&lt;/button&gt;&lt;/a&gt;
+&lt;p class="shop_tit"&gt;&lt;a href="{ZL:GetInfoUrl({Field="ID"/})/}"&gt;{ZL:CutText({Field="Proname"/},@ShowNum,...)/}&lt;/a&gt;&lt;/p&gt;
+&lt;p class="shop_com"&gt;{Field="Producer"/}&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}
+&lt;/div&gt;
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Commodities","tb_s":"ZL_P_Shop"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

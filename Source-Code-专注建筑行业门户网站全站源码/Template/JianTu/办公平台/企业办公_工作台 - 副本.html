@@ -1,0 +1,771 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工作台_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script>
+var username="{ZL:GetuserName()/}";
+var oarole='{ZL.Label id="输出当前登录用户办公角色ID" /}';
+if(username=="")
+{
+	window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+}
+else if(oarole==""){
+	alert("您尚未开通OA办公权限，请联系管理员开通！");
+	window.location.href="/User/";
+}
+</script>
+<style>
+.table .myoa_zzlist td,.table .myoa_rslist,.table .myoa_jylist { white-space:nowrap;}
+</style>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">{ZL:IPprovince()/}</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a></li>
+<li>华北：<a href="{ZL:GetNodeLinkUrl(466)/}">北京</a><a href="{ZL:GetNodeLinkUrl(467)/}">天津</a><a href="{ZL:GetNodeLinkUrl(470)/}">河北</a><a href="{ZL:GetNodeLinkUrl(471)/}">山西</a><a href="{ZL:GetNodeLinkUrl(492)/}">内蒙古</a></li>
+<li>华东：<a href="{ZL:GetNodeLinkUrl(468)/}">上海</a><a href="{ZL:GetNodeLinkUrl(475)/}">江苏</a><a href="{ZL:GetNodeLinkUrl(476)/}">浙江</a><a href="{ZL:GetNodeLinkUrl(477)/}">安徽</a><a href="{ZL:GetNodeLinkUrl(478)/}">福建</a><a href="{ZL:GetNodeLinkUrl(480)/}">山东</a></li>
+<li>华南：<a href="{ZL:GetNodeLinkUrl(484)/}">广东</a><a href="{ZL:GetNodeLinkUrl(493)/}">广西</a><a href="{ZL:GetNodeLinkUrl(485)/}">海南</a></li>
+<li>华中：<a href="{ZL:GetNodeLinkUrl(479)/}">江西</a><a href="{ZL:GetNodeLinkUrl(481)/}">河南</a><a href="{ZL:GetNodeLinkUrl(482)/}">湖北</a><a href="{ZL:GetNodeLinkUrl(483)/}">湖南</a></li>
+<li>西南：<a href="{ZL:GetNodeLinkUrl(469)/}">重庆</a><a href="{ZL:GetNodeLinkUrl(486)/}">四川</a><a href="{ZL:GetNodeLinkUrl(487)/}">贵州</a><a href="{ZL:GetNodeLinkUrl(488)/}">云南</a><a href="{ZL:GetNodeLinkUrl(494)/}">西藏</a></li>
+<li>西北：<a href="{ZL:GetNodeLinkUrl(489)/}">陕西</a><a href="{ZL:GetNodeLinkUrl(490)/}">甘肃</a><a href="{ZL:GetNodeLinkUrl(491)/}">青海</a><a href="{ZL:GetNodeLinkUrl(495)/}">宁夏</a><a href="{ZL:GetNodeLinkUrl(496)/}">新疆</a></li>
+<li>东北：<a href="{ZL:GetNodeLinkUrl(472)/}">辽宁</a><a href="{ZL:GetNodeLinkUrl(473)/}">吉林</a><a href="{ZL:GetNodeLinkUrl(474)/}">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li class="nav_user"><a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎您，<span>{ZL:GetuserName()/}!</span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login">会员中心</a></li>
+<li><a href="/User/Info/UserInfo" target="_blank">资料维护</a></li>
+<li><a href="javascript:;" onClick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="navbar_bg"></div>
+
+<div class="visible-xs">
+<nav class="navbar navbar-default navbar-fixed-top plat_xsnav">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/plat"><img src="{ZL.Label id="获取当前登录用户公司Logo" /}" alt="{ZL.Label id="获取当前登录用户公司名称" /}" onerror="javascript:this.src='/favicon.ico';" style="display:inline-block;width: 50px;" /> <span>{ZL.Label id="获取当前登录用户公司名称" /}办公平台</span></a>
+</div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="{ZL:GetNodeListUrl(79)/}">工作台</a></li>
+<li><a href="/Plat/Blog/">主线</a></li>
+<li><a href="/Plat/Blog/Spec.aspx">话题</a></li>
+<li><a href="/Plat/Addon/NotifyList.aspx">任务</a></li>
+<li><a href="/BU/KE/DailyPlan.aspx">日程</a></li>
+<li><a href="/Plat/Group/CompDetail.aspx">公司</a></li>
+<li><a href="/Plat/Note/ProList.aspx">项目</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div style="height:70px;"></div>
+</div>
+<div class="relative">
+<div class="Otop hidden-xs" id="Otop">
+<div class="Otitle">
+<a href="javascript:;" class="menu"><img src="{ZL.Label id="获取当前登录用户公司Logo" /}" id="logo_img" alt="{ZL.Label id="获取当前登录用户公司名称" /}" onerror="javascript:this.src='/favicon.ico';" /></a>
+<a href="/plat"><span id="M_CompName_L">{ZL.Label id="获取当前登录用户公司名称" /}</span>办公平台</a></div>
+<nav>
+<ul id="topmenu_ul">
+<li class="topnav_li active"><a href="{ZL:GetNodeListUrl(79)/}">工作台</a></li>
+<li class="topnav_li"><a href="/Plat/Blog/">主线</a></li>
+<li class="topnav_li"><a href="/Plat/Blog/Spec.aspx">话题</a></li>
+<li class="topnav_li"><a href="/Plat/Addon/NotifyList.aspx">任务</a></li>
+<li class="topnav_li"><a href="/BU/KE/DailyPlan.aspx">日程</a></li>
+<li class="topnav_li"><a href="/Plat/Group/CompDetail.aspx">公司</a></li>
+<li class="topnav_li"><a href="/Plat/Note/ProList.aspx">项目</a></li>
+<li class="skey_li">
+<i class="fa fa-search r_gray" style="position: absolute; left: 8px; top: 24px;"></i>
+<input type="text" class="form-control" id="skey_t" placeholder="搜索,回车确认" style="padding-left: 30px;" />
+</li>
+</ul>
+<div class="Otop_r hidden-md hidden-xs hidden-sm">
+<ul class="btns_ul list-unstyled">
+<li><a href="javascript:;" onclick="topnav.toggle();" id="skey_toggle_a"><i class="fa fa-search"></i></a></li>
+<li><a href="/Plat/Admin/"><i class="fa fa fa-cog"></i></a></li>
+<li><a href="/Plat/Email/"><i class="fa fa-envelope"></i> 邮件</a></li>
+<li>
+<div class="btn-group" style="margin-left:5px;">
+<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" style="border:none;">
+<img src="/Images/userface/noface.png" id="Main_UserFace_Img" class="uimg img_xs" onerror="shownoface(this);" alt="" />
+<span id="Main_UName_T"></span>
+<span class="fa fa-caret-down"></span>
+</a>
+<ul class="dropdown-menu">
+<li><a href="/Plat/Blog/Contact.aspx">通讯录</a></li>
+<li><a href="/Plat/Mail/">站内信</a></li>
+<li><a href="/Plat/Doc/">云盘</a></li>
+<li><a href="/Plat/Task/">任务</a></li>
+<li><a href="/User/User/Logout">退出登录</a></li>
+</ul>
+</div>
+</li>
+<li><a href="http://www.zoomla.cn/OAS/" target="_blank"><i class="fa  fa-question-circle"></i></a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+
+<div class="oa_banner">
+<div class="oa_box">
+<h3>建途办公系统工作台</h3>
+</div>
+</div>
+
+<div class="container margin_bot20">
+<ol class="breadcrumb margin_top20">
+<li><a href="/">首页</a></li>
+<li class="active">建途OA</li>
+</ol>
+<table class="table">
+<tr>
+<td width="200" style="padding:0; border:none;">
+<div class="myoa_lmenu">
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="#" style="background:#00bb9c;"><img src="{$CssDir/}images/myoa_zhengzhao.png" alt="证照管理" width="20" /> 证照管理</a></div>
+<ul>
+<li><a href="#"><i class="fa fa-caret-right"></i> 证书台帐</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 消息提示</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 办事指南</a></li>
+</ul>
+</div>
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="#" style="background:#11cd6e;"><img src="{$CssDir/}images/myoa_zhengzhao.png" alt="证照管理" width="20" /> 行政人事</a></div>
+<ul>
+<li><a href="#"><i class="fa fa-caret-right"></i> 花名册</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 消息提示</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 办事指南</a></li>
+</ul>
+</div>
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="#" style="background:#f4c600"><img src="{$CssDir/}images/myoa_zhengzhao.png" alt="证照管理" width="20" /> 经营管理</a></div>
+<ul>
+<li><a href="#"><i class="fa fa-caret-right"></i> 证书台帐</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 消息提示</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 办事指南</a></li>
+</ul>
+</div>
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="#" style="background:#ea8010"><img src="{$CssDir/}images/myoa_project.png" alt="证照管理" width="20" /> 项目管理</a></div>
+<ul>
+<li><a href="#"><i class="fa fa-caret-right"></i> 筹备项目</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 在建项目</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 完成项目</a></li>
+</ul>
+</div>
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="#" style="background:#eb4f38"><img src="{$CssDir/}images/myoa_caiwu.png" alt="证照管理" width="20" /> 财务管理</a></div>
+<ul>
+<li><a href="#"><i class="fa fa-caret-right"></i> 证书台帐</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 消息提示</a></li>
+<li><a href="#"><i class="fa fa-caret-right"></i> 办事指南</a></li>
+</ul>
+</div>
+<div class="myoa_lmenu_c">
+<div class="myoa_lmenu_ct"><a href="/Common/Chat/" style="background:#8e44ad"><img src="{$CssDir/}images/myoc_chat.png" alt="在线聊天" width="20" /> 在线聊天</a></div>
+</div>
+</div>
+</td>
+<td style="padding:0; border:none;">
+<iframe src="/Class_350/Default.aspx" width="100%;" height="942" scrolling="auto" frameborder="0"></iframe>
+</td>
+</tr>
+</table>
+
+<div class="myoa_funlist" style="display:none;">
+<div class="row padding5">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 padding10">
+<div class="myoa_funlist_c">
+<a href="/Class_350/Default.aspx" style="background:#00bb9c;">
+<img src="{$CssDir/}images/myoa_zhengzhao.png" alt="证照管理" />
+<h3>证照管理</h3>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 padding10">
+<div class="myoa_funlist_c">
+<a href="/Class_351/Default.aspx" style="background:#11cd6e;">
+<img src="{$CssDir/}images/myoa_xingzhen.png" alt="行政人事" />
+<h3>行政人事</h3>
+</a>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding10">
+<div class="myoa_funlist_c">
+<a href="/User/Content/AddContent?NodeID=352&ModelID=69" style="background:#f4c600">
+<img src="{$CssDir/}images/myoa_jingying.png" alt="经营管理" />
+<h3>经营管理</h3>
+</a>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding10">
+<div class="myoa_funlist_c">
+<a href="/Plat/Note/ProList.aspx" style="background:#ea8010">
+<img src="{$CssDir/}images/myoa_project.png" alt="项目管理" />
+<h3>项目管理</h3>
+</a>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding10">
+<div class="myoa_funlist_c">
+<a href="/User/Content/AddContent?NodeID=354&ModelID=71" style="background:#eb4f38">
+<img src="{$CssDir/}images/myoa_caiwu.png" alt="财务管理" />
+<h3>财务管理</h3>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding10">
+<div class="myoa_funlist_c">
+<a href="/Common/Chat/" style="background:#8e44ad">
+<img src="{$CssDir/}images/myoc_chat.png" alt="在线聊天" />
+<h3>在线聊天</h3>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" hidden="">
+<div class="myoa_user">
+<div class="myoa_user_t"><span>公司成员</span><div class="clearfix"></div></div>
+<div class="myoa_user_c">
+<ul class="media-list">
+{ZL.Label id="获取当前登录用户公司成员列表" /}
+</ul>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-9 col-sm-9 col-xs-12">
+<div role="tabpanel" class="myoa_main" style="display:none;">
+<div class="myoa_tnav">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">证照管理</a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">行政人事</a></li>
+<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">经营管理</a></li>
+<li role="presentation"><a href="/Plat/Note/ProList.aspx">项目管理</a></li>
+<li role="presentation"><a href="#settings1" aria-controls="settings1" role="tab" data-toggle="tab">财务管理</a></li>
+</ul>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="table-responsive" style="font-size:12px;">
+<table class="table table-bordered table-condensed">
+<tr>
+<td>证书类型</td>
+<td>姓名</td>
+<td>证书编号</td>
+<td>内部编号</td>
+<td>过期日期</td>
+<td>发证日期</td>
+<td>存放部门</td>
+<td>证书状态</td>
+<td>专业</td>
+<td>职称</td>
+<td>身份证</td>
+<td>是否由公司保存</td>
+<td>所在地</td>
+<td>备注</td>
+</tr>
+<tbody class="myoa_zzlist">
+</tbody>
+</table>
+</div>
+<div class="myoa_zzlist_m text-center"><button type="button" class="btn btn-info" onClick="GetMore('350');">加载更多</button></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile">
+<div class="table-responsive" style="font-size:12px;">
+<table class="table table-bordered table-condensed">
+<tr>
+<td>姓名</td>
+<td>性别</td>
+<td>电话</td>
+<td>QQ</td>
+<td>学历</td>
+<td>专业</td>
+<td>学校</td>
+<td>工龄</td>
+</tr>
+<tbody class="myoa_xzlist">
+</tbody>
+</table>
+</div>
+<div class="myoa_xzlist_m text-center"><button type="button" class="btn btn-info" onClick="GetMore('351');">加载更多</button></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="messages">
+<div class="table-responsive" style="font-size:12px;">
+<table class="table table-bordered table-condensed">
+<tr>
+<td>申请人</td>
+<td>项目名称</td>
+<td>项目类型</td>
+<td>项目金额</td>
+<td>开标时间</td>
+<td>开标地点</td>
+<td>投标费用</td>
+<td>保证金额</td>
+<td>业绩要求</td>
+<td>项目网址</td>
+</tr>
+<tbody class="myoa_jylist"></tbody>
+</table>
+</div>
+<div class="myoa_jylist_m text-center"><button type="button" class="btn btn-info" onClick="GetMore('352');">加载更多</button></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="settings">
+<div class="myos_xmlist">
+<div class="clearfix"></div>
+<div class="myos_xmlist_m text-center"><button type="button" class="btn btn-info" onClick="GetMore('353');">加载更多</button></div>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="settings1">
+<div class="table-responsive" style="font-size:12px;">
+<table class="table table-bordered table-condensed">
+<tr>
+<td width="25%">标题</td>
+<td width="15%">财务制度</td>
+<td width="15%">投票保证金管理</td>
+<td width="15%">现金流量表</td>
+<td width="15%">资产负债表</td>
+<td width="15%">利润表</td>
+</tr>
+<tbody class="myos_cwlist"></tbody>
+</table>
+</div>
+<div class="myos_cwlist_m text-center"><button type="button" class="btn btn-info" onClick="GetMore('354');">加载更多</button></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('Otop'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+
+$().ready(function(e) {
+	var uid='{ZL:GetuserID()/}';
+	var suprole='{ZL.Label id="获取当前登录用户公司超管角色ID" /}';
+	var zzgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="证照管理" /}';
+	var xzrs='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="行政人事" /}';
+	var jygl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="经营管理" /}';
+	var xmgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="项目管理" /}';
+	var cwb='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="财务部" /}';
+	var platrole='{ZL.Label id="输出当前登录用户办公角色" /}';
+	
+	if(platrole.indexOf(","+suprole+",")>=0){
+		$(".myoa_funlist").show();
+		$(".myoa_main").show();
+	}
+	else if(zzgl.indexOf(","+uid+",")>=0){
+		$(".myoa_funlist .row>div:eq(0)").removeClass("col-lg-6").addClass("col-lg-12").siblings("div").remove();
+		$(".myoa_funlist").show();
+		$(".myoa_main .myoa_tnav .nav li:eq(0)").addClass("active").siblings("li").remove();
+		$(".myoa_main .tab-content .tab-pane:eq(0)").addClass("active").siblings(".tab-pane").remove();
+		$(".myoa_main").show();
+	}
+	else if(xzrs.indexOf(","+uid+",")>=0){
+		$(".myoa_funlist .row>div:eq(1)").removeClass("col-lg-6").addClass("col-lg-12").siblings("div").remove();
+		$(".myoa_funlist").show();
+		$(".myoa_main .myoa_tnav .nav li:eq(1)").addClass("active").siblings("li").remove();
+		$(".myoa_main .tab-content .tab-pane:eq(1)").addClass("active").siblings(".tab-pane").remove();
+		$(".myoa_main").show();
+	}
+	else if(jygl.indexOf(","+uid+",")>=0){
+		$(".myoa_funlist .row>div:eq(2)").removeClass("col-lg-4").addClass("col-lg-12").siblings("div").remove();
+		$(".myoa_funlist").show();
+		$(".myoa_main .myoa_tnav .nav li:eq(2)").addClass("active").siblings("li").remove();
+		$(".myoa_main .tab-content .tab-pane:eq(2)").addClass("active").siblings(".tab-pane").remove();
+		$(".myoa_main").show();
+	}
+	else if(xmgl.indexOf(","+uid+",")>=0){
+		$(".myoa_funlist .row>div:eq(3)").removeClass("col-lg-4").addClass("col-lg-12").siblings("div").remove();
+		$(".myoa_funlist").show();
+		$(".myoa_main .myoa_tnav .nav li:eq(3)").addClass("active").siblings("li").remove();
+		$(".myoa_main .tab-content .tab-pane:eq(3)").addClass("active").siblings(".tab-pane").remove();
+		$(".myoa_main").show();
+	}
+	else if(cwb.indexOf(","+uid+",")>=0){
+		$(".myoa_funlist .row>div:eq(4)").removeClass("col-lg-4").addClass("col-lg-12").siblings("div").remove();
+		$(".myoa_funlist").show();
+		$(".myoa_main .myoa_tnav .nav li:eq(4)").addClass("active").siblings("li").remove();
+		$(".myoa_main .tab-content .tab-pane:eq(4)").addClass("active").siblings(".tab-pane").remove();
+		$(".myoa_main").show();
+	}
+});
+
+//手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$("#Main_UName_T").html(data.UserName);
+	}
+	else
+		window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+});
+
+//页面初始化数据
+var para = { key:'', alias:'zzlist', psize:'12', cpage:1, nodeid:350, compid:'{ZL.Label id="获取当前登录用户公司ID" /}' }
+var para1 = { key:'', alias:'xzlist', psize:'12', cpage:1, nodeid:351, compid:'{ZL.Label id="获取当前登录用户公司ID" /}' }
+var para2 = { key:'', alias:'jylist', psize:'8', cpage:1, nodeid:352, compid:'{ZL.Label id="获取当前登录用户公司ID" /}' }
+var para3 = { key:'', alias:'xmlist', psize:'8', cpage:1, nodeid:353, compid:'{ZL.Label id="获取当前登录用户公司ID" /}' }
+var para4 = { key:'', alias:'cwlist', psize:'8', cpage:1, nodeid:354, compid:'{ZL.Label id="获取当前登录用户公司ID" /}' }
+
+$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+	data=JSON.parse(data);
+	if(data.retcode=="1")
+	{
+		data=JSON.parse(data.result);
+		var str="";
+		for(var i=0;i<data.length;i++)
+		{
+			str+="<tr><td>"+data[i].zzlb+"</td><td>"+data[i].name+"</td><td>"+data[i].bh+"</td><td>"+data[i].nbbh+"</td><td>"+(new Date(data[i].fzrq)).format("yyyy年MM月dd日")+"</td><td>"+(new Date(data[i].fzrq)).format("yyyy年MM月dd日")+"</td><td>"+data[i].cfbm+"</td><td>"+data[i].zszt+"</td><td>"+data[i].zy+"</td><td>"+data[i].zc+"</td><td>"+data[i].sfzh+"</td><td>"+data[i].spygsbc+"</td><td>"+data[i].cfdd+"</td><td>"+data[i].remind+"</td></tr>";
+		}
+		$(".myoa_zzlist").append(str);
+	}
+});
+$.post("/API/Center.ashx?action=GetCustom",para1,function(data){
+	data=JSON.parse(data);
+	if(data.retcode=="1")
+	{
+		var str="";
+		data=JSON.parse(data.result);
+		for(var i=0;i<data.length;i++)
+		{
+			str+="<tr><td>"+data[i].title+"</td><td>"+data[i].xb+"</td><td>"+data[i].phone+"</td><td>"+data[i].qq+"</td><td>"+data[i].xl+"</td><td>"+data[i].byzy+"</td><td>"+data[i].byxx+"</td><td>"+data[i].sjgzsj+"</td></tr>";
+		}
+		$(".myoa_xzlist").append(str);
+	}
+})
+$.post("/API/Center.ashx?action=GetCustom",para2,function(data){
+	data=JSON.parse(data);
+	if(data.retcode=="1")
+	{
+		data=JSON.parse(data.result);
+		console.log(data)
+		var str="";
+		for(var i=0;i<data.length;i++)
+		{
+			str+="<tr><td>"+data[i].sqr+"</td><td>"+data[i].xmmc+"</td><td>"+data[i].xmlx+"</td><td>"+data[i].xmje+"万</td><td>"+(new Date(data[i].kbsj)).format("yyyy年MM月dd日")+"</td><td>"+data[i].kbdd+"</td><td>"+data[i].tbfy+"</td><td>"+data[i].bzje+"</td><td>"+data[i].yjyq+"</td><td>"+data[i].xmwz+"</td></tr>";
+		}
+		$(".myoa_jylist").append(str);
+	}
+})
+$.post("/API/Center.ashx?action=GetCustom",para3,function(data){
+	data=JSON.parse(data);
+	if(data.retcode=="1")
+	{
+		data=JSON.parse(data.result);
+		var str="";
+		for(var i=0;i<data.length;i++)
+		{
+			str+="<div class=\"myos_xmlist_c\"><div class=\"myos_xmlist_ct\"><h3><a href=\"/Item/"+data[i].generalid+".aspx\">"+data[i].title+"</a><span class=\"pull-right\">"+data[i].xmzt+"</span></h3></div><div class=\"myos_xmlist_cb\"><ul><li>项目名称："+data[i].xmmc+"</li><li>项目地点："+data[i].xmdd+"</li><li>项目中标价："+data[i].xmzbj+"</li><li>发布时间："+(new Date(data[i].createtime)).format("yyyy年MM月dd日")+"</li><li>项目概述及规模："+data[i].xmgsjgm+"</li><li>项目进度规划："+data[i].xmjdgh+"</li><li>项目进度款说明："+data[i].xmjdkym+"</li><li>项目施工概要："+data[i].xmsggy+"</li><div class=\"clearfix\"></div></ul></div></div>";
+		}
+		$(".myos_xmlist>.clearfix").before(str);
+	}
+})
+$.post("/API/Center.ashx?action=GetCustom",para4,function(data){
+	data=JSON.parse(data);
+	if(data.retcode=="1")
+	{
+		data=JSON.parse(data.result);
+		var str="";
+		for(var i=0;i<data.length;i++)
+		{
+			str+="<tr><td>"+data[i].title+"</td><td>"+data[i].cwzd+"</td><td>"+data[i].tpbzjgl+"</td><td>"+data[i].xjllb+"</td><td>"+data[i].zcfzb+"</td><td>"+data[i].lrb+"</td></tr>"
+		}
+		$(".myos_cwlist").append(str);
+	}
+})
+function GetMore(nodeid){
+	if(nodeid=="350")
+	{
+		para.cpage++;
+		$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+			data=JSON.parse(data);
+			if(data.retcode=="1")
+			{
+				data=JSON.parse(data.result);
+				if(data.length>0)
+				{
+					var str="";
+					for(var i=0;i<data.length;i++)
+					{
+						str+="<tr><td>"+data[i].zzlb+"</td><td>"+data[i].name+"</td><td>"+data[i].bh+"</td><td>"+data[i].nbbh+"</td><td>"+(new Date(data[i].fzrq)).format("yyyy年MM月dd日")+"</td><td>"+(new Date(data[i].fzrq)).format("yyyy年MM月dd日")+"</td><td>"+data[i].cfbm+"</td><td>"+data[i].zszt+"</td><td>"+data[i].zy+"</td><td>"+data[i].zc+"</td><td>"+data[i].sfzh+"</td><td>"+data[i].spygsbc+"</td><td>"+data[i].cfdd+"</td><td>"+data[i].remind+"</td></tr>";
+					}
+					$(".myoa_zzlist").append(str);
+				}
+				else
+				{
+					$(".myoa_zzlist_m .btn").popover({
+						animation: true,
+						placement: 'top',
+						content: '<span>暂无更多信息</span>',
+						html: true,
+						trigger: 'manual',
+						delay: { show: 10000, hide: 100 }
+					});
+					$(".myoa_zzlist_m .btn").popover('show');
+					setTimeout(function () { $(".myoa_zzlist_m .btn").popover('destroy'); }, 2000);
+				}
+			}
+		});		
+	}
+	else if(nodeid=="351")
+	{
+		para1.cpage++;
+		$.post("/API/Center.ashx?action=GetCustom",para1,function(data){
+			data=JSON.parse(data);
+			if(data.retcode=="1")
+			{
+				data=JSON.parse(data.result);
+				if(data.length>0)
+				{
+					var str="";	
+					for(var i=0;i<data.length;i++)
+					{
+						str+="<tr><td>"+data[i].title+"</td><td>"+data[i].xb+"</td><td>"+data[i].phone+"</td><td>"+data[i].qq+"</td><td>"+data[i].xl+"</td><td>"+data[i].byzy+"</td><td>"+data[i].byxx+"</td><td>"+data[i].sjgzsj+"</td></tr>";
+					}
+					$(".myoa_xzlist").append(str);
+				}
+				else
+				{
+					$(".myoa_xzlist_m .btn").popover({
+						animation: true,
+						placement: 'top',
+						content: '<span>暂无更多信息</span>',
+						html: true,
+						trigger: 'manual',
+						delay: { show: 10000, hide: 100 }
+					});
+					$(".myoa_xzlist_m .btn").popover('show');
+					setTimeout(function () { $(".myoa_zzlist_m .btn").popover('destroy'); }, 2000);
+				}
+			}
+		})
+	}
+	else if(nodeid=="352"){
+		para2.cpage++;
+		$.post("/API/Center.ashx?action=GetCustom",para2,function(data){
+			data=JSON.parse(data);
+			if(data.retcode=="1")
+			{
+				data=JSON.parse(data.result);
+				if(data.length>0)
+				{
+					var str="";	
+					for(var i=0;i<data.length;i++)
+					{
+						str+="<tr><td>"+data[i].sqr+"</td><td>"+data[i].xmmc+"</td><td>"+data[i].xmlx+"</td><td>"+data[i].xmje+"万</td><td>"+(new Date(data[i].kbsj)).format("yyyy年MM月dd日")+"</td><td>"+data[i].kbdd+"</td><td>"+data[i].tbfy+"</td><td>"+data[i].bzje+"</td><td>"+data[i].yjyq+"</td><td>"+data[i].xmwz+"</td></tr>";
+					}
+					$(".myoa_jylist").append(str);
+				}
+				else
+				{
+					$(".myoa_jylist_m .btn").popover({
+						animation: true,
+						placement: 'top',
+						content: '<span>暂无更多信息</span>',
+						html: true,
+						trigger: 'manual',
+						delay: { show: 10000, hide: 100 }
+					});
+					$(".myoa_jylist_m .btn").popover('show');
+					setTimeout(function () { $(".myoa_zzlist_m .btn").popover('destroy'); }, 2000);
+				}
+			}
+		})
+	}
+	else if(nodeid=="353"){
+		para3.cpage++;
+		$.post("/API/Center.ashx?action=GetCustom",para3,function(data){
+			data=JSON.parse(data);
+			if(data.retcode=="1")
+			{
+				data=JSON.parse(data.result);
+				if(data.length>0)
+				{
+					var str="";	
+					for(var i=0;i<data.length;i++)
+					{
+						str+="<div class=\"myos_xmlist_c\"><div class=\"myos_xmlist_ct\"><h3><a href=\"/Item/"+data[i].generalid+".aspx\">"+data[i].title+"</a><span class=\"pull-right\">"+data[i].xmzt+"</span></h3></div><div class=\"myos_xmlist_cb\"><ul><li>项目名称："+data[i].xmmc+"</li><li>项目地点："+data[i].xmdd+"</li><li>项目中标价："+data[i].xmzbj+"</li><li>发布时间："+(new Date(data[i].createtime)).format("yyyy年MM月dd日")+"</li><li>项目概述及规模："+data[i].xmgsjgm+"</li><li>项目进度规划："+data[i].xmjdgh+"</li><li>项目进度款说明："+data[i].xmjdkym+"</li><li>项目施工概要："+data[i].xmsggy+"</li><div class=\"clearfix\"></div></ul></div></div>";
+					}
+					$(".myos_xmlist>.clearfix").before(str);
+				}
+				else
+				{
+					$(".myos_xmlist_m .btn").popover({
+						animation: true,
+						placement: 'top',
+						content: '<span>暂无更多信息</span>',
+						html: true,
+						trigger: 'manual',
+						delay: { show: 10000, hide: 100 }
+					});
+					$(".myos_xmlist_m .btn").popover('show');
+					setTimeout(function () { $(".myos_xmlist_m .btn").popover('destroy'); }, 2000);
+				}
+			}
+		})
+	}
+	else if(nodeid=="354"){
+		para4.cpage++;
+		$.post("/API/Center.ashx?action=GetCustom",para4,function(data){
+			data=JSON.parse(data);
+			if(data.retcode=="1")
+			{
+				data=JSON.parse(data.result);
+				if(data.length>0)
+				{
+					var str="";	
+					for(var i=0;i<data.length;i++)
+					{
+						str+="<tr><td>"+data[i].title+"</td><td>"+data[i].cwzd+"</td><td>"+data[i].tpbzjgl+"</td><td>"+data[i].xjllb+"</td><td>"+data[i].zcfzb+"</td><td>"+data[i].lrb+"</td></tr>"
+					}
+					$(".myos_cwlist").append(str);
+				}
+				else
+				{
+					$(".myos_cwlist_m .btn").popover({
+						animation: true,
+						placement: 'top',
+						content: '<span>暂无更多信息</span>',
+						html: true,
+						trigger: 'manual',
+						delay: { show: 10000, hide: 100 }
+					});
+					$(".myos_cwlist_m .btn").popover('show');
+					setTimeout(function () { $(".myos_cwlist_m .btn").popover('destroy'); }, 2000);
+				}
+			}
+		})
+	}
+}
+Date.prototype.format = function(format) {  
+    var o = {  
+        "M+" : this.getMonth() + 1, // month  
+        "d+" : this.getDate(), // day  
+        "h+" : this.getHours(), // hour  
+        "m+" : this.getMinutes(), // minute  
+        "s+" : this.getSeconds(), // second  
+        "q+" : Math.floor((this.getMonth() + 3) / 3), // quarter  
+        "S" : this.getMilliseconds()  
+        // millisecond  
+    }  
+  
+    if (/(y+)/.test(format)) {  
+        format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4- RegExp.$1.length));  
+    }  
+  
+    for (var k in o) {  
+        if (new RegExp("(" + k + ")").test(format)) {  
+            format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k]: ("00" + o[k]).substr(("" + o[k]).length));  
+        }  
+    }  
+    return format;  
+}
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+</script>

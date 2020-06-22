@@ -1,0 +1,147 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/Controls/B_User.js"></script>
+</head>
+<body>
+{ZL.Label id="建筑资讯头部_new"/}
+
+<div class="news_abanner"><span>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</span></div>
+
+<div class="team_top">
+<div class="container">
+<div class="team_topbox">
+<div class="team_top_c">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择分类：</div>
+</div>
+<div class="media-body">
+<div class="team_list">
+<a data-type="" href="/Class_43/Default.aspx?type=" class="active">不限</a>
+<a data-type="doc" href="/Class_43/Default.aspx?type={$GetUrlencode(DOC)$}">DOC</a>
+<a data-type="ppt" href="/Class_43/Default.aspx?type={$GetUrlencode(PPT)$}">PPT</a>
+<a data-type="txt" href="/Class_43/Default.aspx?type={$GetUrlencode(TXT)$}">TXT</a>
+<a data-type="pdf" href="/Class_43/Default.aspx?type={$GetUrlencode(PDF)$}">PDF</a>
+<a data-type="xls" href="/Class_43/Default.aspx?type={$GetUrlencode(XLS)$}">XLS</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="talent_cont padding_top20">
+<div class="container">
+<div class="row">
+{ZL.Label id="输出建筑资讯相关列表" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="10" TitleNum="60" synNum="60" type="{$GetUrldecode({$GetRequest(type)$})$}" /}
+</div>
+</div>
+</div>
+{ZL.Label id="建筑资讯底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('news_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+    IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+        ".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+    var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+     if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+    if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+    IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+ //]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+$().ready(function(e){
+	$('#nmenu{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}').addClass("active");
+});
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+        $(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e){
+  //判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span").html("{ZL:IPcity()/}");
+	}
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

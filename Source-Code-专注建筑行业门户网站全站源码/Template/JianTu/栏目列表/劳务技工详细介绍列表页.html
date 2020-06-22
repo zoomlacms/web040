@@ -1,0 +1,311 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="laowu_banner"></div>
+<div class="container">
+<div class="news_mySites">
+<ol class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li>列表页</li>
+</ol>
+</div>
+<div class="laowu_search">
+<div class="laowu_search_t">条件筛选<span>(共找到符合条件{ZL.Label id="输出劳务技工总数" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" sex="{$GetUrldecode({$GetRequest(sex)$})$}" mina="{$GetRequest(mina)$}" maxa="{$GetRequest(maxa)$}" area="{$GetUrldecode({$GetRequest(area)$})$}" lwgz="{$GetUrldecode({$GetRequest(lwgz)$})$}" jsgz="{$GetUrldecode({$GetRequest(jsgz)$})$}" /}
+人)</span></div>
+<div class="laowu_search_c">
+<div class="media">
+<div class="media-left media-middle"><span>性别：</span></div>
+<div class="media-body">
+<ul class="laowu_sex">
+<li data-sex=""><a href="/Class_84/NodePage.aspx?sex=&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">不限</a></li>
+<li data-sex="男"><a href="/Class_84/NodePage.aspx?sex={$GetUrlencode(男)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">男性</a></li>
+<li data-sex="女"><a href="/Class_84/NodePage.aspx?sex={$GetUrlencode(女)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">女性</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="laowu_search_c">
+<div class="media">
+<div class="media-left media-middle"><span>年龄：</span></div>
+<div class="media-body">
+<ul class="laowu_age">
+<li data-mina="" data-maxa=""><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=&maxa=&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">不限</a></li>
+<li data-mina="18" data-maxa="23"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=18&maxa=23&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">18到23岁</a></li>
+<li data-mina="23" data-maxa="28"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=23&maxa=28&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">23到28岁</a></li>
+<li data-mina="28" data-maxa="33"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=28&maxa=33&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">28到33岁</a></li>
+<li data-mina="33" data-maxa="40"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=33&maxa=44&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">33到40岁</a></li>
+<li data-mina="40" data-maxa=""><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina=40&maxa=&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">40岁以上</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="laowu_search_c">
+<div class="media">
+<div class="media-left"><span>籍贯：</span></div>
+<div class="media-body">
+<ul class="laowu_area">
+<li data-area=""><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area=&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">不限</a></li>
+<li data-area="北京"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(北京)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">北京</a></li>
+<li data-area="上海"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(上海)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">上海</a></li>
+<li data-area="天津"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(天津)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">天津</a></li>
+<li data-area="重庆"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(重庆)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">重庆</a></li>
+<li data-area="河北省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(河北省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">河北省</a></li>
+<li data-area="江苏省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(江苏省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">江苏省</a></li>
+<li data-area="安徽省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(安徽省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">安徽省</a></li>
+<li data-area="福建省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(福建省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">福建省</a></li>
+<li data-area="甘肃省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(甘肃省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">甘肃省</a></li>
+<li data-area="广东省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(广东省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">广东省</a></li>
+<li data-area="广西省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(广西省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">广西省</a></li>
+<li data-area="贵州省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(贵州省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">贵州省</a></li>
+<li data-area="海南省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(海南省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">海南省</a></li>
+<li data-area="河南省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(河南省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">河南省</a></li>
+<li data-area="黑龙江"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(黑龙江)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">黑龙江</a></li>
+<li data-area="湖北省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(湖北省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">湖北省</a></li>
+<li data-area="湖南省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(湖南省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">湖南省</a></li>
+<li data-area="吉林省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(吉林省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">吉林省</a></li>
+<li data-area="江西省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(江西省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">江西省</a></li>
+<li data-area="辽宁省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(内蒙古)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">辽宁省</a></li>
+<li data-area="内蒙古"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(内蒙古)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">内蒙古</a></li>
+<li data-area="宁夏"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(宁夏)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">宁夏</a></li>
+<li data-area="青海省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(青海省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">青海省</a></li>
+<li data-area="山东省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(山东省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">山东省</a></li>
+<li data-area="山西省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(山西省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">山西省</a></li>
+<li data-area="陕西省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(陕西省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">陕西省</a></li>
+<li data-area="四川省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(四川省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">四川省</a></li>
+<li data-area="西藏"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(西藏)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">西藏</a></li>
+<li data-area="新疆"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(新疆)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">新疆</a></li>
+<li data-area="浙江省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(浙江省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">浙江省</a></li>
+<li data-area="云南省"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetUrlencode(云南省)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}">云南省</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="laowu_search_c">
+<div class="media">
+<div class="media-left"><span>劳务工种：</span></div>
+<div class="media-body">
+<ul class="laowu_lwgz">
+<li data-lwgz=""><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz=&jsgz={$GetRequest(jsgz)$}">不限</a></li>
+<li data-lwgz="防水工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(防水工)$}&jsgz={$GetRequest(jsgz)$}">防水工</a></li>
+<li data-lwgz="油漆工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(油漆工)$}&jsgz={$GetRequest(jsgz)$}">油漆工</a></li>
+<li data-lwgz="抹灰工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(抹灰工)$}&jsgz={$GetRequest(jsgz)$}">抹灰工</a></li>
+<li data-lwgz="钢筋工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(钢筋工)$}&jsgz={$GetRequest(jsgz)$}">钢筋工</a></li>
+<li data-lwgz="架子工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(架子工)$}&jsgz={$GetRequest(jsgz)$}">架子工</a></li>
+<li data-lwgz="测量工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(测量工)$}&jsgz={$GetRequest(jsgz)$}">测量工</a></li>
+<li data-lwgz="混凝土工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(混凝土工)$}&jsgz={$GetRequest(jsgz)$}">混凝土工</a></li>
+<li data-lwgz="模板工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(模板工)$}&jsgz={$GetRequest(jsgz)$}">模板工</a></li>
+<li data-lwgz="木工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(木工)$}&jsgz={$GetRequest(jsgz)$}">木工</a></li>
+<li data-lwgz="砌筑工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(砌筑工)$}&jsgz={$GetRequest(jsgz)$}">砌筑工</a></li>
+<li data-lwgz="镶贴工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(镶贴工)$}&jsgz={$GetRequest(jsgz)$}">镶贴工</a></li>
+<li data-lwgz="石作业工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(石作业工)$}&jsgz={$GetRequest(jsgz)$}">石作业工</a></li>
+<li data-lwgz="水电工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(水电工)$}&jsgz={$GetRequest(jsgz)$}">水电工</a></li>
+<li data-lwgz="瓦工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(瓦工)$}&jsgz={$GetRequest(jsgz)$}">瓦工</a></li>
+<li data-lwgz="机械设备安装工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(机械设备安装工)$}&jsgz={$GetRequest(jsgz)$}">机械设备安装工</a></li>
+<li data-lwgz="管道工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(管道工)$}&jsgz={$GetRequest(jsgz)$}">管道工</a></li>
+<li data-lwgz="通风工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(通风工)$}&jsgz={$GetRequest(jsgz)$}">通风工</a></li>
+<li data-lwgz="低压电工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(低压电工)$}&jsgz={$GetRequest(jsgz)$}">低压电工</a></li>
+<li data-lwgz="维修电工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(维修电工)$}&jsgz={$GetRequest(jsgz)$}">维修电工</a></li>
+<li data-lwgz="安装电工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(安装电工)$}&jsgz={$GetRequest(jsgz)$}">安装电工</a></li>
+<li data-lwgz="砧细工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(砧细工)$}&jsgz={$GetRequest(jsgz)$}">砧细工</a></li>
+<li data-lwgz="木雕工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(木雕工)$}&jsgz={$GetRequest(jsgz)$}">木雕工</a></li>
+<li data-lwgz="石雕工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(石雕工)$}&jsgz={$GetRequest(jsgz)$}">石雕工</a></li>
+<li data-lwgz="砧刻工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(砧刻工)$}&jsgz={$GetRequest(jsgz)$}">砧刻工</a></li>
+<li data-lwgz="泥塑工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(泥塑工)$}&jsgz={$GetRequest(jsgz)$}">泥塑工</a></li>
+<li data-lwgz="彩绘工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(彩绘工)$}&jsgz={$GetRequest(jsgz)$}">彩绘工</a></li>
+<li data-lwgz="推光漆工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(推光漆工)$}&jsgz={$GetRequest(jsgz)$}">推光漆工</a></li>
+<li data-lwgz="匾额工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(匾额工)$}&jsgz={$GetRequest(jsgz)$}">匾额工</a></li>
+<li data-lwgz="砌花街工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetUrlencode(砌花街工)$}&jsgz={$GetRequest(jsgz)$}">砌花街工</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="laowu_search_c">
+<div class="media">
+<div class="media-left"><span>技术工种：</span></div>
+<div class="media-body">
+<ul class="laowu_jsgz">
+<li data-jsgz=""><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz=">不限</a></li>
+<li data-jsgz="手工木工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(手工木工)$}">手工木工</a></li>
+<li data-jsgz="精细木工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(精细木工)$}">精细木工</a></li>
+<li data-jsgz="架子工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(架子工)$}">架子工</a></li>
+<li data-jsgz="钢筋工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(钢筋工)$}">钢筋工</a></li>
+<li data-jsgz="抹灰工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(抹灰工)$}">抹灰工</a></li>
+<li data-jsgz="油漆工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(油漆工)$}">油漆工</a></li>
+<li data-jsgz="混凝土工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(混凝土工)$}">混凝土工</a></li>
+<li data-jsgz="砌筑工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(砌筑工)$}">砌筑工</a></li>
+<li data-jsgz="防水工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(防水工)$}">防水工</a></li>
+<li data-jsgz="电工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(电工)$}">电工</a></li>
+<li data-jsgz="电焊工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(电焊工)$}">电焊工</a></li>
+<li data-jsgz="管工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(管工)$}">管工</a></li>
+<li data-jsgz="模板工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(模板工)$}">模板工</a></li>
+<li data-jsgz="安装钳工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(安装钳工)$}">安装钳工</a></li>
+<li data-jsgz="安装起重工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(安装起重工)$}">安装起重工</a></li>
+<li data-jsgz="管道工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(管道工)$}">管道工</a></li>
+<li data-jsgz="通风工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(通风工)$}">通风工</a></li>
+<li data-jsgz="净水工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(净水工)$}">净水工</a></li>
+<li data-jsgz="水质检验工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(水质检验工)$}">水质检验工</a></li>
+<li data-jsgz="机泵运行工"><a href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetUrlencode(机泵运行工)$}">机泵运行工</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="laowu_list">
+<div class="laowu_list_t">
+显示方式：
+<a class="active" href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}"><i class="fa fa-list-ul"></i> 列表+介绍</a>
+<a href="/Class_84/Default.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}"><i class="fa fa-photo"></i> 照片显示</a>
+<label class="laowu_only"><input type="checkbox" class="pic_chk" name="pic_chk" /> 只看有照片会员</label>
+</div>
+
+{ZL.Label id="输出劳务技工详细介绍列表_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="16" TitleNum="30" SysNum="120" sex="{$GetUrldecode({$GetRequest(sex)$})$}" mina="{$GetRequest(mina)$}" maxa="{$GetRequest(maxa)$}" area="{$GetUrldecode({$GetRequest(area)$})$}" lwgz="{$GetUrldecode({$GetRequest(lwgz)$})$}" jsgz="{$GetUrldecode({$GetRequest(jsgz)$})$}" /}
+</div>
+</div>
+
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+		$(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+	$(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	});
+	$(".mainCate").mouseover(function(){
+		$(this).find(".nav_llist_c").show();	
+	}).mouseout(function(){
+	  $(this).find(".nav_llist_c").hide();
+	});
+	//判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".home_logo_text span a").html("{ZL:IPcity()/}");
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+
+$().ready(function(e) {
+	$(".home_logo_s").text("劳务技工");
+    var sex="{$GetUrldecode({$GetRequest(sex)$})$}";
+    var area="{$GetUrldecode({$GetRequest(area)$})$}";
+	var mina="{$GetRequest(mina)$}";
+	var maxa="{$GetRequest(maxa)$}";
+	var lwgz="{$GetUrldecode({$GetRequest(lwgz)$})$}";
+	var jsgz="{$GetUrldecode({$GetRequest(jsgz)$})$}";
+	$(".laowu_sex li[data-sex='"+sex+"']").addClass("active");
+	$(".laowu_age li[data-mina='"+mina+"'][data-maxa='"+maxa+"']").addClass("active");
+	$(".laowu_area li[data-area='"+area+"']").addClass("active");
+	$(".laowu_lwgz li[data-lwgz='"+lwgz+"']").addClass("active");
+	$(".laowu_jsgz li[data-jsgz='"+jsgz+"']").addClass("active");
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+$(".pic_chk").change(function(){
+	if($(this).is(":checked"))
+		window.location.href="/Class_84/NodeNews.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}";
+	else
+		window.location.href="/Class_84/NodePage.aspx?sex={$GetRequest(sex)$}&mina={$GetRequest(mina)$}&maxa={$GetRequest(maxa)$}&area={$GetRequest(area)$}&lwgz={$GetRequest(lwgz)$}&jsgz={$GetRequest(jsgz)$}";
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

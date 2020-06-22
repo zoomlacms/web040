@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>392</LabelID>
+    <LabelName>输出指定商城节点子节点列表_一级</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID</LabelParam>
+    <LabelTable>ZL_Node</LabelTable>
+    <LabelField>NodeID,NodeName</LabelField>
+    <LabelWhere>ParentID=@NodeID</LabelWhere>
+    <LabelOrder>ZL_Node.OrderID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="nav_llist_ca"&gt;
+&lt;div class="nav_llist_caa"&gt;
+&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}" target="{ZL:GetNodeOpen({Field="NodeID"/})/}"&gt;{Field="NodeName"/}&lt;/a&gt;
+&lt;a href="{ZL:GetNodeLinkUrl({Field="NodeID"/})/}" class="home_nav_more" target="{ZL:GetNodeOpen({Field="NodeID"/})/}"&gt;更多&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="nav_llist_cbb"&gt;
+&lt;ul class="nav_llist_u"&gt;
+{ZL.Label id="输出指定商城节点子节点列表_二级" NodeID="{Field="NodeID"/}" /}
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Node","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

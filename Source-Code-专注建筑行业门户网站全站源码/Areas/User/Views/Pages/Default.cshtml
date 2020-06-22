@@ -1,0 +1,43 @@
+﻿@using ZoomLa.BLL;
+@using ZoomLa.BLL.Page;
+@using ZoomLa.Common;
+@using ZoomLa.Model;
+@using ZoomLa.Model.Page;
+@{
+    Layout = "~/Areas/User/Views/Shared/_layout2.cshtml";
+    B_PageReg prBll = new B_PageReg();
+    B_User buser = new B_User();
+    M_UserInfo mu = buser.GetLogin();
+    M_PageReg prMod = prBll.GetSelectByUserID(mu.UserID);
+}
+@section head{
+    <title>黄页管理</title>
+}
+@section content{
+<div id="pageflag" data-nav="page" data-ban="page"></div>
+<div class="container">
+<ol class="breadcrumb margin_top20">
+<li><a title="会员中心" href="@Url.Action("Default", "")">会员中心</a></li>
+<li class="active">企业黄页
+@if (prMod != null)
+{ <a href="/Page/Default?PageID=@prMod.ID.ToString()" target="_blank">我的黄页]</a>}
+</li>
+</ol>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+@{Html.RenderAction("NodeTree", "Pages");}
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+@*原ondatabinding()事件改为onload时间，不知是否可以*@
+<iframe style="width:100%;" src="MyContent" frameborder="0" name="main_right1" id="main_right1"></iframe>
+</div>
+</div>
+</div>
+}
+@section script{
+<script>
+function SetHeight(id, h) {
+    $("#" + id).css("height", h + "px");
+}
+</script>
+}

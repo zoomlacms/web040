@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>473</LabelID>
+    <LabelName>输出机械设备列表_分页表格形式</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出机械设备列表_分页</LabelDesc>
+    <LabelParam>ShowNum,8,1,显示数|NodeID,5,1,节点ID|TitleNum,40,1,标题长度|SysNum,100,1,简介长度|fl,,1,分类|lx,,1,类型|mode,,1,方式</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_mechanical ON ZL_CommonModel.ItemID=ZL_C_mechanical.ID</LabelTable>
+    <LabelField>ZL_CommonModel.NodeID,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_C_mechanical.img,ZL_C_mechanical.jxnum,ZL_C_mechanical.region,ZL_C_mechanical.synopsis,ZL_C_mechanical.time,ZL_C_mechanical.mode,ZL_C_mechanical.lx,ZL_C_mechanical.fl</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99  And ZL_C_mechanical.fl LIKE '%@fl%' And ZL_C_mechanical.lx LIKE '%@lx%' And ZL_C_mechanical.mode LIKE '%@mode%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="table-responsive"&gt;
+&lt;table class="table team_table"&gt;
+&lt;thead&gt;
+&lt;th width="76"&gt;图片&lt;/th&gt;
+&lt;th&gt;标题&lt;/th&gt;
+&lt;th&gt;需求地址&lt;/th&gt;
+&lt;th&gt;发布时间&lt;/th&gt;
+&lt;th&gt;机械方式&lt;/th&gt;
+&lt;th&gt;机械类型&lt;/th&gt;
+&lt;th&gt;机械分类&lt;/th&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{Repeate}
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="img"/})/}" alt="{Field="Title"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h3&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+&lt;td&gt;{ZL:Replace({Field="region"/},|, )/}&lt;/td&gt;
+&lt;td&gt;{ZL:FormatDate({Field="time"/},yyyy-MM-dd)/}&lt;/td&gt;
+&lt;td&gt;{Field="mode"/}&lt;/td&gt;
+&lt;td&gt;{Field="lx"/}&lt;/td&gt;
+&lt;td&gt;{Field="fl"/}&lt;/td&gt;
+&lt;/tr&gt;{/Repeate}
+&lt;tr&gt;
+&lt;td colspan="7"&gt;
+{ZL.Page id="响应式列表分页v3"/}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_mechanical"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

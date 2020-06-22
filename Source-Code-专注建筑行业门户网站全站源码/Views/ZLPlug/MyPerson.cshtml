@@ -1,0 +1,186 @@
+﻿@using System.Data;
+@using ZoomLa.BLL;
+@using ZoomLa.Common;
+@using ZoomLa.Model;
+@using ZoomLa.SQLDAL;
+@using ZoomLa.SQLDAL.SQL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Layout = "~/Areas/User/Views/Shared/_layout1.cshtml";
+    B_User buser = new B_User();
+    M_UserInfo mu = buser.GetLogin();
+    switch (B_User_Plat.IsPlatUser())
+    {
+        case 0://非Plat用户
+               //Response.Redirect("/Plat/Fill.aspx");
+            function.WriteErrMsg("你并非能力中心用户,请联系网络管理员,为你发送注册邀请!!");
+            break;
+        case 1://未审核
+            function.WriteErrMsg("你的帐户尚未审核,无法登录能力中心,请联系网络管理员!!!");
+            break;
+            //case 99://正常登录
+            //    Session["Main_IsPlatUser"] = true;
+            //    break;
+    }
+    if (!B_User_Plat.IsAdmin())
+    {
+        DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select * from ZL_Plat_Group where MemberIDS like '%," + mu.UserID + ",%' And GroupName='行政人事'", null);
+        if (dt.Rows.Count <= 0)
+        {
+            function.WriteErrMsg("你并非行政部门管理员，无法使用该功能！");
+        }
+    }
+}
+@section head{
+<title>证照管理</title>
+<script src="/JS/DatePicker/WdatePicker.js"></script>
+<style>
+body { font-size:12px;}
+.map_list { margin-left:11px; left:0; width:auto;}
+.map_list>li { margin-left:-11px; left:0;}
+.map_list1>li>h3 { padding:0; border:none; white-space:nowrap; line-height:17px;}
+.map_list1>li { padding-top:2px; padding-bottom:2px; padding-left:15px; background:url(/Template/JianTu/style/images/line.png) left top -3px no-repeat; }
+.map_list1_b { padding-top:1px; padding-bottom:1px; padding-left:3px; padding-right:3px; font-size:10px; line-height:1;}
+.map_list>li>h3 { padding-top:5px; padding-bottom:5px; border-radius:0; line-height:normal;}
+.map_list>li { margin-top:5px;}
+.allchk_l { display:none;}
+.table td { white-space:nowrap;}
+</style>
+}
+@section content{
+<div class="zhengzhao_guide">
+<div class="zhengzhao_mycert_t">
+<div class="zhengzhao_mycert_tl"><span>行政管理</span></div>
+<div class="zhengzhao_mycert_tr">
+<a href="/User/Content/AddContent4?NodeID=562&ModelID=68" class="zz_add">新增</a>
+<a href="javascript:;" onclick="EditFun();" class="zz_edit">修改</a>
+@if (ViewBag.Status.Equals("-2")){ <input type="button" value="批量还原" class="btn btn-info" onclick="mvcpage.bat({url: 'content_recover' });" /> }
+else { <a href="javascript:;" class="zz_delete"  onclick="mvcpage.bat({url: '/User/Content/content_del', confirm: '确定要批量移除吗' });">删除</a> }
+<a href="javascript:;" onclick="ViewFun();" class="zz_view">浏览</a>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="zhengzhao_xzrs_c">
+<form method="post" action="/User/Content/MyContent">
+<table class="table table-condensed zhengzhao_mycert_ct1">
+<tr>
+<td style="padding:0;">
+<select class="form-control input-sm pull-left" style="width:120px;">
+<option value="0">按姓名查找</option>
+<option value="1">按ID查找</option>
+</select>
+<input type="text" class="form-control input-sm pull-left mvcparam" id="skey" name="skey" style="width:200px;" />
+<button type="button" class="btn btn-info btn-sm pull-left" style="margin-left:5px; border-radius:0; padding-top:2px; padding-bottom:2px;" onclick="mvcpage.load();">查询</button>
+</td>
+</tr>
+</table>
+</form>
+<div style="width:100%; margin-top:5px; overflow:auto;">
+@Html.Action("Content_Data3", Model)
+</div>
+</div>
+</div>
+
+}
+@section script{
+<script src="/JS/SelectCheckBox.js"></script>
+<script>
+$("#EGV tr").click(function () {
+    $(this).find("input[name='idchk']").get(0).checked=true;
+});
+$(function () {
+    $(".tvNav a.list1").click(function () { showlist(this); });
+    if (window.localStorage.Content_tvNav) {
+        expand($("#" + window.localStorage.Content_tvNav));
+    }
+})
+function showlist(obj) {
+    $(obj).parent().parent().find("a").removeClass("activeLi");//a-->li-->ul
+    $(obj).parent().children("a").addClass("activeLi");//li
+    $(obj).parent().siblings("li").find("ul").slideUp();
+    $(obj).parent().children("ul").slideToggle();
+    window.localStorage.Content_tvNav = obj.id;
+}
+function expand(obj)//超链接,不以动画效果显示
+{
+    $a = $(obj).parent().parent(".tvNav ul").parent("li").find("a:first");
+    if ($a.length > 0) expand($a);
+    $(obj).addClass("activeLi");
+    $(obj).parent("li").children("ul").show();
+}
+$(".map_list1 li").each(function (index, element) {
+if ($(this).find("ul li").length > 0) {
+$(this).find("ul").hide();
+}
+else {
+$(this).children("h3").find(".btn").remove();
+$(this).find("ul").remove();
+}
+});
+$(".map_list1_b").click(function () {
+if ($(this).find("i").hasClass("fa-plus")) {
+$(this).parent().parent().children("ul").show();
+$(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+}
+else {
+$(this).parent().parent().children("ul").hide();
+$(this).find("i").removeClass("fa-minus").addClass("fa-plus");
+}
+})
+$().ready(function (e) {
+var gid = "0";
+var pid = "0";
+if (gid > 0) {
+$(".map_list1 li[data-gid='" + gid + "']").addClass("active");
+ShowFun($(".map_list1 li[data-gid='" + gid + "']"))
+
+}
+else
+{
+$("#txt_parentid").val(pid);
+}
+if (pid > 0) {
+$(".map_list1 li[data-gid='" + pid + "']").addClass("active");
+ShowFun($(".map_list1 li[data-gid='" + pid + "']"))
+}
+$("#txt_parentid").parent().parent().hide();
+})
+$(".map_list1_zzlb li a").click(function () {
+    $("#zzlb").val($(this).html());
+    mvcpage.load();
+});
+$(".map_list1_zy li a").click(function () {
+    $("#zy").val($(this).html());
+    mvcpage.load();
+});
+$(".map_list1_zszt li a").click(function () {
+    $("#zszt").val($(this).html());
+    mvcpage.load();
+});
+function ViewFun(){
+    if (parseInt($("input[name='idchk']:checked").val()) > 0) {
+        window.location.href="/Item/"+parseInt($("input[name='idchk']:checked").val())+".aspx"
+		//parent.ViewFun(parseInt($("input[name='idchk']:checked").val()));
+    }
+    else {
+        alert("未选择信息！");
+    }
+}
+function EditFun(){
+    if (parseInt($("input[name='idchk']:checked").val()) > 0) {
+        window.location.href = "/User/Content/AddContent4?ID=" + parseInt($("input[name='idchk']:checked").val());
+	}
+	else{
+	    alert("未选择信息！");
+	}
+}
+$().ready(function (e) {
+    setTimeout("SetHeight();", "500");
+});
+function SetHeight() {
+    if (window.top != window.self) {
+        parent.SetHeight("myoa_fright", $(document.body).height());
+    }
+}
+</script>
+}

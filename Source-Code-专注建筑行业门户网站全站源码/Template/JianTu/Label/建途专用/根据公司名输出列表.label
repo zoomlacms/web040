@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>384</LabelID>
+    <LabelName>根据公司名输出列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>根据公司名输出列表</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID|company,,1,公司名|TitleNum,50,1,标题长|ShowNum,5,1,显示数|synNum,30,1,简介长</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_qysjk ON ZL_CommonModel.ItemID=ZL_C_qysjk.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_C_qysjk.company,ZL_C_qysjk.settime,ZL_C_qysjk.address,ZL_C_qysjk.pic,ZL_C_qysjk.yyzzh</LabelField>
+    <LabelWhere>NodeID=@NodeID and status=99  And ZL_C_qysjk.company LIKE '%@company%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.GeneralID DESC</LabelOrder>
+    <LabelContent>{Repeate}  
+&lt;div class="need_nav"&gt;
+&lt;div class="media-left media-middle"&gt;
+&lt;a href="/Item/409.aspx"&gt;
+&lt;img class="media-object" src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="company"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="media-body" style=" vertical-align: middle;"&gt;
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"&gt;
+&lt;h3 class="media-heading"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;&lt;b&gt;{ZL:CutText({Field="company"/},@TitleNum,...)/}&lt;/b&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;h5&gt;{ZL:CutText({Field="address"/},@synNum,...)/}&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;h5&gt;{Field="yyzzh"/}&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;h5&gt;{ZL:FormatDate({Field="settime"/},yyyy-MM-dd)/}&lt;/h5&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

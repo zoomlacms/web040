@@ -1,0 +1,30 @@
+﻿@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Layout = "~/Areas/User/Views/Shared/_layout.cshtml";
+}
+@section head{
+ <script src="/JS/DatePicker/WdatePicker.js"></script>
+    <title>提现日志</title>
+}
+@section content{
+  <ol class="breadcrumb container">
+        <li><a title="会员中心" href="@Url.Action("Default","")">会员中心</a></li>
+        <li><a href="/User/Money/Moneyconver">币值转换</a></li>
+        <li class="active">提现日志 <a href="WithDraw">[申请提现]</a></li>
+    </ol>
+ <div class="container">
+        <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="input-group margin_l5" style="width:439px;">
+                <input type="text" ID="STime_T" placeholder="起始时间" class="form-control text_md mvcparam" onclick="WdatePicker({})" />
+                <input type="text" ID="ETime_T" placeholder="结束时间" class="form-control text_md mvcparam" onclick="WdatePicker({})"/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" onclick="mvcpage.load();"><span class="fa fa-search"></span></button>
+                </span>
+            </div>
+        </div>
+    </div>
+@Html.Partial("WithDrawLog_List",Model)
+</div>
+}
+@section script{}

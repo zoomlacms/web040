@@ -1,0 +1,455 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a></div>
+<div class="home_top_r">
+<ul>
+<li><a href="/">首页</a><span>|</span></li>
+<li><a href="/User/Login.aspx">登录</a><span>|</span></li>
+<li><a href="/User/Register.aspx">注册</a><span>|</span></li>
+<li><a href="/Guset">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container home_nav_t">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<a href="/" class="home_logo"><img src="{$LogoUrl/}" alt="{$SiteName/}"/></a> 
+<div class="home_logo_text"><span><a href="#">上海站</a></span><img src="{$CssDir/}images/logo2.png" alt=""></div> 
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12  home_search">
+<form action="/Search/SearchList.aspx" target="_blank" class="navbar-form navbar-left" role="search">
+<div class="form-group">
+<input type="text" class="form-control" name="keyword" placeholder="全站搜索" />
+</div>
+<button type="submit" class="btn btn-default">搜索</button>
+</form>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<div class="home_code">
+<a href="#"><img src="{$CssDir/}images/MobileCode.jpg" alt="二维码"></a>
+<p>访问手机版</p>
+</div>
+</div>
+</div>
+</div>
+<div class="realtive">
+<nav class="navbar navbar-default home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav home_list">
+<li class="dropdown open">
+<a  href="#" class="dropdown-toggle sort-list-1" data-toggle="dropdown" role="button" aria-expanded="ture">工程项目分类 <i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu second_list">		
+<li class="sort-list"><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a>
+<ul  class="third_list" hidden>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>住宅/别墅</a></li>
+</ul>
+</li>
+<li  class="sort-list"><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a>
+<ul class="third_list" hidden style="margin-top:0em">
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>商业综合</a></li>
+</ul>
+</li>
+<li  class="sort-list"><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a>
+<ul class="third_list" hidden style="margin-top:1.5em" >
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-home"></i>行政办</a></li>
+</ul>
+</li>
+<li  class="sort-list"><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a>
+<ul class="third_list" hidden style="margin-top:3.5em">
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-plus-square"></i>公疗卫生</a></li>
+</ul>
+</li>
+<li class="sort-list"><a href="#" target="_blank"><i class="fa fa-building"></i>工业建筑</a>
+<ul class="third_list" hidden style="margin-top:6em">
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>工业建筑</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>工业建筑</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>工业建筑</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>工业建筑</a></li>
+</ul>
+</li>
+<li class="sort-list"><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a>
+<ul class="third_list" hidden style="margin-top:8em">
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+</ul>
+</li>
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>酒店服务</a>
+<ul class="third_list" hidden style="margin-top:8em">
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>酒店服务</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-building"></i>酒店服务</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-chevron-right"></i>基本建设</a></li>
+</ul>
+</li>
+<li><a href="#" target="_blank"><i class="fa fa-user"></i>教育科研</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-user"></i>公用设施/道路</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>文化体育</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>展览</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>园林景观</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>电力/热力</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>化工/开采</a></li>
+<li><a href="#" target="_blank"><i class="fa fa-info-circle"></i>其他工程</a></li>
+</ul>
+</li>
+<li><a href="/">首页</a></li>                             
+<li><a href="#">施工队伍</a></li>
+<li><a href="#">机械设备</a></li>
+<li><a href="#">工程需求</a></li>
+<li><a href="#">工程项目资源</a></li>
+<li><a href="#">建筑业服务</a></li>
+<li><a href="#">建迅论坛</a></li>
+<li><a href="#">建筑业单位库</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(4)/}">关于我们</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+</div>
+<div class="container">
+<div class="news_nav">
+<ol class="breadcrumb">
+<li><a href="/">首页</a></li>
+<li class="active">建筑人才</li>
+</ol>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="panel panel-default home_r">
+<div class="panel-body home_peo_one">
+<div class="home_peo_t">
+<h3><a href="#">工程管理类</a></h3>
+</div>
+<div class="home_peo_u">
+<ul>
+<li><a href="#" target="_blank">总工程师</a></li>
+<li><a href="#" target="_blank">项目经理</a></li>
+<li><a href="#" target="_blank">施工员</a></li>
+<li><a href="#" target="_blank">机电工程师</a></li>
+<li><a href="#" target="_blank">土建工程师</a></li>
+<li><a href="#" target="_blank">资料员</a></li>
+<li><a href="#" target="_blank">施工员</a></li>
+<li><a href="#" target="_blank">园林工程师</a></li>
+</ul>
+</div>
+<div class="home_a home_peo_l home_ul_one" style="display: none;">
+<div class="home_li">
+<ul>
+<li><a href="#">总经理/副总经理</a></li>
+<li><a href="#">总工程师</a></li>
+<li><a href="#">工程总监</a></li>
+<li><a href="#">总监理师</a></li>
+<li><a href="#">技术部经理</a></li>
+<li><a href="#">安全部经理</a></li>
+<li><a href="#">工程部经理</a></li>
+<li><a href="#">质量部经理</a></li>
+<li><a href="#">项目经理</a></li>
+<li><a href="#">项目总工</a></li>
+<li><a href="#">土建工程师</a></li>
+<li><a href="#">装饰工程师</a></li>
+<li><a href="#">机电工程师</a></li>
+<li><a href="#">市政工程师</a></li>
+<li><a href="#">路桥隧工程师</a></li>
+<li><a href="#">幕墙工程师</a></li>
+<li><a href="#">监理员</a></li>
+<li><a href="#">安全工程师</a></li>
+<li><a href="#">钢结构工程师</a></li>
+<li><a href="#">园林工程师</a></li>
+<li><a href="#">监理工程师</a></li>
+<li><a href="#">咨询师</a></li>
+<li><a href="#">施工员</a></li>
+<li><a href="#">资料员</a></li>
+<li><a href="#">材料员</a></li>
+<li><a href="#">安全员</a></li>
+<li><a href="#">质检员</a></li>
+<li><a href="#">BIM工程师</a></li>
+<li><a href="#">测量工程师</a></li>
+<li><a href="#">其他</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel-body">
+<div class="home_peo_t">
+<h3><a href="#">规划设计类</a></h3>
+</div>
+<div class="home_peo_u">
+<ul>
+<li><a href="#" target="_blank">设计部经理</a></li>
+<li><a href="#" target="_blank">规划师</a></li>
+<li><a href="#" target="_blank">建筑（主创）</a></li>
+<li><a href="#" target="_blank">设计师</a></li>
+<li><a href="#" target="_blank">结构设计师</a></li>
+<li><a href="#" target="_blank">园林景观设计师</a></li>
+<li><a href="#" target="_blank">室内设计师</a></li>
+</ul>
+</div>
+</div>
+<div class="panel-body">
+<div class="home_peo_t">
+<h3><a href="#">工程经济类</a></h3>
+</div>
+<div class="home_peo_u">
+<ul>
+<li><a href="#" target="_blank">成本经理</a></li>
+<li><a href="#" target="_blank">合约经理造价工程师</a></li>
+<li><a href="#" target="_blank">采购经理</a></li>
+<li><a href="#" target="_blank">造价员</a></li>
+<li><a href="#" target="_blank">采购员</a></li>
+</ul>
+</div>
+</div>
+<div class="panel-body">
+<div class="home_peo_t">
+<h3><a href="#">节能环保类</a></h3>
+</div>
+<div class="home_peo_u">
+<ul>
+<li><a href="#" target="_blank">水处理工程师</a></li>
+<li><a href="#" target="_blank">项目经理</a></li>
+<li><a href="#" target="_blank">施工员</a></li>
+<li><a href="#" target="_blank">机电工程师</a></li>
+<li><a href="#" target="_blank">土建工程师</a></li>
+<li><a href="#" target="_blank">资料员</a></li>
+<li><a href="#" target="_blank">施工员</a></li>
+<li><a href="#" target="_blank">园林工程师</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+</div>
+</div>
+<div class="container">
+<div class="home_pic_list">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#"><img src="{$CssDir/}images/pic1.png" alt="pic1">
+<span>7*24全天候服务</span>
+<p>国际准客服</p></a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#"><img src="{$CssDir/}images/pic2.png" alt="pic2">
+<span>专业实名认证</span>
+<p>为每一个负责</p></a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#"><img src="{$CssDir/}images/pic3.png" alt="pic3">
+<span>国际验证</span>
+<p>最完整的资质认证</p></a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#"><img src="{$CssDir/}images/pic4.png" alt="pic4">
+<span>全程呵护</span>
+<p>9999的错误率支持</p></a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#"><img src="{$CssDir/}images/pic5.png" alt="pic5">
+<span>快速响应</span>
+<p>高效社区实时支持</p></a>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="footer">
+<div class="row">		
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 footer_l">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer_list">
+<ul>                                        
+<li> <a href="#">我的建途-我的事业平台</a></li>
+<li><a href="#">中国本土O2O领先品牌</a></li>
+<li><a href="#">汇聚最完整的建筑人才数据总库</a></li>
+<li><a href="#">个人用户全部免费</a></li>
+<li><a href="#">提供完整全产业关系链数据流服务</a></li>
+<li><a href="#">所有商家实名认证</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer_list">
+<ul>
+<li><a href="#">官方服务</a></li>
+<li><a href="#">会员注册</a></li>
+<li><a href="#">搜索总库</a></li>
+<li><a href="#">商家入住</a></li>
+<li><a href="#">企业服务</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer_list">
+<ul>
+<li><a href="#">主力频道</a></li>
+<li><a href="#">栏目名称</a></li>
+<li><a href="#">栏目名称</a></li>
+<li><a href="#">栏目名称</a></li>
+<li><a href="#">栏目名称</a></li>
+<li><a href="#">栏目名称</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer_list">
+<ul>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">关于公司</a></li>
+<li><a href="#">加盟代理</a></li>
+<li><a href="#">联系我们</a></li>
+<li><a href="#">官方新闻</a></li>
+<li><a href="#">运动社区</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer_r">
+<img src="{$CssDir/}images/code2.png" alt="二维码">
+</div>
+</div>
+</div>
+</div>
+<div class="home_friend">
+<div class="container">
+友情链接：
+<a href="http://zoomla.cn" target="_blank">逐浪软件</a>
+<a href="http://www.hx008.com" target="_blank">华夏互联</a>
+<a href="http://www.ziti163.com" target="_blank">字体网</a>
+<a href="http://1th.cn/" target="_blank">一特网</a>
+<a href="#">逐浪软件</a>
+<a href="#">逐浪软件</a>
+<a href="#">逐浪软件</a>
+<a href="#">逐浪软件</a>
+<a href="#">逐浪软件</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6 home_footer_l">
+版权所有：Copryright &copy;; 2016 建途网 Allright <a href="#">版权申明</a> <a href="#">品牌商标</a>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 col-md-offset-3 footer_r">
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footer_m">
+<b>关注我们</b>
+<ul>
+<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+<li><a href="#"><i class="fa fa-qq"></i></a></li>
+</ul>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<img src="{$CssDir/}Images/tel.png" alt=""/>
+<br/>
+<b>400-000-7777</b><br/>
+周一至周日9:00-22:00
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('scolls'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+	".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+ if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement("style");
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      "@-ms-viewport{width:auto!important}"
+    )
+  );
+  document.getElementsByTagName("head")[0].
+    appendChild(msViewportStyle);
+}
+
+//列表显示事件
+$(document).ready(function(e) {
+	$(".home_peo_one").mouseout(function(){
+		$(".home_ul_one").css("display","none");
+	});
+	$(".home_peo_one").mouseover(function(){
+		$(".home_ul_one").css("display","block");
+	});
+	$(".home_peo_l").mouseout(function(){
+		$(".home_ul_one").css("display","none");
+	});
+	$(".home_peo_l").mouseover(function(){
+		$(".home_ul_one").css("display","block");
+	});
+});
+
+$().ready(function(e) {
+    if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

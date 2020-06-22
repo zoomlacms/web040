@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>307</LabelID>
+    <LabelName>输出企业数据库标签</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出企业数据库标签</LabelDesc>
+    <LabelParam>ShowNum,10,1,显示数|TitieNum,40,1,标题长|NodeID,1,1,节点ID|mode,,1,经营模式</LabelParam>
+    <LabelTable>ZL_CommonModel left join ZL_C_qysjk on ZL_CommonModel.ItemID=ZL_C_qysjk.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.TopImg,ZL_C_qysjk.address,ZL_C_qysjk.capital,ZL_C_qysjk.company,ZL_C_qysjk.content,ZL_C_qysjk.good,ZL_C_qysjk.ID,ZL_C_qysjk.mode,ZL_C_qysjk.pic,ZL_C_qysjk.samecity,ZL_C_qysjk.settime,ZL_C_qysjk.trade</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99 And ZL_C_qysjk.mode LIKE '%@mode%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="row"&gt;
+  {Repeate}
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 company_t"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" class="black"&gt;{Field="company"/}&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt;&lt;/li&gt;
+&lt;li class="font_big"&gt;主营产品：{Field="good"/}&lt;/li&gt;
+&lt;li&gt;同城筛选：&lt;a href="#" class="blue"&gt;{Field="samecity"/}&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;地址：{Field="address"/}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;div class="company_img"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" alt="{Field="company"/}" /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;div class="company_img"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;
+&lt;img src="{Field="TopImg"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" alt="{Field="company"/}"/&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 margin_top"&gt;
+&lt;div class="company_img company_img_a"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}"&gt;更多产品&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="company_text"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="blue"&gt;成立时间&lt;/span&gt;&lt;br/&gt;{ZL:FormatDate({Field="settime"/},yyyy-MM-dd)/}&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="blue"&gt;注册资本&lt;/span&gt;&lt;br/&gt;人民币{Field="capital"/}万&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="blue"&gt;主营行业&lt;/span&gt;&lt;br/&gt;{Field="trade"/}&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="blue"&gt;经营模式&lt;/span&gt;&lt;br/&gt;{Field="mode"/}&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+  {/Repeate}
+&lt;/div&gt;
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

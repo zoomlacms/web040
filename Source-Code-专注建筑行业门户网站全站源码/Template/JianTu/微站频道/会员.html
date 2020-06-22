@@ -1,0 +1,97 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/JS/Controls/B_User.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default home_nav wei_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs" href="/"><img src="{$LogoUrl/}" alt="{$SiteName/}" style="height:40px; width:95px;" /></a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav home_list">
+<li><a href="{ZL:GetNodeLinkUrl(52)/}">建筑商城</a></li>
+<li id="team"><a href="{ZL:GetNodeLinkUrl(1)/}">施工队伍</a></li>
+<li id="jxsb"><a href="{ZL:GetNodeLinkUrl(5)/}">机械设备</a></li>
+<li id="jzyc"><a href="{ZL:GetNodeLinkUrl(40)/}">建筑用材</a></li>
+<li id="gcxq"><a href="{ZL:GetNodeLinkUrl(2)/}">采购平台</a></li>
+<li id="gczy"><a href="{ZL:GetNodeLinkUrl(6)/}">工程资源</a></li>
+<li id="jzfw"><a href="{ZL:GetNodeLinkUrl(37)/}">建筑服务</a></li>
+<li id="qysjk"><a href="{ZL:GetNodeLinkUrl(3)/}">企业数据库</a></li>
+<li class="dropdown" role="presentation" id="jxlt"><a href="{ZL:GetNodeLinkUrl(41)/}">建筑资讯</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<div class="wei_user">
+<div class="media">
+<div class="media-left">
+<a href="#">
+<img class="media-object" src="" alt="..." onerror="javascript:this.src='/UploadFiles/nopic.gif'"/>
+</a>
+</div>
+<div class="media-body media-middle">
+<h4 class="media-heading">Middle aligned media</h4>
+</div>
+</div>
+</div>
+{ZL.Label id="微站底部"/}
+</body>
+</html>
+<script>
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+ 		$(".nav_user>a").html("欢迎您<span>"+data.UserName+"!</span>");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+    $("#wei_user").addClass("active");
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+</script>

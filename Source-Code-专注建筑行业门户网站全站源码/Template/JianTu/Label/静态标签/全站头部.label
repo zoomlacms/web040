@@ -1,0 +1,160 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>295</LabelID>
+    <LabelName>全站头部</LabelName>
+    <LabelType>1</LabelType>
+    <LabelCate>静态标签</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable />
+    <LabelField />
+    <LabelWhere />
+    <LabelOrder />
+    <LabelContent>&lt;script src="/JS/Controls/B_User.js"&gt;&lt;/script&gt;
+&lt;div class="home_top"&gt;
+&lt;div class="container"&gt;
+&lt;div class="home_top_l"&gt;
+&lt;span class="pull-left"&gt;&lt;a href="/"&gt;建途首页&lt;/a&gt;&lt;/span&gt;
+&lt;div class="home_top_ls"&gt;
+&lt;div class="home_top_lsc"&gt;
+&lt;span class="site_span"&gt;{ZL:IPprovince()/}&lt;/span&gt;&lt;span class="site_ch"&gt;[切换城市]&lt;span class="caret"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;热门城市：&lt;/strong&gt;&lt;a href="/"&gt;全国&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(468)/}"&gt;上海&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(466)/}"&gt;北京&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(484)/}"&gt;广东&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(482)/}"&gt;湖北&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(486)/}"&gt;四川&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华北：&lt;a href="{ZL:GetNodeLinkUrl(466)/}"&gt;北京&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(467)/}"&gt;天津&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(470)/}"&gt;河北&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(471)/}"&gt;山西&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(492)/}"&gt;内蒙古&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华东：&lt;a href="{ZL:GetNodeLinkUrl(468)/}"&gt;上海&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(475)/}"&gt;江苏&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(476)/}"&gt;浙江&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(477)/}"&gt;安徽&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(478)/}"&gt;福建&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(480)/}"&gt;山东&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华南：&lt;a href="{ZL:GetNodeLinkUrl(484)/}"&gt;广东&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(493)/}"&gt;广西&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(485)/}"&gt;海南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华中：&lt;a href="{ZL:GetNodeLinkUrl(479)/}"&gt;江西&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(481)/}"&gt;河南&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(482)/}"&gt;湖北&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(483)/}"&gt;湖南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;西南：&lt;a href="{ZL:GetNodeLinkUrl(469)/}"&gt;重庆&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(486)/}"&gt;四川&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(487)/}"&gt;贵州&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(488)/}"&gt;云南&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(494)/}"&gt;西藏&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;西北：&lt;a href="{ZL:GetNodeLinkUrl(489)/}"&gt;陕西&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(490)/}"&gt;甘肃&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(491)/}"&gt;青海&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(495)/}"&gt;宁夏&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(496)/}"&gt;新疆&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;东北：&lt;a href="{ZL:GetNodeLinkUrl(472)/}"&gt;辽宁&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(473)/}"&gt;吉林&lt;/a&gt;&lt;a href="{ZL:GetNodeLinkUrl(474)/}"&gt;黑龙江&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;24小时客服热线：&lt;a href="tel:400-6789-314" class="all_phone"&gt;400-6789-314&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="home_top_r"&gt;
+&lt;ul class="nav"&gt;
+&lt;li class="nav_user"&gt;&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;用户登录&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+&lt;li&gt;&lt;a href="/User/Login"&gt;用户登录&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/User/Register"&gt;用户注册&lt;/a&gt;&lt;/li&gt;
+&lt;li class="logon" style="display:none;"&gt;&lt;a href="/User/Info/UserInfo"&gt;资料维护&lt;/a&gt;&lt;/li&gt;
+&lt;li class="logon" style="display:none;"&gt;&lt;a href="javascript:;" onClick="LogoutFun();"&gt;安全退出&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Class_461/NodeHot.aspx"&gt;APP下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Guest"&gt;客户服务&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--顶部结束--&gt;
+&lt;div class="container home_nav_t"&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-lg-5 col-md-5 col-sm-5 col-xs-12"&gt;
+&lt;a href="/" class="home_logo"&gt;&lt;img src="{$LogoUrl/}" alt="{$SiteName/}" /&gt;&lt;/a&gt;
+&lt;span class="home_logo_s"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 "&gt;
+&lt;div class="home_search"&gt;
+&lt;form action="/Search/SearchList" method="get" target="_blank"&gt;
+&lt;div class="home_search_r"&gt;
+&lt;div class="input-group"&gt;
+&lt;input type="text" name="keyword" class="form-control" placeholder="请输入关键字" /&gt;
+&lt;span class="input-group-btn"&gt;
+&lt;button class="btn btn-default" type="submit"&gt;搜索&lt;/button&gt;
+&lt;/span&gt;
+&lt;/div&gt;&lt;!-- /input-group --&gt;
+&lt;/div&gt;
+&lt;div class="home_search_l"&gt;
+&lt;a href="{ZL:GetHotinfo(1)/}" class="btn btn-default"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt; 免费发布&lt;/a&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"&gt;
+&lt;div class="home_code"&gt;
+&lt;img src="{$CssDir/}images/MobileCode.jpg" alt="二维码" /&gt;
+&lt;p&gt;访问手机版&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!--头部搜索结束--&gt;
+&lt;div class="realtive"&gt;
+&lt;nav class="navbar navbar-default home_nav" id="home_nav"&gt;
+&lt;div class="container"&gt;
+&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+&lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;span class="icon-bar"&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a class="navbar-brand visible-xs" href="/"&gt;&lt;img src="{$LogoUrl/}" alt="{$SiteName/}" style="height:40px; width:95px;" /&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+&lt;div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav home_list"&gt;
+&lt;li class="dropdown market hidden-xs"&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(52)/}" style="color:#FFF;" target="{ZL:GetNodeOpen(52)/}"&gt;建筑商城&lt;/a&gt;
+&lt;ul class="dropdown-menu second_list"&gt;
+{ZL.Label id="循环输出首页商城节点导航" NodeID="52" /}
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class="dropdown visible-xs"&gt;
+&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"&gt;建筑商城 &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;ul class="dropdown-menu" role="menu"&gt;
+{ZL.Label id="循环输出首页商城节点导航" NodeID="52" /}
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="team"&gt;&lt;a href="{ZL:GetNodeLinkUrl(1)/}" target="{ZL:GetNodeOpen(1)/}"&gt;施工队伍&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(2)/}" target="{ZL:GetNodeOpen(2)/}"&gt;采购平台&lt;/a&gt;&lt;/li&gt;
+&lt;li id="jxsb"&gt;&lt;a href="{ZL:GetNodeLinkUrl(5)/}" target="{ZL:GetNodeOpen(5)/}"&gt;机械设备&lt;/a&gt;&lt;/li&gt;
+&lt;li id="jzyc"&gt;&lt;a href="{ZL:GetNodeLinkUrl(40)/}" target="{ZL:GetNodeOpen(40)/}"&gt;建筑用材&lt;/a&gt;&lt;/li&gt;
+&lt;li id="gczy"&gt;&lt;a href="{ZL:GetNodeLinkUrl(6)/}" target="{ZL:GetNodeOpen(6)/}"&gt;工程资源&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown" role="presentation" id="jzfw"&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(37)/}" target="{ZL:GetNodeOpen(37)/}"&gt;建筑服务&lt;i class="fa fa-chevron-down"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;ul class="dropdown-menu second_list"&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(38)/}" target="{ZL:GetNodeOpen(38)/}"&gt;人才证书&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(50)/}" target="{ZL:GetNodeOpen(50)/}"&gt;培训咨询&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(39)/}" target="{ZL:GetNodeOpen(39)/}"&gt;第三方代理&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li id="qysjk"&gt;&lt;a href="{ZL:GetNodeLinkUrl(3)/}" target="{ZL:GetNodeOpen(3)/}"&gt;企业数据库&lt;/a&gt;&lt;/li&gt;
+&lt;li class="dropdown" role="presentation" id="jxlt"&gt;
+&lt;a href="{ZL:GetNodeLinkUrl(41)/}" target="{ZL:GetNodeOpen(41)/}"&gt;建筑资讯&lt;i class="fa fa-chevron-down"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;ul class="dropdown-menu second_list"&gt;		
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(42)/}" target="{ZL:GetNodeOpen(42)/}"&gt;新闻公告&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(51)/}" target="{ZL:GetNodeOpen(51)/}"&gt;政策法规&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(43)/}" target="{ZL:GetNodeOpen(43)/}"&gt;建筑文库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(44)/}" target="{ZL:GetNodeOpen(44)/}"&gt;建筑视频&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="/Ask"&gt;建筑问答&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{ZL:GetNodeLinkUrl(45)/}" target="{ZL:GetNodeOpen(45)/}"&gt;办事指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class="home_nav_oa"&gt;&lt;a href="{ZL:GetNodeLinkUrl(79)/}"&gt;&lt;span&gt;&lt;/span&gt;建途OA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+&lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;!--导航结束--&gt;</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>306</LabelID>
+    <LabelName>输出工程资源列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出工程资源列表</LabelDesc>
+    <LabelParam>ShowNum,10,1,显示数|NodeID,1,1,节点ID|AddNum,40,1,地址长|TitleNum,40,1,标题长|type,,1,类型</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_project ON ZL_CommonModel.ItemID=ZL_C_project.ID</LabelTable>
+    <LabelField>ZL_CommonModel.NodeID,ZL_CommonModel.TitleStyle,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_C_project.address,ZL_C_project.endtime,ZL_C_project.ID,ZL_C_project.pic,ZL_C_project.starttime,ZL_C_project.type,ZL_C_project.stage,ZL_C_project.city</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99 And ZL_C_project.type LIKE '%@type%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;table class="table table-bordered gongchen_table"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th width="100"&gt;阶段&lt;/th&gt;
+&lt;th&gt;标题&lt;/th&gt;
+&lt;th width="120"&gt;开竣工时间&lt;/th&gt;
+&lt;th&gt;城市&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{Repeate}
+&lt;tr&gt;
+&lt;td&gt;&lt;img src="{$CssDir/}images/process_{Field="stage"/}.jpg" alt="阶段" /&gt;&lt;/td&gt;
+&lt;td&gt;
+&lt;h3&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" style="{Field="TitleStyle"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;工程地址：{Field="address"/}&lt;/p&gt;
+&lt;/td&gt;
+&lt;td&gt;{ZL:FormatDate({Field="starttime"/},yyyy-MM-dd)/}&lt;br/&gt;{ZL:FormatDate({Field="endtime"/},yyyy-MM-dd)/}&lt;/td&gt;
+&lt;td&gt;{Field="city"/}&lt;/td&gt;
+&lt;/tr&gt;
+{/Repeate}
+&lt;tr&gt;
+&lt;td colspan="4"&gt;
+{ZL.Page id="响应式列表分页v3"/}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_project"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

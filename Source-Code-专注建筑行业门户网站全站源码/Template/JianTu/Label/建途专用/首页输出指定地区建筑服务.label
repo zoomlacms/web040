@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>463</LabelID>
+    <LabelName>首页输出指定地区建筑服务</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出首页建筑服务</LabelDesc>
+    <LabelParam>NodeID,6,1,节点ID|ShowNum,5,1,显示数|TitleNum,40,1,标题长|SysNum,40,1,简介长|City,,1,地市分站</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_project ON ZL_CommonModel.ItemID=ZL_C_project.ID</LabelTable>
+    <LabelField>ZL_CommonModel.NodeID,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_C_project.city,ZL_C_project.synopsis,ZL_C_project.type,ZL_C_project.dsfz</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status = 99 And ModelID=52 And dsfz like '%@City%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center"&gt;
+&lt;table class="table table-hover"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;标题&lt;/th&gt;
+&lt;th&gt;简介&lt;/th&gt;
+&lt;th class="text_center"&gt;发布城市&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{Repeate}
+&lt;tr&gt;
+&lt;th scope="row" class="home_tha"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{Field="type"/}&lt;/a&gt;&lt;/th&gt;
+&lt;td&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;{ZL:CutText({Field="synopsis"/},@SysNum,...)/}&lt;/td&gt;
+&lt;td class="text_center"&gt;{Field="city"/}&lt;/td&gt;
+&lt;/tr&gt;{/Repeate}
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_project"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

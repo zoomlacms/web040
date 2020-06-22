@@ -1,0 +1,417 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}{ZL.Source id="证照模型数据源标签地址栏传参"/}<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link rel="stylesheet" type="text/css" href="/App_Themes/V3.css" />
+<link rel="stylesheet" type="text/css" href="/App_Themes/User.css" />
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script src="/JS/Controls/Control.js"></script>
+<script src="/JS/jquery.validate.min.js"></script>
+<script src="/JS/OAKeyWord.js"></script>
+<script src="/JS/DatePicker/WdatePicker.js"></script>
+<script src="/JS/chinese.js"></script>
+<script src="/JS/Common.js"></script>
+<script src="/JS/Controls/ZL_Dialog.js"></script>
+<script src="/JS/ICMS/tags.json"></script>
+<script src="/JS/ZL_Content.js?v=20160514"></script>
+<script src="/JS/jquery.zclip.min.js"></script>
+<script src="/JS/Plugs/transtool.js"></script>
+<script>
+var username="{ZL:GetuserName()/}";
+var oarole='{ZL.Label id="输出当前登录用户办公角色ID" /}';
+if(username=="")
+{
+	window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+}
+else if(oarole==""){
+	alert("您尚未开通OA办公权限，请联系管理员开通！");
+	window.location.href="/User/";
+}
+</script>
+<style>
+body { font-size:12px;}
+.m715-50 { width:300px; height:30px; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+.table>tbody>tr>td { border:none}
+.preview_img_ul li img {}
+.width1100 { width:440px;}
+.modal_ifr { height:400px;}
+.error { display:block;}
+</style>
+</head>
+<body>
+<div class="zhengzhao_add_fc" style="padding-bottom:1em; border:1px solid #ddd;">
+<div class="zhengzhao_mycert_t">
+<div class="zhengzhao_mycert_tl"><span>添加证书</span></div>
+<div class="zhengzhao_mycert_tr">
+<a href="/User/MyCert" class="zz_close">返回列表</a>
+</div>
+<div class="clearfix"></div>
+</div>
+<div style="overflow:auto;">
+<form action="/User/Content/Content_Add3?NodeID=561&ModelID=67" method="post" id="form1">
+<table class="table table-condensed" style="margin-top:10px;margin-bottom:0;">
+<tbody>
+<tr>
+<td class="text-right" style="vertical-align:middle; text-align:right;" width="100">证件名称：</td>
+<td>
+<input class="form-control m715-50 required input-sm" id="Title" name="Title" type="text" value="" />
+<input id="TitleStyle" name="TitleStyle" type="hidden" value=""/>
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>姓名：</span></td>
+<td>
+<input type="text" name="txt_name" class="form-control m715-50" id="txt_name" />
+</td>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>证照类别：</span></td>
+<td>
+<input type="text" class="form-control m715-50 fd_text pull-left" id="txt_zzlb" style="width:228px" size="300" disabled />
+<input type="hidden" name="txt_zzlb" id="txt_zzlb_hd" />
+<button type="button" class="btn btn-info btn-sm pull-left margin_l5" onClick="ShowDiag('/Class_538/Default.aspx','证书类型');"><i class="fa fa-plus"></i></button>
+<button type="button" class="btn btn-danger btn-sm pull-left margin_l5" onClick="SetValue('txt_zzlb','');"><i class="fa fa-close"></i></button>
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>证件类型：</span></td>
+<td>
+<select class="form-control m715-50 fd_select" name="txt_zjlx" style="width:200px;" id="txt_zjlx">
+<option value="工作证">工作证</option>
+<option value="身份证">身份证</option>
+<option value="其他">其他</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>证书状态：</span></td>
+<td>
+<input type="text" class="form-control m715-50 fd_text pull-left" id="txt_zszt" style="width:228px" size="300" disabled />
+<input type="hidden" name="txt_zszt" id="txt_zszt_hd" />
+<button type="button" class="btn btn-info btn-sm pull-left margin_l5" onClick="ShowDiag('/Class_539/Default.aspx','证书状态');"><i class="fa fa-plus"></i></button>
+<button type="button" class="btn btn-danger btn-sm pull-left margin_l5" onClick="SetValue('txt_zszt','');"><i class="fa fa-close"></i></button>
+
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>名称描述：</span></td>
+<td class="fd_td_r">
+<textarea name="txt_mcms" id="txt_mcms" class="form-control m715-50 fd_textarea" style="height:30px"></textarea>
+</td>
+
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>性别：</span></td>
+<td class="fd_td_r">
+<select class="form-control m715-50 fd_select" name="txt_xb" id="txt_xb">
+<option value="男">男</option>
+<option value="女">女</option>
+</select>
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>身份证号：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_sfzh" class="form-control m715-50 fd_text" id="txt_sfzh" size="300" value="">
+</td>
+
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>编号：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_bh" class="form-control m715-50 fd_text" id="txt_bh" size="300" value="">
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>专业：</span></td>
+<td class="fd_td_r">
+<input type="text" class="form-control m715-50 fd_text pull-left" id="txt_zy" style="width:228px" disabled />
+<input type="hidden" name="txt_zy" id="txt_zy_hd" />
+<button type="button" class="btn btn-info btn-sm pull-left margin_l5" onClick="ShowDiag('/Class_540/Default.aspx','专业类别');"><i class="fa fa-plus"></i></button>
+<button type="button" class="btn btn-danger btn-sm pull-left margin_l5" onClick="SetValue('txt_zy','');"><i class="fa fa-close"></i></button>
+</td>
+
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>职称：</span></td>
+<td>
+<input type="text" class="form-control m715-50 fd_text pull-left" id="txt_zc" style="width:228px" size="300" disabled />
+<input type="hidden" name="txt_zc" id="txt_zc_hd" />
+<button type="button" class="btn btn-info btn-sm pull-left margin_l5" onClick="ShowDiag('/Class_541/Default.aspx','职称类别');"><i class="fa fa-plus"></i></button>
+<button type="button" class="btn btn-danger btn-sm pull-left margin_l5" onClick="SetValue('txt_zc','');"><i class="fa fa-close"></i></button>
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>内部编号：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_nbbh" class="form-control m715-50 fd_text" id="txt_nbbh" size="300" value="">
+</td>
+
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>存放部门：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_cfbm" class="form-control m715-50 fd_text" id="txt_cfbm" size="300" value="">
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>存放地点：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_cfdd" class="form-control m715-50 fd_text" id="txt_cfdd" size="300" value="">
+</td>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>状态：</span></td>
+<td class="fd_td_r">
+<input type="text" name="txt_zt" class="form-control m715-50 fd_text" id="txt_zt" size="300" value="">
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>是否由公司保存：</span></td>
+<td class="fd_td_r">
+<select class="form-control m715-50 fd_select" name="txt_spygsbc" id="txt_spygsbc">
+<option value="是">是</option>
+<option value="否">否</option>
+</select>
+</td>
+
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>发证日期：</span></td>
+<td class="fd_td_r">
+<input type="text" class="form-control m715-50" name="txt_fzrq" size="18" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' });" value="" id="txt_fzrq" />
+</td>
+<td class="text-right" style="vertical-align:middle;"><span>年检日期：</span></td>
+<td class="fd_td_r">
+<input type="text" class="form-control m715-50" name="txt_njrq" size="18" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' });" value="" id="txt_njrq" />
+</td>
+</tr>
+
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>图片：</span></td>
+<td class="fd_td_r">
+<div>
+<input type="text" class="form-control m715-50" value="" name="txt_pic" id="txt_pic" /><br/>
+<img id="Img_pic" src="/Images/nopic.gif" class="preview_img" width="30" height="30" onclick="PopImage('popImg','txt_pic',500, 400);" onerror="this.src='/Images/nopic.gif';" title="点击查看大图" alt="" />
+<span class="btn btn-group"><a href="javascript:;" onclick="GetCutpic('pic','8H5JM')" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> 图片修改</a></span>
+</div>
+<div>
+<iframe id="Upload_pic" src="/common/ContentFile.aspx?ModelID=67&FieldName=pic&NodeId=561&S=1" style="border:none;width:200px;height:46px;" scrolling="no"></iframe>
+</div>
+<div id="popImg" style="display:none;">
+<div class="ptitle">
+<span onclick="javascript:document.getElementById(&quot;popImg&quot;).style.visibility = &quot;hidden&quot;;" title="Close" class="ViewPicClo"> × </span>预览图片
+</div>
+<div id="divImage">
+<img id="imgView" src="#" alt="预览的图片" onload="AutoSetSize(this, 490, 360);">
+</div>
+</div>
+</td>
+<td class="text-right" style="vertical-align:middle;">附件：</td>
+<td class="fd_td_r">
+<ul data-id="txt_pics" id="ul_pics" class="preview_img_ul"></ul>
+<div class="clearfix"></div>
+<div>
+<textarea id="txt_pics" name="txt_pics" class="form-control m715-50" rows="1" style="width:200px;"></textarea>
+</div>
+<div class="btn-group" style="padding-left:0px;padding-top:2px;">
+<input type="button" class="btn btn-primary btn-xs" value="批量上传" onclick="UpFileDiag({'field':'images','nodeid':561,'inputid':'pics','name':'pics','uploaddir':'/UploadFiles/','iswater':'0'});" />
+<input type="button" class="btn btn-info btn-xs" value="远程抓取" onclick="UpFileDiag({'field':'images','nodeid':561,'inputid':'pics','name':'pics','uploaddir':'/UploadFiles/','iswater':'0'}, '/Plugins/WebUploader/RemoteImg.aspx');" />
+<input type="button" class="btn btn-info btn-xs" value="图片库" onclick="SelectUppic({'field':'images','nodeid':561,'inputid':'pics','name':'pics','uploaddir':'/UploadFiles/','iswater':'0'});" />
+<input type="button" class="btn btn-info btn-xs" value="组图排序" onclick="SortImg({'field':'images','nodeid':561,'inputid':'pics','name':'pics','uploaddir':'/UploadFiles/','iswater':'0'})" />
+</div>
+</td>
+</tr>
+<tr>
+<td class="text-right" style="vertical-align:middle;"><span>备注：</span></td>
+<td class="fd_td_r" colspan="3">
+<textarea name="txt_remind" id="txt_remind" class="form-control m715-50 fd_textarea" style="width:100%"></textarea>
+</td>
+</tr>
+<tr class="fd_tr fd_tr_optiontype" hidden>
+<td class="text-right" style="vertical-align:middle;"><span>地市分站：</span></td>
+<td class="fd_td_r">
+<select class="form-control m715-50 fd_select" name="txt_dsfz">
+<option value="">全站</option>
+<option value="北京">北京</option>
+<option value="天津">天津</option>
+<option value="上海">上海</option>
+<option value="重庆">重庆</option>
+<option value="河北">河北</option>
+<option value="山西">山西</option>
+<option value="辽宁">辽宁</option>
+<option value="吉林">吉林</option>
+<option value="黑龙江">黑龙江</option>
+<option value="江苏">江苏</option>
+<option value="浙江">浙江</option>
+<option value="安徽">安徽</option>
+<option value="福建">福建</option>
+<option value="江西">江西</option>
+<option value="山东">山东</option>
+<option value="河南">河南</option>
+<option value="湖北">湖北</option>
+<option value="湖南">湖南</option>
+<option value="广东">广东</option>
+<option value="海南">海南</option>
+<option value="四川">四川</option>
+<option value="贵州">贵州</option>
+<option value="云南">云南</option>
+<option value="陕西">陕西</option>
+<option value="甘肃">甘肃</option>
+<option value="青海">青海</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="text-center"><button type="submit" class="btn btn-primary">添加证照</button></div>
+</form>
+</div>
+</div>
+
+
+</body>
+</html>
+<script>
+
+$().ready(function(e) {
+	var uid='{ZL:GetuserID()/}';
+	var suprole='{ZL.Label id="获取当前登录用户公司超管角色ID" /}';
+	var zzgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="证照管理" /}';
+	var xzrs='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="行政人事" /}';
+	var jygl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="经营管理" /}';
+	var xmgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="项目管理" /}';
+	var cwb='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="财务部" /}';
+	var platrole='{ZL.Label id="输出当前登录用户办公角色" /}';
+	
+	if(platrole.indexOf(","+suprole+",")>=0){
+		$(".myoa_funlist").show();
+		$(".myoa_main").show();
+	}
+	else if(zzgl.indexOf(","+uid+",")>=0){
+		
+	}
+	else {
+		window.location.href="/User/MyCert";
+	}
+});
+
+//手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$("#Main_UName_T").html(data.UserName);
+	}
+	else
+		window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+});
+$(".map_list1 li").each(function(index, element) {
+    if($(this).find("ul li").length>0){
+		$(this).find("ul").hide();
+	}
+	else{
+		$(this).children("h3").find(".btn").remove();
+		$(this).find("ul").remove();
+	}
+});
+$(".map_list1_b").click(function(){
+	if($(this).find("i").hasClass("fa-plus")){
+		$(this).parent().parent().children("ul").show();
+		$(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+	}
+	else{
+		$(this).parent().parent().children("ul").hide();
+		$(this).find("i").removeClass("fa-minus").addClass("fa-plus");
+	}
+});
+$().ready(function(e) {
+	$(".map_list1 li[data-gid='722']").addClass("active");
+	ShowFun($(".map_list1 li[data-gid='722']"))
+});
+function ShowFun(obj){
+	if(parseInt($(obj).data("pid"))>0){
+		$(obj).parent().show();
+		$(obj).parent().prev("h3").find(".btn i").removeClass("fa-plus").addClass("fa-minus");
+		ShowFun($(obj).parent().parent())
+	}
+	else{
+	}
+}
+$("form").validate();
+function SetHeight(h){
+	//$(".modal_ifr").css("height",h+"px");
+}
+function SetValue(id,value){
+	$("#"+id).val(value);
+	$("#"+id+"_hd").val(value);
+}
+$().ready(function(e) {
+    var gid="{$GetRequest(ID)$}";
+	if(parseInt(gid)>0){
+		$("#form1").attr("action","/User/Content/Content_Add3?ID="+gid);
+		$("#Title").val("{SField sid="证照模型数据源标签地址栏传参" FD="Title" page="0"/}");
+		$("#txt_name").val("{SField sid="证照模型数据源标签地址栏传参" FD="name" page="0"/}");
+		$("#txt_zzlb").val("{SField sid="证照模型数据源标签地址栏传参" FD="zzlb" page="0"/}");
+		$("#txt_zzlb_hd").val("{SField sid="证照模型数据源标签地址栏传参" FD="zzlb" page="0"/}");
+		$("#txt_zjlx").val("{SField sid="证照模型数据源标签地址栏传参" FD="zjlx" page="0"/}");
+		$("#txt_zzlb_hd").val("{SField sid="证照模型数据源标签地址栏传参" FD="zzlb" page="0"/}");
+		$("#txt_zszt").val("{SField sid="证照模型数据源标签地址栏传参" FD="zszt" page="0"/}");
+		$("#txt_zszt_hd").val("{SField sid="证照模型数据源标签地址栏传参" FD="zszt" page="0"/}");
+		$("#txt_mcms").val("{SField sid="证照模型数据源标签地址栏传参" FD="mcms" page="0"/}");
+		$("#txt_xb").val("{SField sid="证照模型数据源标签地址栏传参" FD="xb" page="0"/}");
+		$("#txt_sfzh").val("{SField sid="证照模型数据源标签地址栏传参" FD="sfzh" page="0"/}");
+		$("#txt_bh").val("{SField sid="证照模型数据源标签地址栏传参" FD="bh" page="0"/}");
+		$("#txt_zy").val("{SField sid="证照模型数据源标签地址栏传参" FD="zy" page="0"/}");
+		$("#txt_zy_hd").val("{SField sid="证照模型数据源标签地址栏传参" FD="zy" page="0"/}");
+		$("#txt_zc").val("{SField sid="证照模型数据源标签地址栏传参" FD="zc" page="0"/}");
+		$("#txt_zc_hd").val("{SField sid="证照模型数据源标签地址栏传参" FD="zc" page="0"/}");
+		$("#txt_nbbh").val("{SField sid="证照模型数据源标签地址栏传参" FD="nbbh" page="0"/}");
+		$("#txt_cfbm").val("{SField sid="证照模型数据源标签地址栏传参" FD="cfbm" page="0"/}");
+		$("#txt_cfdd").val("{SField sid="证照模型数据源标签地址栏传参" FD="cfdd" page="0"/}");
+		$("#txt_zt").val("{SField sid="证照模型数据源标签地址栏传参" FD="zt" page="0"/}");
+		$("#txt_spygsbc").val("{SField sid="证照模型数据源标签地址栏传参" FD="spygsbc" page="0"/}");
+		$("#txt_fzrq").val("{SField sid="证照模型数据源标签地址栏传参" FD="fzrq" page="0"/}");
+		$("#txt_njrq").val("{SField sid="证照模型数据源标签地址栏传参" FD="njrq" page="0"/}");
+		$("#txt_pic").val("{SField sid="证照模型数据源标签地址栏传参" FD="pic" page="0"/}");
+		$("#txt_pics").val('{SField sid="证照模型数据源标签地址栏传参" FD="pics" page="0"/}');
+		$("#Img_pic").attr("src","{ZL:GetPicUrl({SField sid="证照模型数据源标签地址栏传参" FD="pic" page="0"/})/}");
+		var pics='{SField sid="证照模型数据源标签地址栏传参" FD="pics" page="0"/}';
+		if(pics!=""){
+			pics=JSON.parse(pics);
+			var str="";
+			for(var i=0;i<pics.length;i++){
+				str+='<li class="margin_l5"><img src="/uploadfiles/'+pics[i].url+'" class="preview_img"><div class="file-panel" style="height: 0px;"><span class="cancel" title="删除">删除</span><span class="editpic" title="编辑">编辑</span></div></li>';
+			}
+			$("#ul_pics").html(str);
+		}
+		$("#txt_remind").val("{SField sid="证照模型数据源标签地址栏传参" FD="remind" page="0"/}");
+	}
+});
+$().ready(function (e) {
+    setTimeout("SetHeight();", "500");
+});
+function SetHeight() {
+    if (window.top != window.self) {
+        parent.SetHeight("myoa_fright", $(document.body).height());
+    }
+}
+</script>

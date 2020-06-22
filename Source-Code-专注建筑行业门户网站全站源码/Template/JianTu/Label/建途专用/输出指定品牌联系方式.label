@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>453</LabelID>
+    <LabelName>输出指定品牌联系方式</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>Brand,,1,品牌</LabelParam>
+    <LabelTable>ZL_Manufacturers</LabelTable>
+    <LabelField>Coadd,CoPhoto,CoWebsite,CreateTime,Email,FaxCode,PostCode</LabelField>
+    <LabelWhere>Producername='@Brand'</LabelWhere>
+    <LabelOrder>ZL_Manufacturers.CreateTime DESC</LabelOrder>
+    <LabelContent>创建日期：{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;br/&gt;
+公司地址：{Field="Coadd"/}&lt;br/&gt;
+联系电话：{Field="CoPhoto"/}&lt;br/&gt;
+传真号码：{Field="FaxCode"/}&lt;br/&gt;
+邮政编码：{Field="FaxCode"/}&lt;br/&gt;
+厂商主页：{Field="CoWebsite"/}&lt;br/&gt;
+电子邮件：{Field="Email"/}</LabelContent>
+    <LabelCount>1</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+  </Table>
+</NewDataSet>

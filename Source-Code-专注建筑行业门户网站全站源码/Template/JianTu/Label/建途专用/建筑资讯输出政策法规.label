@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>346</LabelID>
+    <LabelName>建筑资讯输出政策法规</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>建筑资讯输出政策法规</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,6,1,显示数|synNum,40,1,简介长|TitleNum,40,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Policy ON ZL_CommonModel.ItemID=ZL_C_Policy.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_Policy.synopsis</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99</LabelWhere>
+    <LabelOrder>ZL_CommonModel.GeneralID DESC</LabelOrder>
+    <LabelContent>&lt;div class="news_information"&gt;
+&lt;div class="inf_tit"&gt;
+&lt;span&gt;{ZL.Label id="输出指定ID节点名" NodeID="51" /}&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="inf_con"&gt;
+&lt;ul class="inf_u"&gt;
+  {Repeate}
+&lt;li&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;span&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/span&gt;&lt;/a&gt;
+&lt;br/&gt;
+&lt;label&gt;{ZL:CutText({Field="synopsis"/},@synNum,...)/}&lt;/label&gt;
+&lt;/li&gt;
+{/Repeate}
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Policy"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>350</LabelID>
+    <LabelName>输出建筑服务列表</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出建筑服务列表</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|TitleNum,40,1,标题长|synNum,50,1,简介长</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Article ON ZL_CommonModel.ItemID=ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.CreateTime,ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_CommonModel.TopImg,ZL_C_Article.synopsis</LabelField>
+    <LabelWhere>(NodeID= @NodeID) and status = 99</LabelWhere>
+    <LabelOrder>ZL_CommonModel.GeneralID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="media"&gt;
+&lt;div class="media-left set_img"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;img class="media-object" src="{Field="TopImg"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="{Field="Title"/}"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="media-body fuwu_con"&gt;
+&lt;h4 class="media-heading"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/h4&gt;
+&lt;div&gt;&lt;label&gt;摘要&lt;/label&gt;：{ZL:CutText({Field="synopsis"/},@synNum,...)/}&lt;/div&gt;
+&lt;div&gt;&lt;label&gt;发布时间：{ZL:FormatDate({Field="CreateTime"/},yyyy-MM-dd)/}&lt;/label&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+{/Repeate}
+{ZL.Page id="大图标响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Article"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

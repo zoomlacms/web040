@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>485</LabelID>
+    <LabelName>获取当前登录用户公司成员列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>ZL_User_Plat LEFT JOIN ZL_User ON ZL_User_Plat.UserID=ZL_User.UserID</LabelTable>
+    <LabelField>ZL_User_Plat.UserFace,ZL_User_Plat.UserID,ZL_User.UserName</LabelField>
+    <LabelWhere>CompID=(select CompID from ZL_User_plat where UserID='{ZL:GetuserID()/}') And ZL_User_Plat.Status=1</LabelWhere>
+    <LabelOrder>ZL_User_Plat.UserID ASC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;li class="media"&gt;
+&lt;div class="media-left"&gt;&lt;a href="/Common/Chat/Chat.aspx?uid={Field="UserID"/}"&gt;&lt;img class="media-object" src="{Field="UserFace"/}" alt="{Field="TrueName"/}"  onerror="javascript:this.src='/Images/userface/noface.png';"/&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="media-body media-middle"&gt;
+&lt;h4 class="media-heading"&gt;&lt;a href="/Common/Chat/Chat.aspx?uid={Field="UserID"/}"&gt;{Field="UserName"/}&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;{ZL.Label id="获取指定用户部门名称" UserID="{Field="UserID"/}" /}&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;{/Repeate}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_User_Plat","tb_s":"ZL_User"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

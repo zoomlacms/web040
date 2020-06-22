@@ -1,0 +1,222 @@
+﻿@using System.Data;
+@using ZoomLa.BLL;
+@using ZoomLa.Model;
+@using ZoomLa.Model.User;
+@using ZoomLa.Common;
+@using ZoomLa.SQLDAL;
+@model ZoomLa.Model.M_UserInfo
+@{
+    B_Group groupBll = new B_Group();
+    M_Group groupMod = groupBll.SelReturnModel(Model.GroupID);
+    Layout = "~/Areas/User/Views/Shared/_empty.cshtml";
+    M_PointGrounp pgMod = (M_PointGrounp)ViewBag.pgMod;
+    M_Uinfo basemu = (M_Uinfo)ViewBag.basemu;
+    DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select * from ZL_CommonModel where NodeID in (select NodeID from ZL_Node where ParentID=535) And ModelID in (72,73) And Status=99 And Inputer='" + Model.UserName + "'", null);
+    int status = -100;
+    int gid = 0;
+    if (dt.Rows.Count > 0)
+    {
+        status = DataConvert.CLng(dt.Rows[0]["Status"]);
+        if (status == 99)
+        {
+            //Response.Redirect("/User/");
+        }
+        else if (status == 0)
+        {
+            gid = DataConvert.CLng(dt.Rows[0]["GeneralID"]);
+        }
+    }
+    //if (dt.Rows.Count <= 0)
+    //{
+    //    Response.Redirect("/User/Certification");
+    //}
+}
+@section head{
+<title>会员中心-@Call.SiteName</title>
+<style>
+.u_menu { padding-bottom:0;}
+.user_menu { margin-bottom:20px;}
+</style>
+}
+@section content{
+
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">局域网</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="/">全国</a><a href="/Class_468/Default.aspx">上海</a><a href="/Class_466/Default.aspx">北京</a><a href="/Class_484/Default.aspx">广东</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_486/Default.aspx">四川</a></li>
+<li>华北：<a href="/Class_466/Default.aspx">北京</a><a href="/Class_467/Default.aspx">天津</a><a href="/Class_470/Default.aspx">河北</a><a href="/Class_471/Default.aspx">山西</a><a href="/Class_492/Default.aspx">内蒙古</a></li>
+<li>华东：<a href="/Class_468/Default.aspx">上海</a><a href="/Class_475/Default.aspx">江苏</a><a href="/Class_476/Default.aspx">浙江</a><a href="/Class_477/Default.aspx">安徽</a><a href="/Class_478/Default.aspx">福建</a><a href="/Class_480/Default.aspx">山东</a></li>
+<li>华南：<a href="/Class_484/Default.aspx">广东</a><a href="/Class_493/Default.aspx">广西</a><a href="/Class_485/Default.aspx">海南</a></li>
+<li>华中：<a href="/Class_479/Default.aspx">江西</a><a href="/Class_481/Default.aspx">河南</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_483/Default.aspx">湖南</a></li>
+<li>西南：<a href="/Class_469/Default.aspx">重庆</a><a href="/Class_486/Default.aspx">四川</a><a href="/Class_487/Default.aspx">贵州</a><a href="/Class_488/Default.aspx">云南</a><a href="/Class_494/Default.aspx">西藏</a></li>
+<li>西北：<a href="/Class_489/Default.aspx">陕西</a><a href="/Class_490/Default.aspx">甘肃</a><a href="/Class_491/Default.aspx">青海</a><a href="/Class_495/Default.aspx">宁夏</a><a href="/Class_496/Default.aspx">新疆</a></li>
+<li>东北：<a href="/Class_472/Default.aspx">辽宁</a><a href="/Class_473/Default.aspx">吉林</a><a href="/Class_474/Default.aspx">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li style="line-height:normal;"><a href="#" style="padding-top:3px; padding-bottom:3px;"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/bt_blue_76X24.png" alt="QQ登录"></a></li>
+<li class="nav_user">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎您，<span>@Model.UserName!</span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login.aspx">会员中心</a></li>
+<li class="logon"><a href="/User/Info/UserInfo.aspx">资料维护</a></li>
+<li class="logon"><a href="javascript:;" onclick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container myuser_top">
+<div class="media">
+<div class="media-left"><a href="/User/Info/UserInfo"><img class="media-object" src="@Model.UserFace" alt="@Model.UserName" onerror="javascript:this.src='/Images/userface/noface.png';" /></a></div>
+<div class="media-body media-middle">
+<h4 class="media-heading">@Model.UserName <span><a href="/User/"><i class="fa fa-home"></i> 我的主页</a></span></h4>
+<p>
+<span>会员类型：@groupMod.GroupName</span>
+<span>加入时间：@Model.RegTime.ToString()</span>
+<span>余额：<a href="info/ConsumeDetail?SType=1" title="点击查看资金明细"><i class="fa fa-rmb"></i> @Model.Purse.ToString("f2")</a> <a href="/PayOnline/SelectPayPlat.aspx">[在线充值]</a> <a href="/User/Money/WithDraw">[申请提现]</a></span>
+<span>积分：<a href="info/ConsumeDetail?SType=3" title="点击查看积分明细"><i class="fa fa-credit-card-alt"></i> @Model.UserExp.ToString("f0")</a></span>
+</p>
+</div>
+</div>
+</div>
+
+@RenderPage("~/Areas/User/Views/Shared/ASCX/DefaultTop.cshtml") 
+
+<div class="container myuser_hmain">
+<ol class="breadcrumb margin_top20">
+<li><a href="@Url.Action("Default","")">会员中心</a></li>
+<li class="active">功能引导</li>
+</ol>
+<div class="u_menu">
+<div class="row padding5">
+@ViewBag.userhtml
+<div class="clearfix"></div>
+</div>
+</div>
+@if (dt.Rows.Count <= 0)
+{
+<div class="myuser_cert">
+<div class="myuser_cert_t">认证性质<span>认证通过后不可修改</span></div>
+@if (status < 0)
+{
+<div class="myuser_cert_p">
+<p>
+<strong>1、商家</strong>：指从事生产、经营建筑用材、机械设备及代理服务的个人和各种组织。<br />
+<strong>2、企业</strong>：指按照公司法设立的，具备法人资格、注册资本并实行独立核算的盈利性经济组织及所有需要资质或相关许可证书的企业。<br />
+<strong>3、人才技工</strong>：指具有相关职业技能证书和具有一定的专业技能型人才<br />
+<strong>4、其他</strong>：除上述三种情况以外的社会组织、机构团体及个人用户
+</p>
+</div>
+<div class="myuser_cert_g">
+<label class="radio-inline"><input type="radio" name="gid_rad" value="6" checked> 商家</label>
+<label class="radio-inline"><input type="radio" name="gid_rad" value="7"> 企业</label>
+<label class="radio-inline"><input type="radio" name="gid_rad" value="8"> 人才技工</label>
+</div>
+<div class="myuser_cert_b"><button type="button" class="btn btn-primary" onclick="NextFun();">下一步</button></div>
+}
+@if (status == 0)
+{
+<div class="myuser_cert_p">
+<p>您提交的资料正在审核，请耐心等待！或者您也可以点击按钮<a href="/User/Content/AddContent1?ID=@gid" class="btn btn-info">修改认证</a>修改认证资料！</p>
+</div>
+}
+</div>
+}
+</div>
+
+
+@MvcHtmlString.Create(Call.GetLabel("{ZL.Label id=\"全站底部\"/}"))
+}
+@section script{
+<script src="/JS/Controls/B_User.js"></script>
+<script>
+    $().ready(function (e) {//菜单颜色配置
+        var colorArr = new Array('#c47f3e', '#669933', '#27a9e3', '#f05033', '#990066', '#9999FF', '#E48632', '#990000', '#22afc2', '#6633FF', '#9900FF', '#1FA67A');
+        var count = 12;
+        for (var i = 0; i < count; i++) {
+            $(".user_menu").eq(i).css("background", colorArr[i % 12]);
+        }
+        if ($(".user_menu_sub li").length < 1)
+            $(".u_menu_more").remove();
+    })
+    $("#mimenu_btn").click(function (e) {
+        if ($(".user_mimenu_left").width() > 0) {
+            $(".user_mimenu_left ul").fadeOut(100);
+            $(".user_mimenu_left").animate({ width: 0 }, 200);
+        }
+        else {
+            $(".user_mimenu_left").animate({ width: 150 }, 300);
+            $(".user_mimenu_left ul").fadeIn();
+        }
+    });
+    //会员菜单更多显示/隐藏
+    $("#more_btn").click(function (e) {
+        if ($(".user_menu_sub").css("display") == "none") {
+            $(".user_menu_sub").slideDown();
+            $(this).find("i").removeClass("fa-angle-double-down");
+            $(this).find("i").addClass("fa-angle-double-up");
+        }
+        else {
+            $(".user_menu_sub").slideUp(200);
+            $(this).find("i").removeClass("fa-angle-double-up");
+            $(this).find("i").addClass("fa-angle-double-down");
+        }
+    });
+    //会员搜索
+    $("#sub_btn").click(function (e) {
+        if ($("#key").val() == "")
+            alert("搜索关键字为空!");
+        else
+            window.location = "/User/Common/SearchResult?key=" + escape($("#key").val());
+    });
+    //搜索回车事件
+    function IsEnter(obj) {
+        if (event.keyCode == 13) {
+            $("#sub_btn").click(); return false;
+        }
+    }
+    //OA权限判断
+    var oanum="@Call.GetLabel("{ZL.Label id=\"输出办公角色权限\" /}")";
+    if(oanum>0){
+        $("#nav_oa").show();
+    }
+    else{
+        $("#nav_oa").remove();
+    }
+    var buser = new B_User();
+    function LogoutFun()
+    {
+        buser.Logout(function(){location=location;});
+    }
+	function NextFun() {
+        var gid = $("input[name='gid_rad']:checked").val();
+        switch (gid) {
+            case "6":
+                window.location.href = "/User/Content/AddContent1?NodeID=536&ModelID=72&gid=6";
+                break;
+            case "7":
+                window.location.href = "/User/Content/AddContent1?NodeID=536&ModelID=72&gid=7";
+                break;
+            case "8":
+                window.location.href = "/User/Content/AddContent1?NodeID=537&ModelID=73&gid=8";
+                break;
+            case "9":
+                window.location.href = "/User/Content/AddContent1?NodeID=537&ModelID=73&gid=9";
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+}

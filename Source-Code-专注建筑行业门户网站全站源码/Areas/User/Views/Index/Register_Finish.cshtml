@@ -1,0 +1,74 @@
+﻿@model ZoomLa.Model.M_UserInfo
+@{
+    bool isok = ViewBag.isok;
+    Layout = "~/Areas/User/Views/Index/_RegisterLayout.cshtml";
+}
+@section head{
+<title>注册完成</title>
+<style>
+body { font-family:"STHeiti","Microsoft YaHei","黑体","arial";}
+.agr_content {z-index: 1; top: 0; left: 0; color: #fff; background-color: #369;  padding: 12px; opacity: 1;}
+.agr_head{margin-top: 5em; border-radius: 15px; height: 28px; width: 100%; background-color: #BBB; color: #282828;margin:10px 0px; text-align: center;}
+.border_right { margin:auto; padding-top:20px; padding-bottom:20px; padding-left:30px; padding-right:30px; box-shadow:0 0 5px rgba(0,0,0,0.45); width:360px; border-radius:4px;}
+.reg_sub_t { margin-bottom:15px; padding-bottom:10px; font-size:1.2em; font-weight:bold; color:#286bd6; text-align:center; border-bottom:3px solid #286bd6;}
+.reg_sub_item li { margin-bottom:10px;}
+.login_remind { margin-top:10px; margin-bottom:0;}
+.agr_content { margin-top:10px; margin-bottom:10px; }
+.reg_info { margin:auto; width:360px;}
+.reg_info ul { margin-bottom:0; padding-left:0; list-style:none;}
+.reg_info li { margin-bottom:10px;}
+.reg_info li span { color:#c00;}
+.d_ok { color: green; }
+.d_err { color: red; }
+.tdbg { background: none !important; }
+.login_logo img { display:inline-block; margin-top:30px; margin-right:30px; max-width:10em; }
+.login_footer { text-align:center;}
+.login_footer a { margin-left:10px;}
+#BtnSubmit { border:1px solid #00a3e9; background:#00a3e9;}
+@@media screen and (max-width:768px){ /*小于768px私有*/
+.border_right { margin-top:1em; margin-bottom:1em; margin-left:0; width:100%;}
+}
+</style>
+}
+@section content{
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<div class="login_logo">
+<a href="/"><img src="@Call.GetLabel("{$LogoUrl/}")" class="img-responsive" alt="@Call.GetLabel("{$SiteName/}")" /></a>
+<img src="/Template/JianTu/style/images/logo2.png" alt="构筑建筑之通途" />
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs">
+<div><img src="/Template/JianTu/style/Images/login.png" class="img-responsive" alt="登录" /></div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<div class="reg">
+<h1 class="text-center"><span class="fa fa-user" style="font-size: 2em; margin-right: 10px;margin-top:0px; color: #00CCFF;"></span><span class="margin_l5">会员帐号信息</span></h1>
+<div class="alert alert-warning" style="line-height:2em;">
+@MvcHtmlString.Create(ViewBag.RegMessage)
+您的会员名：<span>@Model.UserName</span><br />
+您的密码是：<span>@ViewBag.pwd</span><br />
+注册邮箱是：<span>@Model.Email</span><br />
+请您妥善保存您的信息，如忘记密码在<a href="/User/Change/GetPassword" target="_blank">密码找回页</a>凭邮箱找回。<br/>
+<a href="@ViewBag.RegRUrl" class="btn btn-primary">进入用户中心</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="login_footer">
+@(MvcHtmlString.Create(Call.GetLabel("{$Copyright/}")))
+</div>
+</div>
+}
+@section script{
+<script>
+$(function () {
+    if ("True" == "@isok") { window.setTimeout(function () { location = "@ViewBag.RegRUrl"; }, 5000); }
+})
+</script>
+}
+

@@ -1,0 +1,261 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/Controls/B_User.js"></script>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a></div>
+<div class="home_top_r">
+<ul class="nav">
+<li style="line-height:normal;"><a href="#" style="padding-top:3px; padding-bottom:3px;"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/bt_blue_76X24.png" alt="QQ登录" /></a></li>
+<li class="nav_user"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户登录</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login">用户登录</a></li>
+<li><a href="/User/Register">用户注册</a></li>
+<li class="logon" style="display:none;"><a href="/User/Info/UserInfo">资料维护</a></li>
+<li class="logon" style="display:none;"><a href="javascript:;" onClick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Class_461/NodeHot.aspx">APP下载</a></li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!--顶部结束-->
+<div class="banner">
+<div class="banner_show" id="banner_show">
+<a class="bannger_inbox"><img src="{$CssDir/}images/news_banner6.jpg" width="2000" height="572" alt="banner"/></a>
+<a class="bannger_inbox"><img src="{$CssDir/}images/news_banner1.jpg" width="2000" height="572" alt="banner"/></a>
+<a class="bannger_inbox"><img src="{$CssDir/}images/news_banner3.jpg" width="2000" height="572" alt="banner"/></a>
+<a class="bannger_inbox"><img src="{$CssDir/}images/news_banner2.jpg" width="2000" height="572" alt="banner"/></a>
+<a class="bannger_inbox"><img src="{$CssDir/}images/news_banner5.jpg" width="2000" height="572" alt="banner"/></a>
+<div class="container">
+<div class="banner_logo">
+<img src="{$CssDir/}images/logo.svg" alt="logo"/>
+<h3>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</h3>
+</div>
+</div>
+<div class="banner_mag">
+<div class="banner_magbox">
+{ZL.Label id="输出建筑资讯下政策法规" NodeID="51" TitleNum="200" SynNum="200" ShowNum="5" /}
+</div>
+<div class="yq_banner_list" id="yq_banner_list">
+<a href="javascript:;" rel="0" class="hover">&nbsp;</a>
+<a href="javascript:;" rel="1">&nbsp;</a>
+<a href="javascript:;" rel="2">&nbsp;</a>
+<a href="javascript:;" rel="3">&nbsp;</a>
+<a href="javascript:;" rel="4">&nbsp;</a>
+</div>
+</div>
+<div class="banner_pre_next">
+<a href="javascript:;" class="banner_btn_left">&lt;</a>
+<a href="javascript:;" class="banner_btn_right">&gt;</a>
+</div>
+</div>
+</div>
+<!--顶部轮播图-->
+
+<div class="news_ul_t">
+<div class="container">
+<ul class="news_ul">
+<li><a href="{ZL:GetNodeLinkUrl(41)/}">资讯首页</a></li>
+<li><a href="/PClass?ID=4">新闻公告</a></li>
+<li id="gid51"><a href="{ZL:GetNodeLinkUrl(51)/}">政策法规</a></li>
+<li id="gid43"><a href="{ZL:GetNodeLinkUrl(43)/}">建筑文库</a></li>
+<li id="gid44"><a href="{ZL:GetNodeLinkUrl(44)/}">建筑视频</a></li>
+<li><a href="/ask/">建筑问答</a></li>
+<li><a href="/PClass?ID=19">办事指南</a></li>
+<form action="/Search/SearchList.aspx" method="get" target="_blank">
+<div class="home_search_r news_search">
+<div class="input-group">
+<input type="text" name="keyword" class="form-control" placeholder="请输入关键字" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+</span>
+</div><!-- /input-group -->
+</div>
+</form>
+</ul>
+</div>
+</div>
+<!--导航栏结束-->
+<div class="container">
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+$().ready(function(e){
+	for(var i=0;i<=$(".banner_magbox div").length-1;i++){
+		$(".banner_magbox").find($(".banner_magbox div")[i]).attr("id","banner_magbox"+i);
+	}
+	$("#banner_magbox0").removeClass("none");
+	$(".carousel-inner").find($(".carousel-inner div")[0]).addClass("active");
+    $(".inf_banner").children("div").eq(0).addClass("active");
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+  $(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+        $(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e){
+	$("#gid{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}").css("background","#ccc");
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	})
+  //判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span a").html("南昌站");
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+/*大轮播图*/
+$(function(){
+	var timer=5000;
+	var showtime = 800;
+	var showbox = $("#banner_show");
+	var inbox = $(".bannger_inbox");
+	var movelist = $("#yq_banner_list");
+	var s;
+	var b = 0;
+	var size =inbox.size();
+	var play = 1;
+	function move(){
+		b++;
+	if(b>size-1){
+		b=0;
+	}
+	inbox.each(function(e){
+		inbox.eq(e).hide(0);
+		$("#banner_magbox"+e).hide();
+		movelist.find("a").eq(e).removeClass("hover");
+		if(e == b){
+			inbox.eq(b).fadeIn(showtime);
+			$("#banner_magbox"+b).show();
+			movelist.find("a").eq(b).addClass("hover");
+		}
+	});
+}
+s = setInterval(move,timer);
+function stopp(obj){
+	$(obj).hover(function(){
+		if(play){
+			clearInterval(s);
+			play = 0;
+		}	  
+	},function(){
+		if(!play){
+			s = setInterval(move,timer); 
+			play = 1;
+		}
+	});
+}
+stopp(".banner_show");
+$(".banner_btn_right").click(function(){
+	move(); 
+});
+$(".banner_btn_left").click(function(){
+	b--;
+	if(b<0){
+		b=size
+	}
+	inbox.each(function(e){
+		inbox.eq(e).hide(0);
+		$("#banner_magbox"+e).hide();
+		movelist.find("a").eq(e).removeClass("hover");
+		if(e == b){
+			inbox.eq(b).fadeIn(showtime);
+			$("#banner_magbox"+e).show();
+			movelist.find("a").eq(b).addClass("hover");
+		}
+	}); 
+});
+movelist.find("a").click(function(){
+	var rel = $(this).attr("rel");
+	inbox.each(function(e){
+	inbox.eq(e).hide(0);
+	movelist.find("a").eq(e).removeClass("hover");
+	$("#banner_magbox"+e).hide(0);
+		if(e == rel){
+			inbox.eq(rel).fadeIn(showtime);
+			movelist.find("a").eq(rel).addClass("hover");
+			$("#banner_magbox"+rel).show(0);	
+		}
+	});
+});
+$(".bannger_inbox").each(function(e){
+	var inboxsize = $(".bannger_inbox").size();
+	inboxwimg = $(this).find("img").width();
+	$(".bannger_inbox").eq(e).css({"margin-left":(-1)*inboxwimg/2+"px","z-index":inboxsize-e});
+});
+$(".banner").hover(function(){
+	$(".banner_pre_next").fadeIn();
+	},function(){
+		$(".banner_pre_next").fadeOut();
+	})
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

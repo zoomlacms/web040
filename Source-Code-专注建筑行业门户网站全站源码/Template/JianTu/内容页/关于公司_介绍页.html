@@ -1,0 +1,48 @@
+﻿{ZL.Source id="文章模型数据源标签"/}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{SField sid="文章模型数据源标签" FD="Title" page="0"/}_{$SiteTitle/}</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?id={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js"></script>
+</head> 
+<body>
+{ZL.Label id="关于我们头部"/}
+<!--about_nav end-->
+<div class="about_banner banner_font">{ZL.Label id="输出指定节点下提示信息" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}</div>
+<div class="container top_head">
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}
+</ul>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="about_box">
+{ZL.Label id="输出指定节点下内容" NodeID="{SField sid="文章模型数据源标签" FD="NodeID" page="0"/}" /}
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 about_f">
+<div class="about_con">
+<div class="about_tit">
+<h1>{SField sid="文章模型数据源标签" FD="Title" page="0"/}</h1>
+</div>
+<div class="myContent">{SField sid="文章模型数据源标签" FD="content" page="{SField sid="文章模型数据源标签" FD="K_pages" page="0"/}"/}</div>
+</div>
+</div>
+</div>
+</div>
+{ZL.Label id="关于我们底部"/}
+<!--foot end-->
+</body>
+</html>
+<script type="text/javascript">
+	$().ready(function(){
+		$("#gid{SField sid="文章模型数据源标签" FD="GeneralID" page="0"/}").addClass("active");
+	});
+</script>

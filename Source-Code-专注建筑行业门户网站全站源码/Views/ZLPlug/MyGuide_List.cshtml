@@ -1,0 +1,30 @@
+﻿@using System.Data;
+@using ZoomLa.BLL.Helper
+@using ZoomLa.SQLDAL;
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.cols = 15;
+    Model.url = "Content_Data2";
+}
+<table class="table table-condensed zhengzhao_mycert_ct2" id="EGV">
+<tr>
+<td width="30"></td>
+<td>ID</td>
+<td>标题</td>
+<td>状态</td>
+<td>操作</td>
+</tr>
+@foreach (DataRow dr in Model.dt.Rows)
+{
+<tr onclick="$(this).find('input[name=\'idchk\']').get(0).checked = true">
+<td><input type="radio" name="idchk" value="@dr["GeneralID"]" /></td>
+<td>@dr["GeneralID"]</td>
+<td><a href="/Item/@(dr["GeneralID"]).aspx" target="_blank">@dr["Title"]</a></td>
+<td>@ZoomLa.BLL.B_Content.GetStatusStr(Convert.ToInt32(dr["Status"]))</td>
+<td>
+<a href="javascript:;" class="option_style" onclick="mvcpage.del({ id: '@dr["GeneralID"]', url: 'content_del', confirm: '确定要删除吗' });" title="删除"><i class="fa fa-trash"></i></a>
+</td>
+</tr>
+}
+@Html.Partial("_page", Model)
+</table>

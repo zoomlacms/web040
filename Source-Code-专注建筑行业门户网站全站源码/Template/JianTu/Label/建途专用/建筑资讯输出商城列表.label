@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>422</LabelID>
+    <LabelName>建筑资讯输出商城列表</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,1,1,显示数|TitleNum,1,1,显示数</LabelParam>
+    <LabelTable>ZL_Commodities</LabelTable>
+    <LabelField>ID,Nodeid,Proname,Thumbnails</LabelField>
+    <LabelWhere> ZL_Commodities.ModelID=6 and Nodeid in (select NodeID from ZL_Node where ParentID =@NodeID )</LabelWhere>
+    <LabelOrder>ZL_Commodities.ID DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="col-xs-6 padding5"&gt;
+&lt;div class="news_rdgz_rsc"&gt;
+&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}" title="{Field="Proname"/}" target="{ZL:GetInfoOpen({Field="Nodeid"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="Thumbnails"/})/}" alt="{Field="Proname"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif'"/&gt;&lt;/a&gt;
+&lt;h3&gt;&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}" title="{Field="Proname"/}" target="{ZL:GetInfoOpen({Field="Nodeid"/})/}"&gt;{ZL:CutText({Field="Proname"/},@TitleNum,...)/}&lt;/a&gt;&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Commodities","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

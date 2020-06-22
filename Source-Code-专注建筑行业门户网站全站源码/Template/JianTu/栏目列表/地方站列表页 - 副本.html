@@ -1,0 +1,676 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="substation_banner"></div>
+<div class="container mysite">
+<div class="info_a">
+<div>
+选择城市：
+<select name="s_province" id="s_province" onChange="zzlx_change(this);">
+<option value="省份">省份</option>
+</select>
+<select name="s_city" id="s_city">
+<option value="地级市">地级市</option></select>
+</div>
+<div id="show"></div>
+</div>
+</div>
+<div class="city_body">
+<div class="container">
+<div class="city_list">
+<ul>
+<li>
+<strong>浙江</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9d%ad%e5%b7%9e">杭州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%81%e6%b3%a2">宁波</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b8%a9%e5%b7%9e">温州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%87%91%e5%8d%8e">金华</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%98%89%e5%85%b4">嘉兴</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8f%b0%e5%b7%9e">台州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%bb%8d%e5%85%b4">绍兴</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b9%96%e5%b7%9e">湖州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%bd%e6%b0%b4">丽水</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a1%a2%e5%b7%9e">衢州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%88%9f%e5%b1%b1">舟山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%90%e6%b8%85">乐清</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%91%9e%e5%ae%89">瑞安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%89%e4%b9%8c">义乌</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bd%99%e5%a7%9a">余姚</a>
+</li>
+<li>
+<strong>上海</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%8a%e6%b5%b7">上海</a>
+</li>
+<li>
+<strong>江苏</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8b%8f%e5%b7%9e">苏州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e4%ba%ac">南京</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%97%a0%e9%94%a1">无锡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b8%b8%e5%b7%9e">常州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%be%90%e5%b7%9e">徐州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e9%80%9a">南通</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%89%ac%e5%b7%9e">扬州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9b%90%e5%9f%8e">盐城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b7%ae%e5%ae%89">淮安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%bf%9e%e4%ba%91%e6%b8%af">连云港</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b3%b0%e5%b7%9e">泰州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%bf%e8%bf%81">宿迁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%95%87%e6%b1%9f">镇江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b2%ad%e9%98%b3">沭阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e4%b8%b0">大丰</a>
+</li>
+<li>
+<strong>江西</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e6%98%8c">南昌</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b5%a3%e5%b7%9e">赣州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%9d%e6%b1%9f">九江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9c%e6%98%a5">宜春</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%89%e5%ae%89">吉安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%8a%e9%a5%b6">上饶</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%90%8d%e4%b9%a1">萍乡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%8a%9a%e5%b7%9e">抚州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%99%af%e5%be%b7%e9%95%87">景德镇</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%96%b0%e4%bd%99">新余</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%b9%b0%e6%bd%ad">鹰潭</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b0%b8%e6%96%b0">永新</a>
+</li>
+<li>
+<strong>安徽</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%88%e8%82%a5">合肥</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8a%9c%e6%b9%96">芜湖</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%9a%8c%e5%9f%a0">蚌埠</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%9c%e9%98%b3">阜阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b7%ae%e5%8d%97">淮南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%89%e5%ba%86">安庆</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%bf%e5%b7%9e">宿州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%ad%e5%ae%89">六安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b7%ae%e5%8c%97">淮北</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bb%81%e5%b7%9e">滁州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%a9%ac%e9%9e%8d%e5%b1%b1">马鞍山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%93%9c%e9%99%b5">铜陵</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%a3%e5%9f%8e">宣城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%ba%b3%e5%b7%9e">亳州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%84%e5%b1%b1">黄山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b1%a0%e5%b7%9e">池州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b7%a2%e6%b9%96">巢湖</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%92%8c%e5%8e%bf">和县</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9c%8d%e9%82%b1">霍邱</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a1%90%e5%9f%8e">桐城</a>
+</li>
+<li>
+<strong>山东</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9d%92%e5%b2%9b">青岛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%8e%e5%8d%97">济南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%83%9f%e5%8f%b0">烟台</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bd%8d%e5%9d%8a">潍坊</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b4%e6%b2%82">临沂</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b7%84%e5%8d%9a">淄博</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%8e%e5%ae%81">济宁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b3%b0%e5%ae%89">泰安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%81%8a%e5%9f%8e">聊城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a8%81%e6%b5%b7">威海</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9e%a3%e5%ba%84">枣庄</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%be%b7%e5%b7%9e">德州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%97%a5%e7%85%a7">日照</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%9c%e8%90%a5">东营</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8f%8f%e6%b3%bd">菏泽</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bb%a8%e5%b7%9e">滨州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8e%b1%e8%8a%9c">莱芜</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%ab%a0%e4%b8%98">章丘</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%9e%a6%e5%88%a9">垦利</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%af%b8%e5%9f%8e">诸城</a>
+</li>
+<li>
+<strong>广东</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b7%b1%e5%9c%b3">深圳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b9%bf%e5%b7%9e">广州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%9c%e8%8e%9e">东莞</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bd%9b%e5%b1%b1">佛山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%ad%e5%b1%b1">中山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%8f%a0%e6%b5%b7">珠海</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%83%a0%e5%b7%9e">惠州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b1%9f%e9%97%a8">江门</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b1%95%e5%a4%b4">汕头</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b9%9b%e6%b1%9f">湛江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%82%87%e5%ba%86">肇庆</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8c%82%e5%90%8d">茂名</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%8f%ad%e9%98%b3">揭阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a2%85%e5%b7%9e">梅州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b8%85%e8%bf%9c">清远</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%b3%e6%b1%9f">阳江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9f%b6%e5%85%b3">韶关</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b2%b3%e6%ba%90">河源</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%ba%91%e6%b5%ae">云浮</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b1%95%e5%b0%be">汕尾</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bd%ae%e5%b7%9e">潮州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8f%b0%e5%b1%b1">台山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%b3%e6%98%a5">阳春</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%a1%ba%e5%be%b7">顺德</a>
+</li>
+<li>
+<strong>福建</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e7%a6%8f%e5%b7%9e">福州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8e%a6%e9%97%a8">厦门</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b3%89%e5%b7%9e">泉州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8e%86%e7%94%b0">莆田</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bc%b3%e5%b7%9e">漳州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%81%e5%be%b7">宁德</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%89%e6%98%8e">三明</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e5%b9%b3">南平</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%be%99%e5%b2%a9">龙岩</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%ad%a6%e5%a4%b7%e5%b1%b1">武夷山</a>
+</li>
+<li>
+<strong>广西</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e5%ae%81">南宁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9f%b3%e5%b7%9e">柳州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a1%82%e6%9e%97">桂林</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%8e%89%e6%9e%97">玉林</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a2%a7%e5%b7%9e">梧州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8c%97%e6%b5%b7">北海</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b4%b5%e6%b8%af">贵港</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%92%a6%e5%b7%9e">钦州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%99%be%e8%89%b2">百色</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b2%b3%e6%b1%a0">河池</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9d%a5%e5%ae%be">来宾</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b4%ba%e5%b7%9e">贺州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%b2%e5%9f%8e%e6%b8%af">防城港</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b4%87%e5%b7%a6">崇左</a>
+</li>
+<li>
+<strong>海南</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e5%8f%a3">海口</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%89%e4%ba%9a">三亚</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%ba%94%e6%8c%87%e5%b1%b1">五指山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%89%e6%b2%99">三沙</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%90%bc%e6%b5%b7">琼海</a>
+</li>
+<li>
+<strong>河南</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%83%91%e5%b7%9e">郑州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b4%9b%e9%98%b3">洛阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%96%b0%e4%b9%a1">新乡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e9%98%b3">南阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%ae%b8%e6%98%8c">许昌</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b9%b3%e9%a1%b6%e5%b1%b1">平顶山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%89%e9%98%b3">安阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%84%a6%e4%bd%9c">焦作</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%95%86%e4%b8%98">商丘</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bc%80%e5%b0%81">开封</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bf%ae%e9%98%b3">濮阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%91%a8%e5%8f%a3">周口</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bf%a1%e9%98%b3">信阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%a9%bb%e9%a9%ac%e5%ba%97">驻马店</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bc%af%e6%b2%b3">漯河</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%89%e9%97%a8%e5%b3%a1">三门峡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%b9%a4%e5%a3%81">鹤壁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%8e%e6%ba%90">济源</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%98%8e%e6%b8%af">明港</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%84%a2%e9%99%b5">鄢陵</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%a6%b9%e5%b7%9e">禹州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%95%bf%e8%91%9b">长葛</a>
+</li>
+<li>
+<strong>湖北</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%ad%a6%e6%b1%89">武汉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9c%e6%98%8c">宜昌</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a5%84%e9%98%b3">襄阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8d%86%e5%b7%9e">荆州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%81%e5%a0%b0">十堰</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%84%e7%9f%b3">黄石</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ad%9d%e6%84%9f">孝感</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%84%e5%86%88">黄冈</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%81%a9%e6%96%bd">恩施</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%8d%86%e9%97%a8">荆门</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%92%b8%e5%ae%81">咸宁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%84%82%e5%b7%9e">鄂州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9a%8f%e5%b7%9e">随州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%bd%9c%e6%b1%9f">潜江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a9%e9%97%a8">天门</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bb%99%e6%a1%83">仙桃</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%a5%9e%e5%86%9c%e6%9e%b6">神农架</a>
+</li>
+<li>
+<strong>湖南</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%95%bf%e6%b2%99">长沙</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a0%aa%e6%b4%b2">株洲</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9b%8a%e9%98%b3">益阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b8%b8%e5%be%b7">常德</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a1%a1%e9%98%b3">衡阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b9%98%e6%bd%ad">湘潭</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b2%b3%e9%98%b3">岳阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%83%b4%e5%b7%9e">郴州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%82%b5%e9%98%b3">邵阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%80%80%e5%8c%96">怀化</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b0%b8%e5%b7%9e">永州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a8%84%e5%ba%95">娄底</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b9%98%e8%a5%bf">湘西</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bc%a0%e5%ae%b6%e7%95%8c">张家界</a>
+</li>
+<li>
+<strong>辽宁</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b2%88%e9%98%b3">沈阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e8%bf%9e">大连</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9e%8d%e5%b1%b1">鞍山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%94%a6%e5%b7%9e">锦州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%8a%9a%e9%a1%ba">抚顺</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%90%a5%e5%8f%a3">营口</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9b%98%e9%94%a6">盘锦</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9c%9d%e9%98%b3">朝阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b9%e4%b8%9c">丹东</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%be%bd%e9%98%b3">辽阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9c%ac%e6%ba%aa">本溪</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%91%ab%e8%8a%a6%e5%b2%9b">葫芦岛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%93%81%e5%b2%ad">铁岭</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%9c%e6%96%b0">阜新</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ba%84%e6%b2%b3">庄河</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%93%a6%e6%88%bf%e5%ba%97">瓦房店</a>
+</li>
+<li>
+<strong>黑龙江</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%93%88%e5%b0%94%e6%bb%a8">哈尔滨</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e5%ba%86">大庆</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bd%90%e9%bd%90%e5%93%88%e5%b0%94">齐齐哈尔</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%89%a1%e4%b8%b9%e6%b1%9f">牡丹江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%bb%a5%e5%8c%96">绥化</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bd%b3%e6%9c%a8%e6%96%af">佳木斯</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%b8%a1%e8%a5%bf">鸡西</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8f%8c%e9%b8%ad%e5%b1%b1">双鸭山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%b9%a4%e5%b2%97">鹤岗</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%91%e6%b2%b3">黑河</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bc%8a%e6%98%a5">伊春</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%83%e5%8f%b0%e6%b2%b3">七台河</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e5%85%b4%e5%ae%89%e5%b2%ad">大兴安岭</a>
+</li>
+<li>
+<strong>吉林</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%95%bf%e6%98%a5">长春</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%89%e6%9e%97">吉林</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%9b%9b%e5%b9%b3">四平</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bb%b6%e8%be%b9">延边</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9d%be%e5%8e%9f">松原</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%99%bd%e5%9f%8e">白城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%80%9a%e5%8c%96">通化</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%99%bd%e5%b1%b1">白山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%be%bd%e6%ba%90">辽源</a>
+</li>
+<li>
+<strong>四川</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%88%90%e9%83%bd">成都</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%bb%b5%e9%98%b3">绵阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%be%b7%e9%98%b3">德阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%97%e5%85%85">南充</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9c%e5%ae%be">宜宾</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%87%aa%e8%b4%a1">自贡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%90%e5%b1%b1">乐山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b3%b8%e5%b7%9e">泸州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%be%be%e5%b7%9e">达州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%86%85%e6%b1%9f">内江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%81%82%e5%ae%81">遂宁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%94%80%e6%9e%9d%e8%8a%b1">攀枝花</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9c%89%e5%b1%b1">眉山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b9%bf%e5%ae%89">广安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b5%84%e9%98%b3">资阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%87%89%e5%b1%b1">凉山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b9%bf%e5%85%83">广元</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%9b%85%e5%ae%89">雅安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b7%b4%e4%b8%ad">巴中</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%bf%e5%9d%9d">阿坝</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%94%98%e5%ad%9c">甘孜</a>
+</li>
+<li>
+<strong>云南</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%98%86%e6%98%8e">昆明</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9b%b2%e9%9d%96">曲靖</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e7%90%86">大理</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%ba%a2%e6%b2%b3">红河</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%8e%89%e6%ba%aa">玉溪</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%bd%e6%b1%9f">丽江</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%96%87%e5%b1%b1">文山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a5%9a%e9%9b%84">楚雄</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a5%bf%e5%8f%8c%e7%89%88%e7%ba%b3">西双版纳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%98%ad%e9%80%9a">昭通</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%be%b7%e5%ae%8f">德宏</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%99%ae%e6%b4%b1">普洱</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bf%9d%e5%b1%b1">保山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b4%e6%b2%a7">临沧</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%bf%aa%e5%ba%86">迪庆</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%80%92%e6%b1%9f">怒江</a>
+</li>
+<li>
+<strong>贵州</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b4%b5%e9%98%b3">贵阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%81%b5%e4%b9%89">遵义</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%94%e4%b8%9c%e5%8d%97">黔东南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%94%e5%8d%97">黔南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%ad%e7%9b%98%e6%b0%b4">六盘水</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%af%95%e8%8a%82">毕节</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%93%9c%e4%bb%81">铜仁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%89%e9%a1%ba">安顺</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%94%e8%a5%bf%e5%8d%97">黔西南</a>
+</li>
+<li>
+<strong>西藏</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e6%8b%89%e8%90%a8">拉萨</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%97%a5%e5%96%80%e5%88%99">日喀则</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b1%b1%e5%8d%97">山南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9e%97%e8%8a%9d">林芝</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%98%8c%e9%83%bd">昌都</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%82%a3%e6%9b%b2">那曲</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%bf%e9%87%8c">阿里</a>
+</li>
+<li>
+<strong>河北</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9f%b3%e5%ae%b6%e5%ba%84">石家庄</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bf%9d%e5%ae%9a">保定</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%94%90%e5%b1%b1">唐山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bb%8a%e5%9d%8a">廊坊</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%82%af%e9%83%b8">邯郸</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%a7%a6%e7%9a%87%e5%b2%9b">秦皇岛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b2%a7%e5%b7%9e">沧州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%82%a2%e5%8f%b0">邢台</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a1%a1%e6%b0%b4">衡水</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bc%a0%e5%ae%b6%e5%8f%a3">张家口</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%89%bf%e5%be%b7">承德</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9a%e5%b7%9e">定州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%a6%86%e9%99%b6">馆陶</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bc%a0%e5%8c%97">张北</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b5%b5%e5%8e%bf">赵县</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%ad%a3%e5%ae%9a">正定</a>
+</li>
+<li>
+<strong>山西</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%aa%e5%8e%9f">太原</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b4%e6%b1%be">临汾</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a7%e5%90%8c">大同</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%bf%90%e5%9f%8e">运城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%99%8b%e4%b8%ad">晋中</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%95%bf%e6%b2%bb">长治</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%99%8b%e5%9f%8e">晋城</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%b3%e6%b3%89">阳泉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%95%e6%a2%81">吕梁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bf%bb%e5%b7%9e">忻州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9c%94%e5%b7%9e">朔州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b4%e7%8c%97">临猗</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b8%85%e5%be%90">清徐</a>
+</li>
+<li>
+<strong>内蒙古</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%91%bc%e5%92%8c%e6%b5%a9%e7%89%b9">呼和浩特</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8c%85%e5%a4%b4">包头</a>
+<a href="/Class_1/NodeNews.aspx?city=%e8%b5%a4%e5%b3%b0">赤峰</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%84%82%e5%b0%94%e5%a4%9a%e6%96%af">鄂尔多斯</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%80%9a%e8%be%bd">通辽</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%91%bc%e4%bc%a6%e8%b4%9d%e5%b0%94">呼伦贝尔</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b7%b4%e5%bd%a6%e6%b7%96%e5%b0%94%e5%b8%82">巴彦淖尔市</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%8c%e5%85%b0%e5%af%9f%e5%b8%83">乌兰察布</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%94%a1%e6%9e%97%e9%83%ad%e5%8b%92%e7%9b%9f">锡林郭勒盟</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%b4%e5%ae%89%e7%9b%9f">兴安盟</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%8c%e6%b5%b7">乌海</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%bf%e6%8b%89%e5%96%84%e7%9b%9f">阿拉善盟</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e6%8b%89%e5%b0%94">海拉尔</a>
+</li>
+<li>
+<strong>陕西</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a5%bf%e5%ae%89">西安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%92%b8%e9%98%b3">咸阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9d%e9%b8%a1">宝鸡</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b8%ad%e5%8d%97">渭南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b1%89%e4%b8%ad">汉中</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%a6%86%e6%9e%97">榆林</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bb%b6%e5%ae%89">延安</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%89%e5%ba%b7">安康</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%95%86%e6%b4%9b">商洛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%93%9c%e5%b7%9d">铜川</a>
+</li>
+<li>
+<strong>新疆</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b9%8c%e9%b2%81%e6%9c%a8%e9%bd%90">乌鲁木齐</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%98%8c%e5%90%89">昌吉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b7%b4%e9%9f%b3%e9%83%ad%e6%a5%9e">巴音郭楞</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%bc%8a%e7%8a%81">伊犁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%bf%e5%85%8b%e8%8b%8f">阿克苏</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%96%80%e4%bb%80">喀什</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%93%88%e5%af%86">哈密</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%8b%e6%8b%89%e7%8e%9b%e4%be%9d">克拉玛依</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8d%9a%e5%b0%94%e5%a1%94%e6%8b%89">博尔塔拉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%90%e9%b2%81%e7%95%aa">吐鲁番</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%92%8c%e7%94%b0">和田</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9f%b3%e6%b2%b3%e5%ad%90">石河子</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%8b%e5%ad%9c%e5%8b%92%e8%8b%8f">克孜勒苏</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%98%bf%e6%8b%89%e5%b0%94">阿拉尔</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%ba%94%e5%ae%b6%e6%b8%a0">五家渠</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%9b%be%e6%9c%a8%e8%88%92%e5%85%8b">图木舒克</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ba%93%e5%b0%94%e5%8b%92">库尔勒</a>
+</li>
+<li>
+<strong>甘肃</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%b0%e5%b7%9e">兰州</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%a4%a9%e6%b0%b4">天水</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%99%bd%e9%93%b6">白银</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ba%86%e9%98%b3">庆阳</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%b9%b3%e5%87%89">平凉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%85%92%e6%b3%89">酒泉</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%bc%a0%e6%8e%96">张掖</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%ad%a6%e5%a8%81">武威</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%ae%9a%e8%a5%bf">定西</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%87%91%e6%98%8c">金昌</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%99%87%e5%8d%97">陇南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%b4%e5%a4%8f">临夏</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%98%89%e5%b3%aa%e5%85%b3">嘉峪关</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%94%98%e5%8d%97">甘南</a>
+</li>
+<li>
+<strong>宁夏</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%93%b6%e5%b7%9d">银川</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%90%b4%e5%bf%a0">吴忠</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%9f%b3%e5%98%b4%e5%b1%b1">石嘴山</a>
+<a href="/Class_1/NodeNews.aspx?city=%e4%b8%ad%e5%8d%ab">中卫</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%9b%ba%e5%8e%9f">固原</a>
+</li>
+<li>
+<strong>青海</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e8%a5%bf%e5%ae%81">西宁</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e8%a5%bf">海西</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e5%8c%97">海北</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%9e%9c%e6%b4%9b">果洛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e4%b8%9c">海东</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%bb%84%e5%8d%97">黄南</a>
+<a href="/Class_1/NodeNews.aspx?city=%e7%8e%89%e6%a0%91">玉树</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%b5%b7%e5%8d%97">海南</a>
+</li>
+<li>
+<strong>其他</strong>
+<a href="/Class_1/NodeNews.aspx?city=%e9%a6%99%e6%b8%af">香港</a>
+<a href="/Class_1/NodeNews.aspx?city=%e6%be%b3%e9%97%a8">澳门</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%8f%b0%e6%b9%be">台湾</a>
+<a href="/Class_1/NodeNews.aspx?city=%e9%92%93%e9%b1%bc%e5%b2%9b">钓鱼岛</a>
+<a href="/Class_1/NodeNews.aspx?city=%e5%85%b6%e4%bb%96">其他</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+$(".bottom-contrainer").addClass("bottom-hide");
+$(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+$(".bottom-contrainer").removeClass("bottom-hide");
+$(".bottom-collspan").addClass("collspan-hide");	
+});
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+        $(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+    $(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	})
+  //判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span a").html("{ZL:IPcity()/}");
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+var para = {
+	key:'',
+	alias:'cblblist',
+	psize:'1000',
+	cpage:1,
+	cate:0,
+	grade:0,
+	parentid:0
+}
+
+$().ready(function(e) {
+	$(".home_logo_s").text("{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}");
+    $(".home_list li.dropdown.visible-xs .nav_llist_c").show();
+	para.cate=1;
+	para.parentid=0;
+	para.grade=1;
+	$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+		data=JSON.parse(data);
+		if(data.retcode=="1")
+		{
+			data=JSON.parse(data.result);
+			var str="";
+			for(var i=0;i<data.length;i++)
+			{
+				str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>"
+			}
+			$("#s_province").html("<option>省份</option>"+str);
+		}
+	});
+});
+function zzlx_change(obj)
+{
+	para.cate=1;
+	para.parentid=$(obj).val();
+	para.grade=2;
+	$("#s_city").html("<option>地级市</option>");
+	$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+		data=JSON.parse(data);
+		if(data.retcode=="1")
+		{
+			data=JSON.parse(data.result);
+			var str="";
+			for(var i=0;i<data.length;i++)
+			{
+				str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>"
+			}
+			$("#s_city").html("<option>地级市</option>"+str);
+		}
+	});
+}
+function cblb_change(obj)
+{
+	if($(obj).val()!="")
+	{
+		$("#"+$(obj).parent().parent().find(".zzlx_sel option:selected").data("id")).val($(obj).find("option:selected").html())
+	}
+	para.cate=1;
+	para.parentid=$(obj).val();
+	para.grade=2;
+	$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+		data=JSON.parse(data);
+		if(data.retcode=="1")
+		{
+			data=JSON.parse(data.result);
+			var str="";
+			for(var i=0;i<data.length;i++)
+			{
+				str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>"
+			}
+			$(obj).parent().parent().find(".zzdj_sel").html("<option>选择资质等级</option>"+str);
+		}
+	})
+}
+</script>

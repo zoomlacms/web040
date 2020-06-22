@@ -1,0 +1,4773 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>建途网_首页</title>
+<meta name="Keywords" content="建筑论坛,建途商会,SP,考证培训,工程指南一站式套餐,建筑企业全年套餐,机械企业外包服务,企业线上办公云系统">
+<meta name="Description" content="建途有限公司，致力于发展高效的宣传中心，如果您对我们的产品服务有兴趣，请在线留言或者拨打我们的电话。热诚欢迎各界朋友前来参观、考察、洽谈业务。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.1.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta property="qc:admins" content="13716720776243146375" />
+<link href="/Template/JianTu/style/global.css?v=20150911" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/Controls/B_User.js"></script>
+</head>
+<body>
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">江西省</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="/">全国</a><a href="/Class_468/Default.aspx">上海</a><a href="/Class_466/Default.aspx">北京</a><a href="/Class_484/Default.aspx">广东</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_486/Default.aspx">四川</a></li>
+<li>华北：<a href="/Class_466/Default.aspx">北京</a><a href="/Class_467/Default.aspx">天津</a><a href="/Class_470/Default.aspx">河北</a><a href="/Class_471/Default.aspx">山西</a><a href="/Class_492/Default.aspx">内蒙古</a></li>
+<li>华东：<a href="/Class_468/Default.aspx">上海</a><a href="/Class_475/Default.aspx">江苏</a><a href="/Class_476/Default.aspx">浙江</a><a href="/Class_477/Default.aspx">安徽</a><a href="/Class_478/Default.aspx">福建</a><a href="/Class_480/Default.aspx">山东</a></li>
+<li>华南：<a href="/Class_484/Default.aspx">广东</a><a href="/Class_493/Default.aspx">广西</a><a href="/Class_485/Default.aspx">海南</a></li>
+<li>华中：<a href="/Class_479/Default.aspx">江西</a><a href="/Class_481/Default.aspx">河南</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_483/Default.aspx">湖南</a></li>
+<li>西南：<a href="/Class_469/Default.aspx">重庆</a><a href="/Class_486/Default.aspx">四川</a><a href="/Class_487/Default.aspx">贵州</a><a href="/Class_488/Default.aspx">云南</a><a href="/Class_494/Default.aspx">西藏</a></li>
+<li>西北：<a href="/Class_489/Default.aspx">陕西</a><a href="/Class_490/Default.aspx">甘肃</a><a href="/Class_491/Default.aspx">青海</a><a href="/Class_495/Default.aspx">宁夏</a><a href="/Class_496/Default.aspx">新疆</a></li>
+<li>东北：<a href="/Class_472/Default.aspx">辽宁</a><a href="/Class_473/Default.aspx">吉林</a><a href="/Class_474/Default.aspx">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<span href="tel:400-6789-314" class="all_phone">400-6789-314</span>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li style="line-height:normal;display:none;"><a href="#" style="padding-top:3px; padding-bottom:3px;"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/bt_blue_76X24.png" alt="QQ登录" /></a></li>
+<li class="nav_user"><a href="#" class="dropdown-toggle" data-toggle="dropdown">用户登录</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login">用户登录</a></li>
+<li><a href="/User/Register">用户注册</a></li>
+<li class="logon" style="display:none;"><a href="/User/Info/UserInfo">资料维护</a></li>
+<li class="logon" style="display:none;"><a href="javascript:;" onClick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Class_461/NodeHot.aspx">APP下载</a></li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!--顶部结束-->
+<div class="container home_nav_t">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<a href="/" class="home_logo"><img src="/Template/JianTu/style/Images/logo.svg" alt="建途网" /></a>
+<div class="home_logo_text"><a href="/">构建筑之通途</a></div> 
+</div>
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<div class="home_search">
+<form action="/Search/SearchList" method="get" target="_blank">
+<div class="home_search_r">
+<div class="input-group">
+<input type="text" name="keyword" class="form-control" placeholder="请输入关键字" />
+<span class="input-group-btn">
+<button class="btn btn-default" type="submit">搜索</button>
+</span>
+</div><!-- /input-group -->
+</div>
+<div class="home_search_l">
+<a href="/Class_1/NodeHot.aspx" class="btn btn-default"><i class="fa fa-edit"></i> 免费发布</a>
+</div>
+</form>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+<div class="home_code">
+<img src="/Template/JianTu/style/images/MobileCode.jpg" alt="二维码" />
+<p>访问手机版</p>
+</div>
+</div>
+</div>
+</div>
+<!--头部搜索结束-->
+<div class="realtive">
+<nav class="navbar navbar-default home_nav" id="home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand visible-xs" href="/"><img src="/Template/JianTu/style/Images/logo.svg" alt="建途网" style="height:40px; width:95px;" /></a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav home_list">
+<li class="dropdown market hidden-xs">
+<a href="/Class_52/Default.aspx" style="color:#FFF;" target="_blank">建筑商城</a>
+<ul class="dropdown-menu second_list">
+
+<li>
+<a href="/Class_53/Default.aspx" target="_self">建筑业服务企业</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_93/Default.aspx" target="_self">建筑公司运营</a>
+<a href="/Class_93/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_96/Default.aspx" target="_self">资质代理</a></li>
+<li><a href="/Class_97/Default.aspx" target="_self">人才证书</a></li>
+<li><a href="/Class_98/Default.aspx" target="_self">建筑咨询机构</a></li>
+<li><a href="/Class_99/Default.aspx" target="_self">培训学校</a></li>
+<li><a href="/Class_100/Default.aspx" target="_self">工商税务</a></li>
+<li><a href="/Class_101/Default.aspx" target="_self">商标专利</a></li>
+<li><a href="/Class_102/Default.aspx" target="_self">质量认证</a></li>
+<li><a href="/Class_103/Default.aspx" target="_self">诚信认证</a></li>
+<li><a href="/Class_104/Default.aspx" target="_self">资金贷款</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_94/Default.aspx" target="_self">第三方代理服务</a>
+<a href="/Class_94/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_105/Default.aspx" target="_self">检测机构 </a></li>
+<li><a href="/Class_106/Default.aspx" target="_self">项目报批报建代理 </a></li>
+<li><a href="/Class_107/Default.aspx" target="_self">勘察测量 </a></li>
+<li><a href="/Class_108/Default.aspx" target="_self">设计制作</a></li>
+<li><a href="/Class_109/Default.aspx" target="_self">水土保持方案 </a></li>
+<li><a href="/Class_110/Default.aspx" target="_self">可行性研究报务 </a></li>
+<li><a href="/Class_111/Default.aspx" target="_self">建筑节能</a></li>
+<li><a href="/Class_112/Default.aspx" target="_self">规划编制</a></li>
+<li><a href="/Class_113/Default.aspx" target="_self">施工图审 </a></li>
+<li><a href="/Class_114/Default.aspx" target="_self">工程造价</a></li>
+<li><a href="/Class_115/Default.aspx" target="_self">竣工备案</a></li>
+<li><a href="/Class_116/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_95/Default.aspx" target="_self">附属配套</a>
+<a href="/Class_95/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_117/Default.aspx" target="_self">装修公司</a></li>
+<li><a href="/Class_118/Default.aspx" target="_self">劳务企业</a></li>
+<li><a href="/Class_119/Default.aspx" target="_self">网站制作</a></li>
+<li><a href="/Class_120/Default.aspx" target="_self">企业培训</a></li>
+<li><a href="/Class_121/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_54/Default.aspx" target="_self">砌筑材料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_122/Default.aspx" target="_self">水泥、砖瓦灰砂石及混凝土制品</a>
+<a href="/Class_122/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_123/Default.aspx" target="_self">水泥</a></li>
+<li><a href="/Class_124/Default.aspx" target="_self">砂</a></li>
+<li><a href="/Class_125/Default.aspx" target="_self">石子</a></li>
+<li><a href="/Class_126/Default.aspx" target="_self">轻骨料</a></li>
+<li><a href="/Class_127/Default.aspx" target="_self">灰、粉、土等掺合填充料 石料</a></li>
+<li><a href="/Class_128/Default.aspx" target="_self">砌砖</a></li>
+<li><a href="/Class_129/Default.aspx" target="_self">砌块</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_130/Default.aspx" target="_self">混凝土、砂浆及其他配合比材料</a>
+<a href="/Class_130/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_131/Default.aspx" target="_self">水泥砂浆</a></li>
+<li><a href="/Class_132/Default.aspx" target="_self">石灰砂浆</a></li>
+<li><a href="/Class_133/Default.aspx" target="_self">混合砂浆</a></li>
+<li><a href="/Class_134/Default.aspx" target="_self">特种砂浆</a></li>
+<li><a href="/Class_135/Default.aspx" target="_self">灰浆、水泥浆</a></li>
+<li><a href="/Class_136/Default.aspx" target="_self">石子浆</a></li>
+<li><a href="/Class_137/Default.aspx" target="_self">胶泥、脂、油</a></li>
+<li><a href="/Class_138/Default.aspx" target="_self">普通混凝土</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_55/Default.aspx" target="_self">黑色及有色金属</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_139/Default.aspx" target="_self">钢材</a>
+<a href="/Class_139/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_155/Default.aspx" target="_self">钢筋</a></li>
+<li><a href="/Class_156/Default.aspx" target="_self">钢丝</a></li>
+<li><a href="/Class_157/Default.aspx" target="_self">钢丝绳</a></li>
+<li><a href="/Class_158/Default.aspx" target="_self">钢绞线/钢丝束</a></li>
+<li><a href="/Class_159/Default.aspx" target="_self">圆钢</a></li>
+<li><a href="/Class_160/Default.aspx" target="_self">方钢</a></li>
+<li><a href="/Class_161/Default.aspx" target="_self">扁钢 </a></li>
+<li><a href="/Class_162/Default.aspx" target="_self">六角钢</a></li>
+<li><a href="/Class_163/Default.aspx" target="_self">八角钢</a></li>
+<li><a href="/Class_164/Default.aspx" target="_self">槽钢</a></li>
+<li><a href="/Class_165/Default.aspx" target="_self">角钢</a></li>
+<li><a href="/Class_166/Default.aspx" target="_self">型钢</a></li>
+<li><a href="/Class_167/Default.aspx" target="_self">钢板 </a></li>
+<li><a href="/Class_168/Default.aspx" target="_self">钢带 </a></li>
+<li><a href="/Class_169/Default.aspx" target="_self">硅钢片 </a></li>
+<li><a href="/Class_170/Default.aspx" target="_self">其它型钢</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_140/Default.aspx" target="_self">铜材</a>
+<a href="/Class_140/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_151/Default.aspx" target="_self">铜板</a></li>
+<li><a href="/Class_152/Default.aspx" target="_self">铜带材</a></li>
+<li><a href="/Class_153/Default.aspx" target="_self">铀棒材</a></li>
+<li><a href="/Class_154/Default.aspx" target="_self">铜线材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_141/Default.aspx" target="_self">铝材</a>
+<a href="/Class_141/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_148/Default.aspx" target="_self">铝板(带)材</a></li>
+<li><a href="/Class_149/Default.aspx" target="_self">铝线材</a></li>
+<li><a href="/Class_150/Default.aspx" target="_self">铝型材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_142/Default.aspx" target="_self">其它金属材料</a>
+<a href="/Class_142/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_143/Default.aspx" target="_self">铅材</a></li>
+<li><a href="/Class_144/Default.aspx" target="_self">钛材</a></li>
+<li><a href="/Class_145/Default.aspx" target="_self">镍材 </a></li>
+<li><a href="/Class_146/Default.aspx" target="_self">锌材</a></li>
+<li><a href="/Class_147/Default.aspx" target="_self">金属源材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_56/Default.aspx" target="_self">地砖/地板</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_171/Default.aspx" target="_self">墙砖、地砖、地板、地毯类材料</a>
+<a href="/Class_171/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_174/Default.aspx" target="_self">陶瓷内墙砖</a></li>
+<li><a href="/Class_175/Default.aspx" target="_self">陶瓷外墙砖 </a></li>
+<li><a href="/Class_176/Default.aspx" target="_self">陶瓷地砖</a></li>
+<li><a href="/Class_177/Default.aspx" target="_self">陶瓷马赛克</a></li>
+<li><a href="/Class_178/Default.aspx" target="_self"> 石塑地砖</a></li>
+<li><a href="/Class_179/Default.aspx" target="_self">塑料地砖</a></li>
+<li><a href="/Class_180/Default.aspx" target="_self">实木地板</a></li>
+<li><a href="/Class_181/Default.aspx" target="_self">  软木地板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_172/Default.aspx" target="_self">墙面、顶棚及屋面饰面材料</a>
+<a href="/Class_172/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_182/Default.aspx" target="_self">石膏装饰板</a></li>
+<li><a href="/Class_183/Default.aspx" target="_self">竹木装饰板</a></li>
+<li><a href="/Class_184/Default.aspx" target="_self">金属装饰板</a></li>
+<li><a href="/Class_185/Default.aspx" target="_self">矿物棉装饰板</a></li>
+<li><a href="/Class_186/Default.aspx" target="_self">塑料装饰板</a></li>
+<li><a href="/Class_187/Default.aspx" target="_self">复合装饰板</a></li>
+<li><a href="/Class_188/Default.aspx" target="_self">铝塑复合板</a></li>
+<li><a href="/Class_189/Default.aspx" target="_self">纤维水泥装饰板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_173/Default.aspx" target="_self">龙骨、龙骨配件</a>
+<a href="/Class_173/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_190/Default.aspx" target="_self">轻钢龙骨</a></li>
+<li><a href="/Class_191/Default.aspx" target="_self">型钢龙骨</a></li>
+<li><a href="/Class_192/Default.aspx" target="_self">铝合金龙骨</a></li>
+<li><a href="/Class_193/Default.aspx" target="_self">木龙骨</a></li>
+<li><a href="/Class_194/Default.aspx" target="_self">烤漆龙骨</a></li>
+<li><a href="/Class_195/Default.aspx" target="_self">石膏龙骨</a></li>
+<li><a href="/Class_196/Default.aspx" target="_self">不锈钢龙骨 </a></li>
+<li><a href="/Class_197/Default.aspx" target="_self">轻钢、型钢龙骨配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_57/Default.aspx" target="_self">石材木材</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_198/Default.aspx" target="_self">装饰石材及石材制品</a>
+<a href="/Class_198/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_199/Default.aspx" target="_self">大理石</a></li>
+<li><a href="/Class_200/Default.aspx" target="_self">花岗石</a></li>
+<li><a href="/Class_201/Default.aspx" target="_self">青石(石灰石)</a></li>
+<li><a href="/Class_202/Default.aspx" target="_self">砂岩</a></li>
+<li><a href="/Class_203/Default.aspx" target="_self">文化石</a></li>
+<li><a href="/Class_204/Default.aspx" target="_self">麻石</a></li>
+<li><a href="/Class_205/Default.aspx" target="_self">人造石</a></li>
+<li><a href="/Class_206/Default.aspx" target="_self">板材微晶石</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_207/Default.aspx" target="_self">木、竹材料及其制品</a>
+<a href="/Class_207/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_208/Default.aspx" target="_self">原木</a></li>
+<li><a href="/Class_209/Default.aspx" target="_self">锯材</a></li>
+<li><a href="/Class_210/Default.aspx" target="_self">胶合板</a></li>
+<li><a href="/Class_211/Default.aspx" target="_self">纤维板</a></li>
+<li><a href="/Class_212/Default.aspx" target="_self">细木工板</a></li>
+<li><a href="/Class_213/Default.aspx" target="_self">空心木板</a></li>
+<li><a href="/Class_214/Default.aspx" target="_self">刨花板</a></li>
+<li><a href="/Class_215/Default.aspx" target="_self">其他人造木板</a></li>
+<li><a href="/Class_216/Default.aspx" target="_self">木质容器类</a></li>
+<li><a href="/Class_217/Default.aspx" target="_self">木制台类及货架</a></li>
+<li><a href="/Class_218/Default.aspx" target="_self">其他木制品</a></li>
+<li><a href="/Class_219/Default.aspx" target="_self">竹材</a></li>
+<li><a href="/Class_220/Default.aspx" target="_self">竹板</a></li>
+<li><a href="/Class_221/Default.aspx" target="_self">竹制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_58/Default.aspx" target="_self">橡胶塑料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_222/Default.aspx" target="_self">橡胶、塑料及非金属材料</a>
+<a href="/Class_222/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_223/Default.aspx" target="_self">橡胶板</a></li>
+<li><a href="/Class_224/Default.aspx" target="_self">橡胶条、带</a></li>
+<li><a href="/Class_225/Default.aspx" target="_self">橡胶圈</a></li>
+<li><a href="/Class_226/Default.aspx" target="_self">其他橡胶材料</a></li>
+<li><a href="/Class_227/Default.aspx" target="_self">塑料薄膜、布塑钢建筑型材</a></li>
+<li><a href="/Class_228/Default.aspx" target="_self">塑料板</a></li>
+<li><a href="/Class_229/Default.aspx" target="_self">塑料袋</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_230/Default.aspx" target="_self">油品、化工原料及胶粘材料</a>
+<a href="/Class_230/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_231/Default.aspx" target="_self">油料</a></li>
+<li><a href="/Class_232/Default.aspx" target="_self">燃料油</a></li>
+<li><a href="/Class_233/Default.aspx" target="_self">溶剂油、绝缘油</a></li>
+<li><a href="/Class_234/Default.aspx" target="_self">润滑油</a></li>
+<li><a href="/Class_235/Default.aspx" target="_self">润滑脂、蜡</a></li>
+<li><a href="/Class_236/Default.aspx" target="_self">树脂</a></li>
+<li><a href="/Class_237/Default.aspx" target="_self">颜料</a></li>
+<li><a href="/Class_238/Default.aspx" target="_self">无机化工原料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_59/Default.aspx" target="_self">新型专用建材</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_239/Default.aspx" target="_self">绝热(保温)、耐火材料</a>
+<a href="/Class_239/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_240/Default.aspx" target="_self">石棉及其制品</a></li>
+<li><a href="/Class_242/Default.aspx" target="_self">矿渣棉及其制品</a></li>
+<li><a href="/Class_252/Default.aspx" target="_self">岩棉及其制品</a></li>
+<li><a href="/Class_253/Default.aspx" target="_self">玻璃棉及其制品</a></li>
+<li><a href="/Class_254/Default.aspx" target="_self">膨胀珍珠岩及其制品</a></li>
+<li><a href="/Class_255/Default.aspx" target="_self">膨胀蛭石及其制品</a></li>
+<li><a href="/Class_256/Default.aspx" target="_self">泡沫橡胶(塑料)及其制品</a></li>
+<li><a href="/Class_257/Default.aspx" target="_self">泡沫玻璃及其制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_241/Default.aspx" target="_self">涂料及防腐、防水材料</a>
+<a href="/Class_241/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_258/Default.aspx" target="_self">通用涂料</a></li>
+<li><a href="/Class_259/Default.aspx" target="_self">建筑涂料</a></li>
+<li><a href="/Class_260/Default.aspx" target="_self">功能性涂料</a></li>
+<li><a href="/Class_261/Default.aspx" target="_self">木器涂料</a></li>
+<li><a href="/Class_263/Default.aspx" target="_self">道路、路面涂料</a></li>
+<li><a href="/Class_264/Default.aspx" target="_self">工业设备涂料</a></li>
+<li><a href="/Class_265/Default.aspx" target="_self">其他专用涂料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_243/Default.aspx" target="_self">吸声、抗辐射及无损探伤材料</a>
+<a href="/Class_243/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_266/Default.aspx" target="_self">伤材料</a></li>
+<li><a href="/Class_267/Default.aspx" target="_self">木质吸音板</a></li>
+<li><a href="/Class_268/Default.aspx" target="_self">软木及其制品</a></li>
+<li><a href="/Class_269/Default.aspx" target="_self">复合吸音板</a></li>
+<li><a href="/Class_270/Default.aspx" target="_self">隔声棉</a></li>
+<li><a href="/Class_271/Default.aspx" target="_self">空间吸声体</a></li>
+<li><a href="/Class_272/Default.aspx" target="_self">表面防护材料</a></li>
+<li><a href="/Class_273/Default.aspx" target="_self">无损探伤材料</a></li>
+<li><a href="/Class_274/Default.aspx" target="_self">防辐射材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_60/Default.aspx" target="_self">景观/仿古/园林/苗木</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_246/Default.aspx" target="_self">园林</a>
+<a href="/Class_246/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_277/Default.aspx" target="_self">乔木</a></li>
+<li><a href="/Class_278/Default.aspx" target="_self">藤本植物</a></li>
+<li><a href="/Class_279/Default.aspx" target="_self">地被植物</a></li>
+<li><a href="/Class_280/Default.aspx" target="_self">棕榈科植物</a></li>
+<li><a href="/Class_281/Default.aspx" target="_self">观赏竹类</a></li>
+<li><a href="/Class_282/Default.aspx" target="_self">花卉</a></li>
+<li><a href="/Class_283/Default.aspx" target="_self">盆景</a></li>
+<li><a href="/Class_284/Default.aspx" target="_self">园林雕塑</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_276/Default.aspx" target="_self">仿古</a>
+<a href="/Class_276/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_285/Default.aspx" target="_self">玻璃砖</a></li>
+<li><a href="/Class_286/Default.aspx" target="_self">琉璃瓦件</a></li>
+<li><a href="/Class_287/Default.aspx" target="_self">其他琉璃仿古材料</a></li>
+<li><a href="/Class_288/Default.aspx" target="_self">黏土砖(黑活瓦件)</a></li>
+<li><a href="/Class_289/Default.aspx" target="_self">黏土瓦件</a></li>
+<li><a href="/Class_290/Default.aspx" target="_self">仿古油饰</a></li>
+<li><a href="/Class_291/Default.aspx" target="_self">裱糊材料</a></li>
+<li><a href="/Class_292/Default.aspx" target="_self">木制仿古材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_366/Default.aspx" target="_self">景观</a>
+<a href="/Class_366/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_443/Default.aspx" target="_self">绿植盆栽</a></li>
+<li><a href="/Class_444/Default.aspx" target="_self">小型盆栽</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_61/Default.aspx" target="_self">灯具/开关/五金/周转材料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_244/Default.aspx" target="_self">灯具、光源</a>
+<a href="/Class_244/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_294/Default.aspx" target="_self">光源</a></li>
+<li><a href="/Class_295/Default.aspx" target="_self">吊灯(装饰花灯)</a></li>
+<li><a href="/Class_296/Default.aspx" target="_self">吸顶灯</a></li>
+<li><a href="/Class_297/Default.aspx" target="_self">壁灯</a></li>
+<li><a href="/Class_298/Default.aspx" target="_self">筒灯</a></li>
+<li><a href="/Class_299/Default.aspx" target="_self">格栅灯</a></li>
+<li><a href="/Class_300/Default.aspx" target="_self">射灯</a></li>
+<li><a href="/Class_301/Default.aspx" target="_self">台灯、落地灯</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_245/Default.aspx" target="_self"> 开关、插座</a>
+<a href="/Class_245/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_302/Default.aspx" target="_self">拉线开关</a></li>
+<li><a href="/Class_303/Default.aspx" target="_self">扳把开关</a></li>
+<li><a href="/Class_304/Default.aspx" target="_self">普通面板开关</a></li>
+<li><a href="/Class_305/Default.aspx" target="_self">调光面板开关</a></li>
+<li><a href="/Class_306/Default.aspx" target="_self">电子感应开关</a></li>
+<li><a href="/Class_307/Default.aspx" target="_self">调速面板开关</a></li>
+<li><a href="/Class_308/Default.aspx" target="_self">插卡取电开关</a></li>
+<li><a href="/Class_309/Default.aspx" target="_self">门铃、电铃开关</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_247/Default.aspx" target="_self">周转材料及五金工具</a>
+<a href="/Class_247/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_310/Default.aspx" target="_self">模板</a></li>
+<li><a href="/Class_311/Default.aspx" target="_self">模板附件</a></li>
+<li><a href="/Class_312/Default.aspx" target="_self">脚手架及其配件</a></li>
+<li><a href="/Class_313/Default.aspx" target="_self">维护、运输类周转材料</a></li>
+<li><a href="/Class_314/Default.aspx" target="_self">胎具、模具类周转材料</a></li>
+<li><a href="/Class_315/Default.aspx" target="_self">活动板房、集装箱活动房</a></li>
+<li><a href="/Class_316/Default.aspx" target="_self">其余周转材料</a></li>
+<li><a href="/Class_317/Default.aspx" target="_self">手动工具</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_293/Default.aspx" target="_self">五金制品</a>
+<a href="/Class_293/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_318/Default.aspx" target="_self">紧固件</a></li>
+<li><a href="/Class_319/Default.aspx" target="_self">门窗五金</a></li>
+<li><a href="/Class_320/Default.aspx" target="_self">幕墙五金</a></li>
+<li><a href="/Class_321/Default.aspx" target="_self">家具五金</a></li>
+<li><a href="/Class_322/Default.aspx" target="_self">水暖及卫浴五金</a></li>
+<li><a href="/Class_323/Default.aspx" target="_self">涂附磨具与磨料</a></li>
+<li><a href="/Class_324/Default.aspx" target="_self">焊材</a></li>
+<li><a href="/Class_325/Default.aspx" target="_self">其他五金配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_62/Default.aspx" target="_self">电线电缆 / 电气 / 弱电/消防</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_248/Default.aspx" target="_self">保险、绝缘及消防设施</a>
+<a href="/Class_248/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_326/Default.aspx" target="_self">熔断器</a></li>
+<li><a href="/Class_327/Default.aspx" target="_self">保险器材</a></li>
+<li><a href="/Class_328/Default.aspx" target="_self">避雷装置</a></li>
+<li><a href="/Class_329/Default.aspx" target="_self">接地装置</a></li>
+<li><a href="/Class_330/Default.aspx" target="_self">漏电保护器材</a></li>
+<li><a href="/Class_331/Default.aspx" target="_self">高压绝缘子</a></li>
+<li><a href="/Class_332/Default.aspx" target="_self">低压绝缘子</a></li>
+<li><a href="/Class_333/Default.aspx" target="_self">绝缘穿墙套管、瓷套管</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_249/Default.aspx" target="_self">电线电缆及光纤光缆</a>
+<a href="/Class_249/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_334/Default.aspx" target="_self">裸电线</a></li>
+<li><a href="/Class_335/Default.aspx" target="_self">电气装备用电线电缆</a></li>
+<li><a href="/Class_336/Default.aspx" target="_self">电磁线</a></li>
+<li><a href="/Class_337/Default.aspx" target="_self">电力电缆</a></li>
+<li><a href="/Class_338/Default.aspx" target="_self">充油及油浸纸绝缘电力电缆</a></li>
+<li><a href="/Class_339/Default.aspx" target="_self">室内电话电缆</a></li>
+<li><a href="/Class_340/Default.aspx" target="_self">长途通信电缆</a></li>
+<li><a href="/Class_341/Default.aspx" target="_self">光纤电缆</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_250/Default.aspx" target="_self">电气线路敷设材料</a>
+<a href="/Class_250/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_342/Default.aspx" target="_self">电缆桥架</a></li>
+<li><a href="/Class_343/Default.aspx" target="_self">电缆桥架连接件及附件</a></li>
+<li><a href="/Class_344/Default.aspx" target="_self">线槽及其连接件</a></li>
+<li><a href="/Class_345/Default.aspx" target="_self">母线槽及其连接件</a></li>
+<li><a href="/Class_346/Default.aspx" target="_self">电线、电缆套管及其管件</a></li>
+<li><a href="/Class_347/Default.aspx" target="_self">电缆头</a></li>
+<li><a href="/Class_348/Default.aspx" target="_self">接线端子</a></li>
+<li><a href="/Class_349/Default.aspx" target="_self">接线盒(箱)</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_251/Default.aspx" target="_self">弱电及信息类器材</a>
+<a href="/Class_251/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_435/Default.aspx" target="_self">安防报警器材</a></li>
+<li><a href="/Class_436/Default.aspx" target="_self">门禁系统器材</a></li>
+<li><a href="/Class_437/Default.aspx" target="_self">监控显示器材</a></li>
+<li><a href="/Class_438/Default.aspx" target="_self">安全检查器</a></li>
+<li><a href="/Class_439/Default.aspx" target="_self">停车场管理系统器材</a></li>
+<li><a href="/Class_440/Default.aspx" target="_self">电话通信设备器材</a></li>
+<li><a href="/Class_441/Default.aspx" target="_self">广播线路、移动通信器材</a></li>
+<li><a href="/Class_442/Default.aspx" target="_self">有线电视、卫星电视器材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_63/Default.aspx" target="_self">机械设备</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_355/Default.aspx" target="_self">工程常机械</a>
+<a href="/Class_355/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_367/Default.aspx" target="_self">挖掘机械</a></li>
+<li><a href="/Class_368/Default.aspx" target="_self">铲/推土机械</a></li>
+<li><a href="/Class_369/Default.aspx" target="_self">起重机械</a></li>
+<li><a href="/Class_370/Default.aspx" target="_self">压实机械</a></li>
+<li><a href="/Class_371/Default.aspx" target="_self">桩工机械</a></li>
+<li><a href="/Class_372/Default.aspx" target="_self">叉车</a></li>
+<li><a href="/Class_373/Default.aspx" target="_self">混泥土机械</a></li>
+<li><a href="/Class_374/Default.aspx" target="_self">钢筋和预应力机械</a></li>
+<li><a href="/Class_375/Default.aspx" target="_self">路面机械</a></li>
+<li><a href="/Class_376/Default.aspx" target="_self">凿岩机械</a></li>
+<li><a href="/Class_377/Default.aspx" target="_self">工程车</a></li>
+<li><a href="/Class_378/Default.aspx" target="_self">市政养护</a></li>
+<li><a href="/Class_379/Default.aspx" target="_self">环保和环境卫生机械</a></li>
+<li><a href="/Class_380/Default.aspx" target="_self">筑养路机械</a></li>
+<li><a href="/Class_381/Default.aspx" target="_self">工程钻探机械</a></li>
+<li><a href="/Class_382/Default.aspx" target="_self">桥梁机械动力装置及配件五金机械配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_356/Default.aspx" target="_self">常用设备</a>
+<a href="/Class_356/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_383/Default.aspx" target="_self">给料设备</a></li>
+<li><a href="/Class_384/Default.aspx" target="_self">锅炉设备</a></li>
+<li><a href="/Class_385/Default.aspx" target="_self">破碎设备</a></li>
+<li><a href="/Class_386/Default.aspx" target="_self">磨矿设备</a></li>
+<li><a href="/Class_387/Default.aspx" target="_self">焙烧设备</a></li>
+<li><a href="/Class_388/Default.aspx" target="_self">除尘设备</a></li>
+<li><a href="/Class_389/Default.aspx" target="_self">干燥设备</a></li>
+<li><a href="/Class_390/Default.aspx" target="_self">分离设备</a></li>
+<li><a href="/Class_391/Default.aspx" target="_self">输送设备</a></li>
+<li><a href="/Class_392/Default.aspx" target="_self">泵阀设备</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_64/Default.aspx" target="_self">暖通/空调/给排水</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_357/Default.aspx" target="_self">仪表及自动化控制</a>
+<a href="/Class_357/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_394/Default.aspx" target="_self">水表</a></li>
+<li><a href="/Class_395/Default.aspx" target="_self">燃气表</a></li>
+<li><a href="/Class_396/Default.aspx" target="_self">电度表</a></li>
+<li><a href="/Class_397/Default.aspx" target="_self">热量表</a></li>
+<li><a href="/Class_398/Default.aspx" target="_self">综合计费仪表</a></li>
+<li><a href="/Class_399/Default.aspx" target="_self">电工测量仪表</a></li>
+<li><a href="/Class_400/Default.aspx" target="_self">温度测量仪表</a></li>
+<li><a href="/Class_401/Default.aspx" target="_self">压力仪表</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_358/Default.aspx" target="_self">阀门</a>
+<a href="/Class_358/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_402/Default.aspx" target="_self">截止阀</a></li>
+<li><a href="/Class_403/Default.aspx" target="_self">匣阀</a></li>
+<li><a href="/Class_404/Default.aspx" target="_self">球阀</a></li>
+<li><a href="/Class_405/Default.aspx" target="_self">蝶阀</a></li>
+<li><a href="/Class_406/Default.aspx" target="_self">止回阀</a></li>
+<li><a href="/Class_407/Default.aspx" target="_self">安全阀</a></li>
+<li><a href="/Class_408/Default.aspx" target="_self">调节阀</a></li>
+<li><a href="/Class_409/Default.aspx" target="_self">节流阀</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_359/Default.aspx" target="_self">水暖及通风空调器材</a>
+<a href="/Class_359/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_410/Default.aspx" target="_self">铸铁散热器</a></li>
+<li><a href="/Class_411/Default.aspx" target="_self">钢制散热器</a></li>
+<li><a href="/Class_412/Default.aspx" target="_self">铝制散热器</a></li>
+<li><a href="/Class_413/Default.aspx" target="_self">其他散热器</a></li>
+<li><a href="/Class_414/Default.aspx" target="_self">散热器专用配件</a></li>
+<li><a href="/Class_415/Default.aspx" target="_self">集气罐</a></li>
+<li><a href="/Class_416/Default.aspx" target="_self">集热器</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_393/Default.aspx" target="_self">地暖材料</a>
+<a href="/Class_393/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_417/Default.aspx" target="_self">地热膜</a></li>
+<li><a href="/Class_418/Default.aspx" target="_self">电采暖产品</a></li>
+<li><a href="/Class_419/Default.aspx" target="_self">水暖产品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_65/Default.aspx" target="_self">市政交通</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_360/Default.aspx" target="_self">轨道交通专用材料</a>
+<a href="/Class_360/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_420/Default.aspx" target="_self">钢轨</a></li>
+<li><a href="/Class_421/Default.aspx" target="_self">轨枕（岔枕）</a></li>
+<li><a href="/Class_422/Default.aspx" target="_self">鱼尾板</a></li>
+<li><a href="/Class_423/Default.aspx" target="_self">轨道用辅助材料</a></li>
+<li><a href="/Class_424/Default.aspx" target="_self">轨道用工器具</a></li>
+<li><a href="/Class_425/Default.aspx" target="_self">道口信号器材</a></li>
+<li><a href="/Class_426/Default.aspx" target="_self">信号线路连接附件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_361/Default.aspx" target="_self">道路桥梁专业材料</a>
+<a href="/Class_361/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_427/Default.aspx" target="_self">道路管井、沟槽等构件</a></li>
+<li><a href="/Class_428/Default.aspx" target="_self">路面砖</a></li>
+<li><a href="/Class_429/Default.aspx" target="_self">路面天然石构件</a></li>
+<li><a href="/Class_430/Default.aspx" target="_self">广场砖</a></li>
+<li><a href="/Class_431/Default.aspx" target="_self">防撞装置</a></li>
+<li><a href="/Class_432/Default.aspx" target="_self">隔离装置</a></li>
+<li><a href="/Class_433/Default.aspx" target="_self">交通（安全）标志</a></li>
+<li><a href="/Class_434/Default.aspx" target="_self">车位锁</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_66/Default.aspx" target="_self">门/窗/幕墙/玻璃</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_362/Default.aspx" target="_self">玻璃及玻璃制品</a>
+<a href="/Class_362/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_445/Default.aspx" target="_self">浮法玻璃</a></li>
+<li><a href="/Class_446/Default.aspx" target="_self">有色玻璃</a></li>
+<li><a href="/Class_447/Default.aspx" target="_self"> 钢化玻璃</a></li>
+<li><a href="/Class_448/Default.aspx" target="_self">夹丝（夹网）玻璃</a></li>
+<li><a href="/Class_449/Default.aspx" target="_self">夹层玻璃</a></li>
+<li><a href="/Class_450/Default.aspx" target="_self">中空玻璃</a></li>
+<li><a href="/Class_451/Default.aspx" target="_self"> 镀膜玻璃</a></li>
+<li><a href="/Class_452/Default.aspx" target="_self">艺术装饰玻璃</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_363/Default.aspx" target="_self">门窗及楼梯制品</a>
+<a href="/Class_363/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_453/Default.aspx" target="_self">木门窗</a></li>
+<li><a href="/Class_454/Default.aspx" target="_self">钢门窗</a></li>
+<li><a href="/Class_455/Default.aspx" target="_self">彩钢门窗</a></li>
+<li><a href="/Class_456/Default.aspx" target="_self">不锈钢门窗</a></li>
+<li><a href="/Class_457/Default.aspx" target="_self">铝合金门窗</a></li>
+<li><a href="/Class_458/Default.aspx" target="_self">塑钢、塑铝门窗</a></li>
+<li><a href="/Class_459/Default.aspx" target="_self">塑料门窗</a></li>
+<li><a href="/Class_460/Default.aspx" target="_self"> 玻璃钢门窗</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_67/Default.aspx" target="_self">苗木花卉</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_545/Default.aspx" target="_self">常绿乔木</a>
+<a href="/Class_545/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_546/Default.aspx" target="_self">常绿灌木</a>
+<a href="/Class_546/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_547/Default.aspx" target="_self">落叶乔木</a>
+<a href="/Class_547/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_548/Default.aspx" target="_self">落叶灌木</a>
+<a href="/Class_548/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_549/Default.aspx" target="_self">彩叶苗木</a>
+<a href="/Class_549/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_550/Default.aspx" target="_self">球类苗木</a>
+<a href="/Class_550/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_551/Default.aspx" target="_self">花类苗木</a>
+<a href="/Class_551/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_552/Default.aspx" target="_self">果树苗木</a>
+<a href="/Class_552/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_553/Default.aspx" target="_self">绿植盆栽</a>
+<a href="/Class_553/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_554/Default.aspx" target="_self">小型盆栽</a>
+<a href="/Class_554/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_555/Default.aspx" target="_self">多浆多肉</a>
+<a href="/Class_555/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_556/Default.aspx" target="_self">观赏盆景</a>
+<a href="/Class_556/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_557/Default.aspx" target="_self">其它</a>
+<a href="/Class_557/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li style=" background-color:#ccc;"><a href="/Class_52/Default.aspx" target="_blank">进入商城>></a></li>
+</ul>
+</li>
+<li class="dropdown visible-xs">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">建筑商城 <span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+
+<li>
+<a href="/Class_53/Default.aspx" target="_self">建筑业服务企业</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_93/Default.aspx" target="_self">建筑公司运营</a>
+<a href="/Class_93/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_96/Default.aspx" target="_self">资质代理</a></li>
+<li><a href="/Class_97/Default.aspx" target="_self">人才证书</a></li>
+<li><a href="/Class_98/Default.aspx" target="_self">建筑咨询机构</a></li>
+<li><a href="/Class_99/Default.aspx" target="_self">培训学校</a></li>
+<li><a href="/Class_100/Default.aspx" target="_self">工商税务</a></li>
+<li><a href="/Class_101/Default.aspx" target="_self">商标专利</a></li>
+<li><a href="/Class_102/Default.aspx" target="_self">质量认证</a></li>
+<li><a href="/Class_103/Default.aspx" target="_self">诚信认证</a></li>
+<li><a href="/Class_104/Default.aspx" target="_self">资金贷款</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_94/Default.aspx" target="_self">第三方代理服务</a>
+<a href="/Class_94/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_105/Default.aspx" target="_self">检测机构 </a></li>
+<li><a href="/Class_106/Default.aspx" target="_self">项目报批报建代理 </a></li>
+<li><a href="/Class_107/Default.aspx" target="_self">勘察测量 </a></li>
+<li><a href="/Class_108/Default.aspx" target="_self">设计制作</a></li>
+<li><a href="/Class_109/Default.aspx" target="_self">水土保持方案 </a></li>
+<li><a href="/Class_110/Default.aspx" target="_self">可行性研究报务 </a></li>
+<li><a href="/Class_111/Default.aspx" target="_self">建筑节能</a></li>
+<li><a href="/Class_112/Default.aspx" target="_self">规划编制</a></li>
+<li><a href="/Class_113/Default.aspx" target="_self">施工图审 </a></li>
+<li><a href="/Class_114/Default.aspx" target="_self">工程造价</a></li>
+<li><a href="/Class_115/Default.aspx" target="_self">竣工备案</a></li>
+<li><a href="/Class_116/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_95/Default.aspx" target="_self">附属配套</a>
+<a href="/Class_95/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_117/Default.aspx" target="_self">装修公司</a></li>
+<li><a href="/Class_118/Default.aspx" target="_self">劳务企业</a></li>
+<li><a href="/Class_119/Default.aspx" target="_self">网站制作</a></li>
+<li><a href="/Class_120/Default.aspx" target="_self">企业培训</a></li>
+<li><a href="/Class_121/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_54/Default.aspx" target="_self">砌筑材料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_122/Default.aspx" target="_self">水泥、砖瓦灰砂石及混凝土制品</a>
+<a href="/Class_122/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_123/Default.aspx" target="_self">水泥</a></li>
+<li><a href="/Class_124/Default.aspx" target="_self">砂</a></li>
+<li><a href="/Class_125/Default.aspx" target="_self">石子</a></li>
+<li><a href="/Class_126/Default.aspx" target="_self">轻骨料</a></li>
+<li><a href="/Class_127/Default.aspx" target="_self">灰、粉、土等掺合填充料 石料</a></li>
+<li><a href="/Class_128/Default.aspx" target="_self">砌砖</a></li>
+<li><a href="/Class_129/Default.aspx" target="_self">砌块</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_130/Default.aspx" target="_self">混凝土、砂浆及其他配合比材料</a>
+<a href="/Class_130/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_131/Default.aspx" target="_self">水泥砂浆</a></li>
+<li><a href="/Class_132/Default.aspx" target="_self">石灰砂浆</a></li>
+<li><a href="/Class_133/Default.aspx" target="_self">混合砂浆</a></li>
+<li><a href="/Class_134/Default.aspx" target="_self">特种砂浆</a></li>
+<li><a href="/Class_135/Default.aspx" target="_self">灰浆、水泥浆</a></li>
+<li><a href="/Class_136/Default.aspx" target="_self">石子浆</a></li>
+<li><a href="/Class_137/Default.aspx" target="_self">胶泥、脂、油</a></li>
+<li><a href="/Class_138/Default.aspx" target="_self">普通混凝土</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_55/Default.aspx" target="_self">黑色及有色金属</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_139/Default.aspx" target="_self">钢材</a>
+<a href="/Class_139/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_155/Default.aspx" target="_self">钢筋</a></li>
+<li><a href="/Class_156/Default.aspx" target="_self">钢丝</a></li>
+<li><a href="/Class_157/Default.aspx" target="_self">钢丝绳</a></li>
+<li><a href="/Class_158/Default.aspx" target="_self">钢绞线/钢丝束</a></li>
+<li><a href="/Class_159/Default.aspx" target="_self">圆钢</a></li>
+<li><a href="/Class_160/Default.aspx" target="_self">方钢</a></li>
+<li><a href="/Class_161/Default.aspx" target="_self">扁钢 </a></li>
+<li><a href="/Class_162/Default.aspx" target="_self">六角钢</a></li>
+<li><a href="/Class_163/Default.aspx" target="_self">八角钢</a></li>
+<li><a href="/Class_164/Default.aspx" target="_self">槽钢</a></li>
+<li><a href="/Class_165/Default.aspx" target="_self">角钢</a></li>
+<li><a href="/Class_166/Default.aspx" target="_self">型钢</a></li>
+<li><a href="/Class_167/Default.aspx" target="_self">钢板 </a></li>
+<li><a href="/Class_168/Default.aspx" target="_self">钢带 </a></li>
+<li><a href="/Class_169/Default.aspx" target="_self">硅钢片 </a></li>
+<li><a href="/Class_170/Default.aspx" target="_self">其它型钢</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_140/Default.aspx" target="_self">铜材</a>
+<a href="/Class_140/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_151/Default.aspx" target="_self">铜板</a></li>
+<li><a href="/Class_152/Default.aspx" target="_self">铜带材</a></li>
+<li><a href="/Class_153/Default.aspx" target="_self">铀棒材</a></li>
+<li><a href="/Class_154/Default.aspx" target="_self">铜线材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_141/Default.aspx" target="_self">铝材</a>
+<a href="/Class_141/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_148/Default.aspx" target="_self">铝板(带)材</a></li>
+<li><a href="/Class_149/Default.aspx" target="_self">铝线材</a></li>
+<li><a href="/Class_150/Default.aspx" target="_self">铝型材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_142/Default.aspx" target="_self">其它金属材料</a>
+<a href="/Class_142/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_143/Default.aspx" target="_self">铅材</a></li>
+<li><a href="/Class_144/Default.aspx" target="_self">钛材</a></li>
+<li><a href="/Class_145/Default.aspx" target="_self">镍材 </a></li>
+<li><a href="/Class_146/Default.aspx" target="_self">锌材</a></li>
+<li><a href="/Class_147/Default.aspx" target="_self">金属源材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_56/Default.aspx" target="_self">地砖/地板</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_171/Default.aspx" target="_self">墙砖、地砖、地板、地毯类材料</a>
+<a href="/Class_171/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_174/Default.aspx" target="_self">陶瓷内墙砖</a></li>
+<li><a href="/Class_175/Default.aspx" target="_self">陶瓷外墙砖 </a></li>
+<li><a href="/Class_176/Default.aspx" target="_self">陶瓷地砖</a></li>
+<li><a href="/Class_177/Default.aspx" target="_self">陶瓷马赛克</a></li>
+<li><a href="/Class_178/Default.aspx" target="_self"> 石塑地砖</a></li>
+<li><a href="/Class_179/Default.aspx" target="_self">塑料地砖</a></li>
+<li><a href="/Class_180/Default.aspx" target="_self">实木地板</a></li>
+<li><a href="/Class_181/Default.aspx" target="_self">  软木地板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_172/Default.aspx" target="_self">墙面、顶棚及屋面饰面材料</a>
+<a href="/Class_172/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_182/Default.aspx" target="_self">石膏装饰板</a></li>
+<li><a href="/Class_183/Default.aspx" target="_self">竹木装饰板</a></li>
+<li><a href="/Class_184/Default.aspx" target="_self">金属装饰板</a></li>
+<li><a href="/Class_185/Default.aspx" target="_self">矿物棉装饰板</a></li>
+<li><a href="/Class_186/Default.aspx" target="_self">塑料装饰板</a></li>
+<li><a href="/Class_187/Default.aspx" target="_self">复合装饰板</a></li>
+<li><a href="/Class_188/Default.aspx" target="_self">铝塑复合板</a></li>
+<li><a href="/Class_189/Default.aspx" target="_self">纤维水泥装饰板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_173/Default.aspx" target="_self">龙骨、龙骨配件</a>
+<a href="/Class_173/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_190/Default.aspx" target="_self">轻钢龙骨</a></li>
+<li><a href="/Class_191/Default.aspx" target="_self">型钢龙骨</a></li>
+<li><a href="/Class_192/Default.aspx" target="_self">铝合金龙骨</a></li>
+<li><a href="/Class_193/Default.aspx" target="_self">木龙骨</a></li>
+<li><a href="/Class_194/Default.aspx" target="_self">烤漆龙骨</a></li>
+<li><a href="/Class_195/Default.aspx" target="_self">石膏龙骨</a></li>
+<li><a href="/Class_196/Default.aspx" target="_self">不锈钢龙骨 </a></li>
+<li><a href="/Class_197/Default.aspx" target="_self">轻钢、型钢龙骨配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_57/Default.aspx" target="_self">石材木材</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_198/Default.aspx" target="_self">装饰石材及石材制品</a>
+<a href="/Class_198/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_199/Default.aspx" target="_self">大理石</a></li>
+<li><a href="/Class_200/Default.aspx" target="_self">花岗石</a></li>
+<li><a href="/Class_201/Default.aspx" target="_self">青石(石灰石)</a></li>
+<li><a href="/Class_202/Default.aspx" target="_self">砂岩</a></li>
+<li><a href="/Class_203/Default.aspx" target="_self">文化石</a></li>
+<li><a href="/Class_204/Default.aspx" target="_self">麻石</a></li>
+<li><a href="/Class_205/Default.aspx" target="_self">人造石</a></li>
+<li><a href="/Class_206/Default.aspx" target="_self">板材微晶石</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_207/Default.aspx" target="_self">木、竹材料及其制品</a>
+<a href="/Class_207/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_208/Default.aspx" target="_self">原木</a></li>
+<li><a href="/Class_209/Default.aspx" target="_self">锯材</a></li>
+<li><a href="/Class_210/Default.aspx" target="_self">胶合板</a></li>
+<li><a href="/Class_211/Default.aspx" target="_self">纤维板</a></li>
+<li><a href="/Class_212/Default.aspx" target="_self">细木工板</a></li>
+<li><a href="/Class_213/Default.aspx" target="_self">空心木板</a></li>
+<li><a href="/Class_214/Default.aspx" target="_self">刨花板</a></li>
+<li><a href="/Class_215/Default.aspx" target="_self">其他人造木板</a></li>
+<li><a href="/Class_216/Default.aspx" target="_self">木质容器类</a></li>
+<li><a href="/Class_217/Default.aspx" target="_self">木制台类及货架</a></li>
+<li><a href="/Class_218/Default.aspx" target="_self">其他木制品</a></li>
+<li><a href="/Class_219/Default.aspx" target="_self">竹材</a></li>
+<li><a href="/Class_220/Default.aspx" target="_self">竹板</a></li>
+<li><a href="/Class_221/Default.aspx" target="_self">竹制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_58/Default.aspx" target="_self">橡胶塑料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_222/Default.aspx" target="_self">橡胶、塑料及非金属材料</a>
+<a href="/Class_222/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_223/Default.aspx" target="_self">橡胶板</a></li>
+<li><a href="/Class_224/Default.aspx" target="_self">橡胶条、带</a></li>
+<li><a href="/Class_225/Default.aspx" target="_self">橡胶圈</a></li>
+<li><a href="/Class_226/Default.aspx" target="_self">其他橡胶材料</a></li>
+<li><a href="/Class_227/Default.aspx" target="_self">塑料薄膜、布塑钢建筑型材</a></li>
+<li><a href="/Class_228/Default.aspx" target="_self">塑料板</a></li>
+<li><a href="/Class_229/Default.aspx" target="_self">塑料袋</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_230/Default.aspx" target="_self">油品、化工原料及胶粘材料</a>
+<a href="/Class_230/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_231/Default.aspx" target="_self">油料</a></li>
+<li><a href="/Class_232/Default.aspx" target="_self">燃料油</a></li>
+<li><a href="/Class_233/Default.aspx" target="_self">溶剂油、绝缘油</a></li>
+<li><a href="/Class_234/Default.aspx" target="_self">润滑油</a></li>
+<li><a href="/Class_235/Default.aspx" target="_self">润滑脂、蜡</a></li>
+<li><a href="/Class_236/Default.aspx" target="_self">树脂</a></li>
+<li><a href="/Class_237/Default.aspx" target="_self">颜料</a></li>
+<li><a href="/Class_238/Default.aspx" target="_self">无机化工原料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_59/Default.aspx" target="_self">新型专用建材</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_239/Default.aspx" target="_self">绝热(保温)、耐火材料</a>
+<a href="/Class_239/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_240/Default.aspx" target="_self">石棉及其制品</a></li>
+<li><a href="/Class_242/Default.aspx" target="_self">矿渣棉及其制品</a></li>
+<li><a href="/Class_252/Default.aspx" target="_self">岩棉及其制品</a></li>
+<li><a href="/Class_253/Default.aspx" target="_self">玻璃棉及其制品</a></li>
+<li><a href="/Class_254/Default.aspx" target="_self">膨胀珍珠岩及其制品</a></li>
+<li><a href="/Class_255/Default.aspx" target="_self">膨胀蛭石及其制品</a></li>
+<li><a href="/Class_256/Default.aspx" target="_self">泡沫橡胶(塑料)及其制品</a></li>
+<li><a href="/Class_257/Default.aspx" target="_self">泡沫玻璃及其制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_241/Default.aspx" target="_self">涂料及防腐、防水材料</a>
+<a href="/Class_241/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_258/Default.aspx" target="_self">通用涂料</a></li>
+<li><a href="/Class_259/Default.aspx" target="_self">建筑涂料</a></li>
+<li><a href="/Class_260/Default.aspx" target="_self">功能性涂料</a></li>
+<li><a href="/Class_261/Default.aspx" target="_self">木器涂料</a></li>
+<li><a href="/Class_263/Default.aspx" target="_self">道路、路面涂料</a></li>
+<li><a href="/Class_264/Default.aspx" target="_self">工业设备涂料</a></li>
+<li><a href="/Class_265/Default.aspx" target="_self">其他专用涂料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_243/Default.aspx" target="_self">吸声、抗辐射及无损探伤材料</a>
+<a href="/Class_243/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_266/Default.aspx" target="_self">伤材料</a></li>
+<li><a href="/Class_267/Default.aspx" target="_self">木质吸音板</a></li>
+<li><a href="/Class_268/Default.aspx" target="_self">软木及其制品</a></li>
+<li><a href="/Class_269/Default.aspx" target="_self">复合吸音板</a></li>
+<li><a href="/Class_270/Default.aspx" target="_self">隔声棉</a></li>
+<li><a href="/Class_271/Default.aspx" target="_self">空间吸声体</a></li>
+<li><a href="/Class_272/Default.aspx" target="_self">表面防护材料</a></li>
+<li><a href="/Class_273/Default.aspx" target="_self">无损探伤材料</a></li>
+<li><a href="/Class_274/Default.aspx" target="_self">防辐射材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_60/Default.aspx" target="_self">景观/仿古/园林/苗木</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_246/Default.aspx" target="_self">园林</a>
+<a href="/Class_246/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_277/Default.aspx" target="_self">乔木</a></li>
+<li><a href="/Class_278/Default.aspx" target="_self">藤本植物</a></li>
+<li><a href="/Class_279/Default.aspx" target="_self">地被植物</a></li>
+<li><a href="/Class_280/Default.aspx" target="_self">棕榈科植物</a></li>
+<li><a href="/Class_281/Default.aspx" target="_self">观赏竹类</a></li>
+<li><a href="/Class_282/Default.aspx" target="_self">花卉</a></li>
+<li><a href="/Class_283/Default.aspx" target="_self">盆景</a></li>
+<li><a href="/Class_284/Default.aspx" target="_self">园林雕塑</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_276/Default.aspx" target="_self">仿古</a>
+<a href="/Class_276/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_285/Default.aspx" target="_self">玻璃砖</a></li>
+<li><a href="/Class_286/Default.aspx" target="_self">琉璃瓦件</a></li>
+<li><a href="/Class_287/Default.aspx" target="_self">其他琉璃仿古材料</a></li>
+<li><a href="/Class_288/Default.aspx" target="_self">黏土砖(黑活瓦件)</a></li>
+<li><a href="/Class_289/Default.aspx" target="_self">黏土瓦件</a></li>
+<li><a href="/Class_290/Default.aspx" target="_self">仿古油饰</a></li>
+<li><a href="/Class_291/Default.aspx" target="_self">裱糊材料</a></li>
+<li><a href="/Class_292/Default.aspx" target="_self">木制仿古材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_366/Default.aspx" target="_self">景观</a>
+<a href="/Class_366/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_443/Default.aspx" target="_self">绿植盆栽</a></li>
+<li><a href="/Class_444/Default.aspx" target="_self">小型盆栽</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_61/Default.aspx" target="_self">灯具/开关/五金/周转材料</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_244/Default.aspx" target="_self">灯具、光源</a>
+<a href="/Class_244/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_294/Default.aspx" target="_self">光源</a></li>
+<li><a href="/Class_295/Default.aspx" target="_self">吊灯(装饰花灯)</a></li>
+<li><a href="/Class_296/Default.aspx" target="_self">吸顶灯</a></li>
+<li><a href="/Class_297/Default.aspx" target="_self">壁灯</a></li>
+<li><a href="/Class_298/Default.aspx" target="_self">筒灯</a></li>
+<li><a href="/Class_299/Default.aspx" target="_self">格栅灯</a></li>
+<li><a href="/Class_300/Default.aspx" target="_self">射灯</a></li>
+<li><a href="/Class_301/Default.aspx" target="_self">台灯、落地灯</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_245/Default.aspx" target="_self"> 开关、插座</a>
+<a href="/Class_245/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_302/Default.aspx" target="_self">拉线开关</a></li>
+<li><a href="/Class_303/Default.aspx" target="_self">扳把开关</a></li>
+<li><a href="/Class_304/Default.aspx" target="_self">普通面板开关</a></li>
+<li><a href="/Class_305/Default.aspx" target="_self">调光面板开关</a></li>
+<li><a href="/Class_306/Default.aspx" target="_self">电子感应开关</a></li>
+<li><a href="/Class_307/Default.aspx" target="_self">调速面板开关</a></li>
+<li><a href="/Class_308/Default.aspx" target="_self">插卡取电开关</a></li>
+<li><a href="/Class_309/Default.aspx" target="_self">门铃、电铃开关</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_247/Default.aspx" target="_self">周转材料及五金工具</a>
+<a href="/Class_247/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_310/Default.aspx" target="_self">模板</a></li>
+<li><a href="/Class_311/Default.aspx" target="_self">模板附件</a></li>
+<li><a href="/Class_312/Default.aspx" target="_self">脚手架及其配件</a></li>
+<li><a href="/Class_313/Default.aspx" target="_self">维护、运输类周转材料</a></li>
+<li><a href="/Class_314/Default.aspx" target="_self">胎具、模具类周转材料</a></li>
+<li><a href="/Class_315/Default.aspx" target="_self">活动板房、集装箱活动房</a></li>
+<li><a href="/Class_316/Default.aspx" target="_self">其余周转材料</a></li>
+<li><a href="/Class_317/Default.aspx" target="_self">手动工具</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_293/Default.aspx" target="_self">五金制品</a>
+<a href="/Class_293/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_318/Default.aspx" target="_self">紧固件</a></li>
+<li><a href="/Class_319/Default.aspx" target="_self">门窗五金</a></li>
+<li><a href="/Class_320/Default.aspx" target="_self">幕墙五金</a></li>
+<li><a href="/Class_321/Default.aspx" target="_self">家具五金</a></li>
+<li><a href="/Class_322/Default.aspx" target="_self">水暖及卫浴五金</a></li>
+<li><a href="/Class_323/Default.aspx" target="_self">涂附磨具与磨料</a></li>
+<li><a href="/Class_324/Default.aspx" target="_self">焊材</a></li>
+<li><a href="/Class_325/Default.aspx" target="_self">其他五金配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_62/Default.aspx" target="_self">电线电缆 / 电气 / 弱电/消防</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_248/Default.aspx" target="_self">保险、绝缘及消防设施</a>
+<a href="/Class_248/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_326/Default.aspx" target="_self">熔断器</a></li>
+<li><a href="/Class_327/Default.aspx" target="_self">保险器材</a></li>
+<li><a href="/Class_328/Default.aspx" target="_self">避雷装置</a></li>
+<li><a href="/Class_329/Default.aspx" target="_self">接地装置</a></li>
+<li><a href="/Class_330/Default.aspx" target="_self">漏电保护器材</a></li>
+<li><a href="/Class_331/Default.aspx" target="_self">高压绝缘子</a></li>
+<li><a href="/Class_332/Default.aspx" target="_self">低压绝缘子</a></li>
+<li><a href="/Class_333/Default.aspx" target="_self">绝缘穿墙套管、瓷套管</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_249/Default.aspx" target="_self">电线电缆及光纤光缆</a>
+<a href="/Class_249/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_334/Default.aspx" target="_self">裸电线</a></li>
+<li><a href="/Class_335/Default.aspx" target="_self">电气装备用电线电缆</a></li>
+<li><a href="/Class_336/Default.aspx" target="_self">电磁线</a></li>
+<li><a href="/Class_337/Default.aspx" target="_self">电力电缆</a></li>
+<li><a href="/Class_338/Default.aspx" target="_self">充油及油浸纸绝缘电力电缆</a></li>
+<li><a href="/Class_339/Default.aspx" target="_self">室内电话电缆</a></li>
+<li><a href="/Class_340/Default.aspx" target="_self">长途通信电缆</a></li>
+<li><a href="/Class_341/Default.aspx" target="_self">光纤电缆</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_250/Default.aspx" target="_self">电气线路敷设材料</a>
+<a href="/Class_250/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_342/Default.aspx" target="_self">电缆桥架</a></li>
+<li><a href="/Class_343/Default.aspx" target="_self">电缆桥架连接件及附件</a></li>
+<li><a href="/Class_344/Default.aspx" target="_self">线槽及其连接件</a></li>
+<li><a href="/Class_345/Default.aspx" target="_self">母线槽及其连接件</a></li>
+<li><a href="/Class_346/Default.aspx" target="_self">电线、电缆套管及其管件</a></li>
+<li><a href="/Class_347/Default.aspx" target="_self">电缆头</a></li>
+<li><a href="/Class_348/Default.aspx" target="_self">接线端子</a></li>
+<li><a href="/Class_349/Default.aspx" target="_self">接线盒(箱)</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_251/Default.aspx" target="_self">弱电及信息类器材</a>
+<a href="/Class_251/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_435/Default.aspx" target="_self">安防报警器材</a></li>
+<li><a href="/Class_436/Default.aspx" target="_self">门禁系统器材</a></li>
+<li><a href="/Class_437/Default.aspx" target="_self">监控显示器材</a></li>
+<li><a href="/Class_438/Default.aspx" target="_self">安全检查器</a></li>
+<li><a href="/Class_439/Default.aspx" target="_self">停车场管理系统器材</a></li>
+<li><a href="/Class_440/Default.aspx" target="_self">电话通信设备器材</a></li>
+<li><a href="/Class_441/Default.aspx" target="_self">广播线路、移动通信器材</a></li>
+<li><a href="/Class_442/Default.aspx" target="_self">有线电视、卫星电视器材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_63/Default.aspx" target="_self">机械设备</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_355/Default.aspx" target="_self">工程常机械</a>
+<a href="/Class_355/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_367/Default.aspx" target="_self">挖掘机械</a></li>
+<li><a href="/Class_368/Default.aspx" target="_self">铲/推土机械</a></li>
+<li><a href="/Class_369/Default.aspx" target="_self">起重机械</a></li>
+<li><a href="/Class_370/Default.aspx" target="_self">压实机械</a></li>
+<li><a href="/Class_371/Default.aspx" target="_self">桩工机械</a></li>
+<li><a href="/Class_372/Default.aspx" target="_self">叉车</a></li>
+<li><a href="/Class_373/Default.aspx" target="_self">混泥土机械</a></li>
+<li><a href="/Class_374/Default.aspx" target="_self">钢筋和预应力机械</a></li>
+<li><a href="/Class_375/Default.aspx" target="_self">路面机械</a></li>
+<li><a href="/Class_376/Default.aspx" target="_self">凿岩机械</a></li>
+<li><a href="/Class_377/Default.aspx" target="_self">工程车</a></li>
+<li><a href="/Class_378/Default.aspx" target="_self">市政养护</a></li>
+<li><a href="/Class_379/Default.aspx" target="_self">环保和环境卫生机械</a></li>
+<li><a href="/Class_380/Default.aspx" target="_self">筑养路机械</a></li>
+<li><a href="/Class_381/Default.aspx" target="_self">工程钻探机械</a></li>
+<li><a href="/Class_382/Default.aspx" target="_self">桥梁机械动力装置及配件五金机械配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_356/Default.aspx" target="_self">常用设备</a>
+<a href="/Class_356/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_383/Default.aspx" target="_self">给料设备</a></li>
+<li><a href="/Class_384/Default.aspx" target="_self">锅炉设备</a></li>
+<li><a href="/Class_385/Default.aspx" target="_self">破碎设备</a></li>
+<li><a href="/Class_386/Default.aspx" target="_self">磨矿设备</a></li>
+<li><a href="/Class_387/Default.aspx" target="_self">焙烧设备</a></li>
+<li><a href="/Class_388/Default.aspx" target="_self">除尘设备</a></li>
+<li><a href="/Class_389/Default.aspx" target="_self">干燥设备</a></li>
+<li><a href="/Class_390/Default.aspx" target="_self">分离设备</a></li>
+<li><a href="/Class_391/Default.aspx" target="_self">输送设备</a></li>
+<li><a href="/Class_392/Default.aspx" target="_self">泵阀设备</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_64/Default.aspx" target="_self">暖通/空调/给排水</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_357/Default.aspx" target="_self">仪表及自动化控制</a>
+<a href="/Class_357/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_394/Default.aspx" target="_self">水表</a></li>
+<li><a href="/Class_395/Default.aspx" target="_self">燃气表</a></li>
+<li><a href="/Class_396/Default.aspx" target="_self">电度表</a></li>
+<li><a href="/Class_397/Default.aspx" target="_self">热量表</a></li>
+<li><a href="/Class_398/Default.aspx" target="_self">综合计费仪表</a></li>
+<li><a href="/Class_399/Default.aspx" target="_self">电工测量仪表</a></li>
+<li><a href="/Class_400/Default.aspx" target="_self">温度测量仪表</a></li>
+<li><a href="/Class_401/Default.aspx" target="_self">压力仪表</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_358/Default.aspx" target="_self">阀门</a>
+<a href="/Class_358/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_402/Default.aspx" target="_self">截止阀</a></li>
+<li><a href="/Class_403/Default.aspx" target="_self">匣阀</a></li>
+<li><a href="/Class_404/Default.aspx" target="_self">球阀</a></li>
+<li><a href="/Class_405/Default.aspx" target="_self">蝶阀</a></li>
+<li><a href="/Class_406/Default.aspx" target="_self">止回阀</a></li>
+<li><a href="/Class_407/Default.aspx" target="_self">安全阀</a></li>
+<li><a href="/Class_408/Default.aspx" target="_self">调节阀</a></li>
+<li><a href="/Class_409/Default.aspx" target="_self">节流阀</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_359/Default.aspx" target="_self">水暖及通风空调器材</a>
+<a href="/Class_359/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_410/Default.aspx" target="_self">铸铁散热器</a></li>
+<li><a href="/Class_411/Default.aspx" target="_self">钢制散热器</a></li>
+<li><a href="/Class_412/Default.aspx" target="_self">铝制散热器</a></li>
+<li><a href="/Class_413/Default.aspx" target="_self">其他散热器</a></li>
+<li><a href="/Class_414/Default.aspx" target="_self">散热器专用配件</a></li>
+<li><a href="/Class_415/Default.aspx" target="_self">集气罐</a></li>
+<li><a href="/Class_416/Default.aspx" target="_self">集热器</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_393/Default.aspx" target="_self">地暖材料</a>
+<a href="/Class_393/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_417/Default.aspx" target="_self">地热膜</a></li>
+<li><a href="/Class_418/Default.aspx" target="_self">电采暖产品</a></li>
+<li><a href="/Class_419/Default.aspx" target="_self">水暖产品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_65/Default.aspx" target="_self">市政交通</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_360/Default.aspx" target="_self">轨道交通专用材料</a>
+<a href="/Class_360/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_420/Default.aspx" target="_self">钢轨</a></li>
+<li><a href="/Class_421/Default.aspx" target="_self">轨枕（岔枕）</a></li>
+<li><a href="/Class_422/Default.aspx" target="_self">鱼尾板</a></li>
+<li><a href="/Class_423/Default.aspx" target="_self">轨道用辅助材料</a></li>
+<li><a href="/Class_424/Default.aspx" target="_self">轨道用工器具</a></li>
+<li><a href="/Class_425/Default.aspx" target="_self">道口信号器材</a></li>
+<li><a href="/Class_426/Default.aspx" target="_self">信号线路连接附件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_361/Default.aspx" target="_self">道路桥梁专业材料</a>
+<a href="/Class_361/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_427/Default.aspx" target="_self">道路管井、沟槽等构件</a></li>
+<li><a href="/Class_428/Default.aspx" target="_self">路面砖</a></li>
+<li><a href="/Class_429/Default.aspx" target="_self">路面天然石构件</a></li>
+<li><a href="/Class_430/Default.aspx" target="_self">广场砖</a></li>
+<li><a href="/Class_431/Default.aspx" target="_self">防撞装置</a></li>
+<li><a href="/Class_432/Default.aspx" target="_self">隔离装置</a></li>
+<li><a href="/Class_433/Default.aspx" target="_self">交通（安全）标志</a></li>
+<li><a href="/Class_434/Default.aspx" target="_self">车位锁</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_66/Default.aspx" target="_self">门/窗/幕墙/玻璃</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_362/Default.aspx" target="_self">玻璃及玻璃制品</a>
+<a href="/Class_362/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_445/Default.aspx" target="_self">浮法玻璃</a></li>
+<li><a href="/Class_446/Default.aspx" target="_self">有色玻璃</a></li>
+<li><a href="/Class_447/Default.aspx" target="_self"> 钢化玻璃</a></li>
+<li><a href="/Class_448/Default.aspx" target="_self">夹丝（夹网）玻璃</a></li>
+<li><a href="/Class_449/Default.aspx" target="_self">夹层玻璃</a></li>
+<li><a href="/Class_450/Default.aspx" target="_self">中空玻璃</a></li>
+<li><a href="/Class_451/Default.aspx" target="_self"> 镀膜玻璃</a></li>
+<li><a href="/Class_452/Default.aspx" target="_self">艺术装饰玻璃</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_363/Default.aspx" target="_self">门窗及楼梯制品</a>
+<a href="/Class_363/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_453/Default.aspx" target="_self">木门窗</a></li>
+<li><a href="/Class_454/Default.aspx" target="_self">钢门窗</a></li>
+<li><a href="/Class_455/Default.aspx" target="_self">彩钢门窗</a></li>
+<li><a href="/Class_456/Default.aspx" target="_self">不锈钢门窗</a></li>
+<li><a href="/Class_457/Default.aspx" target="_self">铝合金门窗</a></li>
+<li><a href="/Class_458/Default.aspx" target="_self">塑钢、塑铝门窗</a></li>
+<li><a href="/Class_459/Default.aspx" target="_self">塑料门窗</a></li>
+<li><a href="/Class_460/Default.aspx" target="_self"> 玻璃钢门窗</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<a href="/Class_67/Default.aspx" target="_self">苗木花卉</a>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_545/Default.aspx" target="_self">常绿乔木</a>
+<a href="/Class_545/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_546/Default.aspx" target="_self">常绿灌木</a>
+<a href="/Class_546/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_547/Default.aspx" target="_self">落叶乔木</a>
+<a href="/Class_547/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_548/Default.aspx" target="_self">落叶灌木</a>
+<a href="/Class_548/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_549/Default.aspx" target="_self">彩叶苗木</a>
+<a href="/Class_549/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_550/Default.aspx" target="_self">球类苗木</a>
+<a href="/Class_550/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_551/Default.aspx" target="_self">花类苗木</a>
+<a href="/Class_551/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_552/Default.aspx" target="_self">果树苗木</a>
+<a href="/Class_552/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_553/Default.aspx" target="_self">绿植盆栽</a>
+<a href="/Class_553/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_554/Default.aspx" target="_self">小型盆栽</a>
+<a href="/Class_554/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_555/Default.aspx" target="_self">多浆多肉</a>
+<a href="/Class_555/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_556/Default.aspx" target="_self">观赏盆景</a>
+<a href="/Class_556/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_557/Default.aspx" target="_self">其它</a>
+<a href="/Class_557/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li style=" background-color:#ccc;"><a href="/Class_52/Default.aspx" target="_blank">进入商城>></a></li>
+</ul>
+</li>
+<li id="team"><a href="/Class_1/Default.aspx" target="_self">施工队伍</a></li>
+<li><a href="/Class_2/Default.aspx" target="_self">采购平台</a></li>
+<li id="jxsb"><a href="/Class_5/Default.aspx" target="_self">机械设备</a></li>
+<li id="jzyc"><a href="/Class_40/Default.aspx" target="_self">建筑用材</a></li>
+<li id="gczy"><a href="/Class_6/Default.aspx" target="_self">工程资源</a></li>
+<li class="dropdown" role="presentation" id="jzfw">
+<a href="/Class_37/Default.aspx" target="_self">建筑服务<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu second_list">
+<li><a href="/Class_38/Default.aspx" target="_self">人才证书</a></li>
+<li><a href="/Class_50/Default.aspx" target="_self">培训咨询</a></li>
+<li><a href="/Class_39/Default.aspx" target="_self">第三方代理</a></li>
+</ul>
+</li>
+<li id="qysjk"><a href="/Class_3/Default.aspx" target="_self">企业数据库</a></li>
+<li class="dropdown" role="presentation" id="jxlt">
+<a href="/Class_41/Default.aspx" target="_self">建筑资讯<i class="fa fa-chevron-down"></i></a>
+<ul class="dropdown-menu second_list">		
+<li><a href="/Class_42/Default.aspx" target="_self">新闻公告</a></li>
+<li><a href="/Class_51/Default.aspx" target="_self">政策法规</a></li>
+<li><a href="/Class_43/Default.aspx" target="_blank">建筑文库</a></li>
+<li><a href="/Class_44/Default.aspx" target="_self">建筑视频</a></li>
+<li><a href="/Ask">建筑问答</a></li>
+<li><a href="/Class_45/Default.aspx" target="_self">办事指南</a></li>
+</ul>
+</li>
+<li class="home_nav_oa"><a href="/Class_79/Default.aspx"><span></span>建途OA</a></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+</div>
+<!--导航结束-->
+<div class="home_banner">  
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4000">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active home_banner1">
+ <p><a class="" href="/Class_79/Default.aspx">立即体验</a></p>
+</div>
+<div class="item home_banner2">
+<div class="carousel-caption">
+</div>
+</div>
+<div class="item home_banner3">
+<div class="carousel-caption">
+<p><a href="/Item/267.aspx" target="_blank"><i class="fa fa-hand-pointer-o"></i> 立即联系</a></p>
+</div>
+</div>
+<div class="item home_banner4">
+<div class="carousel-caption">
+<p><a href="/Special_2/Default" target="_blank" class="banner4">培训流程</a></p>
+</div>
+</div>
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+<div class="container hidden-xs">
+<div class="nav_llist">
+<ul id="nav_llist">
+
+<li class="mainCate">
+<h4><a href="/Class_53/Default.aspx" target="_self">建筑业服务企业</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_93/Default.aspx" target="_self">建筑公司运营</a>
+<a href="/Class_93/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_96/Default.aspx" target="_self">资质代理</a></li>
+<li><a href="/Class_97/Default.aspx" target="_self">人才证书</a></li>
+<li><a href="/Class_98/Default.aspx" target="_self">建筑咨询机构</a></li>
+<li><a href="/Class_99/Default.aspx" target="_self">培训学校</a></li>
+<li><a href="/Class_100/Default.aspx" target="_self">工商税务</a></li>
+<li><a href="/Class_101/Default.aspx" target="_self">商标专利</a></li>
+<li><a href="/Class_102/Default.aspx" target="_self">质量认证</a></li>
+<li><a href="/Class_103/Default.aspx" target="_self">诚信认证</a></li>
+<li><a href="/Class_104/Default.aspx" target="_self">资金贷款</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_94/Default.aspx" target="_self">第三方代理服务</a>
+<a href="/Class_94/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_105/Default.aspx" target="_self">检测机构 </a></li>
+<li><a href="/Class_106/Default.aspx" target="_self">项目报批报建代理 </a></li>
+<li><a href="/Class_107/Default.aspx" target="_self">勘察测量 </a></li>
+<li><a href="/Class_108/Default.aspx" target="_self">设计制作</a></li>
+<li><a href="/Class_109/Default.aspx" target="_self">水土保持方案 </a></li>
+<li><a href="/Class_110/Default.aspx" target="_self">可行性研究报务 </a></li>
+<li><a href="/Class_111/Default.aspx" target="_self">建筑节能</a></li>
+<li><a href="/Class_112/Default.aspx" target="_self">规划编制</a></li>
+<li><a href="/Class_113/Default.aspx" target="_self">施工图审 </a></li>
+<li><a href="/Class_114/Default.aspx" target="_self">工程造价</a></li>
+<li><a href="/Class_115/Default.aspx" target="_self">竣工备案</a></li>
+<li><a href="/Class_116/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_95/Default.aspx" target="_self">附属配套</a>
+<a href="/Class_95/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_117/Default.aspx" target="_self">装修公司</a></li>
+<li><a href="/Class_118/Default.aspx" target="_self">劳务企业</a></li>
+<li><a href="/Class_119/Default.aspx" target="_self">网站制作</a></li>
+<li><a href="/Class_120/Default.aspx" target="_self">企业培训</a></li>
+<li><a href="/Class_121/Default.aspx" target="_self">其他</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_54/Default.aspx" target="_self">砌筑材料</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_122/Default.aspx" target="_self">水泥、砖瓦灰砂石及混凝土制品</a>
+<a href="/Class_122/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_123/Default.aspx" target="_self">水泥</a></li>
+<li><a href="/Class_124/Default.aspx" target="_self">砂</a></li>
+<li><a href="/Class_125/Default.aspx" target="_self">石子</a></li>
+<li><a href="/Class_126/Default.aspx" target="_self">轻骨料</a></li>
+<li><a href="/Class_127/Default.aspx" target="_self">灰、粉、土等掺合填充料 石料</a></li>
+<li><a href="/Class_128/Default.aspx" target="_self">砌砖</a></li>
+<li><a href="/Class_129/Default.aspx" target="_self">砌块</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_130/Default.aspx" target="_self">混凝土、砂浆及其他配合比材料</a>
+<a href="/Class_130/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_131/Default.aspx" target="_self">水泥砂浆</a></li>
+<li><a href="/Class_132/Default.aspx" target="_self">石灰砂浆</a></li>
+<li><a href="/Class_133/Default.aspx" target="_self">混合砂浆</a></li>
+<li><a href="/Class_134/Default.aspx" target="_self">特种砂浆</a></li>
+<li><a href="/Class_135/Default.aspx" target="_self">灰浆、水泥浆</a></li>
+<li><a href="/Class_136/Default.aspx" target="_self">石子浆</a></li>
+<li><a href="/Class_137/Default.aspx" target="_self">胶泥、脂、油</a></li>
+<li><a href="/Class_138/Default.aspx" target="_self">普通混凝土</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_55/Default.aspx" target="_self">黑色及有色金属</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_139/Default.aspx" target="_self">钢材</a>
+<a href="/Class_139/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_155/Default.aspx" target="_self">钢筋</a></li>
+<li><a href="/Class_156/Default.aspx" target="_self">钢丝</a></li>
+<li><a href="/Class_157/Default.aspx" target="_self">钢丝绳</a></li>
+<li><a href="/Class_158/Default.aspx" target="_self">钢绞线/钢丝束</a></li>
+<li><a href="/Class_159/Default.aspx" target="_self">圆钢</a></li>
+<li><a href="/Class_160/Default.aspx" target="_self">方钢</a></li>
+<li><a href="/Class_161/Default.aspx" target="_self">扁钢 </a></li>
+<li><a href="/Class_162/Default.aspx" target="_self">六角钢</a></li>
+<li><a href="/Class_163/Default.aspx" target="_self">八角钢</a></li>
+<li><a href="/Class_164/Default.aspx" target="_self">槽钢</a></li>
+<li><a href="/Class_165/Default.aspx" target="_self">角钢</a></li>
+<li><a href="/Class_166/Default.aspx" target="_self">型钢</a></li>
+<li><a href="/Class_167/Default.aspx" target="_self">钢板 </a></li>
+<li><a href="/Class_168/Default.aspx" target="_self">钢带 </a></li>
+<li><a href="/Class_169/Default.aspx" target="_self">硅钢片 </a></li>
+<li><a href="/Class_170/Default.aspx" target="_self">其它型钢</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_140/Default.aspx" target="_self">铜材</a>
+<a href="/Class_140/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_151/Default.aspx" target="_self">铜板</a></li>
+<li><a href="/Class_152/Default.aspx" target="_self">铜带材</a></li>
+<li><a href="/Class_153/Default.aspx" target="_self">铀棒材</a></li>
+<li><a href="/Class_154/Default.aspx" target="_self">铜线材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_141/Default.aspx" target="_self">铝材</a>
+<a href="/Class_141/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_148/Default.aspx" target="_self">铝板(带)材</a></li>
+<li><a href="/Class_149/Default.aspx" target="_self">铝线材</a></li>
+<li><a href="/Class_150/Default.aspx" target="_self">铝型材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_142/Default.aspx" target="_self">其它金属材料</a>
+<a href="/Class_142/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_143/Default.aspx" target="_self">铅材</a></li>
+<li><a href="/Class_144/Default.aspx" target="_self">钛材</a></li>
+<li><a href="/Class_145/Default.aspx" target="_self">镍材 </a></li>
+<li><a href="/Class_146/Default.aspx" target="_self">锌材</a></li>
+<li><a href="/Class_147/Default.aspx" target="_self">金属源材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_56/Default.aspx" target="_self">地砖/地板</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_171/Default.aspx" target="_self">墙砖、地砖、地板、地毯类材料</a>
+<a href="/Class_171/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_174/Default.aspx" target="_self">陶瓷内墙砖</a></li>
+<li><a href="/Class_175/Default.aspx" target="_self">陶瓷外墙砖 </a></li>
+<li><a href="/Class_176/Default.aspx" target="_self">陶瓷地砖</a></li>
+<li><a href="/Class_177/Default.aspx" target="_self">陶瓷马赛克</a></li>
+<li><a href="/Class_178/Default.aspx" target="_self"> 石塑地砖</a></li>
+<li><a href="/Class_179/Default.aspx" target="_self">塑料地砖</a></li>
+<li><a href="/Class_180/Default.aspx" target="_self">实木地板</a></li>
+<li><a href="/Class_181/Default.aspx" target="_self">  软木地板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_172/Default.aspx" target="_self">墙面、顶棚及屋面饰面材料</a>
+<a href="/Class_172/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_182/Default.aspx" target="_self">石膏装饰板</a></li>
+<li><a href="/Class_183/Default.aspx" target="_self">竹木装饰板</a></li>
+<li><a href="/Class_184/Default.aspx" target="_self">金属装饰板</a></li>
+<li><a href="/Class_185/Default.aspx" target="_self">矿物棉装饰板</a></li>
+<li><a href="/Class_186/Default.aspx" target="_self">塑料装饰板</a></li>
+<li><a href="/Class_187/Default.aspx" target="_self">复合装饰板</a></li>
+<li><a href="/Class_188/Default.aspx" target="_self">铝塑复合板</a></li>
+<li><a href="/Class_189/Default.aspx" target="_self">纤维水泥装饰板</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_173/Default.aspx" target="_self">龙骨、龙骨配件</a>
+<a href="/Class_173/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_190/Default.aspx" target="_self">轻钢龙骨</a></li>
+<li><a href="/Class_191/Default.aspx" target="_self">型钢龙骨</a></li>
+<li><a href="/Class_192/Default.aspx" target="_self">铝合金龙骨</a></li>
+<li><a href="/Class_193/Default.aspx" target="_self">木龙骨</a></li>
+<li><a href="/Class_194/Default.aspx" target="_self">烤漆龙骨</a></li>
+<li><a href="/Class_195/Default.aspx" target="_self">石膏龙骨</a></li>
+<li><a href="/Class_196/Default.aspx" target="_self">不锈钢龙骨 </a></li>
+<li><a href="/Class_197/Default.aspx" target="_self">轻钢、型钢龙骨配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_57/Default.aspx" target="_self">石材木材</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_198/Default.aspx" target="_self">装饰石材及石材制品</a>
+<a href="/Class_198/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_199/Default.aspx" target="_self">大理石</a></li>
+<li><a href="/Class_200/Default.aspx" target="_self">花岗石</a></li>
+<li><a href="/Class_201/Default.aspx" target="_self">青石(石灰石)</a></li>
+<li><a href="/Class_202/Default.aspx" target="_self">砂岩</a></li>
+<li><a href="/Class_203/Default.aspx" target="_self">文化石</a></li>
+<li><a href="/Class_204/Default.aspx" target="_self">麻石</a></li>
+<li><a href="/Class_205/Default.aspx" target="_self">人造石</a></li>
+<li><a href="/Class_206/Default.aspx" target="_self">板材微晶石</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_207/Default.aspx" target="_self">木、竹材料及其制品</a>
+<a href="/Class_207/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_208/Default.aspx" target="_self">原木</a></li>
+<li><a href="/Class_209/Default.aspx" target="_self">锯材</a></li>
+<li><a href="/Class_210/Default.aspx" target="_self">胶合板</a></li>
+<li><a href="/Class_211/Default.aspx" target="_self">纤维板</a></li>
+<li><a href="/Class_212/Default.aspx" target="_self">细木工板</a></li>
+<li><a href="/Class_213/Default.aspx" target="_self">空心木板</a></li>
+<li><a href="/Class_214/Default.aspx" target="_self">刨花板</a></li>
+<li><a href="/Class_215/Default.aspx" target="_self">其他人造木板</a></li>
+<li><a href="/Class_216/Default.aspx" target="_self">木质容器类</a></li>
+<li><a href="/Class_217/Default.aspx" target="_self">木制台类及货架</a></li>
+<li><a href="/Class_218/Default.aspx" target="_self">其他木制品</a></li>
+<li><a href="/Class_219/Default.aspx" target="_self">竹材</a></li>
+<li><a href="/Class_220/Default.aspx" target="_self">竹板</a></li>
+<li><a href="/Class_221/Default.aspx" target="_self">竹制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_58/Default.aspx" target="_self">橡胶塑料</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_222/Default.aspx" target="_self">橡胶、塑料及非金属材料</a>
+<a href="/Class_222/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_223/Default.aspx" target="_self">橡胶板</a></li>
+<li><a href="/Class_224/Default.aspx" target="_self">橡胶条、带</a></li>
+<li><a href="/Class_225/Default.aspx" target="_self">橡胶圈</a></li>
+<li><a href="/Class_226/Default.aspx" target="_self">其他橡胶材料</a></li>
+<li><a href="/Class_227/Default.aspx" target="_self">塑料薄膜、布塑钢建筑型材</a></li>
+<li><a href="/Class_228/Default.aspx" target="_self">塑料板</a></li>
+<li><a href="/Class_229/Default.aspx" target="_self">塑料袋</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_230/Default.aspx" target="_self">油品、化工原料及胶粘材料</a>
+<a href="/Class_230/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_231/Default.aspx" target="_self">油料</a></li>
+<li><a href="/Class_232/Default.aspx" target="_self">燃料油</a></li>
+<li><a href="/Class_233/Default.aspx" target="_self">溶剂油、绝缘油</a></li>
+<li><a href="/Class_234/Default.aspx" target="_self">润滑油</a></li>
+<li><a href="/Class_235/Default.aspx" target="_self">润滑脂、蜡</a></li>
+<li><a href="/Class_236/Default.aspx" target="_self">树脂</a></li>
+<li><a href="/Class_237/Default.aspx" target="_self">颜料</a></li>
+<li><a href="/Class_238/Default.aspx" target="_self">无机化工原料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_59/Default.aspx" target="_self">新型专用建材</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_239/Default.aspx" target="_self">绝热(保温)、耐火材料</a>
+<a href="/Class_239/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_240/Default.aspx" target="_self">石棉及其制品</a></li>
+<li><a href="/Class_242/Default.aspx" target="_self">矿渣棉及其制品</a></li>
+<li><a href="/Class_252/Default.aspx" target="_self">岩棉及其制品</a></li>
+<li><a href="/Class_253/Default.aspx" target="_self">玻璃棉及其制品</a></li>
+<li><a href="/Class_254/Default.aspx" target="_self">膨胀珍珠岩及其制品</a></li>
+<li><a href="/Class_255/Default.aspx" target="_self">膨胀蛭石及其制品</a></li>
+<li><a href="/Class_256/Default.aspx" target="_self">泡沫橡胶(塑料)及其制品</a></li>
+<li><a href="/Class_257/Default.aspx" target="_self">泡沫玻璃及其制品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_241/Default.aspx" target="_self">涂料及防腐、防水材料</a>
+<a href="/Class_241/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_258/Default.aspx" target="_self">通用涂料</a></li>
+<li><a href="/Class_259/Default.aspx" target="_self">建筑涂料</a></li>
+<li><a href="/Class_260/Default.aspx" target="_self">功能性涂料</a></li>
+<li><a href="/Class_261/Default.aspx" target="_self">木器涂料</a></li>
+<li><a href="/Class_263/Default.aspx" target="_self">道路、路面涂料</a></li>
+<li><a href="/Class_264/Default.aspx" target="_self">工业设备涂料</a></li>
+<li><a href="/Class_265/Default.aspx" target="_self">其他专用涂料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_243/Default.aspx" target="_self">吸声、抗辐射及无损探伤材料</a>
+<a href="/Class_243/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_266/Default.aspx" target="_self">伤材料</a></li>
+<li><a href="/Class_267/Default.aspx" target="_self">木质吸音板</a></li>
+<li><a href="/Class_268/Default.aspx" target="_self">软木及其制品</a></li>
+<li><a href="/Class_269/Default.aspx" target="_self">复合吸音板</a></li>
+<li><a href="/Class_270/Default.aspx" target="_self">隔声棉</a></li>
+<li><a href="/Class_271/Default.aspx" target="_self">空间吸声体</a></li>
+<li><a href="/Class_272/Default.aspx" target="_self">表面防护材料</a></li>
+<li><a href="/Class_273/Default.aspx" target="_self">无损探伤材料</a></li>
+<li><a href="/Class_274/Default.aspx" target="_self">防辐射材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_60/Default.aspx" target="_self">景观/仿古/园林/苗木</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_246/Default.aspx" target="_self">园林</a>
+<a href="/Class_246/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_277/Default.aspx" target="_self">乔木</a></li>
+<li><a href="/Class_278/Default.aspx" target="_self">藤本植物</a></li>
+<li><a href="/Class_279/Default.aspx" target="_self">地被植物</a></li>
+<li><a href="/Class_280/Default.aspx" target="_self">棕榈科植物</a></li>
+<li><a href="/Class_281/Default.aspx" target="_self">观赏竹类</a></li>
+<li><a href="/Class_282/Default.aspx" target="_self">花卉</a></li>
+<li><a href="/Class_283/Default.aspx" target="_self">盆景</a></li>
+<li><a href="/Class_284/Default.aspx" target="_self">园林雕塑</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_276/Default.aspx" target="_self">仿古</a>
+<a href="/Class_276/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_285/Default.aspx" target="_self">玻璃砖</a></li>
+<li><a href="/Class_286/Default.aspx" target="_self">琉璃瓦件</a></li>
+<li><a href="/Class_287/Default.aspx" target="_self">其他琉璃仿古材料</a></li>
+<li><a href="/Class_288/Default.aspx" target="_self">黏土砖(黑活瓦件)</a></li>
+<li><a href="/Class_289/Default.aspx" target="_self">黏土瓦件</a></li>
+<li><a href="/Class_290/Default.aspx" target="_self">仿古油饰</a></li>
+<li><a href="/Class_291/Default.aspx" target="_self">裱糊材料</a></li>
+<li><a href="/Class_292/Default.aspx" target="_self">木制仿古材料</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_366/Default.aspx" target="_self">景观</a>
+<a href="/Class_366/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_443/Default.aspx" target="_self">绿植盆栽</a></li>
+<li><a href="/Class_444/Default.aspx" target="_self">小型盆栽</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_61/Default.aspx" target="_self">灯具/开关/五金/周转材料</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_244/Default.aspx" target="_self">灯具、光源</a>
+<a href="/Class_244/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_294/Default.aspx" target="_self">光源</a></li>
+<li><a href="/Class_295/Default.aspx" target="_self">吊灯(装饰花灯)</a></li>
+<li><a href="/Class_296/Default.aspx" target="_self">吸顶灯</a></li>
+<li><a href="/Class_297/Default.aspx" target="_self">壁灯</a></li>
+<li><a href="/Class_298/Default.aspx" target="_self">筒灯</a></li>
+<li><a href="/Class_299/Default.aspx" target="_self">格栅灯</a></li>
+<li><a href="/Class_300/Default.aspx" target="_self">射灯</a></li>
+<li><a href="/Class_301/Default.aspx" target="_self">台灯、落地灯</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_245/Default.aspx" target="_self"> 开关、插座</a>
+<a href="/Class_245/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_302/Default.aspx" target="_self">拉线开关</a></li>
+<li><a href="/Class_303/Default.aspx" target="_self">扳把开关</a></li>
+<li><a href="/Class_304/Default.aspx" target="_self">普通面板开关</a></li>
+<li><a href="/Class_305/Default.aspx" target="_self">调光面板开关</a></li>
+<li><a href="/Class_306/Default.aspx" target="_self">电子感应开关</a></li>
+<li><a href="/Class_307/Default.aspx" target="_self">调速面板开关</a></li>
+<li><a href="/Class_308/Default.aspx" target="_self">插卡取电开关</a></li>
+<li><a href="/Class_309/Default.aspx" target="_self">门铃、电铃开关</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_247/Default.aspx" target="_self">周转材料及五金工具</a>
+<a href="/Class_247/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_310/Default.aspx" target="_self">模板</a></li>
+<li><a href="/Class_311/Default.aspx" target="_self">模板附件</a></li>
+<li><a href="/Class_312/Default.aspx" target="_self">脚手架及其配件</a></li>
+<li><a href="/Class_313/Default.aspx" target="_self">维护、运输类周转材料</a></li>
+<li><a href="/Class_314/Default.aspx" target="_self">胎具、模具类周转材料</a></li>
+<li><a href="/Class_315/Default.aspx" target="_self">活动板房、集装箱活动房</a></li>
+<li><a href="/Class_316/Default.aspx" target="_self">其余周转材料</a></li>
+<li><a href="/Class_317/Default.aspx" target="_self">手动工具</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_293/Default.aspx" target="_self">五金制品</a>
+<a href="/Class_293/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_318/Default.aspx" target="_self">紧固件</a></li>
+<li><a href="/Class_319/Default.aspx" target="_self">门窗五金</a></li>
+<li><a href="/Class_320/Default.aspx" target="_self">幕墙五金</a></li>
+<li><a href="/Class_321/Default.aspx" target="_self">家具五金</a></li>
+<li><a href="/Class_322/Default.aspx" target="_self">水暖及卫浴五金</a></li>
+<li><a href="/Class_323/Default.aspx" target="_self">涂附磨具与磨料</a></li>
+<li><a href="/Class_324/Default.aspx" target="_self">焊材</a></li>
+<li><a href="/Class_325/Default.aspx" target="_self">其他五金配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_62/Default.aspx" target="_self">电线电缆 / 电气 / 弱电/消防</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_248/Default.aspx" target="_self">保险、绝缘及消防设施</a>
+<a href="/Class_248/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_326/Default.aspx" target="_self">熔断器</a></li>
+<li><a href="/Class_327/Default.aspx" target="_self">保险器材</a></li>
+<li><a href="/Class_328/Default.aspx" target="_self">避雷装置</a></li>
+<li><a href="/Class_329/Default.aspx" target="_self">接地装置</a></li>
+<li><a href="/Class_330/Default.aspx" target="_self">漏电保护器材</a></li>
+<li><a href="/Class_331/Default.aspx" target="_self">高压绝缘子</a></li>
+<li><a href="/Class_332/Default.aspx" target="_self">低压绝缘子</a></li>
+<li><a href="/Class_333/Default.aspx" target="_self">绝缘穿墙套管、瓷套管</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_249/Default.aspx" target="_self">电线电缆及光纤光缆</a>
+<a href="/Class_249/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_334/Default.aspx" target="_self">裸电线</a></li>
+<li><a href="/Class_335/Default.aspx" target="_self">电气装备用电线电缆</a></li>
+<li><a href="/Class_336/Default.aspx" target="_self">电磁线</a></li>
+<li><a href="/Class_337/Default.aspx" target="_self">电力电缆</a></li>
+<li><a href="/Class_338/Default.aspx" target="_self">充油及油浸纸绝缘电力电缆</a></li>
+<li><a href="/Class_339/Default.aspx" target="_self">室内电话电缆</a></li>
+<li><a href="/Class_340/Default.aspx" target="_self">长途通信电缆</a></li>
+<li><a href="/Class_341/Default.aspx" target="_self">光纤电缆</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_250/Default.aspx" target="_self">电气线路敷设材料</a>
+<a href="/Class_250/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_342/Default.aspx" target="_self">电缆桥架</a></li>
+<li><a href="/Class_343/Default.aspx" target="_self">电缆桥架连接件及附件</a></li>
+<li><a href="/Class_344/Default.aspx" target="_self">线槽及其连接件</a></li>
+<li><a href="/Class_345/Default.aspx" target="_self">母线槽及其连接件</a></li>
+<li><a href="/Class_346/Default.aspx" target="_self">电线、电缆套管及其管件</a></li>
+<li><a href="/Class_347/Default.aspx" target="_self">电缆头</a></li>
+<li><a href="/Class_348/Default.aspx" target="_self">接线端子</a></li>
+<li><a href="/Class_349/Default.aspx" target="_self">接线盒(箱)</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_251/Default.aspx" target="_self">弱电及信息类器材</a>
+<a href="/Class_251/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_435/Default.aspx" target="_self">安防报警器材</a></li>
+<li><a href="/Class_436/Default.aspx" target="_self">门禁系统器材</a></li>
+<li><a href="/Class_437/Default.aspx" target="_self">监控显示器材</a></li>
+<li><a href="/Class_438/Default.aspx" target="_self">安全检查器</a></li>
+<li><a href="/Class_439/Default.aspx" target="_self">停车场管理系统器材</a></li>
+<li><a href="/Class_440/Default.aspx" target="_self">电话通信设备器材</a></li>
+<li><a href="/Class_441/Default.aspx" target="_self">广播线路、移动通信器材</a></li>
+<li><a href="/Class_442/Default.aspx" target="_self">有线电视、卫星电视器材</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_63/Default.aspx" target="_self">机械设备</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_355/Default.aspx" target="_self">工程常机械</a>
+<a href="/Class_355/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_367/Default.aspx" target="_self">挖掘机械</a></li>
+<li><a href="/Class_368/Default.aspx" target="_self">铲/推土机械</a></li>
+<li><a href="/Class_369/Default.aspx" target="_self">起重机械</a></li>
+<li><a href="/Class_370/Default.aspx" target="_self">压实机械</a></li>
+<li><a href="/Class_371/Default.aspx" target="_self">桩工机械</a></li>
+<li><a href="/Class_372/Default.aspx" target="_self">叉车</a></li>
+<li><a href="/Class_373/Default.aspx" target="_self">混泥土机械</a></li>
+<li><a href="/Class_374/Default.aspx" target="_self">钢筋和预应力机械</a></li>
+<li><a href="/Class_375/Default.aspx" target="_self">路面机械</a></li>
+<li><a href="/Class_376/Default.aspx" target="_self">凿岩机械</a></li>
+<li><a href="/Class_377/Default.aspx" target="_self">工程车</a></li>
+<li><a href="/Class_378/Default.aspx" target="_self">市政养护</a></li>
+<li><a href="/Class_379/Default.aspx" target="_self">环保和环境卫生机械</a></li>
+<li><a href="/Class_380/Default.aspx" target="_self">筑养路机械</a></li>
+<li><a href="/Class_381/Default.aspx" target="_self">工程钻探机械</a></li>
+<li><a href="/Class_382/Default.aspx" target="_self">桥梁机械动力装置及配件五金机械配件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_356/Default.aspx" target="_self">常用设备</a>
+<a href="/Class_356/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_383/Default.aspx" target="_self">给料设备</a></li>
+<li><a href="/Class_384/Default.aspx" target="_self">锅炉设备</a></li>
+<li><a href="/Class_385/Default.aspx" target="_self">破碎设备</a></li>
+<li><a href="/Class_386/Default.aspx" target="_self">磨矿设备</a></li>
+<li><a href="/Class_387/Default.aspx" target="_self">焙烧设备</a></li>
+<li><a href="/Class_388/Default.aspx" target="_self">除尘设备</a></li>
+<li><a href="/Class_389/Default.aspx" target="_self">干燥设备</a></li>
+<li><a href="/Class_390/Default.aspx" target="_self">分离设备</a></li>
+<li><a href="/Class_391/Default.aspx" target="_self">输送设备</a></li>
+<li><a href="/Class_392/Default.aspx" target="_self">泵阀设备</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_64/Default.aspx" target="_self">暖通/空调/给排水</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_357/Default.aspx" target="_self">仪表及自动化控制</a>
+<a href="/Class_357/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_394/Default.aspx" target="_self">水表</a></li>
+<li><a href="/Class_395/Default.aspx" target="_self">燃气表</a></li>
+<li><a href="/Class_396/Default.aspx" target="_self">电度表</a></li>
+<li><a href="/Class_397/Default.aspx" target="_self">热量表</a></li>
+<li><a href="/Class_398/Default.aspx" target="_self">综合计费仪表</a></li>
+<li><a href="/Class_399/Default.aspx" target="_self">电工测量仪表</a></li>
+<li><a href="/Class_400/Default.aspx" target="_self">温度测量仪表</a></li>
+<li><a href="/Class_401/Default.aspx" target="_self">压力仪表</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_358/Default.aspx" target="_self">阀门</a>
+<a href="/Class_358/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_402/Default.aspx" target="_self">截止阀</a></li>
+<li><a href="/Class_403/Default.aspx" target="_self">匣阀</a></li>
+<li><a href="/Class_404/Default.aspx" target="_self">球阀</a></li>
+<li><a href="/Class_405/Default.aspx" target="_self">蝶阀</a></li>
+<li><a href="/Class_406/Default.aspx" target="_self">止回阀</a></li>
+<li><a href="/Class_407/Default.aspx" target="_self">安全阀</a></li>
+<li><a href="/Class_408/Default.aspx" target="_self">调节阀</a></li>
+<li><a href="/Class_409/Default.aspx" target="_self">节流阀</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_359/Default.aspx" target="_self">水暖及通风空调器材</a>
+<a href="/Class_359/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_410/Default.aspx" target="_self">铸铁散热器</a></li>
+<li><a href="/Class_411/Default.aspx" target="_self">钢制散热器</a></li>
+<li><a href="/Class_412/Default.aspx" target="_self">铝制散热器</a></li>
+<li><a href="/Class_413/Default.aspx" target="_self">其他散热器</a></li>
+<li><a href="/Class_414/Default.aspx" target="_self">散热器专用配件</a></li>
+<li><a href="/Class_415/Default.aspx" target="_self">集气罐</a></li>
+<li><a href="/Class_416/Default.aspx" target="_self">集热器</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_393/Default.aspx" target="_self">地暖材料</a>
+<a href="/Class_393/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_417/Default.aspx" target="_self">地热膜</a></li>
+<li><a href="/Class_418/Default.aspx" target="_self">电采暖产品</a></li>
+<li><a href="/Class_419/Default.aspx" target="_self">水暖产品</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_65/Default.aspx" target="_self">市政交通</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_360/Default.aspx" target="_self">轨道交通专用材料</a>
+<a href="/Class_360/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_420/Default.aspx" target="_self">钢轨</a></li>
+<li><a href="/Class_421/Default.aspx" target="_self">轨枕（岔枕）</a></li>
+<li><a href="/Class_422/Default.aspx" target="_self">鱼尾板</a></li>
+<li><a href="/Class_423/Default.aspx" target="_self">轨道用辅助材料</a></li>
+<li><a href="/Class_424/Default.aspx" target="_self">轨道用工器具</a></li>
+<li><a href="/Class_425/Default.aspx" target="_self">道口信号器材</a></li>
+<li><a href="/Class_426/Default.aspx" target="_self">信号线路连接附件</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_361/Default.aspx" target="_self">道路桥梁专业材料</a>
+<a href="/Class_361/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_427/Default.aspx" target="_self">道路管井、沟槽等构件</a></li>
+<li><a href="/Class_428/Default.aspx" target="_self">路面砖</a></li>
+<li><a href="/Class_429/Default.aspx" target="_self">路面天然石构件</a></li>
+<li><a href="/Class_430/Default.aspx" target="_self">广场砖</a></li>
+<li><a href="/Class_431/Default.aspx" target="_self">防撞装置</a></li>
+<li><a href="/Class_432/Default.aspx" target="_self">隔离装置</a></li>
+<li><a href="/Class_433/Default.aspx" target="_self">交通（安全）标志</a></li>
+<li><a href="/Class_434/Default.aspx" target="_self">车位锁</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_66/Default.aspx" target="_self">门/窗/幕墙/玻璃</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_362/Default.aspx" target="_self">玻璃及玻璃制品</a>
+<a href="/Class_362/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_445/Default.aspx" target="_self">浮法玻璃</a></li>
+<li><a href="/Class_446/Default.aspx" target="_self">有色玻璃</a></li>
+<li><a href="/Class_447/Default.aspx" target="_self"> 钢化玻璃</a></li>
+<li><a href="/Class_448/Default.aspx" target="_self">夹丝（夹网）玻璃</a></li>
+<li><a href="/Class_449/Default.aspx" target="_self">夹层玻璃</a></li>
+<li><a href="/Class_450/Default.aspx" target="_self">中空玻璃</a></li>
+<li><a href="/Class_451/Default.aspx" target="_self"> 镀膜玻璃</a></li>
+<li><a href="/Class_452/Default.aspx" target="_self">艺术装饰玻璃</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_363/Default.aspx" target="_self">门窗及楼梯制品</a>
+<a href="/Class_363/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<li><a href="/Class_453/Default.aspx" target="_self">木门窗</a></li>
+<li><a href="/Class_454/Default.aspx" target="_self">钢门窗</a></li>
+<li><a href="/Class_455/Default.aspx" target="_self">彩钢门窗</a></li>
+<li><a href="/Class_456/Default.aspx" target="_self">不锈钢门窗</a></li>
+<li><a href="/Class_457/Default.aspx" target="_self">铝合金门窗</a></li>
+<li><a href="/Class_458/Default.aspx" target="_self">塑钢、塑铝门窗</a></li>
+<li><a href="/Class_459/Default.aspx" target="_self">塑料门窗</a></li>
+<li><a href="/Class_460/Default.aspx" target="_self"> 玻璃钢门窗</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate">
+<h4><a href="/Class_67/Default.aspx" target="_self">苗木花卉</a></h4>
+<div class="nav_llist_c" style="display:none;">
+<div class="nav_llist_c_a">
+
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_545/Default.aspx" target="_self">常绿乔木</a>
+<a href="/Class_545/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_546/Default.aspx" target="_self">常绿灌木</a>
+<a href="/Class_546/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_547/Default.aspx" target="_self">落叶乔木</a>
+<a href="/Class_547/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_548/Default.aspx" target="_self">落叶灌木</a>
+<a href="/Class_548/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_549/Default.aspx" target="_self">彩叶苗木</a>
+<a href="/Class_549/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_550/Default.aspx" target="_self">球类苗木</a>
+<a href="/Class_550/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_551/Default.aspx" target="_self">花类苗木</a>
+<a href="/Class_551/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_552/Default.aspx" target="_self">果树苗木</a>
+<a href="/Class_552/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_553/Default.aspx" target="_self">绿植盆栽</a>
+<a href="/Class_553/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_554/Default.aspx" target="_self">小型盆栽</a>
+<a href="/Class_554/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_555/Default.aspx" target="_self">多浆多肉</a>
+<a href="/Class_555/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_556/Default.aspx" target="_self">观赏盆景</a>
+<a href="/Class_556/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+<div class="nav_llist_ca">
+<div class="nav_llist_caa">
+<a href="/Class_557/Default.aspx" target="_self">其它</a>
+<a href="/Class_557/Default.aspx" class="home_nav_more" target="_self">更多></a>
+</div>
+<div class="nav_llist_cbb">
+<ul class="nav_llist_u">
+
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="mainCate" style="background-color:#ccc;"><h4><a href="/Class_52/Default.aspx" target="_blank">进入商城>></a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container relative">
+<div class="home_user">
+<div class="home_user_t">
+<img src="/Images/userface/noface.png" alt="" onerror="javascript:this.src='/Images/userface/noface.png';" />
+<p>Hi,游客<br/>欢迎来到建途网</p>
+<div class="home_user_tb">
+<a href="/User/Login">登录</a>
+<a href="/User/Register">注册</a>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="home_user_g">
+<div class="home_user_gt"><span class="pull-left">建筑文库</span><span class="pull-right"><a href="/Class_43/Default.aspx" target="_blank">更多></a></span><div class="clearfix"></div></div>
+<ul>
+
+<li><a href="/Item/1358.aspx" title="中国传统建筑八大流派之美，" target="_blank">中国传统建筑八大流派之美，</a></li>
+<li><a href="/Item/1357.aspx" title="建造师挂靠：如何应对社保联网问题" target="_blank">建造师挂靠：如何应对社保联网问题</a></li>
+<li><a href="/Item/1356.aspx" title="住建部：开展2016年住房城乡建设系统“安全生产月”活动通知" target="_blank">住建部：开展2016年住房城乡建设系统“安全生产月”活</a></li>
+<li><a href="/Item/1355.aspx" title="国务院：建筑投资项目报建审批减少23项" target="_blank">国务院：建筑投资项目报建审批减少23项</a></li>
+<li><a href="/Item/1354.aspx" title="楼房倒塌等建筑事故频发 专家学者呼吁“修缮”建筑法" target="_blank">楼房倒塌等建筑事故频发 专家学者呼吁“修缮”建筑法</a></li>
+<li><a href="/Item/1353.aspx" title="建筑工程企业倒闭的十大诟病" target="_blank">建筑工程企业倒闭的十大诟病</a></li>
+<li><a href="/Item/1352.aspx" title="住建部评审企业131项资质涉及建造师问题最多" target="_blank">住建部评审企业131项资质涉及建造师问题最多</a></li>
+<li><a href="/Item/1351.aspx" title="一级建造师各专业最新挂靠行情" target="_blank">一级建造师各专业最新挂靠行情</a></li>
+<li><a href="/Item/682.aspx" title="三亚海上机场 预计2020年建成" target="_blank">三亚海上机场 预计2020年建成</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="container relative margin_top20 hidden-xs">
+<div role="tabpanel" class="home_tabs">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs tabs_list" role="tablist">
+<li class="tabs_first"><b>一站式服务：</b></li>
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">建筑企业全年套餐</a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">建筑业系统化培训</a></li>
+<li role="presentation"><a href="/Class_79/Default.aspx" target="_blank">企业线上办公云系统</a></li>
+<li class="tabs_first tabs_list_r"><a href="#">更多</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="home_tab">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 home_tab_l">
+<i class="fa fa-home"></i><p>全年<br/>服务</p>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 home_tab_r">
+<ul>
+<li>全年至尊服务</li>
+<li><a href="#">企业主页推广</a></li>
+<li><a href="#">企业人才招聘</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="home_tab_link">+</div>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ">
+<div class="home_tab">
+<div class="row">
+<div class="col-lg-5 col-md-5 col-sm-5 home_tab_l">
+<i class="fa fa-map-marker"></i><p>上门<br/>跟进</p>
+</div>
+<div class="col-lg-7 col-md-7 col-sm-7 home_tab_r">
+<ul>
+<li>全年至尊服务</li>
+<li><a href="#">企业主页推广</a></li>
+<li><a href="#">企业人才招聘</a></li>
+<li><a href="#">年会推广席位保障</a></li>
+<li><a href="#">官网展示与专题宣传推广</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>  
+</div>
+</div>
+<div role="tabpanel" class="tab-pane home_tab2" id="profile">
+<ul>
+<li><a href="/Special_2/Default" target="_blank">专业培训</a></li>
+<li><a href="/Special_2/Default" target="_blank">资质可靠</a></li>
+<li><a href="/Special_2/Default" target="_blank">专家阵营</a></li>
+<li><a href="/Special_2/Default" target="_blank">客户案例</a></li>
+<li><a href="/Special_2/Default" target="_blank">立即参加</a></li>
+<div class="clearfix"></div>
+</ul>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="home_sitenews">
+<div class="home_sitenews_t"><span class="pull-left">全国新闻</span><span class="pull-right"><a href="/Class_41/Default.aspx" target="_self">更多>><a></span><div class="clearfix"></div></div>
+<ul>
+
+<li><a href="/Item/892.aspx" title="四川省建筑业总产值到2020年超17000亿元" target="_blank">四川省建筑业总产值到2020年超17000亿元</a></li>
+<li><a href="/Item/891.aspx" title="住房城乡建设部通报清理规范工程建设领域保证金情况。" target="_blank">住房城乡建设部通报清理规范工程建设领域保证金情况。</a></li>
+<li><a href="/Item/890.aspx" title="四川处理236家建筑施工企业 11家被列入黑名单" target="_blank">四川处理236家建筑施工企业 11家被列入黑名单</a></li>
+<li><a href="/Item/889.aspx" title="四川建筑施工现场将新增标准员岗位 4城市试点" target="_blank">四川建筑施工现场将新增标准员岗位 4城市试点</a></li>
+<li><a href="/Item/888.aspx" title="四川成都建筑资质代办资质办理困难重重" target="_blank">四川成都建筑资质代办资质办理困难重重</a></li>
+<li><a href="/Item/887.aspx" title="四川建筑产业现代化试点市增至5个 将推广试点装配式建筑" target="_blank">四川建筑产业现代化试点市增至5个 将推广试点装配式建</a></li>
+<li><a href="/Item/886.aspx" title="湖北建筑行业领军企业中建三局前10月产值破千亿" target="_blank">湖北建筑行业领军企业中建三局前10月产值破千亿</a></li>
+<li><a href="/Item/885.aspx" title="湖北再掀超高建筑高潮 武汉54座建筑超200米(图)" target="_blank">湖北再掀超高建筑高潮 武汉54座建筑超200米(图)</a></li>
+
+<li><a href="/Item/829.aspx" title="建筑保温材料行业转型在即 前景向好" target="_self">建筑保温材料行业转型在即 前景向好</a></li>
+<li><a href="/Item/828.aspx" title="建筑钢材也投身“互联网+” 建材大军还差谁" target="_self">建筑钢材也投身“互联网+” 建材大军还差谁</a></li>
+<li><a href="/Item/827.aspx" title="太阳能建筑一体化成趋势" target="_self">太阳能建筑一体化成趋势</a></li>
+<li><a href="/Item/826.aspx" title="建筑中的黑盒子" target="_self">建筑中的黑盒子</a></li>
+<li><a href="/Item/825.aspx" title="第15届威尼斯国际建筑双年展中国馆新闻通稿" target="_self">第15届威尼斯国际建筑双年展中国馆新闻通稿</a></li>
+<li><a href="/Item/824.aspx" title="探秘建筑行业营改增" target="_self">探秘建筑行业营改增</a></li>
+<li><a href="/Item/823.aspx" title="钢铁、煤炭苦尽甘来， 水泥还能乐观吗" target="_self">钢铁、煤炭苦尽甘来， 水泥还能乐观吗</a></li>
+<li><a href="/Item/822.aspx" title="广州：100米内朝向住宅的建筑 拟禁设玻璃幕墙" target="_self">广州：100米内朝向住宅的建筑 拟禁设玻璃幕墙</a></li>
+</ul>
+</div>
+</div>
+<div class="container home_tuijian">
+<div class="home_tuijian_t">官方推荐</div>
+<div class="home_tuijian_b">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="home_tuijian_l">
+
+</div>
+  <div class="bg">此广告位招租</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 home_tuijian_r">
+<ul>
+
+<li>
+<a href="http://nanjing.qfang.com/" target="_blank" title="南房产网"><img src="/Template/JianTu/style/images/home_logo2.png" alt="南房产网" /></a>
+<h3><a href="http://nanjing.qfang.com/" target="_blank" title="南房产网">南房产网</a></h3>
+</li>
+<li>
+<a href="http://www.shzh.net/" target="_blank" title="上海装潢网"><img src="/Template/JianTu/style/images/home_logo3.jpg" alt="上海装潢网" /></a>
+<h3><a href="http://www.shzh.net/" target="_blank" title="上海装潢网">上海装潢网</a></h3>
+</li>
+<li>
+<a href="http://nj.tobosu.com/" target="_blank" title="南京装修"><img src="/Template/JianTu/style/images/home_logo4.png" alt="南京装修" /></a>
+<h3><a href="http://nj.tobosu.com/" target="_blank" title="南京装修">南京装修</a></h3>
+</li>
+<li>
+<a href="http://www.258.com/" target="_blank" title="258"><img src="/Template/JianTu/style/images/home_logo5.jpg" alt="258" /></a>
+<h3><a href="http://www.258.com/" target="_blank" title="258">258</a></h3>
+</li>
+<li>
+<a href="http://build.workercn.cn/" target="_blank" title="中工网"><img src="/Template/JianTu/style/images/home_logo6.jpg" alt="中工网" /></a>
+<h3><a href="http://build.workercn.cn/" target="_blank" title="中工网">中工网</a></h3>
+</li>
+<li>
+<a href="http://www.51zhucai.com/" target="_blank" title="筑才网"><img src="/Template/JianTu/style/images/home_logo7.png" alt="筑才网" /></a>
+<h3><a href="http://www.51zhucai.com/" target="_blank" title="筑才网">筑才网</a></h3>
+</li>
+<li>
+<a href="http://www.coneco.com.cn/" target="_blank" title="建筑经济"><img src="/Template/JianTu/style/images/home_logo8.png" alt="建筑经济" /></a>
+<h3><a href="http://www.coneco.com.cn/" target="_blank" title="建筑经济">建筑经济</a></h3>
+</li>
+<li>
+<a href="http://www.zhjs.cc/" target="_blank" title="中华建设网"><img src="/Template/JianTu/style/images/home_logo1.jpg" alt="中华建设网" /></a>
+<h3><a href="http://www.zhjs.cc/" target="_blank" title="中华建设网">中华建设网</a></h3>
+</li>
+<div class="clearfix"></div>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="container" style="margin-top:20px;"><a href="#"><img class="img-responsive" src="/Template/JianTu/style/images/index.png" alt="自选套餐" /></a></div>
+
+<div class="container margin_top20" hidden>
+<div class="home_list_t"><span>1F</span>采购平台<a href="/Class_2/Default.aspx" target="_self">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+<div class="one_l">
+<h3>谁是施工高手</h3>
+<p>现金日结招聘区火热上线</p>
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>建筑用材</th>
+<th>标题</th>
+<th class="text_center">发布城市</th>
+<th class="text_center">发布时间</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/604.aspx" target="_self"> 投融资</a></th>
+<td><a href="/Item/604.aspx" title="采购矿棉板（雨冰花）——闽宁棚户改造" target="_self">采购矿棉板（雨冰花）——闽宁棚户改造</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>  
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/605.aspx" target="_self"> 投融资</a></th>
+<td><a href="/Item/605.aspx" title="采购砖头——淮安金润置业项目" target="_self">采购砖头——淮安金润置业项目</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>  
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/606.aspx" target="_self"> 投融资</a></th>
+<td><a href="/Item/606.aspx" title="采购塑料管——路灯配管" target="_self">采购塑料管——路灯配管</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>  
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/607.aspx" target="_self"> 投融资</a></th>
+<td><a href="/Item/607.aspx" title="采购吊顶材料——办公楼改建" target="_self">采购吊顶材料——办公楼改建</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>  
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/608.aspx" target="_self"> 投融资</a></th>
+<td><a href="/Item/608.aspx" title="采购玻璃胶——采购石英石辅材" target="_self">采购玻璃胶——采购石英石辅材</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>  
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_list_t2"><span>1F</span>工程资源<a href="/Class_6/Default.aspx" target="_self">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
+<div class="two_l"></div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center">
+<div class="table-responsive">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>类型</th>
+<th>标题</th>
+<th>简介</th>
+<th class="text_center">发布城市</th>
+</tr>
+</thead>
+
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/1378.aspx" target="_self">住宅/别墅</a></th>
+<td><a href="/Item/1378.aspx" title="大雁园林绿化公司林场提前完成雁南矿绿化工程" target="_self">大雁园林绿化公司林场提前完成雁...</a></td>
+<td>大雁园林绿化公司林场提前完成雁...</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/1377.aspx" target="_self">住宅/别墅</a></th>
+<td><a href="/Item/1377.aspx" title="湄洲：抓好第四季度园林 绿化目标任务冲刺" target="_self">湄洲：抓好第四季度园林 绿化目...</a></td>
+<td>抓好第四季度园林 绿化目标任务...</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/1376.aspx" target="_self">住宅/别墅</a></th>
+<td><a href="/Item/1376.aspx" title="龙湖五重园林景观 打造一个充满花香鸟语的乐园" target="_self">龙湖五重园林景观 打造一个充满...</a></td>
+<td>龙湖洋房的五维景观，创造性的设...</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/1375.aspx" target="_self">住宅/别墅</a></th>
+<td><a href="/Item/1375.aspx" title="揭晓石家庄园林景观设计的四大发展趋势" target="_self">揭晓石家庄园林景观设计的四大发...</a></td>
+<td>揭晓石家庄园林景观设计的四大发...</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/1372.aspx" target="_self">住宅/别墅</a></th>
+<td><a href="/Item/1372.aspx" title="五一广场如何“还绿” 3套园林景观设计方案批前公示" target="_self">五一广场如何“还绿” 3套园林景...</a></td>
+<td>五一广场如何“还绿” 3套园林景...</td>
+<td class="text_center"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!--广告开始-->
+<div class="container">
+<div class="home_ad">
+</div>
+</div>
+<!--广告结束-->
+<div class="container margin_top20">
+<div class="home_list_t2"><span>2F</span>施工队伍<a href="/Class_1/Default.aspx" target="_self">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="two_l three_l">
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center">
+<div class="table-responsive">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>类型</th>
+<th>标题</th>
+<th class="text_center">发布时间</th>
+<th class="text_center">发布城市</th>
+</tr>
+</thead>
+
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/633.aspx" target="_self">劳务公司</a></th>
+<td><a href="/Item/633.aspx" title="浙江杭州木工装修工程施工队伍" target="_self">浙江杭州木工装修工程施工队伍</a></td>
+<td class="text_center">2016-07-14</td>
+<td class="text_center">上海|上海</td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/632.aspx" target="_self">劳务公司</a></th>
+<td><a href="/Item/632.aspx" title="湖北专业喷浆、甩浆、毛化队伍" target="_self">湖北专业喷浆、甩浆、毛化队伍</a></td>
+<td class="text_center">2016-07-14</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/631.aspx" target="_self">劳务公司</a></th>
+<td><a href="/Item/631.aspx" title="四川给排水强弱电预埋安装班组" target="_self">四川给排水强弱电预埋安装班组</a></td>
+<td class="text_center">2016-07-14</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/630.aspx" target="_self">劳务公司</a></th>
+<td><a href="/Item/630.aspx" title="浙江杭州水电施工队伍" target="_self">浙江杭州水电施工队伍</a></td>
+<td class="text_center">2016-07-14</td>
+<td class="text_center"></td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/629.aspx" target="_self">劳务公司</a></th>
+<td><a href="/Item/629.aspx" title="专业护坡、铁路高速护栏网、钢网、刀片网安装" target="_self">专业护坡、铁路高速护栏网、钢网、刀片网安...</a></td>
+<td class="text_center">2016-07-14</td>
+<td class="text_center"></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div
+<div class="home_list_one">
+<div class="container">
+<div class="home_list_t2"><span>3F</span>机械设备<a href="/Class_5/Default.aspx" target="_self">更多</a></div>
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="two_l four_l">
+</div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 one_center">
+<div class="table-responsive">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>类型</th>
+<th>标题</th>
+<th class="text_center">发布城市</th>
+<th class="text_center">发布时间</th>
+</tr>
+</thead>
+
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/641.aspx" target="_self">公司</a></th>
+<td><a href="/Item/641.aspx" title="浙江省杭州市下城区挖掘机出租" target="_self">浙江省杭州市下城区挖掘机出租</a></td>
+<td class="text_center">北京|北京</td>
+<td class="text_center">2016-07-14</td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/640.aspx" target="_self">公司</a></th>
+<td><a href="/Item/640.aspx" title="贵州都匀挖机出租" target="_self">贵州都匀挖机出租</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/639.aspx" target="_self">公司</a></th>
+<td><a href="/Item/639.aspx" title="泉记自吊起重出租车" target="_self">泉记自吊起重出租车</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/638.aspx" target="_self">公司</a></th>
+<td><a href="/Item/638.aspx" title="浙江塔吊施工电梯租赁" target="_self">浙江塔吊施工电梯租赁</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>
+<tr>
+<th scope="row" class="home_tha"><a href="/Item/637.aspx" target="_self">公司</a></th>
+<td><a href="/Item/637.aspx" title="浙江杭州120/200挖机租赁" target="_self">浙江杭州120/200挖机租赁</a></td>
+<td class="text_center"></td>
+<td class="text_center">2016-07-14</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--广告位-->
+<div class="container home_ad_bg">
+<div class="row" style="width: 100%;height: 6.5em;margin-left: 0px;background: url(Template/JianTu/style/images/ad_bg3.png) center;background-size: 100% 100%;">
+</div>
+</div>
+<!--广告结束-->
+<div class="container margin_top20">
+<div class="home_list_t5"><span>4F</span>建筑商城</div>
+<div class="margin_bot20 home_shop">
+<div class="home_shop_t"><p>建筑服务<span>Building Services</span></p></div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/1.aspx" title="专业的优质工程咨询" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/0_gongchengzixun_6355_20140922144829.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="专业的优质工程咨询" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/9.aspx" title="优质项目管理" target="_self">
+<div class="home_shop_imgbox">
+<p>优质项目管理<br><span>惊爆价：300</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/fea2eb9c-2b02-4404-8f52-6ca994ab9699.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="优质项目管理" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/8.aspx" title="专业工程监理" target="_self">
+<div class="home_shop_imgbox">
+<p>专业工程监理<br><span>惊爆价：310</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/t018946916441ae3b17.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="专业工程监理" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/7.aspx" title="工程造价" target="_self">
+<div class="home_shop_imgbox">
+<p>工程造价<br><span>惊爆价：321</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/2013070410593811.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="工程造价" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/6.aspx" title="工程监理" target="_self">
+<div class="home_shop_imgbox">
+<p>工程监理<br><span>惊爆价：321</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/3374_480.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="工程监理" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/5.aspx" title="项目管理" target="_self">
+<div class="home_shop_imgbox">
+<p>项目管理<br><span>惊爆价：286</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/20120317123715251.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="项目管理" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/4.aspx" title="远见投资" target="_self">
+<div class="home_shop_imgbox">
+<p>远见投资<br><span>惊爆价：200</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/20160105110550_20203.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="远见投资" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/3.aspx" title="项目设计采购" target="_self">
+<div class="home_shop_imgbox">
+<p>项目设计采购<br><span>惊爆价：287</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/2016216167111278.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="项目设计采购" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/2.aspx" title="工程前期策划" target="_self">
+<div class="home_shop_imgbox">
+<p>工程前期策划<br><span>惊爆价：289</span></p>
+<img src="/UploadFiles/jzyfwqy/jpg/2016/5/t01059626330-7-.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="工程前期策划" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t bluecol">
+<p>砌筑材料<span>Masonry material</span></p>
+</div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/11.aspx" title="砖石" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/qzcl/jpg/2016/5/33b1ooopic99.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="砖石" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/135.aspx" title="KP1耐酸胶泥" target="_self">
+<div class="home_shop_imgbox">
+<p>KP1耐酸胶泥<br><span>惊爆价：50</span></p>
+<img src="/UploadFiles/jnzy/jpg/2016/6/thumb_53a3d0a17731a_bateditor.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="KP1耐酸胶泥" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/134.aspx" title="自保温砌块" target="_self">
+<div class="home_shop_imgbox">
+<p>自保温砌块<br><span>惊爆价：50</span></p>
+<img src="/UploadFiles/qk/jpg/2016/6/728922.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="自保温砌块" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/133.aspx" title="艺术砌砖" target="_self">
+<div class="home_shop_imgbox">
+<p>艺术砌砖<br><span>惊爆价：180</span></p>
+<img src="/UploadFiles/qz/jpg/2016/6/51w58picify_1024.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="艺术砌砖" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/132.aspx" title="银川滑石粉" target="_self">
+<div class="home_shop_imgbox">
+<p>银川滑石粉<br><span>惊爆价：45</span></p>
+<img src="/UploadFiles/hftdshtclsl/jpg/2016/6/pivhbit54_1419016697.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="银川滑石粉" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/131.aspx" title="轻质陶粒" target="_self">
+<div class="home_shop_imgbox">
+<p>轻质陶粒<br><span>惊爆价：1000</span></p>
+<img src="/UploadFiles/qgl/jpg/2016/6/56ca77e99399e.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="轻质陶粒" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/130.aspx" title="鹅卵石" target="_self">
+<div class="home_shop_imgbox">
+<p>鹅卵石<br><span>惊爆价：22</span></p>
+<img src="/UploadFiles/sz/jpg/2016/6/55a89ee433517.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="鹅卵石" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/129.aspx" title="河北掺入型" target="_self">
+<div class="home_shop_imgbox">
+<p>河北掺入型<br><span>惊爆价：4</span></p>
+<img src="/UploadFiles/sn/png/2016/6/55ee4f7acba81.png" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="河北掺入型" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/128.aspx" title="200环氧树脂胶泥厂家" target="_self">
+<div class="home_shop_imgbox">
+<p>200环氧树脂胶泥厂家<br><span>惊爆价：4999</span></p>
+<img src="/UploadFiles/hjsnj/jpg/2016/6/56557bd199e0e.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="200环氧树脂胶泥厂家" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!--新型专用建材上方广告开始-->
+<div class="container">
+<div class="home_ad_bg">
+<div class="row" style="width: 100%;height: 6.5em;margin-left: 0px;margin-top:20px;background: url(Template/JianTu/style/images/ad_bg4.png) center;background-size: 100% 100%;">
+</div>
+</div>
+</div>
+<!--新型专用建材上方广告结束-->
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t redcol">
+<p>新型专用建材<span>New type special building material</span></p>
+</div>
+
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/137.aspx" title="螺纹钢筋" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/gj/jpg/2016/6/20090717194432-507813463.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="螺纹钢筋" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/143.aspx" title="热轧六角钢" target="_self">
+<div class="home_shop_imgbox">
+<p>热轧六角钢<br><span>惊爆价：7300</span></p>
+<img src="/UploadFiles/ljg/jpg/2016/6/55c8208068bc7.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="热轧六角钢" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/142.aspx" title="千锤扁钢" target="_self">
+<div class="home_shop_imgbox">
+<p>千锤扁钢<br><span>惊爆价：2890</span></p>
+<img src="/UploadFiles/pg/jpg/2016/6/wkhqvlkxca6eaxfbaaaaan3ccvg442.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="千锤扁钢" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/141.aspx" title="百炼方钢" target="_self">
+<div class="home_shop_imgbox">
+<p>百炼方钢<br><span>惊爆价：1760</span></p>
+<img src="/UploadFiles/fg/jpg/2016/6/wkhqtvnm3n6eyt69aaaaamo3fk0734.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="百炼方钢" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/140.aspx" title="百炼圆钢" target="_self">
+<div class="home_shop_imgbox">
+<p>百炼圆钢<br><span>惊爆价：1950</span></p>
+<img src="/UploadFiles/yg/jpg/2016/6/2015071414270852852733854.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="百炼圆钢" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/139.aspx" title="不锈钢丝绳" target="_self">
+<div class="home_shop_imgbox">
+<p>不锈钢丝绳<br><span>惊爆价：287</span></p>
+<img src="/UploadFiles/gss/jpg/2016/6/c2fdfc039245d6887bf898e0a4c27d1ed31b24ff.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="不锈钢丝绳" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/138.aspx" title="三环钢丝" target="_self">
+<div class="home_shop_imgbox">
+<p>三环钢丝<br><span>惊爆价：45</span></p>
+<img src="/UploadFiles/gs/jpg/2016/6/55e654e58e036.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="三环钢丝" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/137.aspx" title="螺纹钢筋" target="_self">
+<div class="home_shop_imgbox">
+<p>螺纹钢筋<br><span>惊爆价：95</span></p>
+<img src="/UploadFiles/gj/jpg/2016/6/20090717194432-507813463.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="螺纹钢筋" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/136.aspx" title="预应力钢绞线" target="_self">
+<div class="home_shop_imgbox">
+<p>预应力钢绞线<br><span>惊爆价：480</span></p>
+<img src="/UploadFiles/gjxgss/jpg/2016/6/1324437430.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="预应力钢绞线" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t grcol">
+<p>机械设备<span>Mechanical Equipment</span></p>
+</div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/27.aspx" title="马可波罗瓷砖" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/dz/db/jpg/2016/5/tb2jdtmpxxxxxbvxpxxxxxxxxxx_!!1025622418.jpg_b.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="马可波罗瓷砖" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/151.aspx" title="铝格栅" target="_self">
+<div class="home_shop_imgbox">
+<p>铝格栅<br><span>惊爆价：190</span></p>
+<img src="/UploadFiles/lhjlg/jpg/2016/6/hua10q.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="铝格栅" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/150.aspx" title="冷轧钢顶板支撑龙骨" target="_self">
+<div class="home_shop_imgbox">
+<p>冷轧钢顶板支撑龙骨<br><span>惊爆价：4500</span></p>
+<img src="/UploadFiles/xglg/jpg/2016/6/563daae2e4ab8.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="冷轧钢顶板支撑龙骨" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/149.aspx" title="铝蜂窝复合板" target="_self">
+<div class="home_shop_imgbox">
+<p>铝蜂窝复合板<br><span>惊爆价：220</span></p>
+<img src="/UploadFiles/jzzsb/jpg/2016/6/563314c6c0e2e.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="铝蜂窝复合板" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/148.aspx" title="天然美国黑胡桃木饰面板" target="_self">
+<div class="home_shop_imgbox">
+<p>天然美国黑胡桃木饰面板<br><span>惊爆价：160</span></p>
+<img src="/UploadFiles/zmzsb/jpg/2016/6/55c45e3df309f.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="天然美国黑胡桃木饰面板" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/147.aspx" title="阿姆斯壮雅丽RH90" target="_self">
+<div class="home_shop_imgbox">
+<p>阿姆斯壮雅丽RH90<br><span>惊爆价：20</span></p>
+<img src="/UploadFiles/sgzsb/png/2016/6/55f679015dec6.png" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="阿姆斯壮雅丽RH90" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/146.aspx" title="白城马赛克批发" target="_self">
+<div class="home_shop_imgbox">
+<p>白城马赛克批发<br><span>惊爆价：45</span></p>
+<img src="/UploadFiles/ycmsk/jpg/2016/6/568bba5edf2a2.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="白城马赛克批发" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/145.aspx" title="莱立雅厂家直销个性花砖拼花砖防滑地砖" target="_self">
+<div class="home_shop_imgbox">
+<p>莱立雅厂家直销个性花砖拼花砖防<br><span>惊爆价：4</span></p>
+<img src="/UploadFiles/ycdz/jpg/2016/6/1440729786809398.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="莱立雅厂家直销个性花砖拼花砖防滑地砖" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/144.aspx" title="纯色釉面内墙砖" target="_self">
+<div class="home_shop_imgbox">
+<p>纯色釉面内墙砖<br><span>惊爆价：45</span></p>
+<img src="/UploadFiles/ycnqz/jpg/2016/6/55c86a1e7618f.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="纯色釉面内墙砖" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<!--电气电工上方广告开始-->
+<div class="container">
+<div class="home_ad_bg">
+<div class="row"  style="width: 100%;height: 6.5em;margin-left: 0px;margin-top:20px;background: url(/Template/JianTu/style/images/ad4.png) center;background-size: 100% 100%;">
+</div>
+</div>
+</div>
+<!--电气电工上方广告结束-->
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t greencol">
+<p>电气电工<span>Electrical electrician</span></p>
+</div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/79.aspx" title="西门子开关插座面板" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/dgdq/yqyb/jpg/2016/5/tb1uw07lvxxxxaaxpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="西门子开关插座面板" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/199.aspx" title="防火桥架" target="_self">
+<div class="home_shop_imgbox">
+<p>防火桥架<br><span>惊爆价：1000</span></p>
+<img src="/UploadFiles/dlqj/jpg/2016/6/566677e261644.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="防火桥架" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/198.aspx" title="耐用的停车场系统安装" target="_self">
+<div class="home_shop_imgbox">
+<p>耐用的停车场系统安装<br><span>惊爆价：3500</span></p>
+<img src="/UploadFiles/tjcglxtqc/jpg/2016/6/569c3d93958d0.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="耐用的停车场系统安装" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/197.aspx" title="高清车牌识别系统" target="_self">
+<div class="home_shop_imgbox">
+<p>高清车牌识别系统<br><span>惊爆价：15000</span></p>
+<img src="/UploadFiles/mjxtqc/jpg/2016/6/5677aa717aac2.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="高清车牌识别系统" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/196.aspx" title="可视分机" target="_self">
+<div class="home_shop_imgbox">
+<p>可视分机<br><span>惊爆价：320</span></p>
+<img src="/UploadFiles/mjxtqc/png/2016/6/560a43b86dcc7.png" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="可视分机" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/195.aspx" title="智能视频联网" target="_self">
+<div class="home_shop_imgbox">
+<p>智能视频联网<br><span>惊爆价：298</span></p>
+<img src="/UploadFiles/afbjqc/jpg/2016/6/56663aac1c4d5.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="智能视频联网" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/194.aspx" title="保护器" target="_self">
+<div class="home_shop_imgbox">
+<p>保护器<br><span>惊爆价：290</span></p>
+<img src="/UploadFiles/blzz/jpg/2016/6/563180c472b1e.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="保护器" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/193.aspx" title="保险丝座" target="_self">
+<div class="home_shop_imgbox">
+<p>保险丝座<br><span>惊爆价：15</span></p>
+<img src="/UploadFiles/bxqc/png/2016/6/5628af7a6eecf.png" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="保险丝座" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/192.aspx" title="快速熔断器" target="_self">
+<div class="home_shop_imgbox">
+<p>快速熔断器<br><span>惊爆价：360</span></p>
+<img src="/UploadFiles/rdq/jpg/2016/6/1449814689458712.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="快速熔断器" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container margin_top20">
+<div class="home_shop">
+<div class="home_shop_t chencol">
+<p>苗木花圃<span>Nursery garden</span></p>
+</div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/119.aspx" title="美国红枫" target="_self">
+<div class="home_s_limg">
+<img src="/UploadFiles/mmhp/jpg/2016/5/201603241338586600.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="美国红枫" />
+<span><b>专业的服务美的享受</b><br>期待您的光临</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/125.aspx" title="鸡蛋花" target="_self">
+<div class="home_shop_imgbox">
+<p>鸡蛋花<br><span>惊爆价：60</span></p>
+<img src="/UploadFiles/mmhp/gif/2016/5/201511121655226376.gif" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="鸡蛋花" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/124.aspx" title="银杏" target="_self">
+<div class="home_shop_imgbox">
+<p>银杏<br><span>惊爆价：448</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/56cb0e38bd3e8.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="银杏" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/123.aspx" title="红梅当年苗" target="_self">
+<div class="home_shop_imgbox">
+<p>红梅当年苗<br><span>惊爆价：10</span></p>
+<img src="/UploadFiles/mmhp/gif/2016/5/201512061501095172.gif" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="红梅当年苗" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/122.aspx" title="四川猕猴桃嫁接苗" target="_self">
+<div class="home_shop_imgbox">
+<p>四川猕猴桃嫁接苗<br><span>惊爆价：5</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/201605140922218166.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="四川猕猴桃嫁接苗" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/121.aspx" title="大叶黄杨球" target="_self">
+<div class="home_shop_imgbox">
+<p>大叶黄杨球<br><span>惊爆价：45</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/201603051035334817.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="大叶黄杨球" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/120.aspx" title="优质草莓苗" target="_self">
+<div class="home_shop_imgbox">
+<p>优质草莓苗<br><span>惊爆价：900</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/201605171446565047.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="优质草莓苗" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/119.aspx" title="美国红枫" target="_self">
+<div class="home_shop_imgbox">
+<p>美国红枫<br><span>惊爆价：1600</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/201603241338586600.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="美国红枫" />
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 padding1">
+<a href="/Shop/118.aspx" title="红豆杉造型大盘景" target="_self">
+<div class="home_shop_imgbox">
+<p>红豆杉造型大盘景<br><span>惊爆价：200</span></p>
+<img src="/UploadFiles/mmhp/jpg/2016/5/201411291136117702.jpg" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="红豆杉造型大盘景" />
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container"><a href="#"><img class="img-responsive" src="/Template/JianTu/style/images/index3.png" alt="广告" /></a></div>
+<div class="container margin_top20">
+<div class="shop_new">
+<div class="shop_new_t">
+<p><a></a><span><i class="fa fa-heart-o"></i>猜你喜欢</span><a></a></p>
+</div>
+<div class="row">
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/137.aspx" title="螺纹钢筋" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/gj/jpg/2016/6/20090717194432-507813463.jpg" alt="螺纹钢筋" />
+<p>螺纹钢筋</p>
+<span>￥95.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/119.aspx" title="美国红枫" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/mmhp/jpg/2016/5/201603241338586600.jpg" alt="美国红枫" />
+<p>美国红枫</p>
+<span>￥1600.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/117.aspx" title="纯铜材质时尚环保真铜门" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/mcbl/jpg/2016/5/tb1rjxwkfxxxxbexpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" alt="纯铜材质时尚环保真铜门" />
+<p>澳宁门业 高端铜门 红铜庭院门 ...</p>
+<span>￥3500.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/111.aspx" title="王力防盗门" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/mcbl/jpg/2016/5/tb21zqipxxxxxxkxpxxxxxxxxxx_!!1882652739.jpg_430x430q90.jpg" alt="王力防盗门" />
+<p>王力防盗门甲级大门房门超B级锁...</p>
+<span>￥3549.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/104.aspx" title="防盗报警器视频监控" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/afqx/jpg/2016/5/tb1oc_ihpxxxxbkxpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" alt="防盗报警器视频监控" />
+<p>创高安防 G5+IP116防盗报警器视...</p>
+<span>￥1349.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/95.aspx" title="立式节能空调" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/dd/gd/nt/jpg/2016/5/tb1ff3ujvxxxxa1xpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" alt="立式节能空调" />
+<p>AUX/奥克斯 KFR-51LW/R1TC02+2大...</p>
+<span>￥3999.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/89.aspx" title="反渗透纯净水设备" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/jxsb/jpg/2016/5/tb1peodipxxxxc3xpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" alt="反渗透纯净水设备" />
+<p>厂家直销海德能ro反渗透纯净水设...</p>
+<span>￥210000.00</span>
+</div>
+</a>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<a href="/Shop/79.aspx" title="西门子开关插座面板" target="_self">
+<div class="shop_new_b">
+<img src="/UploadFiles/dgdq/yqyb/jpg/2016/5/tb1uw07lvxxxxaaxpxxxxxxxxxx_!!0-item_pic.jpg_430x430q90.jpg" alt="西门子开关插座面板" />
+<p>西门子开关插座面板 睿致系列一...</p>
+<span>￥36.80</span>
+</div>
+</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="home_link">
+<div class="home_link_l">
+<span>建途友情网站</span>
+</div>
+<div class="home_link_r">
+<ul>                  
+<li><a href="http://www.chinabaike.com">建筑百科</a></li>
+<li><a href="http://www.niwota.com/quan/10895">建筑人</a></li>
+<li><a href="http://www.likebuy.com">乐买</a></li>
+<li><a href="http://ai.pmph.com/index.do">成长学院</a></li>
+<li><a href="http://www.realestate.cei.gov.cn">成科苑</a></li>
+<li><a href="http://www.114ssw.com">百事通</a></li>
+<li><a href="http://www.mohurd.gov.cn/">国家住房和城乡建设部</a></li>
+<li><a href="http://www.chinaasc.org/">中国建筑学会</a></li>
+<li><a href="http://www.51zhucai.com/">筑才网</a></li>
+</ul>
+</div>	
+<div class="home_link_a"><a href="/Class_8/Default.aspx">更多>></a></div>
+</div>	
+</div>
+<div class="container home_pic_list">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="/Template/JianTu/style/images/pic1.png" alt="pic1" />
+<p><span>7*24全天候服务</span><br>国际准客服</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="/Template/JianTu/style/images/pic2.png" alt="pic1" />
+<p><span>专业实名认证</span><br>为每一个负责</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="/Template/JianTu/style/images/pic3.png" alt="pic1" />
+<p><span>国际验证</span><br>最完整的资质认证</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="/Template/JianTu/style/images/pic4.png" alt="pic1" />
+<p><span>全程呵护</span><br>9999的错误率支持</p>
+</a>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 pic_list">
+<a href="#">
+<img src="/Template/JianTu/style/images/pic5.png" alt="pic1" />
+<p><span>快速响应</span><br>高效社区实时支持</p>
+</a>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="footer">
+<div class="row">
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list">
+<ul>
+<li>关于我们</li>
+<li><a href="/Item/56.aspx">公司介绍</a></li>
+<li><a href="/Item/668.aspx">团队展示</a></li>
+<li><a href="/Item/63.aspx">企业文化</a></li>
+<li><a href="/Class_35/Default.aspx">招贤纳士</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list">
+<ul>
+<li>建筑商城</li>
+<li><a href="/Item/257.aspx">申请注册</a></li>
+<li><a href="/Item/265.aspx">商家入驻</a></li>
+<li><a href="/Special_1/Default">名企推荐</a></li>
+<li><a href="/Class_52/Default.aspx">商品检索</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list">
+<ul>
+<li>办公平台</li>
+<li><a href="/Item/670.aspx">平台介绍</a></li>
+<li><a href="/Item/271.aspx">申请开通</a></li>
+<li><a href="/Item/671.aspx">特色功能</a></li>
+<li><a href="/Item/270.aspx">运营管理</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list">
+<ul>
+<li>商务合作</li>
+<li><a href="/Special_2/Default">专业培训</a></li>
+<li><a href="/Item/267.aspx">招商加盟</a></li>
+<li><a href="/Class_8/Default.aspx">合作网站</a></li>
+<li><a href="/Item/59.aspx">联系我们</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 footer_list">
+<ul>
+<li>常见问题</li>
+<li><a href="/Item/65.aspx">版权申明</a></li>
+<li><a href="/Item/672.aspx">使用帮助</a></li>
+<li><a href="/User/Register.aspx">申请会员</a></li>
+<li><a href="/User/GetPassword.aspx">找回密码</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 footer_r"><img src="/Template/JianTu/style/Images/Qrcode.jpg" alt="微信公众号" /><br/>扫描关注建途微信公众号</div>
+</div>
+</div>
+</div>
+<div class="container home_copy">
+<div class="home_copy_r">
+<div class="home_copy_rl">
+<div class="home_copy_rlt">关注我们</div>
+<ul>
+<li><a href="#"><i class="fa fa-weibo"></i></a></li>
+<li><a href="http://wpa.qq.com/msgrd?v=3&uin=69250566&site=qq&menu=yes" target="_blank"><i class="fa fa-qq"></i></a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="home_copy_rp">
+<div class="home_copy_rpt"><img src="/Template/JianTu/style/Images/tel.png" alt="tel" /></div>
+<div class="h3"><a href="tel:400-6789-314" class="all_phone">400-6789-314</a></div>
+<p>周一至周日9:00-22:00</p>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="home_copy_l">
+<p><script src="/js/mobile.js"></script>
+版权所有：Copryright &copy; 2016 建途网 Allright
+<a href="/Item/65.aspx">版权申明</a><a href="/Item/65.aspx">品牌商标</a><a href="/Class_4/Default.aspx">关于我们</a><a href="/Item/59.aspx">联系我们</a><a href="/Class_8/Default.aspx">合作网站</a><a href="/Class_35/Default.aspx">诚聘英才</a></p>
+</div>
+</div>
+<div class="kefu">
+<ul>
+<li><a href="/Item/59.aspx"><span>QQ</span><i class="fa fa-qq"></i></a><div class="clearfix"></div></li>
+<li><a href="tel:17707091717"><span>联系电话</span><i class="fa fa-phone"></i></a><div class="clearfix"></div></li>
+<li class="kefu_qrcode"><a href="javascript:;"><span><img src="/Common/Common.ashx?url=http://www.jt314.com/Class_461/NodeHot.aspx" alt="扫描下载手机APP客户端" /><p>扫描下载手机APP客户端</p></span><i class="fa fa-qrcode"></i></a><div class="clearfix"></div></li>
+<li><a href="/Guest"><span>留言咨询</span><i class="fa fa-envelope"></i></a><div class="clearfix"></div></li>
+</ul>
+</div>
+</body>
+</html>
+  <script src="http://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+  $(".bottom-contrainer").addClass("bottom-hide");
+  $(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+  $(".bottom-contrainer").removeClass("bottom-hide");
+  $(".bottom-collspan").addClass("collspan-hide");	
+})
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+		$(".logon").css("display","block");
+		$(".home_user_t").html('<img src="'+data.UserFace+'" alt="'+data.UserName+'" onerror="javascript:this.src=\'/Images/userface/noface.png\';" /><p>Hi,'+data.UserName+'<br/><a href="/User/">我的建途</a></p><div class="home_user_tb"><a href="/User/Login">我的供应空间</a><a href="/User/Order/OrderList">我的采购空间</a><div class="clearfix"></div></div>')
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+	$(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	});
+	$(".mainCate").mouseover(function(){
+		$(this).find(".nav_llist_c").show();	
+	}).mouseout(function(){
+	  $(this).find(".nav_llist_c").hide();
+	});
+    $(".home_list li.dropdown.visible-xs .nav_llist_c").show();
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>
+  <script>
+$(function(){
+var myElement= document.getElementById('carousel-example-generic')
+var hm=new Hammer(myElement);
+hm.on("swipeleft",function(){
+$('#carousel-example-generic').carousel('next')
+})
+hm.on("swiperight",function(){
+$('#carousel-example-generic').carousel('prev')
+})
+})
+  </script>

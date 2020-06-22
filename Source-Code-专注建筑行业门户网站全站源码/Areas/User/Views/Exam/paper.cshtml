@@ -1,0 +1,46 @@
+﻿@using System.Data
+@{
+    DataTable dt = new DataTable();
+    Layout = "~/Areas/User/Views/Shared/_layout.cshtml";
+}
+@section head{
+    <title>生成试卷</title>
+    <style type="text/css">
+        ul {
+            padding-left: 0px;
+        }
+    </style>
+}
+@section content{
+    <form id="form1">
+        <div id="paper" style="font-size:12px;font-family:'Microsoft YaHei';">
+            <div style="width: 500px; margin: auto; text-align: center;">
+                <h2 style="text-align: center;color:black;"><label id="title_l"></label></h2>
+                <h2 style="text-align: center;color:black;">试卷副标题</h2>
+                <h3 style="text-align: center;color:black;">考试范围：XXX 考试时间：120分钟 命题人：XXX</h3>
+            </div>
+            <div>注意事项：</div>
+            <div>1,答题前填写好自己的姓名,班级,考号等信息,请将答案正确填写在答题卡上</div>
+            @foreach (DataRow dr in dt.Rows)
+            {
+                <div style="margin-top: 5px;">
+                    <h3><%#ZoomLa.BLL.Helper.StrHelper.ConvertIntegral(Container.ItemIndex+1) +"．"+@dr["QName"]+"（有"+@dr["QNum"]+"小题,共"+@dr["TotalScore"]+"分）" %></h3>
+                    <div>@dr["LargeContent"]</div>
+                    @foreach (DataRow dr2 in dt.Rows)
+                    {
+                        <div class="item">
+                            <div class="content">
+                                <span><%#Container.ItemIndex+1+"．"+@dr2["P_Title"]%></span><%#GetContent() %>
+                            </div>
+                            <div class="submit"><%#GetSubmit() %></div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </form>
+
+}
+@section script{
+
+}

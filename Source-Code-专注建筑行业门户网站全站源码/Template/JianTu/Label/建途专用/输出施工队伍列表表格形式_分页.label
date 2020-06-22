@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>472</LabelID>
+    <LabelName>输出施工队伍列表表格形式_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出施工队伍列表_分页</LabelDesc>
+    <LabelParam>ShowNum,8,1,显示数|NodeID,2,1,节点ID|TitleNum,40,1,标题长度|SysNum,100,1,简介长度|gzlb,,1,类别|sex,,1,性别|pynl,,1,平均年龄|gsx,,1,工伤险|lx,,1,类型</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Constructionteam ON ZL_CommonModel.ItemID=ZL_C_Constructionteam.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_Constructionteam.img,ZL_C_Constructionteam.peonum,ZL_C_Constructionteam.region,ZL_C_Constructionteam.synopsis,ZL_C_Constructionteam.time,ZL_C_Constructionteam.pynl</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99 And ModelID=49 And ZL_C_Constructionteam.gzlb LIKE '%@gzlb%' And ZL_C_Constructionteam.sex LIKE '%@sex%' And ZL_C_Constructionteam.pynl LIKE '%@pynl%' And ZL_C_Constructionteam.gsx LIKE '%@gsx%' And ZL_C_Constructionteam.lx LIKE '%@lx%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="table-responsive"&gt;
+&lt;table class="table team_table"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th width="76"&gt;图片&lt;/th&gt;
+&lt;th&gt;标题&lt;/th&gt;
+&lt;th&gt;队伍人数&lt;/th&gt;
+&lt;th&gt;平均年龄&lt;/th&gt;
+&lt;th&gt;发布时间&lt;/th&gt;
+&lt;th&gt;地区&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+{Repeate}
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="img"/})/}" alt="{Field="Title"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';"&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;h3&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+&lt;td&gt;{Field="peonum"/}人&lt;/td&gt;
+&lt;td&gt;{Field="pynl"/}&lt;/td&gt;
+&lt;td&gt;{ZL:FormatDate({Field="time"/},yyyy-MM-dd)/}&lt;br&gt;&lt;a href="#" class="cut"&gt;[切换城市]&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;{Field="region"/}&lt;/td&gt;
+&lt;/tr&gt;{/Repeate}
+&lt;tr&gt;
+&lt;td colspan="6"&gt;
+{ZL.Page id="响应式列表分页v3"/}
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Constructionteam"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

@@ -1,0 +1,247 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="team_banner banner_font">{ZL.Label id="输出指定节点下提示信息" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" /}</div>
+<div class="team_top">
+<div class="container">
+<div class="news_mySites">
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /}
+</ul>
+</div>
+<div class="team_topbox">
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择类型：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list1">
+<a data-lx="" href="/Class_1/Default.aspx?lx=&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}" class="active">不限</a>
+<a data-lx="劳务公司" href="/Class_1/Default.aspx?lx={$GetUrlencode(劳务公司)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">劳务公司</a>
+<a data-lx="施工团队" href="/Class_1/Default.aspx?lx={$GetUrlencode(施工团队)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">施工团队</a>
+<a data-lx="个人" href="/Class_1/Default.aspx?lx={$GetUrlencode(个人)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">个人</a>
+</div>
+</div>
+</div>
+</div>
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择性别：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list2">
+<a data-sex="" href="/Class_1/Default.aspx?sex=&lx={$GetRequest(lx)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}" class="active">不限</a>
+<a data-sex="男" href="/Class_1/Default.aspx?sex={$GetUrlencode(男)$}&lx={$GetRequest(lx)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">男</a>
+<a data-sex="女" href="/Class_1/Default.aspx?sex={$GetUrlencode(女)$}&lx={$GetRequest(lx)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">女</a>
+</div>
+</div>
+</div>
+</div>
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">平均年龄：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list3">
+<a data-pynl="" href="/Class_1/Default.aspx?pynl=&sex={$GetRequest(sex)$}&lx={$GetRequest(lx)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}" class="active">不限</a>
+<a data-pynl="20-29岁" href="/Class_1/Default.aspx?pynl={$GetUrlencode(20-29岁)$}&sex={$GetRequest(sex)$}&lx={$GetRequest(lx)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">20-29岁</a>
+<a data-pynl="30-39岁" href="/Class_1/Default.aspx?pynl={$GetUrlencode(30-39岁)$}&sex={$GetRequest(sex)$}&lx={$GetRequest(lx)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">30-39岁</a>
+<a data-pynl="40-49岁" href="/Class_1/Default.aspx?pynl={$GetUrlencode(40-49岁)$}&sex={$GetRequest(sex)$}&lx={$GetRequest(lx)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">40-49岁</a>
+<a data-pynl="50岁以上" href="/Class_1/Default.aspx?pynl={$GetUrlencode(50岁以上)$}&sex={$GetRequest(sex)$}&lx={$GetRequest(lx)$}&gsx={$GetRequest(gsx)$}&gzlb={$GetRequest(gzlb)$}">50岁以上</a>
+</div>
+</div>
+</div>
+</div>
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">有无工险：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list4">
+<a data-gsx="" href="/Class_1/Default.aspx?gsx=&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&lx={$GetRequest(lx)$}&gzlb={$GetRequest(gzlb)$}" class="active">不限</a>
+<a data-gsx="有" href="/Class_1/Default.aspx?gsx={$GetUrlencode(有)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&lx={$GetRequest(lx)$}&gzlb={$GetRequest(gzlb)$}">有</a>
+<a data-gsx="无" href="/Class_1/Default.aspx?gsx={$GetUrlencode(无)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&lx={$GetRequest(lx)$}&gzlb={$GetRequest(gzlb)$}">无</a>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="team_top_c">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择分类：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list5">
+<a href="/Class_1/Default.aspx" class="active">不限</a>
+<a data-gzlb="钢结构安装/制作" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(钢结构安装/制作)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">钢结构安装/制作</a>
+<a data-gzlb="钢筋绑扎/制作" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(钢筋绑扎/制作)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">钢筋绑扎/制作</a>
+<a data-gzlb="水电/弱电/安防" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(水电/弱电/安防)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">水电/弱电/安防</a>
+<a data-gzlb="拆卸安装/设备安装" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(拆卸安装/设备安装)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">拆卸安装/设备安装</a>
+<a data-gzlb="管道安装/电焊" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(管道安装/电焊)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">管道安装/电焊</a>
+<a data-gzlb="给排水/消防/水暖管道" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(给排水/消防/水暖管道)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">给排水/消防/水暖管道</a>
+<a data-gzlb="活动房/电梯/空调" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(活动房/电梯/空调)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">活动房/电梯/空调</a>
+<a data-gzlb="模板工/木工" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(模板工/木工)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">模板工/木工</a>
+<a data-gzlb="土建/房建/装修" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(土建/房建/装修)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">土建/房建/装修</a>
+<a data-gzlb="泥瓦工/抹灰" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(泥瓦工/抹灰)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">泥瓦工/抹灰</a>
+<a data-gzlb="钻井/顶管/打井" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(钻井/顶管/打井)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">钻井/顶管/打井</a>
+<a data-gzlb="防水/防腐/沥青工" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(防水/防腐/沥青工)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">防水/防腐/沥青工</a>
+<a data-gzlb="网架工/架子工" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(网架工/架子工)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">网架工/架子工</a>
+<a data-gzlb="隔墙龙骨/吊顶" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(隔墙龙骨/吊顶)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">隔墙龙骨/吊顶</a>
+<a data-gzlb="贴瓷砖/大理石" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(贴瓷砖/大理石)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">贴瓷砖/大理石</a>
+<a data-gzlb="油漆/涂料/喷涂/刮大白" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(油漆/涂料/喷涂/刮大白)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">油漆/涂料/喷涂/刮大白</a>
+<a data-gzlb="护坡/挡墙/砌石工" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(护坡/挡墙/砌石工)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">护坡/挡墙/砌石工</a>
+<a data-gzlb="人工挖桩/爆破" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(人工挖桩/爆破)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">人工挖桩/爆破</a>
+<a data-gzlb="桩基础/边坡/基坑/混凝土" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(桩基础/边坡/基坑/混凝土)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">桩基础/边坡/基坑/混凝土</a>
+<a data-gzlb="道路/桥梁/涵洞/隧道" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(道路/桥梁/涵洞/隧道)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">道路/桥梁/涵洞/隧道</a>
+<a data-gzlb="幕墙制作/外墙保温/环氧地坪" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(幕墙制作/外墙保温/环氧地坪)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">幕墙制作/外墙保温/环氧地坪</a>
+<a data-gzlb="园林绿化/古建筑" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(园林绿化/古建筑)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">园林绿化/古建筑</a>
+<a data-gzlb="搬运工/民工" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(搬运工/民工)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">搬运工/民工</a>
+<a data-gzlb="其它施工队" href="/Class_1/Default.aspx?gzlb={$GetUrlencode(其它施工队)$}&sex={$GetRequest(sex)$}&pynl={$GetRequest(pynl)$}&gsx={$GetRequest(gsx)$}&lx={$GetRequest(lx)$}">其它施工队</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+{ZL.Label id="输出施工队伍列表表格形式_分页" ShowNum="20" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="100" SysNum="100" gzlb="{$GetUrldecode({$GetRequest(gzlb)$})$}" sex="{$GetUrldecode({$GetRequest(sex)$})$}" pynl="{$GetUrldecode({$GetRequest(pynl)$})$}" gsx="{$GetUrldecode({$GetRequest(gsx)$})$}" lx="{$GetUrldecode({$GetRequest(lx)$})$}" /}
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+$(document).ready(function(){
+	var type = "{$GetUrldecode({$GetRequest(gzlb)$})$}";
+	var end = type.lenght;
+	var start = type.indexOf("=")+1;
+	$(document.getElementById(type.substring(start,end))).addClass("active").siblings("a").removeClass("active");
+	$("#team").css("background-color","#00a3e9");
+	$("#team a").css("color","#FFF");
+});
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+ 		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+        $(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+	var lx="{$GetUrldecode({$GetRequest(lx)$})$}";
+	var sex="{$GetUrldecode({$GetRequest(sex)$})$}";
+	var pynl="{$GetUrldecode({$GetRequest(pynl)$})$}";
+	var gsx="{$GetUrldecode({$GetRequest(gsx)$})$}";
+	var gzlb="{$GetUrldecode({$GetRequest(gzlb)$})$}";
+	$(".team_list1 a[data-lx='"+lx+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list2 a[data-sex='"+sex+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list3 a[data-pynl='"+pynl+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list4 a[data-gsx='"+gsx+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list5 a[data-gzlb='"+gzlb+"']").addClass("active").siblings("a").removeClass("active");
+	
+    $(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	})
+  //判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span a").html("{ZL:IPcity()/}");
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+$().ready(function(e) {
+	$(".home_logo_s").text("{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}")
+    $(".home_list li.dropdown.visible-xs .nav_llist_c").show();
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

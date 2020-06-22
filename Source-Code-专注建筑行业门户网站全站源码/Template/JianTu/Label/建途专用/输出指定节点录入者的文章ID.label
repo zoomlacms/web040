@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>358</LabelID>
+    <LabelName>输出指定节点录入者的文章ID</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出指定节点录入者的文章ID</LabelDesc>
+    <LabelParam>Inputer,,1,录入者|FirstNodeID,,1,节点ID|NodeID,,1,</LabelParam>
+    <LabelTable>ZL_CommonModel</LabelTable>
+    <LabelField>GeneralID</LabelField>
+    <LabelWhere> ZL_CommonModel.Inputer='@Inputer' And ZL_CommonModel.TableName LIKE 'ZL_Page_%' And ZL_CommonModel.FirstNodeID=@FirstNodeID And ZL_CommonModel.NodeID=@NodeID</LabelWhere>
+    <LabelOrder />
+    <LabelContent>{Field="GeneralID"/}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

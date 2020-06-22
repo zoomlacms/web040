@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>499</LabelID>
+    <LabelName>循环输出证书类型选择</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ParentID,0,1,父类</LabelParam>
+    <LabelTable>ZL_C_ZSView</LabelTable>
+    <LabelField>GeneralID,Title,parentid,Child</LabelField>
+    <LabelWhere>(NodeID=538 or FirstNodeID=538) And ModelID=74 And Status=99 And parentid=@ParentID</LabelWhere>
+    <LabelOrder>CreateTime ASC</LabelOrder>
+    <LabelContent>{Repeate}&lt;li data-gid="{Field="GeneralID"/}" data-pid="{Field="parentid"/}"&gt;
+&lt;h3&gt;
+&lt;button type="button" class="btn btn-info btn-xs map_list1_b"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;label&gt;
+&lt;input type="radio" name="zslx_rad" id="zslx_rad{Field="GeneralID"/}" value="{Field="Title"/}" /&gt;
+{Field="Title"/}
+&lt;/label&gt;
+&lt;/h3&gt;
+&lt;ul class="map_list1" style="display:none;"&gt;
+{ZL.Label id="循环输出证书类型选择" ParentID="{Field="GeneralID"/}" /}
+&lt;/ul&gt;
+&lt;/li&gt;{/Repeate}</LabelContent>
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>参数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>不等于</setroot>
+    <Modelvalue>0</Modelvalue>
+    <Valueroot>{Field="Child"/}</Valueroot>
+    <IsOpen>1</IsOpen>
+    <FalseContent>&lt;li&gt;
+&lt;h3&gt;{Field="Title"/}&lt;/h3&gt;
+&lt;/li&gt;</FalseContent>
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

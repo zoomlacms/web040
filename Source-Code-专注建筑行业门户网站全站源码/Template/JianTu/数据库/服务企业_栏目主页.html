@@ -1,0 +1,303 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="company_banner">{ZL.Label id="输出指定节点下提示信息" NodeID="3" /}</div>
+<div class="container margin_top20 tab_min">
+<div class="company_sgqyn">
+<ul>
+<li class="active"><a href="{ZL:GetNodeLinkUrl({SField sid="节点栏目信息数据源" FD="NodeID" page="0"/})/}"><i class="fa fa-cog"></i> {SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}</a></li>
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="company_sgqyb">
+<div class="company_fwqys">
+<div class="company_sgqys_r">
+共找到符合条件的企业：<span>{ZL.Label id="输出服务型企业总数" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" area="{$GetUrldecode({$GetRequest(area)$})$}" zyfw="{$GetUrldecode({$GetRequest(zyfw)$})$}" ptfw="{$GetUrldecode({$GetRequest(ptfw)$})$}" /}家</span>
+</div>
+<div class="company_fwqys_t">
+<div class="company_sgqys_tit"><i class="fa fa-database"></i> 服务型企业查询</div>
+<form action="/Class_82/Default.aspx" method="get">
+<div class="company_fwqys_tc">
+<div class="company_fwqys_tcl">所属地区：</div>
+<div class="company_fwqys_tcs">
+<input type="hidden" name="area" id="area" value="{$GetUrldecode({$GetRequest(area)$})$}" />
+<input type="hidden" name="zyfw" value="{$GetUrldecode({$GetRequest(zyfw)$})$}" />
+<input type="hidden" name="ptfw" value="{$GetUrldecode({$GetRequest(ptfw)$})$}" />
+<select id="province" class="form-control province_sel">
+<option value="">请选择省份</option>
+</select>
+<select id="city" class="form-control city_sel">
+<option value="">请选择城市</option>
+</select>
+<button class="btn btn-info"><i class="fa fa-search"></i> 点击查询</button>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="company_fwqys_tc">
+<div class="company_fwqys_tcl">主营服务：</div>
+<div class="company_fwqys_tcm company_fwqys_tcm1">
+<ul>
+<li data-zyfw=""><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw=&ptfw={$GetRequest(ptfw)$}">不限</a></li>
+<li data-zyfw="资质代理"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetUrlencode(资质代理)$}&ptfw={$GetRequest(ptfw)$}">资质代理</a></li>
+<li data-zyfw="人才证书"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetUrlencode(人才证书)$}&ptfw={$GetRequest(ptfw)$}">人才证书</a></li>
+<li data-zyfw="建筑咨询机构"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetUrlencode(建筑咨询机构)$}&ptfw={$GetRequest(ptfw)$}">建筑咨询机构</a></li>
+<li data-zyfw="培训学校"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetUrlencode(培训学校)$}&ptfw={$GetRequest(ptfw)$}">培训学校</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="company_fwqys_tc">
+<div class="company_fwqys_tcl">配套服务：</div>
+<div class="company_fwqys_tcm company_fwqys_tcm2">
+<ul>
+<li data-ptfw=""><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw=">不限</a></li>
+<li data-ptfw="装修公司"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(装修公司)$}">装修公司</a></li>
+<li data-ptfw="劳务企业"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(劳务企业)$}">劳务企业</a></li>
+<li data-ptfw="网站制作"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(网站制作)$}">网站制作</a></li>
+<li data-ptfw="管理培训工商税务"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(管理培训工商税务)$}">管理培训工商税务</a></li>
+<li data-ptfw="商标专利"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(商标专利)$}">商标专利</a></li>
+<li data-ptfw="质量认证"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(质量认证)$}">质量认证</a></li>
+<li data-ptfw="诚信认证"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(诚信认证)$}">诚信认证</a></li>
+<li data-ptfw="资金贷款"><a href="/Class_82/Default.aspx?area={$GetRequest(area)$}&zyfw={$GetRequest(zyfw)$}&ptfw={$GetUrlencode(资金贷款)$}">资金贷款</a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+</div>
+</form>
+</div>
+</div>
+<div class="company_fwqyl">
+{ZL.Label id="输出服务型企业列表_分页" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="16" SysNum="200" TitleNum="30" area="{$GetUrldecode({$GetRequest(area)$})$}" zyfw="{$GetUrldecode({$GetRequest(zyfw)$})$}" ptfw="{$GetUrldecode({$GetRequest(ptfw)$})$}" /}
+</div>
+</div>
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+  $(".bottom-contrainer").addClass("bottom-hide");
+  $(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+  $(".bottom-contrainer").removeClass("bottom-hide");
+  $(".bottom-collspan").addClass("collspan-hide");	
+})
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+  if(flag)
+  {
+      data=JSON.parse(data);
+      $(".nav_user>a").html("欢迎您，"+data.UserName+"!");
+      $(".nav_user>a").attr("href","/User");
+  }
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+//导航商城节点显示效果
+$(".nav_llist li").mouseover(function(){
+	$(this).siblings("li").find("nav_llist_c").hide();
+	$(this).find(".nav_llist_c").show();
+}).mouseout(function(){
+	$(this).siblings("li").find("nav_llist_c").hide();
+	$(this).find(".nav_llist_c").hide();
+});
+$().ready(function(e) {
+    $(".home_logo_s").text("{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}")
+	$(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	$(".home_nav .navbar-nav li.dropdown").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	});
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	})
+	//判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span a").html("{ZL:IPcity()/}");
+	}
+});
+
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var para = {
+	key:'',
+	alias:'cblblist',
+	psize:'1000',
+	cpage:1,
+	cate:1,
+	grade:0,
+	parentid:0
+}
+$().ready(function(e) {
+	var area="{$GetUrldecode({$GetRequest(area)$})$}";
+	var areaArr=area.split('|');
+	para.grade=1;
+    $.post("/API/Center.ashx?action=GetCustom",para,function(data){
+		data=JSON.parse(data);
+		if(data.retcode=="1")
+		{
+			data=JSON.parse(data.result);
+			var str="";
+			for(var i=0;i<data.length;i++)
+			{
+				if(data[i].gradename==areaArr[0])
+				{
+					str+="<option value=\""+data[i].gradeid+"\" selected>"+data[i].gradename+"</option>";
+					para.parentid=data[i].gradeid;
+					para.grade=2;
+					$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+						data=JSON.parse(data);
+						if(data.retcode=="1")
+						{
+							data=JSON.parse(data.result);
+							var str="";
+							for(var i=0;i<data.length;i++)
+							{
+								if(areaArr.length>1)
+								{
+									if(data[i].gradename==areaArr[1])
+										str+="<option value=\""+data[i].gradeid+"\" selected>"+data[i].gradename+"</option>";
+									else
+										str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>";
+								}
+								else
+									str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>";
+							}
+							$(".city_sel").html("<option value=''>请选择城市</option>"+str);
+						}
+					});
+				}
+				else
+					str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>>";
+			}
+			$(".province_sel").html("<option value=''>请选择省份</option>"+str);
+		}
+	});
+	
+	var zyfw="{$GetUrldecode({$GetRequest(zyfw)$})$}";
+	var ptfw="{$GetUrldecode({$GetRequest(ptfw)$})$}";
+	$(".company_fwqys_tcm1 li[data-zyfw='"+zyfw+"']").addClass("active");
+	$(".company_fwqys_tcm2 li[data-ptfw='"+ptfw+"']").addClass("active");
+	$(".company_fwqyl_c p").each(function(index, element) {
+        $(this).html($(this).html().replace(area.replace('|',' '),"<span>"+area.replace('|',' ')+"</span>").replace(zyfw,"<span>"+zyfw+"</span>").replace(ptfw,"<span>"+ptfw+"</span>"))
+    });
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+$(".province_sel").change(function(e){
+	if($(this).val()!="")
+		$("#area").val($(this).find("option:selected").html())
+	else
+		$("#area").val("");
+	para.parentid=$(this).val();
+	para.grade=2;
+	$.post("/API/Center.ashx?action=GetCustom",para,function(data){
+		data=JSON.parse(data);
+		if(data.retcode=="1")
+		{
+			data=JSON.parse(data.result);
+			var str="";
+			for(var i=0;i<data.length;i++)
+			{
+				str+="<option value=\""+data[i].gradeid+"\">"+data[i].gradename+"</option>"
+			}
+			$(".city_sel").html("<option value=''>请选择城市</option>"+str);
+		}
+	});
+});
+$(".city_sel").change(function(e){
+	if($(this).val()!="")
+		$("#area").val($(".province_sel option:selected").html()+"|"+$(this).find("option:selected").html());
+	else
+		$("#area").val($(".province_sel option:selected").html());
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

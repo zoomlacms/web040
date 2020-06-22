@@ -1,0 +1,244 @@
+{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+</head>
+<body>
+{ZL.Label id="全站头部"/}
+<div class="jixie_banner banner_font">{ZL.Label id="输出指定节点下提示信息" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" /}</div>
+<div class="team_top">
+<div class="container">
+<div class="news_mySites">
+<ul class="breadcrumb">
+<li><a href="/">首页</a></li>
+{ZL.Label id="输出多级节点导航_V3" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" ShowNum="30" /}
+<li>列表页</li>
+</ul>
+</div>
+<div class="team_topbox">
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择方式：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list1">
+<a data-mode="" href="/Class_5/Default.aspx?mode=&lx={$GetRequest(lx)$}&fl={$GetRequest(fl)$}" class="active">不限</a>
+<a data-mode="找活干" href="/Class_5/Default.aspx?mode={$GetUrlencode(找活干)$}&lx={$GetRequest(lx)$}&fl={$GetRequest(fl)$}">找活干</a>
+<a data-mode="租赁" href="/Class_5/Default.aspx?mode={$GetUrlencode(租赁)$}&lx={$GetRequest(lx)$}&fl={$GetRequest(fl)$}">租赁</a>
+<a data-mode="出售" href="/Class_5/Default.aspx?mode={$GetUrlencode(出售)$}&lx={$GetRequest(lx)$}&fl={$GetRequest(fl)$}">出售</a>
+</div>
+</div>
+</div>
+</div>
+<div class="team_top_c team_top_cw5">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择类型：</div>
+</div>
+<div class="media-body">
+<div class="team_list team_list2">
+<a data-lx="" href="/Class_5/Default.aspx?lx=&mode={$GetRequest(mode)$}&fl={$GetRequest(fl)$}" class="active">不限</a>
+<a data-lx="公司" href="/Class_5/Default.aspx?lx={$GetUrlencode(公司)$}&mode={$GetRequest(mode)$}&fl={$GetRequest(fl)$}">公司</a>
+<a data-lx="机械设备队伍" href="/Class_5/Default.aspx?lx={$GetUrlencode(机械设备队伍)$}&mode={$GetRequest(mode)$}&fl={$GetRequest(fl)$}">机械设备队伍</a>
+<a data-lx="个人" href="/Class_5/Default.aspx?lx={$GetUrlencode(个人)$}&mode={$GetRequest(mode)$}&fl={$GetRequest(fl)$}">个人</a>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="team_top_c">
+<div class="media">
+<div class="media-left">
+<div class="team_top_cl">选择分类：</div>
+</div>
+<div class="media-body">	
+<div class="team_list team_list3">
+<a href="/Class_5/Default.aspx?lx={$GetRequest(lx)$}&mode={$GetRequest(mode)$}&fl=" class="active">不限</a>
+<a data-fl="货车/自卸车/等运输车辆" href="/Class_5/Default.aspx?fl={$GetUrlencode(货车/自卸车/等运输车辆)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">货车/自卸车/等运输车辆</a>
+<a data-fl="挖机/装载/推土/等土方机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(挖机/装载/推土/等土方机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">挖机/装载/推土/等土方机械</a>
+<a data-fl="混凝土机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(混凝土机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">混凝土机械</a>
+<a data-fl="吊车/塔吊/叉车/等起重机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(吊车/塔吊/叉车/等起重机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">吊车/塔吊/叉车/等起重机械</a>
+<a data-fl="压路/洒水/摊铺/等路面机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(压路/洒水/摊铺/等路面机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">压路/洒水/摊铺/等路面机械</a>
+<a data-fl="钻机/打桩/等桩机机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(钻机/打桩/等桩机机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">钻机/打桩/等桩机机械</a>
+<a data-fl="发电机/空压机/等动力设备" href="/Class_5/Default.aspx?fl={$GetUrlencode(发电机/空压机/等动力设备)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">发电机/空压机/等动力设备</a>
+<a data-fl="脚手架/钢模板/破碎设备" href="/Class_5/Default.aspx?fl={$GetUrlencode(脚手架/钢模板/破碎设备)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">脚手架/钢模板/破碎设备</a>
+<a data-fl="其他工程机械" href="/Class_5/Default.aspx?fl={$GetUrlencode(其他工程机械)$}&mode={$GetRequest(mode)$}&lx={$GetRequest(lx)$}">其他工程机械</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+{ZL.Label id="输出机械设备列表_分页表格形式" ShowNum="10" NodeID="{SField sid="节点栏目信息数据源" FD="NodeID" page="0"/}" TitleNum="25" SysNum="100" fl="{$GetUrldecode({$GetRequest(fl)$})$}" lx="{$GetUrldecode({$GetRequest(lx)$})$}" mode="{$GetUrldecode({$GetRequest(mode)$})$}"  /}
+</div>
+{ZL.Label id="全站底部"/}
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('home_nav'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+$(".bottom-close").click(function(){
+$(".bottom-contrainer").addClass("bottom-hide");
+$(".bottom-collspan").removeClass("collspan-hide");
+})
+$(".collspan").click(function(){
+$(".bottom-contrainer").removeClass("bottom-hide");
+$(".bottom-collspan").addClass("collspan-hide");	
+});
+$(document).ready(function(){
+	var mode="{$GetUrldecode({$GetRequest(mode)$})$}";
+	var lx="{$GetUrldecode({$GetRequest(lx)$})$}";
+	var fl="{$GetUrldecode({$GetRequest(fl)$})$}";
+	$(".team_list1 a[data-mode='"+mode+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list2 a[data-lx='"+lx+"']").addClass("active").siblings("a").removeClass("active");
+	$(".team_list3 a[data-fl='"+fl+"']").addClass("active").siblings("a").removeClass("active");
+	
+	var type = "{$GetUrldecode({$GetRequest(fl)$})$}";
+	var end = type.lenght;
+	var start = type.indexOf("=")+1;
+	$(document.getElementById(type.substring(start,end))).addClass("active").siblings("a").removeClass("active");
+	$("#jxsb").css("background-color","#00a3e9");
+	$("#jxsb a").css("color","#FFF");
+});
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$(".nav_user>a").html("欢迎您，<span>"+data.UserName+"!</span>");
+		$(".nav_user .dropdown-menu li:nth-child(1) a").html("会员中心");
+		$(".nav_user .dropdown-menu li:nth-child(2)").remove();
+        $(".logon").css("display","block");
+	}
+});
+function LogoutFun()
+{
+  buser.Logout(function(){location=location;});
+}
+$().ready(function(e) {
+    $(".second_list li").mouseover(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").show();
+	}).mouseout(function(){
+	  $(this).siblings("li").find("nav_llist_c").hide();
+	  $(this).find(".nav_llist_c").hide();
+	});
+	
+	$(".home_nav .navbar-nav li").mouseover(function(){
+		$(this).addClass("open");
+	}).mouseout(function(){
+		$(this).removeClass("open");
+	})
+  //判断分站
+	if("{$GetRequest(city)$}"=="")
+	{
+		$(".site_span a").html("{ZL:IPcity()/}");
+	}
+});
+//---------------------手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+$().ready(function(e) {
+	var lx="{$GetUrldecode({$GetRequest(lx)$})$}";
+	var mode="{$GetUrldecode({$GetRequest(mode)$})$}";
+	var fl="{$GetUrldecode({$GetRequest(fl)$})$}";
+	if(lx!="")
+	{
+		$(".lx_li").each(function(index, element) {
+            if($(this).data("search")==lx)
+				$(this).find("span").css("color","#f00");
+        });
+	}
+	if(mode!="")
+	{
+		$(".mode_li").each(function(index, element) {
+            if($(this).data("search")==mode)
+				$(this).find("span").css("color","#f00");
+        });
+	}
+	if(fl!="")
+	{
+		$(".fl_li").each(function(index, element) {
+            if($(this).data("search")==fl)
+				$(this).find("span").css("color","#f00");
+        });
+	}
+    $(".home_list li.dropdown.visible-xs .nav_llist_c").show();
+	$(".home_logo_s").text("{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}");
+	if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>354</LabelID>
+    <LabelName>黄页文章模型数据源标签</LabelName>
+    <LabelType>3</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam />
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_Page_mypage ON ZL_CommonModel.ItemID=ZL_Page_mypage.ID</LabelTable>
+    <LabelField>*</LabelField>
+    <LabelWhere> ZL_CommonModel.GeneralID='{$GetRequest(ItemID)$}'</LabelWhere>
+    <LabelOrder />
+    <LabelContent />
+    <LabelCount />
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType />
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

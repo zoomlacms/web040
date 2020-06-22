@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>375</LabelID>
+    <LabelName>输出商城热门商品信息</LabelName>
+    <LabelType>2</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>输出商城热门商品信息</LabelDesc>
+    <LabelParam>ShowNum,1,1,显示数|NodeID,53,1,节点ID</LabelParam>
+    <LabelTable>ZL_Commodities</LabelTable>
+    <LabelField>ID,Nodeid,Proname,Thumbnails</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID or NodeID in (select NodeID from ZL_Node where ParentID=@NodeID) or NodeID in (select NodeID from ZL_Node where ParentID in (select NodeID from ZL_Node where ParentID=@NodeID))) And ModelID=6 And Sales=1 And istrue=1 And Recycler=0 And ishot=1</LabelWhere>
+    <LabelOrder>ZL_Commodities.isbest DESC</LabelOrder>
+    <LabelContent>{Repeate}
+&lt;div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"&gt;
+&lt;a href="{ZL:GetShopUrl({Field="ID"/})/}" title="{Field="Proname"/}" target="{ZL:GetInfoOpen({Field="Nodeid"/})/}"&gt;
+&lt;div class="home_s_limg"&gt;
+&lt;img src="{ZL:GetPicUrl({Field="Thumbnails"/})/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';"  alt="{Field="Proname"/}" /&gt;
+&lt;span&gt;&lt;b&gt;专业的服务美的享受&lt;/b&gt;&lt;br&gt;期待您的光临&lt;/span&gt;
+&lt;/div&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+{/Repeate}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_Commodities","tb_s":""}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

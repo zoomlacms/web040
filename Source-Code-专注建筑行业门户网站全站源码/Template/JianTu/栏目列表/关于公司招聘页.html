@@ -1,0 +1,164 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteTitle/}</title>
+{$MetaKeywords/}
+{$MetaDescription/}
+{ZL:Boot()/}
+<link href="{$CssDir/}global.css?id={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js"></script>
+</head> 
+<body class="body_f">
+<div class="realtive">
+<nav class="navbar-default home_head_z">
+<div class="container">
+<div class="home_head_y">
+<span>你好，欢迎来到建途网！</span>
+<ul class="navbar-right">
+<li><a href="/">天工首页</a></li>
+<li><a href="#"> 工程信息</a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">网站导航<span class="caret"></span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/">建途网首页</a></li>
+<li><a href="#">友情链接</a></li>
+</ul>
+</li>
+<li><a href="#">帮助</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav class="navbar-default" id="home_na">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse home_head_g clearfix" id="bs-example-navbar-collapse-1">
+<a href="/"><img src="{$CssDir/}Images/logo.svg" alt="建途"/></a>
+<div class="home_head_w">
+<ul class="nav navbar-nav home_nav_c">
+<li><a href="/">首页</a></li>
+<li><a href="#">关于我们</a></li>
+<li><a href="#">产品与服务</a></li>
+<li><a href="#">企业文化</a></li>
+<li><a href="#">相关法律</a></li>
+</ul>
+<div class="sub-a" style="display:none;">
+<div class="cleara">
+<ul class="home_a">
+<li><a href="{ZL:GetNodeLinkUrl(47)/}">公司简介</a></li>
+<li><a href="{ZL:GetNodeLinkUrl(47)/}">大事记</a></li>
+<li><a href="#">关注我们</a></li>
+<li><a href="#">联系我们</a></li>
+</ul>
+<ul>
+<li><a href="#">加入我们</a></li>
+<li><a href="#">实习生招聘</a></li>
+<li><a href="#">应届生招聘</a></li>
+<li><a href="#">社会招聘</a></li>
+</ul>
+<ul>
+<li><a href="#">商务合作区</a></li>
+<li><a href="#">知识交流区</a></li>
+</ul>
+<ul>
+<li><a href="#">版权和商标</a></li>
+<li><a href="#">隐私声明</a></li>
+<li><a href="#">服务条款</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+</div>
+<div class="home_banner">
+</div>
+<div class="home_t">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="home_body_one">
+<a href="#">
+<img src="{$CssDir/}Images/ig2.png" alt="产业布局"/>
+<p>产业布局</p>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="home_body_one">
+<a href="#">
+<img src="{$CssDir/}Images/ig1.png" alt="客户服务"/>
+<p>客户服务</p>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="home_body_one">
+<a href="#">
+<img src="{$CssDir/}Images/ig3.png" alt="使用帮助"/>
+<p>使用帮助</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="home_foot">
+<div class="container">
+<div class="home_foot_r">
+友情链接：
+<a href="http://www.zoomla.cn">逐浪官网</a>
+<span>&copy;2016 建途</span>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script>
+$().ready(function(e) {
+	$(".home_nav_c").mouseout(function(){
+		$(".sub-a").css("display","none");
+	});
+	$(".home_nav_c").mouseover(function(){
+		$(".sub-a").css("display","block");
+	});
+	$(".sub-a").mouseout(function(){
+		$(".sub-a").css("display","none");
+	});
+	$(".sub-a").mouseover(function(){
+		$(".sub-a").css("display","block");
+	});
+    if(IsPC()){
+		$(".all_phone").attr("href","javascript:alert('请用手机直接拨打400-6789-314')");	
+	}
+});
+//判断是否手机
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+</script>

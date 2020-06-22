@@ -1,0 +1,212 @@
+﻿@using System.Data;
+@using ZoomLa.SQLDAL;
+@using ZoomLa.BLL;
+@using ZoomLa.Common;
+@using ZoomLa.Model
+@model ZoomLa.Model.M_CommonData
+@{
+    B_User buser = new B_User();
+    B_PointGrounp pointBll = new B_PointGrounp();
+    DataTable ds = (DataTable)ViewBag.ds;
+    Layout = "~/Areas/User/Views/Shared/_empty.cshtml";
+    string action = MVCHelper.GetAction(Url.Action("Content_Add1", "Content"), Request);
+    M_UserInfo mu = buser.GetLogin();
+    M_PointGrounp pgMod = pointBll.SelectPintGroup((int)mu.UserExp);
+    M_Uinfo basemu = buser.GetUserBaseByuserid(mu.UserID);
+    DataTable dt = SqlHelper.ExecuteTable(CommandType.Text, "select Top 1 * from ZL_CommonModel where NodeID in (select NodeID from ZL_Node where ParentID=535) And ModelID in (72,73) And Inputer='" + mu.UserName + "' Order by CreateTime DESC", null);
+    B_Group groupBll = new B_Group();
+    M_Group groupMod = groupBll.SelReturnModel(mu.GroupID);
+    int status = -100;
+    if (dt.Rows.Count > 0)
+    {
+        status = DataConvert.CLng(dt.Rows[0]["Status"]);
+        if (status == 99)
+        {
+            Response.Redirect("/User/");
+        }
+        else if (status == 0 && DataConvert.CLng(Request.QueryString["ID"]) <= 0)
+        {
+            Response.Redirect("/User/Content/AddContent1?ID=" + DataConvert.CLng(dt.Rows[0]["GeneralID"]));
+        }
+    }
+}
+@section head{
+<title>添加认证信息</title>
+<script charset="utf-8" src="/Plugins/Ueditor/ueditor.config.js"></script>
+<script charset="utf-8" src="/Plugins/Ueditor/ueditor.all.min.js"></script>
+}
+@section content{
+<div class="home_top">
+<div class="container">
+<div class="home_top_l">
+<span class="pull-left"><a href="/">建途首页</a></span>
+<div class="home_top_ls">
+<div class="home_top_lsc">
+<span class="site_span">局域网</span><span class="site_ch">[切换城市]<span class="caret"></span></span>
+</div>
+<ul>
+<li><strong>热门城市：</strong><a href="/">全国</a><a href="/Class_468/Default.aspx">上海</a><a href="/Class_466/Default.aspx">北京</a><a href="/Class_484/Default.aspx">广东</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_486/Default.aspx">四川</a></li>
+<li>华北：<a href="/Class_466/Default.aspx">北京</a><a href="/Class_467/Default.aspx">天津</a><a href="/Class_470/Default.aspx">河北</a><a href="/Class_471/Default.aspx">山西</a><a href="/Class_492/Default.aspx">内蒙古</a></li>
+<li>华东：<a href="/Class_468/Default.aspx">上海</a><a href="/Class_475/Default.aspx">江苏</a><a href="/Class_476/Default.aspx">浙江</a><a href="/Class_477/Default.aspx">安徽</a><a href="/Class_478/Default.aspx">福建</a><a href="/Class_480/Default.aspx">山东</a></li>
+<li>华南：<a href="/Class_484/Default.aspx">广东</a><a href="/Class_493/Default.aspx">广西</a><a href="/Class_485/Default.aspx">海南</a></li>
+<li>华中：<a href="/Class_479/Default.aspx">江西</a><a href="/Class_481/Default.aspx">河南</a><a href="/Class_482/Default.aspx">湖北</a><a href="/Class_483/Default.aspx">湖南</a></li>
+<li>西南：<a href="/Class_469/Default.aspx">重庆</a><a href="/Class_486/Default.aspx">四川</a><a href="/Class_487/Default.aspx">贵州</a><a href="/Class_488/Default.aspx">云南</a><a href="/Class_494/Default.aspx">西藏</a></li>
+<li>西北：<a href="/Class_489/Default.aspx">陕西</a><a href="/Class_490/Default.aspx">甘肃</a><a href="/Class_491/Default.aspx">青海</a><a href="/Class_495/Default.aspx">宁夏</a><a href="/Class_496/Default.aspx">新疆</a></li>
+<li>东北：<a href="/Class_472/Default.aspx">辽宁</a><a href="/Class_473/Default.aspx">吉林</a><a href="/Class_474/Default.aspx">黑龙江</a></li>
+</ul>
+</div>24小时客服热线：<a href="tel:400-6789-314">400-6789-314</a>
+</div>
+<div class="home_top_r">
+<ul class="nav">
+<li style="line-height:normal;"><a href="#" style="padding-top:3px; padding-bottom:3px;"><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/bt_blue_76X24.png" alt="QQ登录"></a></li>
+<li class="nav_user">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎您，<span>@mu.UserName!</span></a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="/User/Login.aspx">会员中心</a></li>
+<li class="logon"><a href="/User/Info/UserInfo.aspx">资料维护</a></li>
+<li class="logon"><a href="javascript:;" onclick="LogoutFun();">安全退出</a></li>
+</ul>
+</li>
+<li><a href="/Guest">客户服务</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container myuser_top">
+<div class="media">
+<div class="media-left"><a href="/User/Info/UserInfo"><img class="media-object" src="@mu.UserFace" alt="@mu.UserName" onerror="shownoface(this);" /></a></div>
+<div class="media-body media-middle">
+<h4 class="media-heading">@mu.UserName <span><a href="/User/"><i class="fa fa-home"></i> 我的主页</a></span></h4>
+<p>
+<span>会员类型：@groupMod.GroupName</span>
+<span>加入时间：@mu.RegTime.ToString()</span>
+<span>余额：<a href="info/ConsumeDetail?SType=1" title="点击查看资金明细"><i class="fa fa-rmb"></i> @mu.Purse.ToString("f2")</a> <a href="/PayOnline/SelectPayPlat.aspx">[在线充值]</a> <a href="/User/Money/WithDraw">[申请提现]</a></span>
+<span>积分：<a href="info/ConsumeDetail?SType=3" title="点击查看积分明细"><i class="fa fa-credit-card-alt"></i> @mu.UserExp.ToString("f0")</a></span>
+</p>
+</div>
+</div>
+</div>
+
+@RenderPage("~/Areas/User/Views/Shared/ASCX/DefaultTop.cshtml") 
+
+<div class="container myuser_hmain">
+<div class="row">
+<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+<div class="myuser_left">
+<ul>
+<li><a href="/User/"><i class="fa fa-home"></i> 我的建途</a></li>
+<li><a href="/User/Info/UserInfo"><i class="fa fa-user"></i> 账号信息</a></li>
+<li><a href="/PayOnline/SelectPayPlat.aspx"><i class="fa fa-money"></i> 充值中心</a></li>
+<li><a href="/User/Content/MyFavori?type=1"><i class="fa fa-heart"></i> 我的收藏</a></li>
+<li><a href="User/iServer/FiServer"><i class="fa fa-question-circle-o"></i> 有问必答</a></li>
+<li><a href="/User/Change/Mobile"><i class="fa fa-mobile"></i> 更改手机</a></li>
+<li><a href="/User/Change/Email"><i class="fa fa-envelope"></i> 更改邮箱</a></li>
+<li><a href="/User/Change/Pwd"><i class="fa fa-lock"></i> 更改密码</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-10 col-md-9 col-sm-9 col-xs-12" style="margin-top:20px;">
+<ol class="breadcrumb">
+<li><a href="@Url.Action("Default","")">会员中心</a></li>
+<li><a href="/User/Certification">会员认证</a></li>
+<li class="active">添加认证信息</li>
+</ol>
+<form action="@MVCHelper.GetAction("/User/Content/Content_Add1",Request)" method="post">
+<div style="margin-bottom:20px;">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#Tabs0" data-toggle="tab">认证信息</a></li>
+</ul>
+<div class="tab-content panel-body padding0">
+<div id="Tabs0" class="tab-pane active manage_content">
+<table class="table table-bordered table_padding0 addcontent_modeltale">
+<tr>
+<td class="text-right">@B_Content.GetFieldAlias("Title", ds)：</td>
+<td>
+@Html.TextBoxFor(Model => Model.Title, new { @style = "background:url(/Images/bg1.gif) repeat-x;", @class = "form-control m715-50", onkeyup = "isgoEmpty('Title','span_txtTitle');Getpy('Title','PYtitle')" })
+@*<input type="text" id="title" name="title" style="background:url(/Images/bg1.gif) repeat-x;" class="form-control m715-50" onkeyup="isgoEmpty('Title','span_txtTitle');Getpy('Title','PYtitle')" />*@
+<span class="vaild_tip">*</span>
+<a href="javascript:;" class="btn btn-info btn-sm" onclick="ShowTitle()"><i class="fa fa-info"></i>标题属性</a>
+<button type="button" class="btn btn-info btn-sm" onclick="ShowSys();"><i class="fa fa-list"></i></button>
+<span id="span_txtTitle" name="span_txtTitle"></span>
+@Html.HiddenFor(Model => Model.TitleStyle)
+</td>
+</tr>
+@MvcHtmlString.Create(ViewBag.modelhtml)
+</table>
+</div>
+<div id="Tabs1" class="tab-pane">
+<table class="table table-bordered table_padding0 addcontent_modeltale">
+<tr>
+<td class="text-right"><label>@B_Content.GetFieldAlias("PYtitle", ds)</label></td>
+<td>
+@Html.TextBoxFor(Model => Model.PYtitle, new { @class = "form-control m715-50" })
+</td>
+</tr>
+<tr>
+<td class="tdbgleft" align="right">
+<label>@B_Content.GetFieldAlias("TagKey", ds)</label>
+</td>
+<td>
+<div id="OAkeyword"></div>
+@Html.TextBoxFor(Model => Model.TagKey, new { @class = "form-control" })<span>(空格或回车键分隔，长度不超过10字符或5汉字)</span>
+</td>
+</tr>
+<tr>
+<td class="text-right"><label>@B_Content.GetFieldAlias("Subtitle", ds);</label></td>
+<td>
+@Html.TextBoxFor(Model => Model.Subtitle, new { @class = "form-control m715-50" })
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="text-center">
+<input type="submit" class="btn btn-primary" value="@ViewBag.op" />
+<a href="MyContent?NodeID=@ViewBag.NodeID" class="btn btn-primary">返回列表</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+@MvcHtmlString.Create(Call.GetLabel("{ZL.Label id=\"全站底部\"/}"))
+}
+@section script{
+<script>
+var zlconfig = {
+    updir: "@ZoomLa.Components.SiteConfig.SiteOption.UploadDir.ToLower()",
+    duptitlenum: "@ZoomLa.Components.SiteConfig.SiteOption.DupTitleNum",
+    modelid: "@ViewBag.ModelID"
+};
+</script>
+<script src="/JS/OAKeyWord.js"></script>
+<script src="/JS/DatePicker/WdatePicker.js"></script>
+<script src="/JS/chinese.js"></script>
+<script src="/JS/Common.js"></script>
+<script src="/JS/Controls/ZL_Dialog.js"></script>
+<script src="/JS/ICMS/tags.json"></script>
+<script src="/JS/ZL_Content.js?v=20160514"></script>
+<script src="/JS/jquery.zclip.min.js"></script>
+<script src="/JS/Plugs/transtool.js"></script>
+<script>
+    $(function () {
+        Tlp_initTemp();
+        $("#BaiduTrans_a").TransTools({ top: 120 });
+        $("#txt_Edit,#txt_pages").parents("tr").hide();
+        $("form").validate();
+    });
+    function OnTemplateViewCheck(value) { $("#TxtTemplate_hid").val(value); }
+    $().ready(function (e) {
+        $("select[name='txt_groupid']").parent().parent().hide();
+        $("#Title").val("@(mu.UserName)的认证信息");
+        $("#Title").parent().parent().hide();
+        var id = "@(DataConvert.CLng(Request.QueryString["ID"]))";
+        if(id=="0")
+        {
+            $("select[name='txt_groupid']").val(@DataConvert.CLng(Request.QueryString["gid"]));
+        }
+    })
+</script>
+}

@@ -1,0 +1,273 @@
+﻿{ZL.Source id="节点栏目信息数据源"/}
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{SField sid="节点栏目信息数据源" FD="NodeName" page="0"/}_{$SiteName/}</title>
+<meta name="Keywords" content="{SField sid="节点栏目信息数据源" FD="Meta_Keywords" page="0"/}" />
+<meta name="description" content="{SField sid="节点栏目信息数据源" FD="Meta_Description" page="0"/}" />
+{ZL:Boot()/}
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link type="text/css" rel="stylesheet" href="/App_Themes/Guest.css" />
+<link href="{$CssDir/}global.css?Version={ZL.Label id="前端样式版本号"/}" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js" type="text/javascript"></script>
+<script src="/JS/ZL_ValidateCode.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<script src="/JS/Controls/Control.js"></script>
+<script>
+var username="{ZL:GetuserName()/}";
+var oarole='{ZL.Label id="输出当前登录用户办公角色ID" /}';
+if(username=="")
+{
+	window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+}
+else if(oarole==""){
+	alert("您尚未开通OA办公权限，请联系管理员开通！");
+	window.location.href="/User/";
+}
+</script>
+<style>
+.table td { white-space:nowrap;}
+</style>
+</head>
+<body>
+<div class="table-responsive" style="font-size:12px;">
+<table class="table table-bordered table-condensed">
+<tr>
+<td>证书类型</td>
+<td>姓名</td>
+<td>证书编号</td>
+<td>内部编号</td>
+<td>过期日期</td>
+<td>发证日期</td>
+<td>存放部门</td>
+<td>证书状态</td>
+<td>专业</td>
+<td>职称</td>
+<td>身份证</td>
+<td>是否由公司保存</td>
+<td>所在地</td>
+<td>备注</td>
+</tr>
+<tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td>注册证书</td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td>注册证书</td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td></td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td>押证</td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td>二级注册建造师</td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td>在库</td><td>港口与航道工程</td><td>助理工程师</td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td>在库</td><td></td><td></td><td>qwewqewqeqwewq</td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td>在库</td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td>1900年01月01日</td><td>1900年01月01日</td><td></td><td>在库</td><td></td><td></td><td></td><td>是</td><td></td><td></td></tr>
+</table>
+</div>
+
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_body_c">
+<div class="container">
+<div class="zhengzhao_body_f"><iframe src="/User/MyCert" frameborder="0" scrolling="no" width="100%" height="700"></iframe></div>
+</div>
+</div>
+</div>
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_add_c">
+<div class="zhengzhao_add_f"><iframe src="/Class_350/NodePage.aspx" frameborder="0" scrolling="no" width="100%" height="660"></iframe></div>
+</div>
+</div>
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_zjlx">
+<div class="zhengzhao_zjlx_c">
+<iframe src="/User/Content/AddContent2?NodeID=538&ModelID=74" frameborder="0" scrolling="no" width="760" height="560"></iframe>
+</div>
+</div>
+</div>
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_qt">
+<iframe src="/Class_539/NodePage.aspx" frameborder="0" scrolling="no" width="760" height="560"></iframe>
+</div>
+</div>
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_myguide">
+<div class="container">
+<div class="zhengzhao_myguide_c">
+<iframe src="/User/MyGuide?NodeID=543" frameborder="0" scrolling="no" width="100%" height="700"></iframe>
+</div>
+</div>
+</div>
+</div>
+
+<div class="zhengzhao_body" style="display:none;">
+<div class="zhengzhao_addguide">
+<iframe src="/User/Content/AddContent3?NodeID=543&ModelID=2" frameborder="0" scrolling="no" width="960" height="760"></iframe>
+</div>
+</div>
+
+</body>
+</html>
+<script>
+//检测固顶事件
+var IO=document.getElementById('Otop'),Y=IO,H=0,IE6;
+IE6=window.ActiveXObject&&!window.XMLHttpRequest;
+while(Y){H+=Y.offsetTop;Y=Y.offsetParent};
+if(IE6)
+IO.style.cssText="position:absolute;top:expression(this.fix?(document"+
+".documentElement.scrollTop-(this.javascript||"+H+")):0)";
+window.onscroll=function (){
+var d=document,s=Math.max(d.documentElement.scrollTop,document.body.scrollTop);
+if(s>H&&IO.fix||s<=H&&!IO.fix)return;
+if(!IE6)IO.style.position=IO.fix?"":"fixed";        
+IO.fix=!IO.fix;
+};
+try{document.execCommand("BackgroundImageCache",false,true)}catch(e){};
+//]]>
+//兼容wp8
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].
+appendChild(msViewportStyle);
+}
+
+
+$().ready(function(e) {
+	var uid='{ZL:GetuserID()/}';
+	var suprole='{ZL.Label id="获取当前登录用户公司超管角色ID" /}';
+	var zzgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="证照管理" /}';
+	var xzrs='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="行政人事" /}';
+	var jygl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="经营管理" /}';
+	var xmgl='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="项目管理" /}';
+	var cwb='{ZL.Label id="获取当前登录用户公司指定部门ID" GroupName="财务部" /}';
+	var platrole='{ZL.Label id="输出当前登录用户办公角色" /}';
+	
+	if(platrole.indexOf(","+suprole+",")>=0){
+		$(".myoa_funlist").show();
+		$(".myoa_main").show();
+	}
+	else if(zzgl.indexOf(","+uid+",")>=0){
+	}
+});
+
+//手机下右侧导航菜单效果
+$(function () {
+    $('button.navbar-toggle').click(function () {
+        $('body').toggleClass('out');
+        $('nav.navbar-fixed-top').toggleClass('out');
+        if ($('body').hasClass('out')) {
+            $(this).focus();
+        }
+        else {
+            $(this).blur();
+        }
+    });
+});
+
+$(document).click(function (e) {
+    if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+        e.preventDefault();
+        $('button.navbar-toggle').trigger('click');
+    }
+}).keyup(function (e) {
+    if (e.keyCode == 27 && $('body').hasClass('out')) {
+        $('button.navbar-toggle').trigger('click');
+    }
+});
+
+var buser = new B_User();
+buser.IsLogged(function(data,flag){
+	if(flag)
+	{
+		data=JSON.parse(data);
+		$("#Main_UName_T").html(data.UserName);
+	}
+	else
+		window.location.href="{ZL:GetNodeLinkUrl(79)/}";
+});
+$(".map_list1 li").each(function(index, element) {
+    if($(this).find("ul li").length>0){
+		$(this).find("ul").hide();
+	}
+	else{
+		$(this).children("h3").find(".btn").remove();
+		$(this).find("ul").remove();
+	}
+});
+$(".map_list1_b").click(function(){
+	if($(this).find("i").hasClass("fa-plus")){
+		$(this).parent().parent().children("ul").show();
+		$(this).find("i").removeClass("fa-plus").addClass("fa-minus");
+	}
+	else{
+		$(this).parent().parent().children("ul").hide();
+		$(this).find("i").removeClass("fa-minus").addClass("fa-plus");
+	}
+});
+$().ready(function(e) {
+	$(".map_list1 li[data-gid='722']").addClass("active");
+	ShowFun($(".map_list1 li[data-gid='722']"))
+});
+function ShowFun(obj){
+	if(parseInt($(obj).data("pid"))>0){
+		$(obj).parent().show();
+		$(obj).parent().prev("h3").find(".btn i").removeClass("fa-plus").addClass("fa-minus");
+		ShowFun($(obj).parent().parent())
+	}
+	else{
+	}
+}
+function CloseAdd(){
+	$(".zhengzhao_add_c").parent().hide();
+}
+function ShowAdd(){
+	$(".zhengzhao_add_f iframe").attr("src","/Class_350/NodePage.aspx");
+	$(".zhengzhao_add_c").parent().show();
+}
+function CloseMyCert(){
+	$(".zhengzhao_body_c").parent().hide();
+}
+function ShowMyCert(){
+	$(".zhengzhao_body_c").parent().show();
+}
+function Closezslx(){
+	$(".zhengzhao_zjlx").parent().hide();	
+}
+function Showzslx(){
+	$(".zhengzhao_zjlx").parent().show();	
+}
+function EditFun(gid){
+	$(".zhengzhao_add_f iframe").attr("src","/Class_350/NodePage.aspx?ID="+gid);
+	$(".zhengzhao_add_c").parent().show();
+}
+function Closeqt(){
+	$(".zhengzhao_qt").parent().hide();
+}
+function Showqt(){
+	$(".zhengzhao_qt").parent().show();
+}
+function CloseMyGuide(){
+	$(".zhengzhao_myguide").parent().hide();
+}
+function ShowMyGuide(){
+	$(".zhengzhao_myguide").parent().show();
+}
+function Closeaddguide(){
+	$(".zhengzhao_addguide").parent().hide();
+}
+function Showaddguide(){
+	$(".zhengzhao_addguide iframe").attr("src","/User/Content/AddContent3?NodeID=543&ModelID=2");
+	$(".zhengzhao_addguide").parent().show();
+}
+function AddSuccess(){
+	CloseAdd();
+	$(".zhengzhao_body_f iframe").attr("src",$(".zhengzhao_body_f iframe").attr("src"));
+	$(".zhengzhao_add_f iframe").attr("src",$(".zhengzhao_add_f iframe").attr("src"));
+}
+function AddSuccess1(){
+	Closeaddguide();
+	$(".zhengzhao_myguide_c iframe").attr("src",$(".zhengzhao_myguide_c iframe").attr("src"));
+	$(".zhengzhao_addguide iframe").attr("src",$(".zhengzhao_addguide iframe").attr("src"));
+}
+function EditFun1(gid){
+	$(".zhengzhao_addguide iframe").attr("src","/User/Content/AddContent3?ID="+gid);
+	$(".zhengzhao_addguide").parent().show();
+}
+</script>

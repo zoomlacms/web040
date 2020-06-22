@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>345</LabelID>
+    <LabelName>输出施工企业列表_分页</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc>施工企业库列表标签</LabelDesc>
+    <LabelParam>NodeID,1,1,节点ID|ShowNum,10,1,显示数|sgzcb,,1,施工总承包|sgzycb,,1,专业承包|qtzz,,1,其他资质|dsffwqy,,1,第三方服务企业|TitleNum,50,1,标题长|Title,,1,标题</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_qysjk ON ZL_CommonModel.ItemID=ZL_C_qysjk.ID</LabelTable>
+    <LabelField>ZL_CommonModel.GeneralID,ZL_CommonModel.NodeID,ZL_CommonModel.Title,ZL_C_qysjk.capital,ZL_C_qysjk.company,ZL_C_qysjk.yyzzh,ZL_C_qysjk.settime,ZL_C_qysjk.address,ZL_C_qysjk.pic,ZL_C_qysjk.gszcd,ZL_C_qysjk.qygw,ZL_C_qysjk.dsffwqy,ZL_C_qysjk.qtzz,ZL_C_qysjk.sgzcb,ZL_C_qysjk.sgzycb</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) And Status=99 And sgzcb like '%@sgzcb%' And sgzycb like '%@sgzycb%'  And qtzz like '%@qtzz%'  And dsffwqy like '%@dsffwqy%'  And Title like '%@Title%'</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime DESC</LabelOrder>
+    <LabelContent>&lt;div class="row padding5"&gt;
+{Repeate}  
+&lt;div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 padding10"&gt;
+&lt;div class="company_sgqyl_c"&gt;
+&lt;div class="company_sgqyl_ct"&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;&lt;img src="{ZL:GetPicUrl({Field="pic"/})/}" alt="{Field="Title"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;div class="company_sgqyl_cp"&gt;
+&lt;h3&gt;&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;{ZL:CutText({Field="Title"/},@TitleNum,)/}&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;公司地址：{Field="address"/}&lt;/li&gt;
+&lt;li&gt;成立时间：{ZL:FormatDate({Field="settime"/},yyyy年MM月dd日)/}&lt;/li&gt;
+&lt;li&gt;工商注册地：{Field="gszcd"/}&lt;/li&gt;
+&lt;li&gt;企业官网：&lt;a href="{Field="qygw"/}" target="_blank"&gt;{Field="qygw"/}&lt;/a&gt;&lt;/li&gt;
+&lt;li class="sgzcb_li" data-search="{Field="sgzcb"/}"&gt;施工总承包：&lt;span&gt;{ZL:Replace({Field="sgzcb"/},|, )/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="sgzycb_li" data-search="{Field="sgzycb"/}"&gt;施工专业承包：&lt;span&gt;{ZL:Replace({Field="sgzycb"/},|, )/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="qtzz_li" data-search="{Field="qtzz"/}"&gt;其他资质：&lt;span&gt;{ZL:Replace({Field="qtzz"/},|, )/}&lt;/span&gt;&lt;/li&gt;
+&lt;li class="dsffwqy_li" data-search="{Field="dsffwqy"/}"&gt;第三方服务企业：&lt;span&gt;{ZL:Replace({Field="dsffwqy"/},|, )/}&lt;/span&gt;&lt;/li&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;{/Repeate}
+&lt;/div&gt;
+{ZL.Page id="响应式列表分页v3"/}</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_qysjk"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

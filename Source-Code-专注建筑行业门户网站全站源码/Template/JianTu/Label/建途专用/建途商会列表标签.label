@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Table>
+    <LabelID>327</LabelID>
+    <LabelName>建途商会列表标签</LabelName>
+    <LabelType>4</LabelType>
+    <LabelCate>建途专用</LabelCate>
+    <LabelDesc />
+    <LabelParam>ShowNum,10,1,显示数|NodeID,1,1,节点ID|TitleNum,40,1,标题长</LabelParam>
+    <LabelTable>ZL_CommonModel LEFT JOIN ZL_C_Article ON ZL_CommonModel.ItemID=ZL_C_Article.ID</LabelTable>
+    <LabelField>ZL_CommonModel.NodeID,ZL_CommonModel.GeneralID,ZL_CommonModel.Title,ZL_CommonModel.TopImg</LabelField>
+    <LabelWhere>(NodeID=@NodeID or FirstNodeID=@NodeID) and status=99</LabelWhere>
+    <LabelOrder>ZL_CommonModel.CreateTime ASC</LabelOrder>
+    <LabelContent>&lt;div class="team_tab"&gt;
+&lt;div class="pan_img"&gt;
+&lt;div class="row"&gt;
+&lt;ul class="meet_p"&gt;
+  {Repeate}
+&lt;div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"&gt;
+&lt;li&gt;
+&lt;div class="pan_img_c"&gt;
+&lt;a href="{ZL:GetInfoUrl({Field="GeneralID"/})/}" title="{Field="Title"/}" target="{ZL:GetInfoOpen({Field="NodeID"/})/}"&gt;
+&lt;img src="{Field="TopImg"/}" alt="{Field="Title"/}" onerror="javascript:this.src='/UploadFiles/nopic.gif';" /&gt;
+&lt;h5&gt;{ZL:CutText({Field="Title"/},@TitleNum,...)/}&lt;/h5&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/div&gt;
+  {/Repeate}
+&lt;/ul&gt;
+&lt;/div&gt; 
+  {ZL.Page id="大图标响应式列表分页v3"/}
+&lt;/div&gt;
+&lt;/div&gt;</LabelContent>
+    <LabelCount>@ShowNum</LabelCount>
+    <LabelAddUser>0</LabelAddUser>
+    <LabelNodeID>0</LabelNodeID>
+    <Modeltypeinfo>计数判断</Modeltypeinfo>
+    <addroot>循环计算</addroot>
+    <setroot>等于</setroot>
+    <Modelvalue />
+    <Valueroot />
+    <IsOpen>0</IsOpen>
+    <FalseContent />
+    <DataSourceType>{"ds_m":"main","ds_s":"main","tb_m":"ZL_CommonModel","tb_s":"ZL_C_Article"}</DataSourceType>
+    <ConnectString />
+    <ProceName />
+    <ProceParam />
+  </Table>
+</NewDataSet>

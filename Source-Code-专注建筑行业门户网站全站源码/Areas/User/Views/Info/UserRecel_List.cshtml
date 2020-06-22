@@ -1,0 +1,29 @@
+﻿@using System.Data
+@model ZoomLa.SQLDAL.SQL.PageSetting
+@{
+    Model.url = "UserRecel_Date";}
+<div class="container">
+    <ul id="addul" class="list-unstyled margin_t5">
+        @foreach (DataRow dr in Model.dt.Rows)
+        {
+            <li class="col-lg-4 col-md-4 col-xs-6 col-sm-6" style="padding-left:0px;">
+                <div class="panel panel-info  text-left">
+                    <div class="panel-heading">
+                        <i class="fa fa-user"></i> <strong>@dr["ReceivName"]</strong> <i class="fa fa-mobile-phone" style="font-size:16px;"></i> @dr["MobileNum"]
+                        <i class='fa fa-check pull-right' title='默认'></i>
+                    </div>
+                    <div class="panel-body">
+                        <div><div class="add_left">所在地区：</div><span>@dr["Provinces"]</span></div>
+                        <div><div class="add_left">地址：</div>@dr["Street"]</div>
+                        <div><div class="add_left">邮编：</div>@dr["ZipCode"]</div>
+                    </div>
+                    <div class="panel-footer">
+                        <span><a href="AddUserAddress?id=@dr["id"]" title="修改"><i class="fa fa-pencil"></i>修改</a></span>
+                        <input type="submit" id="del_btn" value="@dr["id"]" onclick="return confirm('你确定要删除吗!');" /><i class="fa fa-trash">删除</i>
+                        <button id="def_btn" class="pull-right" value="@dr["ID"]">设为默认</button>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
